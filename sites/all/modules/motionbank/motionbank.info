@@ -1,0 +1,5 @@
+;
+name = Motion Bank
+description = Some fixups: set ungrouped posts to have term "all members".
+depends[] = taxonomy_access
+core = 6.x

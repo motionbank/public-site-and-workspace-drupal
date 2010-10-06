@@ -1,3 +1,14 @@
-**Motion Bank** Workspace
+<b>Motion Bank</b> Workspace
 
 http://motionbank.org
+
+<hr />
+
+<h4>A note on access control for the workspace.</h4>
+<p>
+We are using a module called "Taxonomy Access Control" (TAC) along with "Organic Groups". 
+Any group posts are set to be private. This is overridden by a TAC taxonomy with 3 terms:
+"anyone", "all members", "group only". Per default anonymous users can't see anything, this is
+overridden by the term "anyone" (set to "allow view node"). Any node (be it in a group or not)
+having that term is visible on the world level. Posts not in a group are visible to 
+</p>
