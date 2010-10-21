@@ -1,0 +1,116 @@
+/* Motion Bank workspace style sheet */
+/* fjenett - 2010-10 */
+
+  body
+  {
+    background-image: url('images/background.jpg');
+    background-repeat: repeat-x;
+    background-color: #131212;
+    
+    font-size: 13px;
+    font-family: 'Verdana', sans;
+  }
+  
+  a,
+  a:visited,
+  a:hover,
+  a:link,
+  a:active
+  {
+    text-decoration: none;
+    color: #225D8F;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .title
+  {
+    font-family: 'Verdana', sans;
+    font-weight: normal;
+  }
+  
+  #header
+  {
+    height: 130px;
+  }
+  
+  #logo
+  {
+    padding-top: 35px;
+    padding-left: 8px;
+    margin-bottom: 36px;
+  }
+  
+  #header .region-header
+  {
+    width: 960px;
+  }
+  
+  #block-menu-primary-links
+  {
+    float: left;
+  }
+  
+  #block-menu-secondary-links
+  {
+    float: right;
+  }
+  
+  #block-menu-primary-links .title,
+  #block-menu-secondary-links .title
+  {
+    display: none;
+  }
+  
+  #block-menu-primary-links ul,
+  #block-menu-secondary-links ul
+  {
+    padding: 0px;
+    margin: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  #block-menu-primary-links li,
+  #block-menu-secondary-links li
+  {
+    list-style: none;
+    padding: 7px 12px 7px 12px;
+    margin: 0px 5px 0px 0px;
+    float: left;
+    background-color: #485059;
+  }
+  
+  #block-menu-primary-links li.active-trail,
+  #block-menu-secondary-links li.active-trail
+  {
+    background-color: white;
+  }
+  
+  #block-menu-secondary-links li
+  {
+    margin: 0px 0px 0px 5px;
+  }
+  
+  #block-menu-primary-links li a,
+  #block-menu-secondary-links li a
+  {
+    display: block;
+    font-size: 1.0em;
+    color: #dddddd;
+  }
+  
+  #block-menu-primary-links li.active-trail a,
+  #block-menu-secondary-links li.active-trail a
+  {
+    color: #444444;
+  }
+  
+  #main-wrapper
+  {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .sidebar-first #content
+  {
+    width: 720px;
+  }
