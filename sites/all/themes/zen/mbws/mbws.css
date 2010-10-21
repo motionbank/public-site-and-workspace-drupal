@@ -123,6 +123,11 @@
     padding: 20px;
   }
   
+  .no-sidebars #content
+  {
+    width: 920px;
+  }
+  
   .sidebar-first #content,
   .sidebar-second #content
   {
