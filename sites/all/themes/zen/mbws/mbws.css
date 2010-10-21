@@ -39,6 +39,19 @@
     margin-bottom: 36px;
   }
   
+  .breadcrumb
+  {
+    float: left;
+    padding-top: 46px;
+    padding-left: 1em;
+  }
+  
+  .breadcrumb,
+  .breadcrumb a
+  {
+    color: #868F98;
+  }
+  
   #header .region-header
   {
     width: 960px;
@@ -110,7 +123,20 @@
     padding: 20px;
   }
   
-  .sidebar-first #content
+  .sidebar-first #content,
+  .sidebar-second #content
   {
     width: 720px;
+  }
+  
+  .region-sidebar-second
+  {
+    margin-left: 720px;
+  }
+  
+  #footer
+  {
+    padding: 20px;
+    background-color: #A2AAB1;
+    margin-bottom: 20px;
   }
