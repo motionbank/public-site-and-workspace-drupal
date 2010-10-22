@@ -23,7 +23,7 @@
   
   h1, h2, h3, h4, h5, h6, .title
   {
-    font-family: 'Verdana', sans;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: normal;
   }
   
@@ -120,7 +120,7 @@
   #main-wrapper
   {
     background-color: white;
-    padding: 20px;
+    padding: 30px ;
   }
   
   .no-sidebars #content
@@ -138,6 +138,36 @@
   {
     margin-left: 720px;
   }
+  
+  /* projects page */
+  
+  .view-projects .views-row
+  {
+    float: left;
+    padding: 10px;
+    width: 200px;
+    background-color: #A2AAB1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .view-projects .views-field-field-images-fid img
+  {
+    border: 1px solid #cccccc;
+  }
+  
+  .view-projects .views-field-title
+  {
+    margin-top: 1em;
+  }
+  
+  .view-projects .views-field-title a
+  {
+    color: white;
+    font-size: 15px;
+  }
+  
+  /* end projects page */
   
   #footer
   {
