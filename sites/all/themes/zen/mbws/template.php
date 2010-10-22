@@ -46,7 +46,18 @@ function mbws_menu_item ( $link, $has_children, $menu = '',
     $class .= ' active-trail';
   }
   
-  return '<li class="'. $class .'">'. $link . $menu ."</li>\n";
+  if ( $path_link == 'logout' )
+  {
+    global $user;
+    
+    if ( $user->uid > 0 )
+    {
+      return '<li class="'. $class .'">'. l($user->name, 'user/'.$user->uid) . $menu ."</li>\n".
+             '<li class="'. $class .'">'. $link . $menu ."</li>\n";
+    }
+  }
+  else
+    return '<li class="'. $class .'">'. $link . $menu ."</li>\n";
 }
 
 /**
