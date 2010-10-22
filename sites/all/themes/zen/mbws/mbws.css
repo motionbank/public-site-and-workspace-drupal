@@ -3,12 +3,14 @@
 
   body
   {
+    background-color: #131212;
     background-image: url('images/background.png');
     background-repeat: repeat-x;
-    background-color: #131212;
     
     font-size: 13px;
     font-family: 'Verdana', sans;
+    
+    height: 100%;
   }
   
   a,
@@ -117,6 +119,8 @@
     color: #444444;
   }
   
+  /* MAIN */
+  
   #main-wrapper
   {
     background-color: white;
@@ -125,21 +129,136 @@
   
   .no-sidebars #content
   {
-    width: 920px;
+    width: 900px;
   }
   
   .sidebar-first #content,
   .sidebar-second #content
   {
-    width: 720px;
+    width: 700px;
   }
   
   .region-sidebar-second
   {
-    margin-left: 720px;
+    margin-left: 700px;
   }
   
+  div.messages,
+  div.status,
+  div.error,
+  div.warning
+  {
+    margin: 1em 0px 2em 0px;
+  }
+  
+  #content-area .picture,
+  #content-area .meta
+  {
+    display: none;
+  }
+  
+  /* prettify tabs menu for some pages */
+  
+  .node-type-wiki h1.title,
+  .node-type-project h1.title,
+  .node-type-post h1.title,
+  .section-user h1.title
+  {
+    float: left;
+  }
+  
+  .node-type-wiki .tabs,
+  .node-type-project .tabs,
+  .node-type-post .tabs,
+  .section-user .tabs
+  {
+    float: right;
+  }
+  
+  .node-type-wiki .tabs ul.primary,
+  .node-type-wiki .tabs ul.primary li a,
+  .node-type-wiki .tabs ul.primary li.active a,
+  .node-type-wiki .tabs ul.primary li.active a:hover,
+  .node-type-wiki .tabs ul.primary li a .tab,
+  .node-type-project .tabs ul.primary,
+  .node-type-project .tabs ul.primary li a,
+  .node-type-project .tabs ul.primary li.active a,
+  .node-type-project .tabs ul.primary li.active a:hover,
+  .node-type-project .tabs ul.primary li a .tab,
+  .node-type-post .tabs ul.primary,
+  .node-type-post .tabs ul.primary li a,
+  .node-type-post .tabs ul.primary li.active a,
+  .node-type-post .tabs ul.primary li.active a:hover,
+  .node-type-post .tabs ul.primary li a .tab,
+  .section-user .tabs ul.primary,
+  .section-user .tabs ul.primary li a,
+  .section-user .tabs ul.primary li.active a,
+  .section-user .tabs ul.primary li.active a:hover,
+  .section-user .tabs ul.primary li a .tab
+  {
+    background-image: none;
+    font-weight: normal;
+  }
+  
+  .node-type-wiki .tabs ul.primary li,
+  .node-type-wiki .tabs ul.primary li a,
+  .node-type-project .tabs ul.primary li,
+  .node-type-project .tabs ul.primary li a,
+  .node-type-post .tabs ul.primary li,
+  .node-type-post .tabs ul.primary li a,
+  .section-user .tabs ul.primary li,
+  .section-user .tabs ul.primary li a
+  {
+    padding: 0px;
+    color: white;
+  }
+  
+  .node-type-wiki .tabs ul.primary li a .tab,
+  .node-type-project .tabs ul.primary li a .tab,
+  .node-type-post .tabs ul.primary li a .tab,
+  .section-user .tabs ul.primary li a .tab
+  {
+    background-color: #A2AAB1;
+    padding: 3px 10px 3px 10px;
+    margin-left: 5px;
+  }
+  
+  .node-type-wiki .tabs ul.primary li.active a .tab,
+  .node-type-project .tabs ul.primary li.active a .tab,
+  .node-type-post .tabs ul.primary li.active a .tab,
+  .section-user .tabs ul.primary li.active a .tab
+  {
+    background-color: #dddddd;
+    color: black;
+  }
+  
+  .node-type-wiki #content-area,
+  .node-type-project #content-area,
+  .node-type-post #content-area,
+  .section-user #content-area
+  {
+    padding-top: 1em;
+  }
+  
+  /* end prettify tabs menu for some pages */
+  
   /* projects page */
+  
+  .page-projects #content
+  {
+    width: 720px;
+  }
+  
+  .page-projects #block-block-1
+  {
+    background-color: #A2AAB1;
+    padding: 6px 15px 6px 15px;
+  }
+  
+  .page-projects #block-block-1 a
+  {
+    color: white;
+  }
   
   .view-projects .views-row
   {
@@ -167,7 +286,64 @@
     font-size: 15px;
   }
   
+  .view-projects .views-field-description
+  {
+    height: 5em;
+  }
+  
   /* end projects page */
+  
+  /* users page */
+  
+  .page-users #content
+  {
+    width: 920px;
+  }
+  
+  .view-users .views-row
+  {
+    padding: 10px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    float: left;
+    width: 270px;
+    background-color: #A2AAB1;
+  }
+  
+  #content-area .view-users .views-row .picture
+  {
+    display: block;
+    width: 85px;
+    height: 85px;
+    text-align: center;
+    border: 1px solid #dddddd;
+  }
+  
+  .view-users .views-field-picture
+  {
+    float: left;
+    padding-right: 10px;
+  }
+  
+  .view-users .views-field-name
+  {
+    float: left;
+    margin-bottom: 1em;
+  }
+  
+  .view-users .views-field-name a
+  {
+    color: white;
+    font-size: 1.1em;
+  }
+  
+  .view-users .views-field-value
+  {
+    float: left;
+    font-size: 0.8em;
+  }
+  
+  /* end users page */
   
   #footer
   {
