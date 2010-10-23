@@ -29,6 +29,11 @@
     font-weight: normal;
   }
   
+  h1.title
+  {
+    margin-bottom: 1em;
+  }
+  
   fieldset
   {
     border: 1px solid #999999;
@@ -295,6 +300,11 @@
     padding-top: 1em;
   }
   
+  .feed-icons
+  {
+    display: none;
+  }
+  
   .section-comment #content-area .box h2,
   .section-project #content-area .box h2,
   .node-type-wiki #content-area .box h2
@@ -443,8 +453,14 @@
   
   /* end scrap book coating from wiki pages */
   
-  /* local tasks block */
+  /* local tasks block && group / project block */
   
+  #block-og-0 ul
+  {
+    padding-left: 0px;
+  }
+  
+  #block-og-0 li,
   #block-block-2 li
   {
     background-color: #A2AAB1;
@@ -453,22 +469,25 @@
     list-style: none;
   }
   
+  #block-og-0 li.active,
   #block-block-2 li.active
   {
     background-color: #E7EAED;
   }
   
+  #block-og-0 li a,
   #block-block-2 li a
   {
     color: white;
   }
   
+  #block-og-0 li.active a,
   #block-block-2 li.active a
   {
     color: black;
   }
   
-  /* end local tasks block */
+  /* end local tasks block && group / project block */
   
   /* projects page */
   
