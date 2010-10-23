@@ -174,10 +174,12 @@
         <?php if ($title): ?>
           <h1 class="title"><?php print $title; ?></h1>
         <?php endif; ?>
+        <?php /* ?>
         <?php if ($tabs): ?>
           <div class="tabs"><?php print $tabs; ?></div>
         <?php endif; ?>
         <div class="clearfix clear-tabs"> <!-- clear tabs --> </div>
+        <?php */ ?>
         <?php print $messages; ?>
         <?php print $help; ?>
 

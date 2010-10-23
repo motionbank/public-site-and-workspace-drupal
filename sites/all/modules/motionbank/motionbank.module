@@ -36,6 +36,17 @@
     {
         switch ($op)
         {
+            //
+            case 'alter':
+                if ( isset($node->links) && is_array($node->links) )
+                {
+                    global $current_node_links;
+                    $current_node_links = $node->links;
+                    $node->links = array();
+                }
+                break;
+            
+            // auto generate link aliases for group (aka project) pages
           case 'insert':
           case 'update':
             if ( $node->type == 'project' )

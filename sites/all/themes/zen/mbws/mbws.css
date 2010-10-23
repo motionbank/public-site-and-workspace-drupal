@@ -172,34 +172,24 @@
     display: none;
   }
   
-  #content-area .links
-  {
-    margin-top: 1em;
-  }
-  
-  #content-area .links li
-  {
-    display: block;
-    float: right;
-    background-color: #A2AAB1;
-    padding: 6px 10px 6px 10px;
-    margin-left: 5px;
-  }
-  
-  #content-area .links li a
-  {
-    color: white;
-  }
-  
   #content-area .node .groups
   {
     display: none;
   }
   
+  ul.links
+  {
+    margin-top: 0px;
+  }
+  
+  ul.links li
+  {
+    display: block;
+  }
+  
   /* comments, commenting */
   
-  .section-comment #content-area .node .content,
-  .section-comment #content-area .node .links
+  .section-comment #content-area .node .content
   {
     display: none;
   }
@@ -242,7 +232,7 @@
     border-top: 0px solid #939699;
   }
   
-  #content-area #comments .first
+  #content-area #comments div.first
   {
     border-top: 1px solid #939699;
   }
@@ -270,18 +260,34 @@
     font-style: italic;
     float: right;
     font-size: 0.8em;
+    padding: 6px;
+    padding-right: 0px;
   }
   
   #content-area .comment .links
   {
     margin: 0px;
-   display: none;
-   float: right;
+    display: none;
+    float: right;
   }
   
   #content-area .comment:hover .links
   {
      display: block;
+  }
+  
+  #content-area .comment .links li
+  {
+    display: inline;
+    float: right;
+    padding: 3px;
+    background-color: #939699;
+    margin-left: 5px;
+  }
+  
+  #content-area .comment .links li a
+  {
+    color: white;
   }
   
   #content-area .box
@@ -310,6 +316,57 @@
   
   /* end comments, commenting */
   
+  /* tagadelic block */
+  
+  #block-tagadelic-1
+  {
+    background-color: #E7EAED;
+    padding: 10px;
+  }
+  
+  #block-tagadelic-1 .title
+  {
+    display: none;
+  }
+  
+  #block-tagadelic-1 a.level1
+  {
+    font-size: 0.6em;
+  }
+  
+  #block-tagadelic-1 a.level2
+  {
+    font-size: 0.7em;
+  }
+  
+  #block-tagadelic-1 a.level3
+  {
+    font-size: 0.8em;
+  }
+  
+  #block-tagadelic-1 a.level4
+  {
+    font-size: 0.9em;
+  }
+  
+  #block-tagadelic-1 a.level5
+  {
+    font-size: 1em;
+  }
+  
+  #block-tagadelic-1 a.level6
+  {
+    font-size: 1.1em;
+  }
+  
+  #block-tagadelic-1 .more-link
+  {
+    padding-top: 6px;
+    text-align: left;
+  }
+  
+  /* end tagadelic block */
+  
   /* scrap book coating from wiki pages */
   
   .block-book
@@ -318,7 +375,6 @@
     padding: 10px;
     padding-bottom: 5px;
     padding-left: 15px;
-    font-size: 0.8em;
   }
   
   .block-book h2.title
@@ -387,164 +443,32 @@
   
   /* end scrap book coating from wiki pages */
   
-  /* prettify tabs menu for some pages */
+  /* local tasks block */
   
-  .node-type-wiki h1.title,
-  .node-type-project h1.title,
-  .node-type-post h1.title,
-  .section-user h1.title,
-  .section-search h1.title
+  #block-block-2 li
   {
-    float: left;
+    background-color: #A2AAB1;
+    padding: 6px 0px 6px 12px;
+    margin-bottom: 5px;
+    list-style: none;
   }
   
-  .node-type-wiki .tabs,
-  .node-type-project .tabs,
-  .node-type-post .tabs,
-  .section-user .tabs,
-  .section-search .tabs
+  #block-block-2 li.active
   {
-    float: right;
+    background-color: #E7EAED;
   }
   
-  .node-type-wiki #content-area,
-  .section-project #content-area,
-  .node-type-post #content-area,
-  .section-user #content-area,
-  .section-search #content-area
+  #block-block-2 li a
   {
-    margin-top: 1em;
-  }
-  
-  .node-type-wiki .tabs ul,
-  .node-type-wiki .tabs ul li a,
-  .node-type-wiki .tabs ul li.active a,
-  .node-type-wiki .tabs ul li a .tab,
-  .node-type-project .tabs ul,
-  .node-type-project .tabs ul li a,
-  .node-type-project .tabs ul li.active a,
-  .node-type-project .tabs ul li a .tab,
-  .node-type-post .tabs ul,
-  .node-type-post .tabs ul li a,
-  .node-type-post .tabs ul li.active a,
-  .node-type-post .tabs ul li a .tab,
-  .section-user .tabs ul,
-  .section-user .tabs ul li a,
-  .section-user .tabs ul li.active a,
-  .section-user .tabs ul li a .tab,
-  .section-search .tabs ul,
-  .section-search .tabs ul li a,
-  .section-search .tabs ul li.active a,
-  .section-search .tabs ul li a .tab
-  {
-    background-image: none;
-    border: 0px solid white;
-    font-weight: normal;
-    padding-left: 0px;
-  }
-  
-  .node-type-wiki .tabs ul li.active a .tab,
-  .node-type-project .tabs ul li.active a .tab,
-  .node-type-post .tabs ul li.active a .tab,
-  .section-user .tabs ul li.active a .tab,
-  .section-search .tabs ul li.active a .tab
-  {
-    background-image: none;
-  }
-  
-  .node-type-wiki .tabs ul,
-  .node-type-project .tabs ul,
-  .node-type-post .tabs ul,
-  .section-user .tabs ul,
-  .section-search .tabs ul
-  {
-    float: right;
-    height: 30px;
-  }
-  
-  .node-type-wiki div.tabs,
-  .node-type-project div.tabs,
-  .node-type-post div.tabs,
-  .section-user div.tabs,
-  .section-search div.tabs
-  {
-    width: 49%;
-  }
-  
-  .node-type-wiki h1.title,
-  .node-type-project h1.title,
-  .node-type-post h1.title,
-  .section-user h1.title,
-  .section-search h1.title
-  {
-    width: 49%;
-  }
-  
-  .node-type-wiki .tabs ul li,
-  .node-type-wiki .tabs ul li a,
-  .node-type-project .tabs ul li,
-  .node-type-project .tabs ul li a,
-  .node-type-post .tabs ul li,
-  .node-type-post .tabs ul li a,
-  .section-user .tabs ul li,
-  .section-user .tabs ul li a,
-  .section-search .tabs ul li,
-  .section-search .tabs ul li a
-  {
-    padding: 0px;
-    margin: 0px;
     color: white;
   }
   
-  .node-type-wiki .tabs ul li a .tab,
-  .node-type-project .tabs ul li a .tab,
-  .node-type-post .tabs ul li a .tab,
-  .section-user .tabs ul li a .tab,
-  .section-search .tabs ul li a .tab
+  #block-block-2 li.active a
   {
-    background-color: #A2AAB1;
-    padding: 3px 10px 3px 10px;
-    margin-left: 5px;
-  }
-  
-  .node-type-wiki .tabs ul.secondary,
-  .node-type-project .tabs ul.secondary,
-  .node-type-post .tabs ul.secondary,
-  .section-user .tabs ul.secondary,
-  .section-search .tabs ul.secondary
-  {
-    width: 350px;
-  }
-  
-  .node-type-wiki .tabs ul.secondary li,
-  .node-type-project .tabs ul.secondary li,
-  .node-type-post .tabs ul.secondary li,
-  .section-user .tabs ul.secondary li,
-  .section-search .tabs ul.secondary li
-  {
-    float: right;
-  }
-  
-  .node-type-wiki .tabs ul.secondary li a .tab,
-  .node-type-project .tabs ul.secondary li a .tab,
-  .node-type-post .tabs ul.secondary li a .tab,
-  .section-user .tabs ul.secondary li a .tab,
-  .section-search .tabs ul.secondary li a .tab
-  {
-    padding: 4px 10px 4px 10px;
-  }
-  
-  .node-type-wiki .tabs ul li.active a .tab,
-  .node-type-project .tabs ul li.active a .tab,
-  .node-type-post .tabs ul li.active a .tab,
-  .section-user .tabs ul li.active a .tab,
-  .section-search .tabs ul li.active a .tab
-  {
-    background-color: #dddddd;
     color: black;
   }
   
-  /* end prettify tabs menu for some pages */
+  /* end local tasks block */
   
   /* projects page */
   
