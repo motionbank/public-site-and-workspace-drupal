@@ -1,0 +1,29 @@
+<?php
+    /* Motion Bank module */
+    /* fjenett - 2010-10-22 */
+    
+    
+    /**
+     *  Hook form alter.
+     */
+    
+    function motionbank_form_alter( &$form, &$form_state, $form_id )
+    {
+        if ( $form_id == 'comment_form' )
+        {
+            $form["_author"] = array();
+            
+            foreach ($form['comment_filter']['format'] as $i => $filter)
+            {
+                /* More information link ... */
+                if (is_int($i) && !$filter['#type'])
+                {
+                    $form['comment_filter']['format'][$i]['#value'] = '';
+                }
+                else if ( $filter['guidelines'] )
+                {
+                    $form['comment_filter']['format'][$i]['guidelines'] = array();
+                }
+            }
+        }
+    }
