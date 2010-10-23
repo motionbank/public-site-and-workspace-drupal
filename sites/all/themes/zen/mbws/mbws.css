@@ -25,7 +25,7 @@
   
   h1, h2, h3, h4, h5, h6, .title
   {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", "DejaVu Sans", Arial, sans-serif;
     font-weight: normal;
   }
   
@@ -180,10 +180,10 @@
   #content-area .links li
   {
     display: block;
-    float: left;
+    float: right;
     background-color: #A2AAB1;
     padding: 6px 10px 6px 10px;
-    margin-right: 5px;
+    margin-left: 5px;
   }
   
   #content-area .links li a
@@ -284,13 +284,21 @@
     padding-bottom: 1em;
   }
   
+  .node-type-wiki #content-area .links li.talk_add
+  {
+    display: none;
+  }
+  
   /* end comments, commenting */
   
   /* scrap book coating from wiki pages */
   
   .node-type-wiki .book-navigation
   {
-    padding-bottom: 1em;
+    background-color: #E7EAED;
+    padding: 5px;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
   
   .node-type-wiki .book-navigation .menu

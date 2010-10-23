@@ -1,10 +1,5 @@
 ; global transliteration
 [default]
-– = "-"
-  = "-"
-     = "-"
-» = ""
-« = ""
 À = "A"
 Á = "A"
 Â = "A"
