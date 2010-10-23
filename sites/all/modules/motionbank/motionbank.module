@@ -1,6 +1,52 @@
 <?php
     /* Motion Bank module */
-    /* fjenett - 2010-10-22 */
+    
+    /**
+     *  Hook menu, see:
+     *  http://api.drupal.org/api/function/hook_menu
+     */
+    
+    function motionbank_menu ( )
+    {
+        $items = array();
+
+        $items['partial/comment/reply/%node'] = array(
+          'title' => 'Reply to comment',
+          'page callback' => '_motionbank_partial_comment_reply',
+          'page arguments' => array(3),
+          'access arguments' => array( 'post comments' ),
+          'type' => MENU_CALLBACK
+        );
+        
+        $items['partial/comment/edit'] = array(
+            'title' => 'Edit comment',
+            'page callback' => '_motionbank_partial_comment_edit',
+            'access arguments' => array('post comments'),
+            'type' => MENU_CALLBACK,
+        );
+      
+        return $items;
+    }
+    
+    /**
+     *  Hook node api
+     */
+    
+    function motionbank_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL)
+    {
+        switch ($op)
+        {
+          case 'insert':
+          case 'update':
+            if ( $node->type == 'project' )
+            {
+                //path_set_alias( 'node/'.$node->nid, 'project/'.$node->nid );
+                path_set_alias( 'og/users/'.$node->nid.'/faces', 'project/'.$node->nid.'/users' );
+            }
+            break;
+        }
+    }
+
     
     
     /**
@@ -11,8 +57,13 @@
     {
         if ( $form_id == 'comment_form' )
         {
+            // remove "Your name: ..." above form
             $form["_author"] = array();
             
+            // remove "Comment" above textarea
+            $form['comment_filter']['comment']['#title'] = '';
+            
+            // remove filter guidelines and more info link
             foreach ($form['comment_filter']['format'] as $i => $filter)
             {
                 /* More information link ... */
@@ -25,5 +76,65 @@
                     $form['comment_filter']['format'][$i]['guidelines'] = array();
                 }
             }
+            
+            $show_collapsed = true;
+            // Todo: remove "Reply" / "Edit" / "Post new comment" title
+            foreach ( $form['#parameters'] as $k => $field )
+            {
+                if ( $field == t('Post new comment') )
+                {
+                    $form['#parameters'][$k] = '';
+                }
+                
+                if ( is_array($field) && isset($field['pid']) && isset($field['nid']) )
+                    $show_collapsed = false;
+            }
+            
+            if ( $show_collapsed )
+            {
+                // create fieldset to hold form
+                $form['comment_wrapper'] = array(
+                    '#type' => 'fieldset',
+                    '#title' => t('Post new comment'),
+                    '#weight' => 5,
+                    '#collapsible' => TRUE,
+                    '#collapsed' => $show_collapsed,
+                  );
+                
+                // put visible form elements into fieldset
+                foreach ( array('comment_filter', 'submit', 'preview') as $field )
+                {
+                    $form['comment_wrapper'][$field] = $form[$field];
+                    unset( $form[$field] );
+                }
+            }
         }
+    }
+    
+    function _motionbank_partial_comment_edit ( $cid )
+    {
+        if ( !function_exists('comment_edit') )
+        {
+            require_once( drupal_get_path('module', 'comment') . '/' . 'comment.pages.inc' );
+        }
+        
+        print comment_edit( $cid );
+        exit();
+    }
+    
+    /**
+     *  Render comment reply page and return it.
+     *
+     *  See: comment/comment.pages.inc
+     */
+
+    function _motionbank_partial_comment_reply ( $node, $pid = NULL )
+    {
+        if ( !function_exists('comment_reply') )
+        {
+            require_once( drupal_get_path('module', 'comment') . '/' . 'comment.pages.inc' );
+        }
+        
+        print comment_form_box(array('pid' => $pid, 'nid' => $node->nid), t('Reply'));
+        exit();
     }

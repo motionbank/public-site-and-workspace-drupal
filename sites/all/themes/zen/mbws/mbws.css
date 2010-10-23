@@ -222,30 +222,49 @@
     padding-bottom: 1em;
   }
   
-  #content-area #comments .first
+  #content-area .comment /* reply page */
+  {
+    margin-top: 1em;
+  }
+  
+  #content-area #comments .comment
+  {
+    margin-top: 0px;
+  }
+  
+  #content-area .comment
   {
     border-top: 1px solid #939699;
   }
   
   #content-area #comments .comment
   {
+    border-top: 0px solid #939699;
+  }
+  
+  #content-area #comments .first
+  {
+    border-top: 1px solid #939699;
+  }
+  
+  #content-area .comment
+  {
     border-bottom: 1px solid #939699;
     background-color: #F5F6F8;
     padding: 10px;
   }
   
-  #content-area #comments .comment .new
+  #content-area .comment .new
   {
     padding-left: 5px;
     float: right;
   }
   
-  #content-area #comments .comment .picture
+  #content-area .comment .picture
   {
     display: none;
   }
   
-  #content-area #comments .comment .submitted,
   #content-area .comment .submitted
   {
     font-style: italic;
@@ -253,19 +272,19 @@
     font-size: 0.8em;
   }
   
-  #content-area #comments .comment .links
+  #content-area .comment .links
   {
     margin: 0px;
    display: none;
    float: right;
   }
   
-  #content-area #comments .comment:hover .links
+  #content-area .comment:hover .links
   {
      display: block;
   }
   
-  #content-area #comments .box
+  #content-area .box
   {
     padding-top: 1em;
   }
@@ -293,16 +312,63 @@
   
   /* scrap book coating from wiki pages */
   
-  .node-type-wiki .book-navigation
+  .block-book
   {
     background-color: #E7EAED;
-    padding: 5px;
+    padding: 10px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    font-size: 0.8em;
+  }
+  
+  .block-book h2.title
+  {
+    display: none;
+  }
+  
+  .block-book .content
+  {
+    margin-top: -10px;
+  }
+  
+  .block-book .content ul,
+  .block-book .content ul ul
+  {
+    padding-left: 0px;
+  }
+  
+  .block-book .content ul li
+  {
+    list-style: none;
+  }
+  
+  .block-book .content ul ul li
+  {
+    padding-left: 15px;
+    padding-top: 5px;
+    background-image: url('/sites/all/themes/zen/mbws/images/extm.gif');
+    background-repeat: no-repeat;
+    background-position: -5px 0px;
+  }
+  
+  .block-book .content ul ul li.last
+  {
+    background-image: url('/sites/all/themes/zen/mbws/images/exlm.gif');
+    background-repeat: no-repeat;
+  }
+  
+  .node-type-wiki .book-navigation
+  {
+    display: none; /* using book nav block instead */
+    background-color: #E7EAED;
     margin-top: 1em;
     margin-bottom: 1em;
+    overflow: auto;
   }
   
   .node-type-wiki .book-navigation .menu
   {
+    margin: 10px;
     padding-top: 0px;
     padding-left: 2em;
     border: 0px solid white;
@@ -339,6 +405,15 @@
   .section-search .tabs
   {
     float: right;
+  }
+  
+  .node-type-wiki #content-area,
+  .section-project #content-area,
+  .node-type-post #content-area,
+  .section-user #content-area,
+  .section-search #content-area
+  {
+    margin-top: 1em;
   }
   
   .node-type-wiki .tabs ul,
@@ -393,7 +468,16 @@
   .section-user div.tabs,
   .section-search div.tabs
   {
-    width: 50%;
+    width: 49%;
+  }
+  
+  .node-type-wiki h1.title,
+  .node-type-project h1.title,
+  .node-type-post h1.title,
+  .section-user h1.title,
+  .section-search h1.title
+  {
+    width: 49%;
   }
   
   .node-type-wiki .tabs ul li,
@@ -480,6 +564,12 @@
     color: white;
   }
   
+  .view-projects .view-header
+  {
+    width: 97%;
+    padding-bottom: 1em;
+  }
+  
   .view-projects .views-row
   {
     float: left;
@@ -490,8 +580,10 @@
     margin-bottom: 20px;
   }
   
-  .view-projects .views-field-field-images-fid img
+  .view-projects .views-field-field-images-fid
   {
+    width: 200px;
+    height: 160px;
     border: 1px solid #cccccc;
   }
   

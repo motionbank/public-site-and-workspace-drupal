@@ -177,7 +177,7 @@
         <?php if ($tabs): ?>
           <div class="tabs"><?php print $tabs; ?></div>
         <?php endif; ?>
-        <div class="clearfix"> <!-- clear tabs --> </div>
+        <div class="clearfix clear-tabs"> <!-- clear tabs --> </div>
         <?php print $messages; ?>
         <?php print $help; ?>
 
