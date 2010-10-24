@@ -80,6 +80,31 @@
     
     function motionbank_form_alter( &$form, &$form_state, $form_id )
     {
+        
+    // changes to node form for organic groups
+        
+        if ( $form_id == 'project_node_form' )
+        {
+            $container = array(
+                '#type' => 'fieldset',
+                '#title' => t('Project settings'),
+                '#weight' => 5,
+                '#collapsible' => TRUE,
+                '#collapsed' => TRUE,
+            );
+            foreach ( $form as $k => $v )
+            {
+                if ( strpos($k, 'og_') === 0 && $k !== 'og_description' )
+                {
+                    $container[$k] = $form[$k];
+                    unset($form[$k]);
+                }
+            }
+            $form['og_container'] = $container;
+        }
+        
+    // changes to comment form
+        
         if ( $form_id == 'comment_form' )
         {
             // remove "Your name: ..." above form
