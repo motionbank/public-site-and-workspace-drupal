@@ -192,6 +192,62 @@
     display: block;
   }
   
+  /* front */
+  
+  .front .views-row
+  {
+    border-bottom: 1px solid #ADAFB2;
+    padding: 8px 0px 8px 12px;
+  }
+  
+  .front .views-row-first
+  {
+    border-top: 1px solid #ADAFB2;
+  }
+  
+  .view-dashboard .views-row .content-type-label,
+  .view-dashboard-comments .views-row .node-info
+  {
+    color: #ADAFB2;
+    padding-left: 2em;
+    font-size: 0.8em;
+  }
+  
+  .view-dashboard .views-row .content-type-post a,
+  .view-dashboard .views-row .content-type-wiki a,
+  .view-dashboard .views-row .content-type-project a,
+  .view-dashboard-comments .views-row a
+  {
+    font-size: 13px;
+  }
+  
+  .view-dashboard .views-row .content-type-post a
+  {
+    color: #4D621F;
+  }
+  
+  .view-dashboard .views-row .content-type-wiki a
+  {
+    color: #38648E;
+  }
+  
+  .view-dashboard .views-row .content-type-project a
+  {
+    color: #722E15;
+  }
+  
+  .front #block-views-dashboard_comments-block_1
+  {
+    margin-top: 2em;
+  }
+  
+  .front #block-views-dashboard_comments-block_1 h2.title
+  {
+    margin-bottom: 1em;
+  }
+  
+  /* end front */
+  
   /* comments, commenting */
   
   .section-comment #content-area .node .content

@@ -9,6 +9,13 @@
     function motionbank_menu ( )
     {
         $items = array();
+        
+        $items['login'] = array(
+            'title' => t('Login'),
+            'page callback' => '_motionbank_login',
+            'access arguments' => array('global nothing'),
+            'type' => MENU_CALLBACK
+        );
 
         $items['partial/comment/reply/%node'] = array(
           'title' => 'Reply to comment',
@@ -26,6 +33,15 @@
         );
       
         return $items;
+    }
+    
+    /**
+     *  Hook perm to suffice login menu item
+     */
+    
+    function motionbank_perm ()
+    {
+        return array( 'global nothing' );
     }
     
     /**
@@ -58,8 +74,6 @@
         }
     }
 
-    
-    
     /**
      *  Hook form alter.
      */
@@ -121,6 +135,27 @@
             }
         }
     }
+    
+    /**
+     *  Login or dashboard
+     */
+    function _motionbank_login (  )
+    {
+        global $user;
+        
+        if ( $user->uid == 0 )
+        {
+            drupal_goto( 'user' );
+        }
+        else
+        {
+            drupal_goto( '' );   
+        }
+    }
+    
+    /**
+     *  Render comment edit page and return.
+     */
     
     function _motionbank_partial_comment_edit ( $cid )
     {
