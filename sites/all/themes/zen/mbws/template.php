@@ -60,6 +60,27 @@ function mbws_menu_item ( $link, $has_children, $menu = '',
     return '<li class="'. $class .'">'. $link . $menu ."</li>\n";
 }
 
+function mbws_breadcrumb ( $breadcrumbs )
+{
+  array_shift( $breadcrumbs );
+  
+  if ( count($breadcrumbs) > 0 )
+  {
+    $o = '';
+    foreach ( $breadcrumbs as $i => $crumb )
+    {
+      $o .= '<li class="'.($i == 0 ? ' first ' : '').
+                          ($i == count($breadcrumbs)-1 ? ' last ' : '').'">'.
+                          $crumb.'</li>';
+    }
+    return '<ul class="breadcrumb">'.$o.'</ul>';
+  }
+  else
+  {
+    return '';
+  }
+}
+
 /**
  * Implementation of HOOK_theme().
  */

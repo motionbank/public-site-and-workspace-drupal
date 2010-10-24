@@ -61,17 +61,50 @@
     margin-bottom: 36px;
   }
   
-  .breadcrumb
+  ul.breadcrumb
   {
     float: left;
-    padding-top: 46px;
-    padding-left: 1em;
+    padding: 0px;
+    padding-top: 44px;
+    padding-left: 20px;
+    margin: 0px;
+  }
+  
+  ul.breadcrumb li
+  {
+    padding: 0px;
+    list-style: none;
+    overflow: auto;
+    display: inline;
+    margin: 0px;
   }
   
   .breadcrumb,
   .breadcrumb a
   {
-    color: #AAB3BE;
+    color: white; /*#444444;*/
+  }
+  
+  .breadcrumb a
+  {
+    padding: 7px 8px;
+    background-color: #30343A; /*#E7EAED;*/
+    padding-right: 15px;
+    margin: 0px;
+    background-image: url('images/breadcrumbs-arrow.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
+  
+  .breadcrumb li.last a
+  {
+    padding-right: 12px;
+    background-image: none;
+  }
+  
+  .breadcrumb li.first a
+  {
+    padding-left: 12px;
   }
   
   #header .region-header
@@ -190,6 +223,11 @@
   ul.links li
   {
     display: block;
+  }
+  
+  .block h2.title
+  {
+    font-size: 1.1em;
   }
   
   /* front */
@@ -324,13 +362,19 @@
     display: none;
   }
   
-  #content-area .comment .submitted
+  #content-area .comment .submitted,
+  #content-area .comment .new
   {
     font-style: italic;
     float: right;
     font-size: 0.8em;
     padding: 6px;
     padding-right: 0px;
+  }
+  
+  #content-area .comment .new
+  {
+    font-weight: bold;
   }
   
   #content-area .comment .links
@@ -359,9 +403,9 @@
     color: white;
   }
   
-  #content-area .box
+  #content-area #comments .last
   {
-    padding-top: 1em;
+    margin-bottom: 2em;
   }
   
   .feed-icons
@@ -701,6 +745,21 @@
   {
     float: left;
     font-size: 0.8em;
+    margin-bottom: 1em;
+  }
+  
+  .view-users .views-field-managelink,
+  .view-users .views-field-is-admin,
+  .view-users .views-field-is-manager
+  {
+    float: left;
+  }
+  
+  .view-users .views-field-is-admin,
+  .view-users .views-field-is-manager
+  {
+    font-size: 0.8em;
+    width: 100px;
   }
   
   /* end users page */
