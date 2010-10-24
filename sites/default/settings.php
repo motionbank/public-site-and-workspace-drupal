@@ -90,7 +90,7 @@
  *   $db_url = 'pgsql://username:password@localhost/databasename';
  */
 $db_url = 'mysqli://motionbank:motionbank@localhost/motionbank';
-$db_prefix = '';
+$db_prefix = 'drupal_';
 
 /**
  * Access control for update.php script
