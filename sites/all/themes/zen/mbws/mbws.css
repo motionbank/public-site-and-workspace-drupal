@@ -222,7 +222,7 @@
   }
   
   .view-dashboard .views-row .content-type-post a,
-  .view-dashboard .views-row .content-type-wiki a,
+  .view-dashboard .views-row .content-type-wiki-page a,
   .view-dashboard .views-row .content-type-project a,
   .view-dashboard-comments .views-row a
   {
@@ -234,7 +234,7 @@
     color: #4D621F;
   }
   
-  .view-dashboard .views-row .content-type-wiki a
+  .view-dashboard .views-row .content-type-wiki-page a
   {
     color: #38648E;
   }
@@ -272,8 +272,8 @@
   {
     margin: 0px;
     margin-top: 2em;
-    padding: 10px;
-    background-color: #EDEFF1;
+    /*padding: 10px;
+    background-color: #EDEFF1;*/
   }
   
   #content-area #comments h2.title
@@ -519,35 +519,55 @@
   
   /* local tasks block && group / project block */
   
-  #block-og-0 ul
+  #block-og-0 ul,
+  .block-motionbank ul
   {
+    margin-top: 5px;
     padding-left: 0px;
   }
   
-  #block-og-0 li,
-  #block-block-2 li
+  .block-motionbank ul.chained
   {
-    background-color: #A2AAB1;
-    padding: 6px 0px 6px 12px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+  }
+  
+  .block-motionbank ul.links li
+  {
+    padding: 0px;
+  }
+  
+  .block-motionbank ul ul
+  {
+    padding-left: 12px;
+  }
+  
+  #block-og-0 li,
+  .block-motionbank li
+  {
     list-style: none;
   }
   
-  #block-og-0 li.active,
-  #block-block-2 li.active
+  #block-og-0 li,
+  .block-motionbank li a,
+  .block-motionbank li.active li a
   {
-    background-color: #E7EAED;
+    display: block;
+    background-color: #A2AAB1;
+    padding: 6px 0px 6px 12px;
+    margin-bottom: 5px;
+    color: white;
   }
   
-  #block-og-0 li a,
-  #block-block-2 li a
+  #block-og-0 li a
   {
     color: white;
   }
   
-  #block-og-0 li.active a,
-  #block-block-2 li.active a
+  #block-og-0 li.active,
+  .block-motionbank li.active a,
+  .block-motionbank li.active li.active a
   {
+    background-color: #E7EAED;
     color: black;
   }
   
@@ -690,4 +710,16 @@
     padding: 20px;
     background-color: #A2AAB1;
     margin-bottom: 20px;
+  }
+  
+  .region-page-closure .block
+  {
+    padding-left: 10px;
+  }
+  
+  .region-page-closure,
+  .region-page-closure a
+  {
+    color: #333333;
+    font-size: 10px;
   }

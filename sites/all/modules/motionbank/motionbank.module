@@ -162,6 +162,106 @@
     }
     
     /**
+     *  Hook block
+     *
+     *  http://api.drupal.org/api/function/hook_block/6
+     */
+    
+    function motionbank_block ( $op = 'list', $delta = 0, $edit = array() )
+    {
+        if ($op == 'list')
+        {
+            $blocks[0] = array( 'info' => t('Local tasks block'),
+                                'cache' => BLOCK_CACHE_PER_PAGE
+            );
+            
+            $blocks[1] = array( 'info' => t('Node links block'),
+                                'cache' => BLOCK_CACHE_PER_PAGE
+            );
+            
+            return $blocks;
+        }
+        else if ($op == 'configure')
+        {
+        }
+        else if ($op == 'save')
+        {
+        }
+        else if ($op == 'view')
+        {
+            switch($delta) {
+              case 0:
+                $object = _mb_get_current_object();
+                $title = t('Local tasks');
+                if ( $object->nid )
+                    $title = l( $object->title, $object->path );
+                $block = array(
+                    'subject' => $title,
+                    'content' => _motionbank_render_block_1()
+                );
+                break;
+              case 1:
+                $block = array(
+                    'subject' => t('Node links'),
+                    'content' => _motionbank_render_block_2()
+                );
+                break;
+            }
+            return $block;
+        }
+    }
+    
+    /**
+     *  Render local tasks
+     */
+    
+    function _motionbank_render_block_1 ()
+    {
+        $primary = menu_primary_local_tasks();
+        
+        if ( empty($primary) ) // hides the block
+            return null;
+        
+        $secondary = menu_secondary_local_tasks();
+        
+        if ( !empty($secondary) )
+        {
+            $primary = preg_replace( '/(<li[^>]*class="active"[^>]*>.+)(<\/li>)/im', '\1<ul>'.$secondary.'</ul>\2', $primary );
+        }
+        
+        $links = _motionbank_render_block_2();
+        
+        return '<ul'.(empty($links)?'':' class="chained"').'>'.$primary.'</ul>'.$links;
+    }
+    
+    /**
+     *  Render node links block
+     */
+    
+    function _motionbank_render_block_2 ()
+    {
+        $node = _mb_get_current_object();
+        
+        if ( empty($node->nid) ) return null;
+        
+        $node->links = module_invoke_all('link', 'node', $node, FALSE);
+        
+        return theme('links',$node->links);
+    }
+    
+    /**
+     *  Get currently viewed object based on menu
+     */
+    
+    function _mb_get_current_object ()
+    {
+        static $current_object;
+        if ( !isset($current_object) )
+            $current_object = menu_get_object();
+        return $current_object;
+    }
+    
+    /**
      *  Login or dashboard
      */
     function _motionbank_login (  )
