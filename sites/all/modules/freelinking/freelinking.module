@@ -232,6 +232,10 @@ function freelinking_settings() {
     'no access search' => t('Search for content if user can\'t create'),
     'always search' => t('Always search for content'),
   );
+  
+  if ( module_exists('wikitools') )
+    $notfoundoptions['let wikitools handle'] = t('Let the wikitools module handle it');
+    
   $form["freelinking_nodetype"] = array(
     '#title' => t('Default for new content'),
     '#type' => 'select',
@@ -591,6 +595,12 @@ function _freelinking_make_link($thetitle) { // helper function for freelinking_
         break;
       case 'always search':
         $freelink['path'] = 'search/node/' . $thetitle;
+        break;
+      case 'let wikitools handle':
+          if ( module_exists('wikitools') )
+            $freelink['path'] = variable_get('wikitools_path', 'wiki') . '/' . $thetitle;
+          else
+            drupal_set_message( 'Freelinking module needs wikitools to be installed to be able to redirect to it.', 'error' );
         break;
     } // endswitch notfound options
     return $freelink;
