@@ -4,12 +4,13 @@
   html,
   body
   {
-    height: 100%;
     overflow: auto;  /* hide IE7 scrollbar */
   }
   
   body
   {
+    height: 100%;
+    
     background-color: #131212;
     background-image: url('images/background.png');
     background-repeat: repeat-x;
@@ -57,6 +58,7 @@
   #header
   {
     height: 130px;
+    overflow: visible;
   }
   
   #logo
@@ -70,18 +72,19 @@
   {
     float: left;
     padding: 0px;
-    padding-top: 44px;
+    padding-top: 36px;
     padding-left: 20px;
     margin: 0px;
+    width: 550px;
   }
   
   ul.breadcrumb li
   {
-    padding: 0px;
-    list-style: none;
-    overflow: auto;
     display: inline;
+    overflow: auto;
+    padding: 0px;
     margin: 0px;
+    list-style: none;
   }
   
   .breadcrumb,
@@ -92,10 +95,14 @@
   
   .breadcrumb a
   {
+    display: block;
+    float: left;
+    
     padding: 7px 8px;
-    background-color: #30343A; /*#E7EAED;*/
     padding-right: 15px;
     margin: 0px;
+    
+    background-color: #30343A; /*#E7EAED;*/
     background-image: url('images/breadcrumbs-arrow.png');
     background-position: right center;
     background-repeat: no-repeat;
