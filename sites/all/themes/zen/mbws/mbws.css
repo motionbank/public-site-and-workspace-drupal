@@ -744,7 +744,6 @@
   
   .view-users .views-field-name
   {
-    float: left;
     margin-bottom: 1em;
   }
   
@@ -756,7 +755,6 @@
   
   .view-users .views-field-value
   {
-    float: left;
     font-size: 0.8em;
     margin-bottom: 1em;
   }
