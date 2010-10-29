@@ -1,6 +1,13 @@
 /* Motion Bank workspace style sheet */
 /* fjenett - 2010-10 */
 
+  html,
+  body
+  {
+    height: 100%;
+    overflow: auto;  /* hide IE7 scrollbar */
+  }
+  
   body
   {
     background-color: #131212;
@@ -9,8 +16,6 @@
     
     font-size: 13px;
     font-family: 'Verdana', sans;
-    
-    height: 100%;
   }
   
   a,
