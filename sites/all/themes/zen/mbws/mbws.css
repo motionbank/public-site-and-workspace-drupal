@@ -526,6 +526,7 @@
   .block-book .content ul li
   {
     list-style: none;
+    list-style-image: none;
   }
   
   .block-book .content ul ul li
