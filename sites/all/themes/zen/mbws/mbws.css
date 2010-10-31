@@ -247,7 +247,8 @@
   .front .views-row,
   .view-og-ghp-projects-home .views-row,
   .section-taxonomy .taxonomy-node,
-  .section-category .taxonomy-node
+  .section-category .taxonomy-node,
+  .node-type-wiki .book-navigation .menu li
   {
     border-bottom: 1px solid #ADAFB2;
     padding: 8px 0px 8px 12px;
@@ -256,7 +257,8 @@
   .front .views-row-first,
   .view-og-ghp-projects-home .views-row-first,
   .section-taxonomy .first .taxonomy-node ,
-  .section-category .first .taxonomy-node
+  .section-category .first .taxonomy-node,
+  .node-type-wiki .book-navigation .menu
   {
     border-top: 1px solid #ADAFB2;
   }
@@ -552,25 +554,18 @@
   
   .node-type-wiki .book-navigation
   {
-    display: none; /* using book nav block instead */
-    background-color: #E7EAED;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    overflow: auto;
+    padding-top: 1em;
   }
   
   .node-type-wiki .book-navigation .menu
   {
-    margin: 10px;
-    padding-top: 0px;
-    padding-left: 2em;
-    border: 0px solid white;
+    padding: 0px;
   }
   
   .node-type-wiki .book-navigation .menu li
   {
-    list-style-image: inherit;
-    list-style-type: disc;
+    list-style: none;
+    list-style-image: none;
   }
   
   .node-type-wiki .book-navigation .page-links
