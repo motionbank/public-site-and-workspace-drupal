@@ -245,14 +245,18 @@
   /* front */
   
   .front .views-row,
-  .view-og-ghp-projects-home .views-row
+  .view-og-ghp-projects-home .views-row,
+  .section-taxonomy .taxonomy-node,
+  .section-category .taxonomy-node
   {
     border-bottom: 1px solid #ADAFB2;
     padding: 8px 0px 8px 12px;
   }
   
   .front .views-row-first,
-  .view-og-ghp-projects-home .views-row-first
+  .view-og-ghp-projects-home .views-row-first,
+  .section-taxonomy .first .taxonomy-node ,
+  .section-category .first .taxonomy-node
   {
     border-top: 1px solid #ADAFB2;
   }
@@ -274,7 +278,9 @@
   .view-dashboard .views-row .content-type-post a,
   .view-dashboard .views-row .content-type-wiki-page a,
   .view-dashboard .views-row .content-type-project a,
-  .view-dashboard-comments .views-row a
+  .view-dashboard-comments .views-row a,
+  .section-taxonomy .taxonomy-node .node-body a,
+  .section-category .taxonomy-node .node-body a
   {
     font-size: 13px;
   }

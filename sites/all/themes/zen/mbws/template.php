@@ -1,6 +1,17 @@
 <?php
 /* See STARTERKIT/template.php for comments and help */
 
+/* style taxonomy pages */
+function mbws_preprocess_node ( &$vars )
+{
+  if ( arg(0) == 'taxonomy' )
+  {
+    $suggestions = array('node-taxonomy');
+    $vars['template_files'] = array_merge( $vars['template_files'], $suggestions );
+  }
+}
+
+
 /**
  *  Highlight main menu items based on current path
  *  fjenett - 2010-10-22
