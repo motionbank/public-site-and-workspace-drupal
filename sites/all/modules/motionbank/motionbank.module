@@ -36,7 +36,7 @@
             'title' => 'Resend welcome message',
             'page callback' => '_motionbank_user_resend_welcome',
             'page arguments' => array(1, 3),
-            'access arguments' => array('create users'),
+            'access arguments' => array('administer users'),
             'type' => MENU_CALLBACK
         );
       
@@ -233,6 +233,8 @@
         {
             if ( function_exists('_user_mail_notify') )
             {
+                $receiver->password = t( 'Please use one time login link below and change your password once logged in.' );
+                
                 _user_mail_notify( $operation, $receiver );
                 
                 if ( $operation == 'register_admin_created' )
