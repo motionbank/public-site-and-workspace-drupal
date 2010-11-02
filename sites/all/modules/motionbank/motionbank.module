@@ -44,6 +44,20 @@
     }
     
     /**
+     *  Hook user operations: admin/user/user/list
+     */
+    
+    function motionbank_user_operations() {
+        $operations = array(
+            'motionbank resend welcome mail' => array(
+                'label' => t('Resend account created mail'), 
+                'callback' => 'motionbank_user_operation_resend_welcome',
+            )
+        );
+        return $operations;
+    }
+    
+    /**
      *  Hook perm to suffice login menu item
      */
     
@@ -220,14 +234,29 @@
     }
     
     /**
+     *  Bulk re-send welcome email
+     */
+    
+    function motionbank_user_operation_resend_welcome ( $receivers )
+    {
+        foreach ( $receivers as $receiver )
+        {
+            _motionbank_user_resend_welcome( $receiver, 'register_admin_created' );
+        }
+    }
+    
+    /**
      *  Resend welcome message
      */
     
-    function _motionbank_user_resend_welcome ( $uid, $operation )
+    function _motionbank_user_resend_welcome ( $receiver, $operation )
     {
-        $receiver = user_load( array('uid'=>$uid) );
+        if ( is_numeric($receiver) ) // than its an / treat as UID
+            $receiver = user_load( array('uid'=>$receiver) );
+        else if ( is_array($receiver) )
+            $receiver = (object)$receiver;
         
-        if ( !$receiver )
+        if ( !$receiver || !is_object($receiver) || !$receiver->uid )
             drupal_set_message( t('User does not exist'), 'error' );
         else
         {
@@ -238,7 +267,7 @@
                 _user_mail_notify( $operation, $receiver );
                 
                 if ( $operation == 'register_admin_created' )
-                    $message = t('New account notification was sent again.');
+                    $message = t('"Account created" mail was sent to %user', array('%user'=>$receiver->name));
                 else
                     $message = t('Message for %op was sent again.', array('%op'=>$operation));
                 
@@ -246,7 +275,7 @@
             }
         }
         
-        drupal_goto('users');
+        //drupal_goto('users'); // user ?destination=blah instead
     }
     
     /**
