@@ -17,6 +17,7 @@
     
     font-size: 13px;
     font-family: 'Verdana', sans;
+	color: black;
   }
   
   a,
@@ -27,6 +28,11 @@
   {
     text-decoration: none;
     color: #225D8F;
+  }
+
+  b, strong
+  {
+     color: #444444;
   }
   
   h1, h2, h3, h4, h5, h6, .title
@@ -266,6 +272,18 @@
   }
   
   /* front */
+
+  .front .meta
+  {
+    display: none;
+  }
+
+  .front .block-views .detailed-info
+  {
+	float: right;
+    color: #ADAFB2;
+    font-size: 0.8em;
+  }
   
   .front .views-row,
   .view-og-ghp-projects-home .views-row,
@@ -290,14 +308,6 @@
   {
     padding-top: 1em;
     margin-bottom: 1em;
-  }
-  
-  .view-dashboard .views-row .content-type-label,
-  .view-dashboard-comments .views-row .node-info
-  {
-    color: #ADAFB2;
-    padding-left: 2em;
-    font-size: 0.8em;
   }
   
   .view-dashboard .views-row .content-type-post a,
@@ -325,14 +335,71 @@
     color: #722E15;
   }
   
-  .front #block-views-dashboard_comments-block_1
+  /*.front #block-views-dashboard_comments-block_1
   {
     margin-top: 2em;
-  }
+  }*/
   
-  .front #block-views-dashboard_comments-block_1 h2.title
+  .front .block-views h2.title
   {
     margin-bottom: 1em;
+  }
+
+  .front .block-views
+  {
+	margin-bottom: 2em;
+  }
+
+	/* -- todo block -- */
+	
+  .block-to_do_block ul.primary
+  {
+	background-image: none;
+	padding: 0px;
+  }
+
+  .block-to_do_block ul.primary li a
+  {
+	background-image: none;
+	height: auto;
+	font-weight: normal;
+	padding: 0px;
+	padding-right: 5px;
+  }
+
+  .block-to_do_block .to-do-links
+  {
+	display: none;
+  }
+
+  .block-to_do_block table tr
+  {
+  	padding: 8px 0 8px 12px;
+  }
+  
+  .block-to_do_block table td,
+  .block-to_do_block table th
+  {
+    padding: 8px 0 8px 0px;
+  }
+
+  .block-to_do_block table th
+  {
+	border-top: 1px solid #ADAFB2;
+	border-bottom: 1px solid #ADAFB2;
+  }
+  
+  .block-to_do_block table td,
+  .block-to_do_block table th
+  {
+	padding-left: 12px;
+  }
+
+  .block-to_do_block table th
+  {
+	font-weight: normal;
+    color: #ADAFB2;
+    font-size: 0.8em;
   }
   
   /* end front */
@@ -662,12 +729,14 @@
     width: 720px;
   }
   
-  #block-block-1 ul
+  #block-block-1 ul,
+  #block-block-4 ul
   {
     padding: 0px;
   }
   
-  #block-block-1 li
+  #block-block-1 li,
+  #block-block-4 li
   {
     list-style: none;
     background-color: #A2AAB1;
@@ -675,12 +744,14 @@
     margin-bottom: 5px;
   }
   
-   #block-block-1 li.last
+   #block-block-1 li.last,
+   #block-block-4 li.last
    {
     margin-bottom: 0px;
    }
   
-  #block-block-1 a
+  #block-block-1 a,
+  #block-block-4 a
   {
     color: white;
   }

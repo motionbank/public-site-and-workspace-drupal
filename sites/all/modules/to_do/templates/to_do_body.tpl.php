@@ -1,2 +1,2 @@
 <?php
-echo $body;
+	echo $body;

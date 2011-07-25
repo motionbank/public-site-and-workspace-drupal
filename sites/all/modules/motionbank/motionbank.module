@@ -7,8 +7,15 @@
      */
     
     function motionbank_menu ( )
-    {
+    {		
         $items = array();
+        
+        $items['todos'] = array(
+            'title' => t('ToDos'),
+            'page callback' => '_motionbank_go_to_do',
+            'access arguments' => array('global nothing'),
+            'type' => MENU_CALLBACK
+        );
         
         $items['login'] = array(
             'title' => t('Login'),
@@ -42,6 +49,13 @@
       
         return $items;
     }
+
+	function _motionbank_go_to_do ()
+	{
+		global $user;
+		
+		drupal_goto('user/'.$user->uid.'/to_do');
+	}
     
     /**
      *  Hook user operations: admin/user/user/list

@@ -240,3 +240,5 @@ ini_set('memory_limit', '128M');
 #   'forum'      => 'Discussion board',
 #   '@count min' => '@count minutes',
 # );
+
+$conf['file_directory_temp'] = '/is/htdocs/user_tmp/wp10610991_9H8KJCHO1E';
