@@ -216,11 +216,34 @@
     margin: 1em 0px 2em 0px;
   }
   
-  #content-area .picture,
-  #content-area .meta
+  #content-area .picture /*,
+  #content-area .meta*/
   {
     display: none;
   }
+
+#content-area .meta
+{
+	color: #888888;
+	overflow: auto;
+	margin-bottom: 1.5em;
+}
+
+#content-area .meta a
+{
+	color: #555555;
+}
+
+#content-area .meta .submitted
+{
+	display: block;
+}
+
+#content-area .meta .terms ul li
+{
+	float: left;
+	padding-left: 0px;
+}
   
   #content-area .node .groups
   {
@@ -541,14 +564,14 @@
   {
     padding-left: 15px;
     padding-top: 5px;
-    background-image: url('/sites/all/themes/zen/mbws/images/extm.gif');
+    background-image: url('images/extm.gif');
     background-repeat: no-repeat;
     background-position: -5px 0px;
   }
   
   .block-book .content ul ul li.last
   {
-    background-image: url('/sites/all/themes/zen/mbws/images/exlm.gif');
+    background-image: url('images/exlm.gif');
     background-repeat: no-repeat;
   }
   

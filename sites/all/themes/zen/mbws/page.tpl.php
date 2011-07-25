@@ -253,5 +253,8 @@
 
   <?php print $closure; ?>
 
+	<!-- SWF OBJECT -->
+	<script src="http://ajax.googleapis.com/ajax/libs/swfobject/2/swfobject.js" type="text/javascript"></script>
+
 </body>
 </html>
