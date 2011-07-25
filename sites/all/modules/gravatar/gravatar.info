@@ -3,9 +3,9 @@ name = "Gravatar integration"
 description = "Integrate Gravatar pictures registered at Gravatar.com in Drupal sites"
 core = 6.x
 
-; Information added by drupal.org packaging script on 2009-06-14
-version = "6.x-1.7"
+; Information added by drupal.org packaging script on 2011-02-17
+version = "6.x-1.10"
 core = "6.x"
 project = "gravatar"
-datestamp = "1244950522"
+datestamp = "1297971181"
 

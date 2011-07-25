@@ -4,9 +4,9 @@ dependencies[] = util
 package = Util
 core = 6.x
 
-; Information added by drupal.org packaging script on 2010-08-06
-version = "6.x-3.0-rc2"
+; Information added by drupal.org packaging script on 2010-10-28
+version = "6.x-3.0"
 core = "6.x"
 project = "util"
-datestamp = "1281105678"
+datestamp = "1288295149"
 

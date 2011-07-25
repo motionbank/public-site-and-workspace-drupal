@@ -1,4 +1,4 @@
-// $Id: gravatar.js,v 1.1.2.2 2008/11/17 03:39:20 davereid Exp $
+// $Id: gravatar.js,v 1.1.2.4 2009/01/04 03:12:05 davereid Exp $
 
 Drupal.behaviors.gravatarPreview = function (context) {
   $('input[name=gravatar_default]:not(.gravatarPreview-processed)', context).addClass('gravatarPreview-processed').click(function () {

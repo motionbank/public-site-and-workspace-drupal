@@ -1,4 +1,4 @@
-$Id: README.txt,v 1.1.2.6 2008/12/10 20:25:14 davereid Exp $
+$Id: README.txt,v 1.1.2.9 2009/10/18 19:08:43 davereid Exp $
 
 CONTENTS OF THIS FILE
 ---------------------
@@ -24,7 +24,7 @@ This module integrates the Gravatar service with Drupal user pictures.
 INSTALLATION
 ------------
 
-See http://drupal.org/getting-started/5/install-contrib for instructions on
+See http://drupal.org/getting-started/install-contrib for instructions on
 how to install or update Drupal modules.
 
 User picture support (admin/user/settings) must be enabled for Gravatar to
@@ -43,12 +43,6 @@ Q: Is Gravatar support enabled by default for my users?
 A: If their user role has the 'use gravatar' permission, yes Gravatar is enabled
    by default.
 
-Q: What if a user has a different Gravatar e-mail from their user account's
-   email?
-A: Currently, users can specify a separate Gravatar e-mail in their account
-   page (user/x/edit). This option is slated for removal as Gravatar accounts
-   can have more than one e-mail address associated with it.
-
 
 KNOWN ISSUES
 ------------
@@ -66,7 +60,7 @@ HOW CAN YOU CONTRIBUTE?
   http://drupalmodules.com/module/gravatar
 
 - Help translate this module on launchpad.net.
-  https://translations.launchpad.net/drupal-gravatar
+  http://localize.drupal.org/translate/projects/gravatar
 
 - Report any bugs, feature requests, etc. in the issue tracker.
   http://drupal.org/project/issues/gravatar
