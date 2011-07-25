@@ -1,0 +1,12 @@
+name = To do views
+description = Add views support to the To do list by exposing its fields.
+dependencies[] = to_do
+dependencies[] = views
+core = 6.x
+
+; Information added by drupal.org packaging script on 2011-06-30
+version = "6.x-1.5"
+core = "6.x"
+project = "to_do"
+datestamp = "1309471919"
+

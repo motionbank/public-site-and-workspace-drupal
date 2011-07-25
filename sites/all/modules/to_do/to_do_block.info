@@ -1,0 +1,11 @@
+name = To do block
+description = Displays a block to users with his To do items.
+core = 6.x
+dependencies[] = to_do
+
+; Information added by drupal.org packaging script on 2011-06-30
+version = "6.x-1.5"
+core = "6.x"
+project = "to_do"
+datestamp = "1309471919"
+
