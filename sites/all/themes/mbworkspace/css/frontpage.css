@@ -1,0 +1,72 @@
+
+ .front .meta
+ {
+   display: none;
+ }
+
+ .front .block-views .detailed-info
+ {
+	float: right;
+   color: #ADAFB2;
+   font-size: 0.8em;
+ }
+ 
+ .front .views-row,
+ .view-og-ghp-projects-home .views-row,
+ .section-taxonomy .taxonomy-node,
+ .section-category .taxonomy-node,
+ .node-type-wiki .book-navigation .menu li
+ {
+   border-bottom: 1px solid #ADAFB2;
+   padding: 8px 0px 8px 12px;
+ }
+ 
+ .front .views-row-first,
+ .view-og-ghp-projects-home .views-row-first,
+ .section-taxonomy .first .taxonomy-node ,
+ .section-category .first .taxonomy-node,
+ .node-type-wiki .book-navigation .menu
+ {
+   border-top: 1px solid #ADAFB2;
+ }
+ 
+ .view-og-ghp-projects-home .view-header
+ {
+   padding-top: 1em;
+   margin-bottom: 1em;
+ }
+ 
+ .view-dashboard .views-row .content-type-post a,
+ .view-dashboard .views-row .content-type-wiki-page a,
+ .view-dashboard .views-row .content-type-project a,
+ .view-dashboard-comments .views-row a,
+ .section-taxonomy .taxonomy-node .node-body a,
+ .section-category .taxonomy-node .node-body a
+ {
+   font-size: 13px;
+ }
+ 
+ .view-dashboard .views-row .content-type-post a
+ {
+   color: #4D621F;
+ }
+ 
+ .view-dashboard .views-row .content-type-wiki-page a
+ {
+   color: #38648E;
+ }
+ 
+ .view-dashboard .views-row .content-type-project a
+ {
+   color: #722E15;
+ }
+ 
+ .front .block-views h2.title
+ {
+   margin-bottom: 1em;
+ }
+
+ .front .block-views
+ {
+	margin-bottom: 2em;
+ }

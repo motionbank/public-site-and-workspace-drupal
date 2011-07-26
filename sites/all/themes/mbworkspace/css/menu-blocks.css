@@ -1,0 +1,55 @@
+/* local tasks block && group / project block */
+ 
+ #block-og-0 ul,
+ .block-motionbank ul
+ {
+   margin-top: 5px;
+   padding-left: 0px;
+ }
+ 
+ .block-motionbank ul.chained
+ {
+   margin-bottom: 0px;
+ }
+ 
+ .block-motionbank ul.links li
+ {
+   padding: 0px;
+ }
+ 
+ .block-motionbank ul ul
+ {
+   padding-left: 12px;
+ }
+ 
+ #block-og-0 li,
+ .block-motionbank li
+ {
+   list-style: none;
+ }
+ 
+ #block-og-0 li,
+ .block-motionbank li a,
+ .block-motionbank li.active li a
+ {
+   display: block;
+   background-color: #A2AAB1;
+   padding: 6px 0px 6px 12px;
+   margin-bottom: 5px;
+   color: white;
+ }
+ 
+ #block-og-0 li a
+ {
+   color: white;
+ }
+ 
+ #block-og-0 li.active,
+ .block-motionbank li.active a,
+ .block-motionbank li.active li.active a
+ {
+   background-color: #E7EAED;
+   color: black;
+ }
+ 
+ /* end local tasks block && group / project block */

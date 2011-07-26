@@ -1,0 +1,65 @@
+/* users page */
+ 
+ .page-users #content
+ {
+   width: 920px;
+ }
+ 
+ .view-users .views-row
+ {
+   padding: 10px;
+   margin-right: 15px;
+   margin-bottom: 15px;
+   float: left;
+   width: 270px;
+   
+   background-color: #A2AAB1;
+ }
+ 
+ #content-area .view-users .views-row .picture
+ {
+   display: block;
+   width: 85px;
+   height: 85px;
+   text-align: center;
+   border: 1px solid #dddddd;
+ }
+ 
+ .view-users .views-field-picture
+ {
+   float: left;
+   padding-right: 10px;
+ }
+ 
+ .view-users .views-field-name
+ {
+   margin-bottom: 1em;
+ }
+ 
+ .view-users .views-field-name a
+ {
+   color: white;
+   font-size: 1.1em;
+ }
+ 
+ .view-users .views-field-value
+ {
+   font-size: 0.8em;
+   margin-bottom: 1em;
+ }
+ 
+ .view-users .views-field-managelink,
+ .view-users .views-field-is-admin,
+ .view-users .views-field-is-manager
+ {
+   float: left;
+ }
+ 
+ .view-users .views-field-is-admin,
+ .view-users .views-field-is-manager
+ {
+   font-size: 0.8em;
+   width: 100px;
+ }
+ 
+ /* end users page */

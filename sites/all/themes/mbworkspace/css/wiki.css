@@ -1,0 +1,69 @@
+/* scrap book coating from wiki pages */
+ 
+ .block-book
+ {
+   background-color: #E7EAED;
+   padding: 10px;
+   padding-bottom: 5px;
+   padding-left: 15px;
+ }
+ 
+ .block-book h2.title
+ {
+   display: none;
+ }
+ 
+ .block-book .content
+ {
+   margin-top: -10px;
+ }
+ 
+ .block-book .content ul,
+ .block-book .content ul ul
+ {
+   padding-left: 0px;
+ }
+ 
+ .block-book .content ul li
+ {
+   list-style: none;
+   list-style-image: none;
+ }
+ 
+ .block-book .content ul ul li
+ {
+   padding-left: 15px;
+   padding-top: 5px;
+   background-image: url('images/extm.gif');
+   background-repeat: no-repeat;
+   background-position: -5px 0px;
+ }
+ 
+ .block-book .content ul ul li.last
+ {
+   background-image: url('images/exlm.gif');
+   background-repeat: no-repeat;
+ }
+ 
+ .node-type-wiki .book-navigation
+ {
+   padding-top: 1em;
+ }
+ 
+ .node-type-wiki .book-navigation .menu
+ {
+   padding: 0px;
+ }
+ 
+ .node-type-wiki .book-navigation .menu li
+ {
+   list-style: none;
+   list-style-image: none;
+ }
+ 
+ .node-type-wiki .book-navigation .page-links
+ {
+   display: none;
+ }
+ 
+ /* end scrap book coating from wiki pages */

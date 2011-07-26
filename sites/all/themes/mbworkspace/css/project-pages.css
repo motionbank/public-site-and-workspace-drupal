@@ -1,0 +1,83 @@
+/* projects page */
+
+.page-projects #content,
+.page-projects-my #content
+{
+  width: 720px;
+}
+
+#block-block-1 ul,
+#block-block-4 ul
+{
+  padding: 0px;
+}
+
+#block-block-1 li,
+#block-block-4 li
+{
+  list-style: none;
+  background-color: #A2AAB1;
+  padding: 6px 15px 6px 15px;
+  margin-bottom: 5px;
+}
+
+ #block-block-1 li.last,
+ #block-block-4 li.last
+ {
+  margin-bottom: 0px;
+ }
+
+#block-block-1 a,
+#block-block-4 a
+{
+  color: white;
+}
+
+.view-projects .view-header
+{
+  width: 97%;
+  padding-bottom: 1em;
+}
+
+.view-projects .views-row
+{
+  float: left;
+  padding: 10px;
+  width: 200px;
+  background-color: #A2AAB1;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.view-projects .views-field-field-images-fid
+{
+  width: 200px;
+  height: 160px;
+  border: 1px solid #cccccc;
+}
+
+.view-projects .views-field-title
+{
+  margin-top: 1em;
+  height: 3em;
+}
+
+.view-projects .views-field-title a
+{
+  color: white;
+  font-size: 15px;
+}
+
+.view-projects .views-field-description
+{
+  height: 5em;
+}
+
+.view-projects .views-field-member-count,
+.view-projects .views-field-post-count,
+.view-projects .views-field-post-count-new
+{
+  display: inline;
+}
+
+/* end projects page */
