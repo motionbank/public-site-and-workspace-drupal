@@ -5,10 +5,10 @@ screenshot  = screenshot.png
 name        = Motion Bank Workspace Theme for D7
 description = ...
 
-; This theme is compatible with Drupal 7 core. And it is a sub-theme of Zen.
+; This theme is compatible with Drupal 7 core. And it is a sub-sub-theme of Zen.
 
 core        = 7.x
-base theme  = zen
+base theme  = zenbase
 
 ; This section adds CSS files to your theme. The media type is specified in
 ; the brackets. Typical CSS media types include "all", "screen", "print", and
@@ -18,20 +18,6 @@ base theme  = zen
 ; You can also override or remove any module's stylesheets, an extremely
 ; useful feature. See the excellent Drupal 7 Theme Guide at
 ; http://drupal.org/node/263967 for more details.
-
-stylesheets[all][]        = css/html-reset.css
-stylesheets[all][]        = css/wireframes.css
-stylesheets[all][]        = css/layout-fixed.css
-stylesheets[all][]        = css/page-backgrounds.css
-stylesheets[all][]        = css/tabs.css
-stylesheets[all][]        = css/pages.css
-stylesheets[all][]        = css/blocks.css
-stylesheets[all][]        = css/navigation.css
-stylesheets[all][]        = css/views-styles.css
-stylesheets[all][]        = css/nodes.css
-stylesheets[all][]        = css/comments.css
-stylesheets[all][]        = css/forms.css
-stylesheets[all][]        = css/fields.css
 
 stylesheets[all][]        = css/mbworkspace.css
 

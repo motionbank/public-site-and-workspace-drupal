@@ -1,0 +1,108 @@
+<?php
+
+	define( 'MOTIONBANK_BLOCK_LOCALTASKS', 'local_tasks' );
+	define( 'MOTIONBANK_BLOCK_NODELINKS', 'node_links' );
+
+	/**
+	 *	hook_block_info
+	 *	http://api.drupal.org/api/drupal/modules--block--block.api.php/function/hook_block_info/7
+	 */
+	function motionbank_block_info ()
+	{
+		$blocks[MOTIONBANK_BLOCK_LOCALTASKS] = 
+			array( 'info' => t('Local tasks block'),
+        		   'cache' => DRUPAL_CACHE_PER_PAGE  );
+      
+    	$blocks[MOTIONBANK_BLOCK_NODELINKS] = 
+			array( 'info' => t('Node links block'),
+            	   'cache' => DRUPAL_CACHE_PER_PAGE  );
+
+	    return $blocks;
+	}
+	
+	
+	/**
+	 *	hook_block_view
+	 *	http://api.drupal.org/api/drupal/modules--block--block.api.php/function/hook_block_view/7
+	 */
+	function motionbank_block_view ( $block_name = '' )
+	{
+		$block = array();
+		
+		switch ( $block_name )
+		{
+			case MOTIONBANK_BLOCK_LOCALTASKS:
+				$object = _mb_get_current_object();
+                $title = t('Local tasks');
+                if ( $object->nid )
+                    $title = l( $object->title, $object->path );
+                $block = array(
+                    'subject' => $title,
+                    'content' => _motionbank_render_block_1()
+                );
+				break;
+			case MOTIONBANK_BLOCK_NODELINKS:
+	            $block = array(
+                    'subject' => t('Node links'),
+                    'content' => _motionbank_render_block_2()
+                );
+				break;
+		}
+		
+		return $block;
+	}
+	
+	
+    /**
+     *  Render local tasks as list
+     */
+    
+    function _motionbank_render_block_1 ()
+    {
+        $primary = menu_primary_local_tasks();
+
+        if ( empty($primary) ) // hides the block
+            return null;
+        
+		$primary = drupal_render($primary);
+		
+        $secondary = menu_secondary_local_tasks();
+        
+        if ( !empty($secondary) )
+        {
+			$secondary = drupal_render($secondary);
+            $primary = preg_replace( '/(<li[^>]*class="active"[^>]*>.+)(<\/li>)/im',
+									 '\1<ul>'.$secondary.'</ul>\2', $primary );
+        }
+        
+        $links = _motionbank_render_block_2();
+        
+        return '<ul'.(empty($links)?'':' class="chained"').'>'.$primary.'</ul>'.$links;
+    }
+    
+    /**
+     *  Render node links block
+     */
+    
+    function _motionbank_render_block_2 ()
+    {
+        $node = _mb_get_current_object();
+        
+        if ( empty($node->nid) ) return null;
+        
+        $node->links = module_invoke_all('link', 'node', $node, FALSE);
+        
+        return theme('links',$node->links);
+    }
+    
+    /**
+     *  Get currently viewed object based on menu
+     */
+    
+    function _mb_get_current_object ()
+    {
+        static $current_object;
+        if ( !isset($current_object) )
+            $current_object = menu_get_object();
+        return $current_object;
+    }

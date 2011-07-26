@@ -271,6 +271,11 @@
   {
     display: none;
   }
+
+  #content .tabs /* these are handled as block -> local tasks block */
+  {
+	display: none;
+  }
   
   ul.links
   {

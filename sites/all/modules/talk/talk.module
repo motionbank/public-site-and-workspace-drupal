@@ -160,6 +160,7 @@ function talk_node_view($node, $view_mode, $langcode) {
       'class' => array('links', 'inline'),
     ),
   );
+  if ( is_array($links) )
   foreach ($links as $link) {
     if (isset($link['href']) && $link['href'] == 'node/' . $node->nid) {
       $link['href'] .= '/talk';

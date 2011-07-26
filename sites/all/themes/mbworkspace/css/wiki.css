@@ -34,14 +34,14 @@
  {
    padding-left: 15px;
    padding-top: 5px;
-   background-image: url('images/extm.gif');
+   background-image: url('../images/extm.gif');
    background-repeat: no-repeat;
    background-position: -5px 0px;
  }
  
  .block-book .content ul ul li.last
  {
-   background-image: url('images/exlm.gif');
+   background-image: url('../images/exlm.gif');
    background-repeat: no-repeat;
  }
  
