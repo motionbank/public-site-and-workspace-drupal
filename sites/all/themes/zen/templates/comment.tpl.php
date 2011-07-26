@@ -1,22 +1,29 @@
 <?php
 /**
  * @file
- * Default theme implementation for comments.
+ * Zen theme's implementation for comments.
  *
  * Available variables:
  * - $author: Comment author. Can be link or plain text.
- * - $content: Body of the comment.
+ * - $content: An array of comment items. Use render($content) to print them all, or
+ *   print a subset such as render($content['field_example']). Use
+ *   hide($content['field_example']) to temporarily suppress the printing of a
+ *   given element.
  * - $created: Formatted date and time for when the comment was created.
  *   Preprocess functions can reformat it by calling format_date() with the
- *   desired parameters on the $comment->timestamp variable.
+ *   desired parameters on the $comment->created variable.
+ * - $changed: Formatted date and time for when the comment was last changed.
+ *   Preprocess functions can reformat it by calling format_date() with the
+ *   desired parameters on the $comment->changed variable.
  * - $new: New comment marker.
+ * - $permalink: Comment permalink.
+ * - $submitted: Submission information created from $author and $created during
+ *   template_preprocess_comment().
  * - $picture: Authors picture.
  * - $signature: Authors signature.
  * - $status: Comment status. Possible values are:
  *   comment-unpublished, comment-published or comment-preview.
  * - $title: Linked title.
- * - $links: Various operational links.
- * - $unpublished: An unpublished comment visible only to administrators.
  * - $classes: String of classes that can be used to style contextually through
  *   CSS. It can be manipulated through the variable $classes_array from
  *   preprocess functions. The default values can be one or more of the following:
@@ -29,9 +36,15 @@
  *   - odd: An odd-numbered comment in the list of displayed comments.
  *   - even: An even-numbered comment in the list of displayed comments.
  *   The following applies only to viewers who are registered users:
- *   - comment-by-viewer: Comment by the user currently viewing the page.
  *   - comment-unpublished: An unpublished comment visible only to administrators.
+ *   - comment-by-viewer: Comment by the user currently viewing the page.
  *   - comment-new: New comment since the last visit.
+ * - $title_prefix (array): An array containing additional output populated by
+ *   modules, intended to be displayed in front of the main title tag that
+ *   appears in the template.
+ * - $title_suffix (array): An array containing additional output populated by
+ *   modules, intended to be displayed after the main title tag that appears in
+ *   the template.
  *
  * These two variables are provided for context:
  * - $comment: Full comment object.
@@ -41,22 +54,19 @@
  * - $classes_array: Array of html class attribute values. It is flattened
  *   into a string within the variable $classes.
  *
- * The following variables are deprecated and will be removed in Drupal 7:
- * - $date: Formatted date and time for when the comment was created.
- * - $submitted: By line with date and time.
- *
  * @see template_preprocess()
  * @see template_preprocess_comment()
- * @see zen_preprocess()
  * @see zen_preprocess_comment()
- * @see zen_process()
+ * @see template_process()
+ * @see theme_comment()
  */
 ?>
-<div class="<?php print $classes; ?> clearfix">
+<div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php print $picture; ?>
 
+  <?php print render($title_prefix); ?>
   <?php if ($title): ?>
-    <h3 class="title">
+    <h3<?php print $title_attributes; ?>>
       <?php print $title; ?>
       <?php if ($new): ?>
         <span class="new"><?php print $new; ?></span>
@@ -65,20 +75,23 @@
   <?php elseif ($new): ?>
     <div class="new"><?php print $new; ?></div>
   <?php endif; ?>
+  <?php print render($title_suffix); ?>
 
-  <?php if ($unpublished): ?>
+  <?php if ($status == 'comment-unpublished'): ?>
     <div class="unpublished"><?php print t('Unpublished'); ?></div>
   <?php endif; ?>
 
   <div class="submitted">
-    <?php
-      print t('Submitted by !username on !datetime.',
-        array('!username' => $author, '!datetime' => $created));
-    ?>
+    <?php print $permalink; ?>
+    <?php print $submitted; ?>
   </div>
 
-  <div class="content">
-    <?php print $content; ?>
+  <div class="content"<?php print $content_attributes; ?>>
+    <?php
+      // We hide the comments and links now so that we can render them later.
+      hide($content['links']);
+      print render($content);
+    ?>
     <?php if ($signature): ?>
       <div class="user-signature clearfix">
         <?php print $signature; ?>
@@ -86,5 +99,5 @@
     <?php endif; ?>
   </div>
 
-  <?php print $links; ?>
+  <?php print render($content['links']) ?>
 </div><!-- /.comment -->

@@ -89,7 +89,7 @@
  *   $db_url = 'mysqli://username:password@localhost/databasename';
  *   $db_url = 'pgsql://username:password@localhost/databasename';
  */
-$db_url = 'mysqli://motionbank:motionbank@localhost/motionbank';
+$db_url = 'mysqli://motionbank:motionbank@localhost/motionbankd7';
 $db_prefix = 'drupal_';
 
 /**
@@ -237,3 +237,21 @@ ini_set('url_rewriter.tags',        '');
 #   'forum'      => 'Discussion board',
 #   '@count min' => '@count minutes',
 # );
+
+$conf['file_directory_temp'] = '/tmp';
+$databases = array (
+  'default' => 
+  array (
+    'default' => 
+    array (
+      'driver' => 'mysql',
+      'database' => 'motionbankd7',
+      'username' => 'motionbank',
+      'password' => 'motionbank',
+      'host' => 'localhost',
+      'port' => '',
+      'prefix' => 'drupal_',
+    ),
+  ),
+);
+$drupal_hash_salt = 'dooFg4NExNTttgKgTuVihlTyh-INVATfPMKZXFIR6KY';

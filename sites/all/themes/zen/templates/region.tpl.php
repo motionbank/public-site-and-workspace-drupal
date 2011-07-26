@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Default theme implementation to display a region.
+ * Zen theme's implementation to display a region.
  *
  * Available variables:
  * - $content: The content for this region, typically blocks.
@@ -21,11 +21,13 @@
  * - $logged_in: Flags true when the current user is a logged-in member.
  *
  * @see template_preprocess()
- * @see zen_preprocess()
+ * @see template_preprocess_region()
  * @see zen_preprocess_region()
- * @see zen_process()
+ * @see template_process()
  */
 ?>
-<div class="<?php print $classes; ?>">
-  <?php print $content; ?>
-</div><!-- /.region -->
+<?php if ($content): ?>
+  <div class="<?php print $classes; ?>">
+    <?php print $content; ?>
+  </div><!-- /.region -->
+<?php endif; ?>

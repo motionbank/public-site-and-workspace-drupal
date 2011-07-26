@@ -1,9 +1,6 @@
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
 
-# OS generated
-.DS_Store
-ehthumbs.db
-Icon?
-Thumbs.db
-
-sites/*/files/css
-sites/*/files/js
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private

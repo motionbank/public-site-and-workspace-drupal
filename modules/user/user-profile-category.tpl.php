@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @file user-profile-category.tpl.php
+ * @file
  * Default theme implementation to present profile categories (groups of
  * profile items).
  *

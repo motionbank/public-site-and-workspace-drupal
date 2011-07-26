@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Theme implementation to display a block.
+ * Zen theme's implementation to display a block.
  *
  * Available variables:
  * - $title: Block title.
@@ -9,9 +9,6 @@
  * - $block->module: Module that generated the block.
  * - $block->delta: An ID for the block, unique within each module.
  * - $block->region: The block region embedding the current block.
- * - $edit_links: A list of contextual links for the block. It can be
- *   manipulated through the variable $edit_links_array from preprocess
- *   functions.
  * - $classes: String of classes that can be used to style contextually through
  *   CSS. It can be manipulated through the variable $classes_array from
  *   preprocess functions. The default values can be one or more of the
@@ -22,21 +19,18 @@
  *     that case the class would be "block-user".
  *   - first: The first block in the region.
  *   - last: The last block in the region.
- *   - region-count-[x]: The position of the block in the list of blocks in the
- *     current region.
- *   - region-odd: An odd-numbered block of the list of blocks in the current
- *     region.
- *   - region-even: An even-numbered block of the list of blocks in the current
- *     region.
- *   - count-[x]: The position of the block in the list of blocks on the current
- *     page.
- *   - odd: An odd-numbered block of the list of blocks on the current page.
- *   - even: An even-numbered block of the list of blocks on the current page.
+ *   - odd: An odd-numbered block in the region's list of blocks.
+ *   - even: An even-numbered block in the region's list of blocks.
+ * - $title_prefix (array): An array containing additional output populated by
+ *   modules, intended to be displayed in front of the main title tag that
+ *   appears in the template.
+ * - $title_suffix (array): An array containing additional output populated by
+ *   modules, intended to be displayed after the main title tag that appears in
+ *   the template.
  *
  * Helper variables:
  * - $classes_array: Array of html class attribute values. It is flattened
  *   into a string within the variable $classes.
- * - $edit_links_array: An array of contextual links for the block.
  * - $block_zebra: Outputs 'odd' and 'even' dependent on each block region.
  * - $zebra: Same output as $block_zebra but independent of any block region.
  * - $block_id: Counter dependent on each block region.
@@ -47,20 +41,22 @@
  * - $block_html_id: A valid HTML ID and guaranteed unique.
  *
  * @see template_preprocess()
- * @see zen_preprocess()
  * @see template_preprocess_block()
  * @see zen_preprocess_block()
- * @see zen_process()
+ * @see template_process()
+ * @see zen_process_block()
  */
 ?>
-<div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>">
-  <?php if ($title): ?>
-    <h2 class="title"><?php print $title; ?></h2>
-  <?php endif; ?>
+<div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
-  <div class="content">
+  <?php print render($title_prefix); ?>
+  <?php if ($title): ?>
+    <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
+  <?php endif; ?>
+  <?php print render($title_suffix); ?>
+
+  <div class="content"<?php print $content_attributes; ?>>
     <?php print $content; ?>
   </div>
 
-  <?php print $edit_links; ?>
 </div><!-- /.block -->
