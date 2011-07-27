@@ -1,5 +1,6 @@
 
- .front .meta
+ .front .submitted,
+ .front .links
  {
    display: none;
  }
@@ -61,7 +62,7 @@
    color: #722E15;
  }
  
- .front .block-views h2.title
+ .front .block-views h2.block-title
  {
    margin-bottom: 1em;
  }

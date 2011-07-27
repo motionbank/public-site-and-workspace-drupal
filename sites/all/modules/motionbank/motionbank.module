@@ -90,9 +90,10 @@
         
         if ( empty($node->nid) ) return null;
         
-        $node->links = module_invoke_all('link', 'node', $node, FALSE);
+		$node_rendered = node_view( $node );
+		$links = $node_rendered['links'];
         
-        return theme('links',$node->links);
+        return drupal_render($links);
     }
     
     /**
