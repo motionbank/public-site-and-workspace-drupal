@@ -83,7 +83,7 @@
   {
 	display: none;
   }
-  
+
   ul.breadcrumb
   {
     float: left;
@@ -93,7 +93,7 @@
     margin: 0px;
     width: 550px;
   }
-  
+
   ul.breadcrumb li
   {
     display: inline;
@@ -102,6 +102,14 @@
     margin: 0px;
     list-style: none;
   }
+
+  /*.breadcrumb
+  {
+	margin-top: 33px;
+	float: left;
+	height: 32px;
+	margin-left: 33px;
+  }*/
   
   .breadcrumb,
   .breadcrumb a
@@ -287,7 +295,7 @@
     display: block;
   }
   
-  .block h2.title
+  .block h2.block-title
   {
     font-size: 1.1em;
   }

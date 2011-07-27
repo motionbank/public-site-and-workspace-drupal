@@ -1,0 +1,44 @@
+Things to do / fix for Drupal6 -> Drupal7
+
+https://github.com/fjenett/Motion-Bank-Workspace/issues/46
+
+- missing modules, see issue 46
+
+- talk page on pages that have talk disabled
+  http://drupal.org/node/1215894#comment-4786886
+
+- front page new comments
+
+- add todo content type
+  -- title & description
+  -- due date
+  -- tags 			(taxonomy)
+  -- fixed project 	(taxonomy)
+  -- milestone 		(taxonomy)
+  -- assigned to 	(user reference)
+  -- status 		(taxonomy)
+
+- front page todo list
+- todo page
+- milestones page
+
+- freelinking not working
+
+- ckeditor profiles
+
+- issues
+  -- user page sortable (see issue)
+  -- include search as overlay
+  -- make login an overlay
+
+- node layouts
+- comments layout
+
+- footer formatting
+
+- fix embedded content (iframes)
+- fix flash player / amazon-s3 content
+
+- tabbed menu highlights
+
+- check / fix all views (pager, etc)
