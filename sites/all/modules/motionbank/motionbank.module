@@ -1,7 +1,53 @@
 <?php
 
+	// node types
+	define( 'MOTIONBANK_TYPE_TODOITEM', 'to_do_item');
+	// menu names
 	define( 'MOTIONBANK_BLOCK_LOCALTASKS', 'local_tasks' );
 	define( 'MOTIONBANK_BLOCK_NODELINKS', 'node_links' );
+	
+	/**
+	 *	hook_menu
+	 *	http://api.drupal.org/api/drupal/modules--system--system.api.php/function/hook_menu/7
+	 */
+	function motionbank_menu ()
+	{
+		global $user;
+		
+		$items = array();
+
+		return $items;
+	}
+	
+	/** 
+	 *	hook_node_prepare
+	 *	http://api.drupal.org/api/drupal/modules--node--node.api.php/function/hook_node_prepare/7
+	 */
+	
+	function motionbank_node_prepare ( $node )
+	{
+		switch ( $node->type )
+		{
+			case MOTIONBANK_TYPE_TODOITEM:
+				_motionbank_to_do_item_prepare( $node );
+				break;
+		}
+	}
+	
+	/**
+	 *	Prepare (pre add/edit) nodes of type 'to do item'
+	 */
+	function _motionbank_to_do_item_prepare ( $node )
+	{
+		if ( $node->type !== MOTIONBANK_TYPE_TODOITEM ) return;
+		global $user;
+		
+		// assign to current user if not already set
+		if ( empty($node->field_assignees) )
+		{
+			$node->field_assignees = array( "und" => array( array( "uid" => $user->uid ) ) ); 
+		}
+	}
 
 	/**
 	 *	hook_block_info
@@ -35,7 +81,9 @@
 				$object = _mb_get_current_object();
                 $title = t('Local tasks');
                 if ( $object->nid )
-                    $title = l( $object->title, $object->path );
+				{
+                    $title = l( $object->title, $object->uri['path'] );
+				}
                 $block = array(
                     'subject' => $title,
                     'content' => _motionbank_render_block_1()

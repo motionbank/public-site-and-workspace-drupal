@@ -1,16 +1,16 @@
 /* comments, commenting */
   
-  .section-comment #content-area .node .content
+  .section-comment .region-content .node .content
   {
     display: none;
   }
   
-  .section-comment #content-area .node h2.title
+  .section-comment .region-content .node h2.title
   {
     padding-top: 1em;
   }
   
-  #content-area #comments
+  .region-content #comments
   {
     margin: 0px;
     margin-top: 2em;
@@ -18,56 +18,56 @@
     background-color: #EDEFF1;*/
   }
   
-  #content-area #comments h2.title
+  .region-content #comments h2.title
   {
     padding-bottom: 1em;
   }
   
-  #content-area .comment /* reply page */
+  .region-content .comment /* reply page */
   {
     margin-top: 1em;
   }
   
-  #content-area #comments .comment
+  .region-content #comments .comment
   {
     margin-top: 0px;
   }
   
-  #content-area .comment
+  .region-content .comment
   {
     border-top: 1px solid #939699;
   }
   
-  #content-area #comments .comment
+  .region-content #comments .comment
   {
     border-top: 0px solid #939699;
   }
   
-  #content-area #comments div.first
+  .region-content #comments div.first
   {
     border-top: 1px solid #939699;
   }
   
-  #content-area .comment
+  .region-content .comment
   {
     border-bottom: 1px solid #939699;
     background-color: #F5F6F8;
     padding: 10px;
   }
   
-  #content-area .comment .new
+  .region-content .comment .new
   {
     padding-left: 5px;
     float: right;
   }
   
-  #content-area .comment .picture
+  .region-content .comment .picture
   {
     display: none;
   }
   
-  #content-area .comment .submitted,
-  #content-area .comment .new
+  .region-content .comment .submitted,
+  .region-content .comment .new
   {
     font-style: italic;
     float: right;
@@ -76,24 +76,24 @@
     padding-right: 0px;
   }
   
-  #content-area .comment .new
+  .region-content .comment .new
   {
     font-weight: bold;
   }
   
-  #content-area .comment .links
+  .region-content .comment .links
   {
     margin: 0px;
     display: none;
     float: right;
   }
   
-  #content-area .comment:hover .links
+  .region-content .comment:hover .links
   {
      display: block;
   }
   
-  #content-area .comment .links li
+  .region-content .comment .links li
   {
     display: inline;
     float: right;
@@ -102,12 +102,12 @@
     margin-left: 5px;
   }
   
-  #content-area .comment .links li a
+  .region-content .comment .links li a
   {
     color: white;
   }
   
-  #content-area #comments .last
+  .region-content #comments .last
   {
     margin-bottom: 2em;
   }
@@ -117,21 +117,21 @@
     display: none;
   }
   
-  .section-comment #content-area .box h2,
-  .section-project #content-area .box h2,
-  .node-type-wiki #content-area .box h2
+  .section-comment .region-content .box h2,
+  .section-project .region-content .box h2,
+  .node-type-wiki .region-content .box h2
   {
     /*display: none;*/
   }
   
-  #content-area #comments .ckeditor_links,
+  .region-content #comments .ckeditor_links,
   .section-comment .ckeditor_links
   {
     display: block;
     padding-bottom: 1em;
   }
   
-  .node-type-wiki #content-area .links li.talk_add
+  .node-type-wiki .region-content .links li.talk_add
   {
     display: none;
   }

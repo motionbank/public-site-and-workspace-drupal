@@ -1,0 +1,26 @@
+.view-to-do-list
+ {
+ }
+
+ .view-to-do-list .detailed-info
+ {
+	float: right;
+    color: #ADAFB2;
+    font-size: 0.8em;
+ }
+
+ .view-to-do-list .views-row
+ {
+   border-bottom: 1px solid #ADAFB2;
+   padding: 8px 0px 8px 12px;
+ }
+
+ .view-to-do-list .views-row-first
+ {
+   border-top: 1px solid #ADAFB2;
+ }
+
+ .view-to-do-list .views-row-last
+ {
+	margin-bottom: 3em;
+ }

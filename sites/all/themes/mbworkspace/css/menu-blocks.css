@@ -1,6 +1,6 @@
 /* local tasks block && group / project block */
  
- #block-og-0 ul,
+ /*#block-og-0 ul,
  .block-motionbank ul
  {
    margin-top: 5px;
@@ -50,6 +50,54 @@
  {
    background-color: #E7EAED;
    color: black;
- }
+ }*/
  
  /* end local tasks block && group / project block */
+
+	.region-sidebar-second .block-block ul,
+	.region-sidebar-second .block-motionbank ul
+	{
+	  margin-top: 5px;
+	  padding-left: 0px;
+	}
+
+	.region-sidebar-second .block-block ul.chained,
+	.region-sidebar-second .block-motionbank ul.chained
+	{
+	  margin-bottom: 0px;
+	}
+
+	.region-sidebar-second .block-block ul.links li,
+	.region-sidebar-second .block-motionbank ul.links li
+	{
+	  padding: 0px;
+	}
+
+	.region-sidebar-second .block-block ul ul,
+	.region-sidebar-second .block-motionbank ul ul
+	{
+	  padding-left: 12px;
+	}
+
+	.region-sidebar-second .block-block li,
+	.region-sidebar-second .block-motionbank li
+	{
+	  list-style: none;
+	}
+
+	.region-sidebar-second .block-block li a,
+	.region-sidebar-second .block-motionbank li a
+	{
+	  display: block;
+	  background-color: #A2AAB1;
+	  padding: 6px 0px 6px 12px;
+	  margin-bottom: 5px;
+	  color: white;
+	}
+
+	.region-sidebar-second .block-block li.active,
+	.region-sidebar-second .block-motionbank li.active
+	{
+	  background-color: #E7EAED;
+	  color: black;
+	}

@@ -112,7 +112,8 @@
   }*/
   
   .breadcrumb,
-  .breadcrumb a
+  .breadcrumb a,
+  .breadcrumb a.active
   {
     color: white; /*#444444;*/
   }
@@ -168,8 +169,8 @@
     display: none;
   }
   
-  #block-menu-primary-links ul,
-  #block-menu-secondary-links ul
+  #block-menu-primary-links ul.menu,
+  #block-menu-secondary-links ul.menu
   {
     padding: 0px;
     margin: 0px;
@@ -177,8 +178,8 @@
     padding-right: 5px;
   }
   
-  #block-menu-primary-links li,
-  #block-menu-secondary-links li
+  #block-menu-primary-links .menu li,
+  #block-menu-secondary-links .menu li
   {
     list-style: none;
     padding: 7px 12px 7px 12px;
@@ -186,28 +187,37 @@
     float: left;
     background-color: #485059;
   }
+
+  #block-menu-primary-links .menu li:hover,
+  #block-menu-secondary-links .menu li:hover
+  {	
+  	background-color: #A2AAB1;
+    color: #444444;
+  }
   
-  #block-menu-primary-links li.active-trail,
-  #block-menu-secondary-links li.active-trail
+  #block-menu-primary-links .menu li.active-trail,
+  #block-menu-secondary-links .menu li.active-trail
   {
     background-color: white;
   }
   
-  #block-menu-secondary-links li
+  #block-menu-secondary-links .menu li
   {
     margin: 0px 0px 0px 5px;
   }
   
-  #block-menu-primary-links li a,
-  #block-menu-secondary-links li a
+  #block-menu-primary-links .menu li a,
+  #block-menu-secondary-links .menu li a
   {
     display: block;
     font-size: 1.0em;
     color: #dddddd;
   }
   
-  #block-menu-primary-links li.active-trail a,
-  #block-menu-secondary-links li.active-trail a
+  #block-menu-primary-links .menu li:hover a,
+  #block-menu-secondary-links .menu li:hover a,
+  #block-menu-primary-links .menu li.active-trail a,
+  #block-menu-secondary-links .menu li.active-trail a
   {
     color: #444444;
   }
@@ -305,21 +315,25 @@
      Footer
     ==========================*/
   
-  #footer
+  .region-i-dont-know-which
   {
     padding: 20px;
     background-color: #A2AAB1;
     margin-bottom: 20px;
   }
   
-  .region-page-closure .block
+  .region-footer .block
   {
     padding-left: 10px;
   }
   
-  .region-page-closure,
-  .region-page-closure a
+  .region-footer,
+  .region-footer a
   {
-    color: #333333;
+    color: #444444;
     font-size: 10px;
   }
+  .region-footer a
+  {
+	text-decoration: underline;
+}

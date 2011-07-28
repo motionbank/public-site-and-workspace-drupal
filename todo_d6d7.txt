@@ -21,24 +21,26 @@ https://github.com/fjenett/Motion-Bank-Workspace/issues/46
 - front page todo list
 - todo page
 - milestones page
-
-- freelinking not working
-
-- ckeditor profiles
+- how to set time for milestones for normal users?
+- how to handle editing, deletion of todos by users it's not assigned to?
+- how to handle that other users can't see the todo items not assigned to them?
 
 - issues
   -- user page sortable (see issue)
   -- include search as overlay
   -- make login an overlay
 
-- node layouts
-- comments layout
-
-- footer formatting
+- local tasks hover
 
 - fix embedded content (iframes)
 - fix flash player / amazon-s3 content
 
-- tabbed menu highlights
-
 - check / fix all views (pager, etc)
+
+==				   ==
+==	STILL MISSING  ==
+==				   ==
+
+- images lightbox no slideshow, wrong thumbnail style
+- project page: num of posts, members: view fields for og missing
+

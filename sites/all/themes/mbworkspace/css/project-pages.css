@@ -47,6 +47,8 @@
   background-color: #A2AAB1;
   margin-right: 20px;
   margin-bottom: 20px;
+
+  height: 300px;
 }
 
 .view-projects .views-field-field-images-fid
@@ -59,7 +61,7 @@
 .view-projects .views-field-title
 {
   margin-top: 1em;
-  height: 3em;
+  margin-bottom: 1em;
 }
 
 .view-projects .views-field-title a
@@ -81,3 +83,8 @@
 }
 
 /* end projects page */
+
+.node-type-project #content .submitted
+{
+	display: none;
+}

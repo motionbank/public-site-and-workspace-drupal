@@ -5,15 +5,16 @@
    display: none;
  }
 
- .front .block-views .detailed-info
+ .front .block-views .detailed-info,
+ .view-og-nodes .detailed-info
  {
 	float: right;
-   color: #ADAFB2;
-   font-size: 0.8em;
+    color: #ADAFB2;
+    font-size: 0.8em;
  }
  
  .front .views-row,
- .view-og-ghp-projects-home .views-row,
+ .view-og-nodes .views-row,
  .section-taxonomy .taxonomy-node,
  .section-category .taxonomy-node,
  .node-type-wiki .book-navigation .menu li
@@ -23,7 +24,7 @@
  }
  
  .front .views-row-first,
- .view-og-ghp-projects-home .views-row-first,
+ .view-og-nodes .views-row-first,
  .section-taxonomy .first .taxonomy-node ,
  .section-category .first .taxonomy-node,
  .node-type-wiki .book-navigation .menu
@@ -31,7 +32,7 @@
    border-top: 1px solid #ADAFB2;
  }
  
- .view-og-ghp-projects-home .view-header
+ .view-og-nodes .view-header
  {
    padding-top: 1em;
    margin-bottom: 1em;

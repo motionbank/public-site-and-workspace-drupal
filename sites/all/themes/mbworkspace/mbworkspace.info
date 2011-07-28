@@ -28,6 +28,7 @@ stylesheets[all][]        = css/wiki.css
 stylesheets[all][]        = css/menu-blocks.css
 stylesheets[all][]        = css/project-pages.css
 stylesheets[all][]        = css/user-pages.css
+stylesheets[all][]        = css/todos.css
 
 stylesheets[print][]      = css/print.css
 
