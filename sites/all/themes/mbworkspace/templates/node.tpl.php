@@ -1,6 +1,6 @@
 <?php
 /**
- * see sites/all/themes/zen/templates/node.tpl.php
+ * see zen/templates/node.tpl.php
  */
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
@@ -32,7 +32,7 @@
     ?>
   </div>
 
-  <?php /*print render($content['links']);*/ ?>
+  <?php /* print render($content['links']); */ ?>
 
   <?php print render($content['comments']); ?>
 
