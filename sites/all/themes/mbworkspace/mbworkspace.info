@@ -90,7 +90,8 @@ features[] = slogan
 features[] = node_user_picture
 features[] = comment_user_picture
 features[] = favicon
-features[] = main_menu
+; main_menu prev known as primary_links is added as block, so dis'd here.
+;features[] = main_menu
 features[] = secondary_menu
 
 

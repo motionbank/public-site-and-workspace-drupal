@@ -74,7 +74,7 @@
       <?php print $feed_icons; ?>
     </div></div><!-- /.section, /#content -->
 
-    <?php if ($page['navigation'] || $main_menu): ?>
+    <?php /*if ($page['navigation'] || $main_menu): ?>
       <div id="navigation"><div class="section clearfix">
 
         <?php print theme('links__system_main_menu', array(
@@ -93,7 +93,7 @@
         <?php print render($page['navigation']); ?>
 
       </div></div><!-- /.section, /#navigation -->
-    <?php endif; ?>
+    <?php endif;*/ ?>
 
     <?php print render($page['sidebar_first']); ?>
 
