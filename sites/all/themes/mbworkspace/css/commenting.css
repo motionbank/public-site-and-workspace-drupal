@@ -135,5 +135,11 @@
   {
     display: none;
   }
+
+  .comment-form #edit-author--2,
+  .comment-form .form-item-subject
+  {
+	display: none;
+}
   
   /* end comments, commenting */

@@ -2,13 +2,6 @@
  {
  }
 
- .view-to-do-list .detailed-info
- {
-	float: right;
-    color: #ADAFB2;
-    font-size: 0.8em;
- }
-
  .view-to-do-list .views-row
  {
    border-bottom: 1px solid #ADAFB2;
@@ -25,8 +18,65 @@
 	margin-bottom: 3em;
  }
 
+ .view-to-do-list .views-row .field-title .field-content
+ {
+	display: inline;
+ }
+
+ .view-to-do-list .views-row .state-new,
+ .view-to-do-list .views-row .state-new a
+ {
+	color: #444;
+ }
+
+ .view-to-do-list .views-row .state-blocked,
+ .view-to-do-list .views-row .state-blocked a
+ {
+	color: #444;
+	font-style: italic;
+ }
+
+ .view-to-do-list .views-row .state-in-progress,
+ .view-to-do-list .views-row .state-in-progress a
+ {
+	color: #00cc00;
+ }
+
+ .view-to-do-list .views-row .state-finished,
+ .view-to-do-list .views-row .state-finished a
+ {
+	color: #bbb;
+ }
+
+ .view-to-do-list .views-row .state-won-t-do,
+ .view-to-do-list .views-row .state-won-t-do a
+ {
+	color: #bbb;
+	text-decoration: line-through;
+ }
+
+ .view-to-do-list .views-row .overdue,
+ .view-to-do-list .views-row .overdue a
+ {
+	color: red;
+	font-weight: bold;
+ }
+
+ .view-to-do-list .views-row .detailed-info
+ {
+	float: right;
+ }
+
+ .view-to-do-list .views-row .detailed-info,
+ .view-to-do-list .views-row .detailed-info a
+ {	
+ 	color: #ADAFB2;
+ 	font-size: 0.9em;
+ }
+
 /* to_do_item node page */
 
+ .vocabulary-to-do-milestones .field-label,
  .node-type-to-do-item .content .field-label
  {
 	width: 100px;
@@ -34,6 +84,7 @@
 	color: #666;
  }
 
+ .vocabulary-to-do-milestones .fields,
  .node-type-to-do-item .content .fields
  {
 	padding: 0.75em;
@@ -41,8 +92,34 @@
 	margin-bottom: 2em;
  }
 
+ .vocabulary-to-do-milestones .fields .field-items .field-item,
  .node-type-to-do-item .content .fields .field-items .field-item
  {
 	float: left;
 	padding-right: 1em;
  }
+
+ /* single nodes in teaser on tax-term-pages */
+
+ .page-taxonomy-term .term-listing-heading,
+ .page-taxonomy-term .node
+ {
+	/* see frontpage.css */
+ 	border-bottom: 1px solid #ADAFB2;
+ }
+ 
+ .page-taxonomy-term .node
+ {		
+	padding: 8px 0px 8px 12px;
+ }
+
+ .page-taxonomy-term .node .node-title
+ {
+	font-size: 1em;
+ }
+
+ .page-taxonomy-term .node .fields,
+ .page-taxonomy-term .node .content
+ {
+	display: none;
+}

@@ -6,6 +6,44 @@
 	define( 'MOTIONBANK_BLOCK_LOCALTASKS', 'local_tasks' );
 	define( 'MOTIONBANK_BLOCK_NODELINKS', 'node_links' );
 	
+	
+	function xxx_motionbank_views_data_alter ( &$data )
+	{
+		/*
+		'filter' => array(
+	      'help' => t('Show only content that is new or updated.'),
+	      'handler' => 'views_handler_filter_history_user_timestamp',
+	    ),
+		*/
+		$data['node']['new_comments']['filter'] = array(
+	      'help' => t('Show only content that is new or updated.'),
+	      'handler' => 'views_handler_field_node_new_comments',
+		);
+	}
+	
+	/**
+	 *	hook_views_query_alter
+	 *
+	 *	This fixes the order of to do items to show items without
+	 *	due date at the end of the list.
+	 */
+	function motionbank_views_query_alter ( &$view, &$query )
+	{
+		if ( $view->name == 'to_do_list' ) 
+		{
+			//var_dump( $query );
+			$orderby_add = array(
+				'field'=>'ISNULL('.$query->orderby[0]['field'].')',
+				'direction'=>$query->orderby[0]['direction']
+			);
+			$query->orderby = array_merge(
+				array($orderby_add),
+				$query->orderby
+			);
+			//var_dump( $query->orderby );
+		}
+	}
+	
 	/**
 	 *	hook_menu
 	 *	http://api.drupal.org/api/drupal/modules--system--system.api.php/function/hook_menu/7

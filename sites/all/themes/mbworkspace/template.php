@@ -26,6 +26,14 @@
 	}
 	
 	/**
+	 *	hook_preprocess
+	 */
+	function mbworkspace_preprocess ( &$variables )
+	{
+		//drupal_set_message(implode(',',$variables['theme_hook_suggestions']));
+	}
+	
+	/**
 	 *	Highlights main menu items based upon if the current page is in
 	 *	the menu tree of the menu that the item points to (they are redirects).
 	 */
