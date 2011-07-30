@@ -118,7 +118,7 @@
 			case MOTIONBANK_BLOCK_LOCALTASKS:
 				$object = _mb_get_current_object();
                 $title = t('Local tasks');
-                if ( $object->nid )
+                if ( $object && $object->nid )
 				{
                     $title = l( $object->title, $object->uri['path'] );
 				}
