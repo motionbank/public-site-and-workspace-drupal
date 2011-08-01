@@ -17,7 +17,8 @@
  .view-og-nodes .views-row,
  .section-taxonomy .taxonomy-node,
  .section-category .taxonomy-node,
- .node-type-wiki .book-navigation .menu li
+ .node-type-wiki .book-navigation .menu li,
+ .view-milestones-block ul li
  {
    border-bottom: 1px solid #ADAFB2;
    padding: 8px 0px 8px 12px;
@@ -27,8 +28,10 @@
  .view-og-nodes .views-row-first,
  .section-taxonomy .first .taxonomy-node ,
  .section-category .first .taxonomy-node,
- .node-type-wiki .book-navigation .menu
+ .node-type-wiki .book-navigation .menu,
+ .view-milestones-block ul
  {
+   list-style: none;
    border-top: 1px solid #ADAFB2;
  }
  
@@ -71,4 +74,23 @@
  .front .block-views
  {
 	margin-bottom: 2em;
+ }
+
+ .view-milestones-block ul
+ {
+	margin: 0px;
+	padding: 0px;
+ }
+
+ .view-milestones-block ul li .date-display-single
+ {
+	display: inline-block;
+	width: 200px;
+	color: #777;
+	font-style: italic;
+ }
+
+ .view-milestones-block
+ {
+	margin-bottom: 3em;
  }

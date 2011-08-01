@@ -122,4 +122,32 @@
  .page-taxonomy-term .node .content
  {
 	display: none;
-}
+ }
+
+ /* to do items by status */
+
+ .view-to-do-block-status ul
+ {
+	margin: 0px; padding: 0px;
+	display: block;
+	overflow: auto;
+ }
+
+ .view-to-do-block-status ul li
+ {
+	float: left;
+	list-style: none;
+	margin-right: 1em;
+	border: 1px solid #eee;
+ }
+
+ .view-to-do-block-status ul li a
+ {
+	display: block;
+	padding: 6px 7px 7px 7px;
+ }
+
+ .view-to-do-block-status
+ {
+	margin-bottom: 3em;
+ }

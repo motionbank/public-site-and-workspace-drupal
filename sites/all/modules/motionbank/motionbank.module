@@ -120,7 +120,12 @@
                 $title = t('Local tasks');
                 if ( $object && $object->nid )
 				{
-                    $title = l( $object->title, $object->uri['path'] );
+					if ( $object->uri )
+                    	$title = l( $object->title, $object->uri['path'] );
+					else if ( $object->path )
+                    	$title = l( $object->title, $object->path );
+					else
+                    	$title = l( $object->title, 'node/'.$object->nid );
 				}
                 $block = array(
                     'subject' => $title,
