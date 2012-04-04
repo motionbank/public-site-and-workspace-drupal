@@ -1,5 +1,5 @@
 <?php
-// $Id: og_handler_field_user_roles.inc,v 1.1.2.1 2010/12/15 09:14:11 amitaibu Exp $
+
 /**
  * Field handler to provide a list of group roles.
  */

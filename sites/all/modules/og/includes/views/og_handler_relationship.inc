@@ -1,5 +1,5 @@
 <?php
-// $Id: og_handler_relationship.inc,v 1.1.2.1 2010/12/15 09:14:11 amitaibu Exp $
+
 
 /**
  * @file
@@ -7,11 +7,12 @@
  */
 
 /**
- * Specialized relationship handler associating flags and content.
+ * Specialized relationship handler associating groups and their entity.
  *
  * @ingroup views
  */
 class og_handler_relationship extends views_handler_relationship {
+
   /**
    * Called to implement a relationship in a query.
    */

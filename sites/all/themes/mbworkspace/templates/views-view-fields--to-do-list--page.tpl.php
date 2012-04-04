@@ -1,7 +1,13 @@
 <?php
 /**
  * see zen/templates/views-view-fields.tpl.php
- */
+ */	
+	//var_dump($fields['field_status']);
+	
+	$status_class = preg_replace( '/[^a-z0-9]/i', '-',
+		strtolower(trim(strip_tags($fields['field_status']->content)))
+	);
+	
 	$date_str = trim(strip_tags($fields['field_date_due']->content));
 	//var_dump(array_keys((array)$fields['field_date_due']->handler->items));
 	//var_dump($fields['field_date_due']->handler->items);
@@ -26,10 +32,6 @@
 	/* array(4) { [0]=> string(5) "title" [1]=> string(14) "field_date_due" [2]=> string(10) "field_list" [3]=> string(15) "field_milestone" } */
 	//var_dump(array_keys((array)$fields['field_status']));
 	
-	$status_class = preg_replace( '/[^a-z0-9]/i', '-',
-		strtolower(trim(strip_tags($fields['field_status']->content)))
-	);
-	
 	$title = preg_replace( '/href="[^"]+"/i', 'href="/node/'.$fields['nid']->raw.'/edit"',
 		$fields['title']->content
 	);
@@ -37,7 +39,7 @@
 ?>
 
  <div class="views-field-title <?php 
-		if ( $is_over_due ) print 'overdue'; 
+		if ( $is_over_due && ($status_class == 'new' || $status_class == 'in-progress' || $status_class == 'blocked') ) print 'overdue'; 
 	?> state-<?php
 		print $status_class;
 	?>">

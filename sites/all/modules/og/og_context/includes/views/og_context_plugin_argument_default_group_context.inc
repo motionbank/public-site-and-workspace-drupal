@@ -1,5 +1,5 @@
 <?php
-// $Id: og_context_plugin_argument_default_group_context.inc,v 1.1.2.4 2010/12/26 08:55:59 amitaibu Exp $
+
 /**
  * @file
  * Contains the group context argument default plugin.

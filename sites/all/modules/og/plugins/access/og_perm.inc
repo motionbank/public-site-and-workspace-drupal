@@ -1,5 +1,5 @@
 <?php
-// $Id: og_perm.inc,v 1.1.2.1 2010/12/15 09:14:11 amitaibu Exp $
+
 
 /**
  * @file
@@ -12,14 +12,14 @@
  */
 $plugin = array(
   'title' => t("OG: user permission in group"),
-  'description' => t('Control access by gorup permission string.'),
+  'description' => t('Control access by group permission string.'),
   'callback' => 'og_perm_ctools_access_check',
   'default' => array('perm' => ''),
   'settings form' => 'og_perm_ctools_access_settings',
   'summary' => 'og_perm_ctools_access_summary',
   'required context' => array(
     new ctools_context_required(t('User'), 'user'),
-    new ctools_context_required(t('Group'), 'og_group'),
+    new ctools_context_required(t('OG Group'), 'entity:group'),
   ),
 );
 

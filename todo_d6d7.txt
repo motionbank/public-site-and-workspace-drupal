@@ -9,6 +9,17 @@ https://github.com/fjenett/Motion-Bank-Workspace/issues/46
 
 - front page new comments
 
+- add todo content type
+  -- title & description
+  -- due date
+  -- tags 			(taxonomy)
+  -- fixed project 	(taxonomy)
+  -- milestone 		(taxonomy)
+  -- assigned to 	(user reference)
+  -- status 		(taxonomy)
+
+- front page todo list
+- todo page
 - milestones page
 - how to set time for milestones for normal users?
 - how to handle editing, deletion of todos by users it's not assigned to?
@@ -20,21 +31,19 @@ https://github.com/fjenett/Motion-Bank-Workspace/issues/46
   -- make login an overlay
 
 - local tasks hover
+- listings zu lange namen
+- maintenance page style
 - 404 / 403 menus
 
+- fix embedded content (iframes)
 - fix flash player / amazon-s3 content
 
 - check / fix all views (pager, etc)
 
 - user pages profile textareas need wysiwyg
 
-- listings zu lange namen
 - fix too long breadcrumbs
 - fix too long titles on dashboard, listings
-
-- textarea on project/edit has background image of theme
-
-- replace trigger->action for email-author-node-change with rule
 
 ==				   ==
 ==	STILL MISSING  ==

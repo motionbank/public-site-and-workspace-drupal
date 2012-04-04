@@ -1,5 +1,5 @@
 <?php
-// $Id: og_access.module,v 1.1.2.8 2010/12/26 08:55:59 amitaibu Exp $
+
 
 /**
  * @file
@@ -38,7 +38,7 @@ define('OG_CONTENT_ACCESS_PRIVATE', 2);
 
 
 /**
- * Implementation of hook_node_grants().
+ * Implements hook_node_grants().
  */
 function og_access_node_grants($account, $op) {
   $grants = array();
@@ -55,7 +55,7 @@ function og_access_node_grants($account, $op) {
 
 
 /**
- * Implementation of hook_node_access_records.
+ * Implements hook_node_access_records().
  */
 function og_access_node_access_records($node) {
   $grants = array();
@@ -64,10 +64,9 @@ function og_access_node_access_records($node) {
   $gids = array();
 
   $access = FALSE;
-  if (!empty($node->{OG_ACCESS_FIELD}[LANGUAGE_NONE][0]['value'])) {
+  if (!empty($node->{OG_ACCESS_FIELD}[LANGUAGE_NONE][0]['value']) && $group = og_get_group('node', $node->nid)) {
     // Group or group content that is explicitly set to be unpublic.
     $access = TRUE;
-    $group = og_get_group('node', $node->nid);
     $gids[] = $group->gid;
   }
   elseif (isset($node->{OG_CONTENT_ACCESS_FIELD}[LANGUAGE_NONE][0]['value'])) {

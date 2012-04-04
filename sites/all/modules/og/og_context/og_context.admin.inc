@@ -1,5 +1,5 @@
 <?php
-// $Id: og_context.admin.inc,v 1.1.2.4 2010/12/15 09:14:12 amitaibu Exp $
+
 
 /**
  * @file

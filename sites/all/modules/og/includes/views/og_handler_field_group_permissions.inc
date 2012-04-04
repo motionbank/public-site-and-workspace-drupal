@@ -1,5 +1,5 @@
 <?php
-// $Id: og_handler_field_group_permissions.inc,v 1.1.2.1 2010/12/15 09:14:11 amitaibu Exp $
+
 /**
  * Field handler to provide a list of group permissions.
  */
@@ -32,7 +32,7 @@ class og_handler_field_group_permissions extends og_handler_field_prerender_list
       if ($all_rids) {
         $all_perms = og_get_permissions();
         // Get the permissions of all the roles we need to show.
-        $perms = og_user_role_permissions($all_rids);
+        $perms = og_role_permissions($all_rids);
         foreach ($list as $value) {
           foreach ($value['rids'] as $rid) {
             foreach ($perms[$rid] as $perm => $perm_value) {

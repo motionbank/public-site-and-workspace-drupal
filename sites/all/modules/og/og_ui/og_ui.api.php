@@ -1,5 +1,5 @@
 <?php
-// $Id: og_ui.api.php,v 1.1.2.6 2010/12/26 08:55:59 amitaibu Exp $
+
 
 /**
  * @file
@@ -31,8 +31,10 @@ function hook_og_ui_get_group_admin() {
  *
  * @param $data
  *   The menu items passed by reference.
+ * @param $gid
+ *   The group being viewed.
  */
-function hook_og_ui_get_group_admin_alter(&$data) {
+function hook_og_ui_get_group_admin_alter(&$data, $gid) {
   // Hijack the add people to use a custom implementation.
   $items['add_people']['href'] = 'admin/people/custom-add-user';
 }

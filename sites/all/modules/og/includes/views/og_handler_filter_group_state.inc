@@ -1,5 +1,5 @@
 <?php
-// $Id: og_handler_filter_group_state.inc,v 1.1.2.1 2010/12/15 09:14:11 amitaibu Exp $
+
 /**
  * Filter by group state.
  */
