@@ -313,6 +313,19 @@
     font-size: 1.1em;
   }
 
+  /*==========================
+     projects node
+    ==========================*/
+
+  .node-type-post .field-type-image .field-item
+  {
+	float: left;
+  }
+
+  .node-type-post .field-type-image
+  {
+	overflow: auto;
+  }
   
   /*==========================
      Footer

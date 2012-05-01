@@ -198,3 +198,58 @@
             $current_object = menu_get_object();
         return $current_object;
     }
+
+	/**
+	 * Implements hook_token_info().
+	 * http://drupal.org/node/1088538#comment-5300274
+	 */
+	function motionbank_token_info() {
+	  $info['types']['current-group'] = array(
+	    'name' => t('Current group'),
+	    'description' => t('Tokens related to the current group context.'),
+	  );
+	  $info['tokens']['current-group']['title'] = array(
+	    'name' => t('Title'),
+	    'description' => t('The title of the current group.'),
+	  );
+	  $info['tokens']['current-group']['url'] = array(
+	    'name' => t('URL'),
+	    'description' => t('The URL of the current group.'),
+	    'type' => 'url',
+	  );
+	  return $info;
+	}
+
+	/**
+	 * Implements hook_tokens().
+	 * http://drupal.org/node/1088538#comment-5300274
+	 */
+	function motionbank_tokens($type, $tokens, array $data = array(), array $options = array()) {
+	  $replacements = array();
+	  $url_options = array('absolute' => TRUE);
+
+	  if ($type == 'current-group') {
+	    $current_group = og_context();
+
+	    if (isset($current_group->etid)) {
+	      $groupnode = $current_group->getEntity();
+	      foreach ($tokens as $name => $original) {
+	        switch ($name) {
+	          case 'title':
+	            $replacements[$original] = $groupnode->title;
+	            break;
+	          case 'url':
+	            $replacements[$original] = url('node/' . $groupnode->nid, $url_options);
+	            break;
+	        }
+	      }
+
+	      // Chained token relationships.
+	      if ($url_tokens = token_find_with_prefix($tokens, 'url')) {
+	        $replacements += token_generate('url', $url_tokens, array('path' => 'node/' . $groupnode->nid), $options);
+	      }
+	    }
+	  }
+
+	  return $replacements;
+	}

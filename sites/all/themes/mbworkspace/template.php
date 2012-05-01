@@ -117,7 +117,7 @@
 	function mbworkspace_preprocess_menu_link ( &$variables )
 	{
 		$menus_to_highlight = array('main-menu','secondary-menu');
-		// drupal_set_message($variables['element']['#original_link']['menu_name']);
+		//drupal_set_message($variables['element']['#original_link']['menu_name']);
 		
 		if ( in_array( $variables['element']['#original_link']['menu_name'],
 		 			   $menus_to_highlight ) )
