@@ -65,6 +65,17 @@
  {
    color: #722E15;
  }
+
+.view-image-teaser-block .views-row {
+    border: 0px solid transparent;
+    float: left;
+    height: 110px;
+    width: 110px;
+ }
+
+.view-image-teaser-block {
+    overflow: auto;
+  }
  
  .front .block-views h2.block-title
  {
