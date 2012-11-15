@@ -14,6 +14,12 @@ class OgMetadataController extends EntityDefaultMetadataController {
     $info = parent::entityPropertyInfo();
     $properties = &$info[$this->type]['properties'];
 
+    // Initialize values
+    $properties = !empty($properties) ? $properties : array();
+    $properties += array(
+      'entity_type' => array(),
+    );
+
     $properties['entity'] = array(
       'label' => t('Entity'),
       'type' => 'entity',
@@ -72,12 +78,18 @@ class OgMembershipMetadataController extends EntityDefaultMetadataController {
     $info = parent::entityPropertyInfo();
     $properties = &$info[$this->type]['properties'];
 
+    // Initialize values
+    $properties = !empty($properties) ? $properties : array();
+    $properties += array(
+      'entity_type' => array(),
+    );
+
     // Group ID is provided in the "group" property.
     unset($properties['gid']);
     $properties['group'] = array(
-      'label' => t("Group"),
+      'label' => t("OG group"),
       'type' => 'group',
-      'description' => t("The group associated with the group membership."),
+      'description' => t("The OG group associated with the OG membership."),
       'required' => TRUE,
       'getter callback' => 'entity_property_getter_method',
       'schema field' => 'gid',
@@ -97,6 +109,9 @@ class OgMembershipMetadataController extends EntityDefaultMetadataController {
     );
 
     $properties['created']['type'] = 'date';
+    $properties['created'] += array(
+      'setter callback' => 'entity_property_verbatim_set',
+    );
 
     $properties['state']['type'] = 'integer';
     $properties['state'] += array(
@@ -105,15 +120,15 @@ class OgMembershipMetadataController extends EntityDefaultMetadataController {
       'required' => TRUE,
     );
 
-    // Provide the membership-type under 'type' not 'name'.
-    $properties['type'] = array(
-      'label' => t("Group membership type"),
-      'type' => 'og_membership_type',
-      'description' => t('The group membership type.'),
+    $properties['entity_type'] += array(
+      'setter callback' => 'entity_property_verbatim_set',
+    );
+
+    $properties['type']['type'] = 'og_membership_type';
+    $properties['type'] += array(
       'required' => TRUE,
-      'getter callback' => 'entity_property_getter_method',
-    ) + $properties['name'];
-    unset($properties['name']);
+      'setter callback' => 'entity_property_verbatim_set',
+    );
 
     return $info;
   }

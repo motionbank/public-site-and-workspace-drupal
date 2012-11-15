@@ -193,6 +193,12 @@ function talk_node_view($node, $view_mode, $langcode) {
       'title' => talk_title($node, 'link'),
     );
   }
+
+  // Remove comments from page if viewing a node page for a node type for which
+  // Talk is enabled.
+  if (talk_activated($node->type) && arg(0) == 'node' && !arg(2)) {
+    $node->content['comments'] = array();
+  }
 }
 
 /**
@@ -286,10 +292,16 @@ function theme_talk_comments($variables) {
   $node->comment = _talk_node_comment_value($node);
   comment_node_view($node, 'full');
 
-  // If comment form on same page as Talk, alter "Add new comment" link
-  if (variable_get('comment_form_location_' . $node->type, COMMENT_FORM_BELOW) == COMMENT_FORM_BELOW) {
-    $links_comments = &$node->content['links']['comment']['#links'];
-    $links_comments['comment-add']['href'] = "node/$node->nid/talk";
+  if ($node->comment == COMMENT_NODE_OPEN) {
+    if (user_access('post comments')) {
+      // If comment form on same page as Talk, alter "Add new comment" link
+      if (variable_get('comment_form_location_' . $node->type, COMMENT_FORM_BELOW) == COMMENT_FORM_BELOW) {
+        $links_comments = &$node->content['links']['comment']['#links'];
+        if (isset($links_comments['comment-add'])) {
+          $links_comments['comment-add']['href'] = "node/$node->nid/talk";
+        }
+      }
+    }
   }
 
   return drupal_render($node->content);
