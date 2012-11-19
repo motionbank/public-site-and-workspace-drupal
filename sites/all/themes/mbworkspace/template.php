@@ -25,83 +25,6 @@
 	  }
 	}
 	
- 	/**
- 	 *	http://www.tylerfrankenstein.com/user/4/code/drupal-views-group-by-field-with-counts
- 	 */
-	function motionbank_preprocess_views_view ( &$variables )
-	{
-		//drupal_set_message($variables['view']->name);
-		switch ( $variables['view']->name ) 
-		{
-			case "to_do_block_status":
-				_motionbank_preproc_views_count( $variables,
-					 							 'to_do_status_counts',
-												 'tid',
-												 'taxonomy_term_data_name'
-				);
-				break;
-			case "milestones_block":
-				_motionbank_preproc_views_count( $variables,
-					 							 'milestones_counts',
-												 'tid',
-												 'taxonomy_term_data_name'
-				);
-				break;
-		}
-	}
-	
-	function _motionbank_preproc_views_count ( &$variables, $variable_name,
-											   $views_grouping_field,
-											   $views_grouping_field_title )
-	{
-		// generate counts for the views grouping field
-		$variables[$variable_name] = array();
-		foreach ($variables['view']->result as $result) 
-		{
-		    $index = $result->$views_grouping_field;
-			if ( !isset($variables[$variable_name][$index]) ) 
-			{ 
-				$variables[$variable_name][$index] = 0; 
-			}
-		    $variables[$variable_name][$index]++;
-		}
-
-		// build an array of each group count
-		$views_grouping_field_links = array();
-		foreach ($variables[$variable_name] as $index => $count) 
-		{
-		  	foreach ($variables['view']->result as $result)
-			{
-		    	if ($index == $result->$views_grouping_field) 
-				{
-					$date = null;
-		      		$title = $result->$views_grouping_field;
-		      		if ($views_grouping_field_title) 
-					{ 
-						$title = $result->$views_grouping_field_title; 
-					}
-					//var_dump((array)$result);
-					if ( isset($result->field_field_date_due) && !empty($result->field_field_date_due) )
-					{
-						$date = $result->field_field_date_due[0]['rendered']['#markup'];
-					}
-		      		$views_grouping_field_links[] = array(
-						'title' => $title,
-						'date'  => $date,
-						'path'  => drupal_get_path_alias('taxonomy/term/'.$result->$views_grouping_field),
-						'count' => $count,
-						'index' => $index
-					);
-		      		break;
-		    	}
-		  	}
-		}
-		if (!empty($views_grouping_field_links)) 
-		{
-		  	$variables['views_grouping_field_links'] = $views_grouping_field_links;
-		}
-	}
-	
 	/**
 	 *	hook_preprocess
 	 */
@@ -148,3 +71,83 @@
 			}
 		}
 	}
+
+	//	This is maybe old code from the Drupal-6 version, commented out to see if
+	//	errors surface at some point. Remove later. fjenett 20121119
+
+ // 	/**
+ // 	 *	http://www.tylerfrankenstein.com/user/4/code/drupal-views-group-by-field-with-counts
+ // 	 */
+	// function motionbank_preprocess_views_view ( &$variables )
+	// {
+	// 	//drupal_set_message($variables['view']->name);
+	// 	switch ( $variables['view']->name ) 
+	// 	{
+	// 		case "to_do_block_status":
+	// 			_motionbank_preproc_views_count( $variables,
+	// 				 							 'to_do_status_counts',
+	// 											 'tid',
+	// 											 'taxonomy_term_data_name'
+	// 			);
+	// 			break;
+	// 		case "milestones_block":
+	// 			_motionbank_preproc_views_count( $variables,
+	// 				 							 'milestones_counts',
+	// 											 'tid',
+	// 											 'taxonomy_term_data_name'
+	// 			);
+	// 			break;
+	// 	}
+	// }
+	
+	// function _motionbank_preproc_views_count ( &$variables, $variable_name,
+	// 										   $views_grouping_field,
+	// 										   $views_grouping_field_title )
+	// {
+	// 	// generate counts for the views grouping field
+	// 	$variables[$variable_name] = array();
+	// 	foreach ($variables['view']->result as $result) 
+	// 	{
+	// 	    $index = $result->$views_grouping_field;
+	// 		if ( !isset($variables[$variable_name][$index]) ) 
+	// 		{ 
+	// 			$variables[$variable_name][$index] = 0; 
+	// 		}
+	// 	    $variables[$variable_name][$index]++;
+	// 	}
+
+	// 	// build an array of each group count
+	// 	$views_grouping_field_links = array();
+	// 	foreach ($variables[$variable_name] as $index => $count) 
+	// 	{
+	// 	  	foreach ($variables['view']->result as $result)
+	// 		{
+	// 	    	if ($index == $result->$views_grouping_field) 
+	// 			{
+	// 				$date = null;
+	// 	      		$title = $result->$views_grouping_field;
+	// 	      		if ($views_grouping_field_title) 
+	// 				{ 
+	// 					$title = $result->$views_grouping_field_title; 
+	// 				}
+	// 				//var_dump((array)$result);
+	// 				if ( isset($result->field_field_date_due) && !empty($result->field_field_date_due) )
+	// 				{
+	// 					$date = $result->field_field_date_due[0]['rendered']['#markup'];
+	// 				}
+	// 	      		$views_grouping_field_links[] = array(
+	// 					'title' => $title,
+	// 					'date'  => $date,
+	// 					'path'  => drupal_get_path_alias('taxonomy/term/'.$result->$views_grouping_field),
+	// 					'count' => $count,
+	// 					'index' => $index
+	// 				);
+	// 	      		break;
+	// 	    	}
+	// 	  	}
+	// 	}
+	// 	if (!empty($views_grouping_field_links)) 
+	// 	{
+	// 	  	$variables['views_grouping_field_links'] = $views_grouping_field_links;
+	// 	}
+	// }
