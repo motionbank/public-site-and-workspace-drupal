@@ -29,6 +29,7 @@ stylesheets[all][]        = css/menu-blocks.css
 stylesheets[all][]        = css/project-pages.css
 stylesheets[all][]        = css/user-pages.css
 stylesheets[all][]        = css/todos.css
+stylesheets[all][]        = css/search-block.css
 
 stylesheets[print][]      = css/print.css
 
@@ -50,6 +51,7 @@ stylesheets-conditional[lte IE 6][all][]  = css/ie6.css
 ; Optionally add some JavaScripts to your theme.
 
 ;scripts[] = js/script.js
+scripts[] = js/switch-search-form.js
 
 
 
