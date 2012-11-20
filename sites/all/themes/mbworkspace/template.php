@@ -69,6 +69,12 @@
 					$variables['element']['#attributes']['class'] = array();
 				$variables['element']['#attributes']['class'][] = 'active-trail';
 			}
+			
+			if ( 'search' == $variables['element']['#href'] ) {
+				$variables['element']['#attributes']['class'][] = 'search-menu-link';
+			}
+			
+			//var_dump($variables);
 		}
 	}
 
