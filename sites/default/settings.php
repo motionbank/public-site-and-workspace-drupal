@@ -245,9 +245,9 @@ $databases = array (
     'default' => 
     array (
       'driver' => 'mysql',
-      'database' => 'motionbankd7',
-      'username' => 'motionbank',
-      'password' => 'motionbank',
+      'database' => 'motionbank',
+      'username' => 'root',
+      'password' => '',
       'host' => 'localhost',
       'port' => '',
       'prefix' => 'drupal_',
