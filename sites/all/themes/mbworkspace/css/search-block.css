@@ -1,6 +1,14 @@
-#block-search-form{
-	position:relative;
-	display:none;
-	text-align:right;
-	background-color:#FFFFFF;
+#block-search-form
+{
+	clear: both;
+	background: white;
+	height: 27px;
+	padding-left: 78.2%;
+	padding-top: 5px;
+}
+
+#block-system-main-menu, 
+#block-menu-secondary-menu
+{
+	margin-bottom:0px;
 }
