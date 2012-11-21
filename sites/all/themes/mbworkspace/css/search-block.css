@@ -1,18 +1,10 @@
 #block-search-form
 {
-	display: none;
 	clear: both;
 	background: white;
 	height: 27px;
 	padding-left: 78.2%;
-	 padding-top: 5px;
-}
-
-
-
-#header.search-form-visible
-{
-	height:161px;
+	padding-top: 5px;
 }
 
 #block-system-main-menu, 
