@@ -5,7 +5,7 @@ jQuery(function(){
 
 		jQuery('#header').toggleClass('search-form-visible');
 		if( jQuery('#header').hasClass('search-form-visible') ){
-			jQuery('#header').animate({height: "162px"},500);
+			jQuery('#header').animate({height: "169px"},500);
 		}
 		else{
 			jQuery('#header').animate({height: "133px"},500);
