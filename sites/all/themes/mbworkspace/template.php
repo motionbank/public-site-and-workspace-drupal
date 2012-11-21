@@ -33,14 +33,17 @@
 		//drupal_set_message(implode(',',$variables['theme_hook_suggestions']));
 	}
 	
-	/**
-	 *	Highlights main menu items based upon if the current page is in
-	 *	the menu tree of the menu that the item points to (they are redirects).
+	/*+
+	 *	Hook preprocess_menu_link()
 	 */
 	function mbworkspace_preprocess_menu_link ( &$variables )
 	{
+
+		/**
+		 *	Highlights main menu items based upon if the current page is in
+		 *	the menu tree of the menu that the item points to (they are redirects).
+		 */
 		$menus_to_highlight = array('main-menu','secondary-menu');
-		//drupal_set_message($variables['element']['#original_link']['menu_name']);
 		
 		if ( in_array( $variables['element']['#original_link']['menu_name'],
 		 			   $menus_to_highlight ) )
@@ -69,12 +72,17 @@
 					$variables['element']['#attributes']['class'] = array();
 				$variables['element']['#attributes']['class'][] = 'active-trail';
 			}
-			
-			if ( 'search' == $variables['element']['#href'] ) {
+		}
+
+		/**
+		 *	Add a class 'search-menu-link' to "search" in the secondary menu.
+		 */
+		if ( $variables['element']['#original_link']['menu_name'] == 'secondary-menu' )
+		{
+			if ( 'search' == $variables['element']['#href'] ) 
+			{
 				$variables['element']['#attributes']['class'][] = 'search-menu-link';
 			}
-			
-			//var_dump($variables);
 		}
 	}
 
