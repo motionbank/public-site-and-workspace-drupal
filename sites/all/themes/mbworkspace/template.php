@@ -38,7 +38,6 @@
 	 */
 	function mbworkspace_preprocess_menu_link ( &$variables )
 	{
-
 		/**
 		 *	Highlights main menu items based upon if the current page is in
 		 *	the menu tree of the menu that the item points to (they are redirects).
@@ -48,30 +47,36 @@
 		if ( in_array( $variables['element']['#original_link']['menu_name'],
 		 			   $menus_to_highlight ) )
 		{
-			$u = request_uri();
-			$u = preg_replace('!^/!i', '', $u);
-			$u2 = drupal_get_path_alias(
+			// var_dump( request_uri() ); // --> z.B. /motionbank/users
+			// var_dump( request_path() ); //--> alles nach motionbank/      also z.B.  users
+			// var_dump($base_path); //--> /motionbank/
+			
+			// pfade zu den einzelnen menüpunkten ohne motionbank/
+			$menu_paths = drupal_get_path_alias(
 				drupal_get_normal_path($variables['element']['#href'])
 			);
-			if ( $u2 == '<front>' ) $u2 = '';
 			
-			// $trail = menu_get_active_trail();
-			// 			foreach ( $trail as $item )
-			// 			{
-			// 				$link_path = drupal_get_normal_path($variables['element']['#href']);
-			// 				if ( $item['link_path'] == $link_path )
-			// 				{
-			// 					drupal_set_message($link_path);
-			// 				}
-			// 			}
+		    if ( $menu_paths == '<front>' ) $menu_paths = '';
 			
-			if ( $u == $u2 || (!empty($u2) && strpos($u, $u2) !== FALSE) )
+			// pfad zur aktuellen seite ohne die front-angabe (motionbank/)
+			$current_tab =  request_path();
+			
+			if( $current_tab == 'content/dashboard' ) $current_tab='';
+			
+			// nur die zeichen bis zum ersten / verwenden
+			if( stripos( $current_tab, '/') !== FALSE){
+				$current_tab = substr($current_tab, 0, stripos( $current_tab, '/'));
+			}
+			
+			// .s für pluralformen wie z.B. user / users
+			if ( $current_tab == $menu_paths || $current_tab."s" == $menu_paths)
 			{
 				if ( !isset($variables['element']['#attributes']['class']) || 	
 					 !is_array($variables['element']['#attributes']['class']) )
-					$variables['element']['#attributes']['class'] = array();
-				$variables['element']['#attributes']['class'][] = 'active-trail';
+						$variables['element']['#attributes']['class'] = array();
+						$variables['element']['#attributes']['class'][] = 'active-trail';
 			}
+			
 		}
 
 		/**
