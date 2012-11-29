@@ -45,6 +45,7 @@
 		 
 		$menus_to_highlight = array('main-menu','secondary-menu');
 		
+		
 		if ( in_array( $variables['element']['#original_link']['menu_name'],
 		 			   $menus_to_highlight ) )
 		{
