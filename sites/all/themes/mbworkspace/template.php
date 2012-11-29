@@ -42,6 +42,7 @@
 		 *	Highlights main menu items based upon if the current page is in
 		 *	the menu tree of the menu that the item points to (they are redirects).
 		 */
+		 
 		$menus_to_highlight = array('main-menu','secondary-menu');
 		
 		if ( in_array( $variables['element']['#original_link']['menu_name'],
@@ -56,14 +57,46 @@
 				drupal_get_normal_path($variables['element']['#href'])
 			);
 			
+			// bei startseite  mit leerer zeichenkette überschreiben
 		    if ( $menu_paths == '<front>' ) $menu_paths = '';
 			
-			// pfad zur aktuellen seite ohne die front-angabe (motionbank/)
+			// pfad zur aktuellen seite ohne front (motionbank/)
 			$current_tab =  request_path();
 			
+			// wenn ein node angesurft wurde
+			if( substr($current_tab, 0, 5) == 'node/' ){
+			
+				//sonderfall:  node/add/wiki?parent=834
+				if(substr($current_tab, 0, 9) == 'node/add/'){
+					$current_tab = substr($current_tab, 9, strlen($current_tab));
+				}
+				else{			
+					$tmp = drupal_lookup_path( 'alias', request_path());
+					
+					// für fälle wie z.B. node/18/edit oder node/18/talk
+					if($tmp == FALSE){
+						$tmp = substr($current_tab, 0, strrpos( $current_tab, '/'));	
+						$tmp = drupal_lookup_path( 'alias', $tmp);
+					}
+					$current_tab = $tmp;
+				}
+			}
+
+			// wenn ein user sich eingelogt hat, landet er auf der startseite == content/dashboard
 			if( $current_tab == 'content/dashboard' ) $current_tab='';
 			
-			// nur die zeichen bis zum ersten / verwenden
+			if( substr($current_tab, 0, 14) == 'comment/reply/'){
+				$nodeid = substr($current_tab, 14, strlen($current_tab));
+				
+				// für den fall comment auf comment: z.B. 660/374
+				if( stripos( $nodeid, '/') !== FALSE){
+					$nodeid = substr($nodeid, 0, stripos( $nodeid, '/'));
+				} 
+				
+				$current_tab = drupal_lookup_path('alias', 'node/'.$nodeid);
+				
+			}
+			// nur die zeichen bis zum ersten / verwenden für z.B. wiki, user, users etc.
 			if( stripos( $current_tab, '/') !== FALSE){
 				$current_tab = substr($current_tab, 0, stripos( $current_tab, '/'));
 			}
@@ -78,7 +111,7 @@
 			}
 			
 		}
-
+			
 		/**
 		 *	Add a class 'search-menu-link' to "search" in the secondary menu.
 		 */
