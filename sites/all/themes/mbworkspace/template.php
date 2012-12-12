@@ -33,6 +33,19 @@
 		//drupal_set_message(implode(',',$variables['theme_hook_suggestions']));
 	}
 	
+	function mbworkspace_preprocess_block(&$variables) 
+	{	
+		//get current group id
+		$group_node = og_context();
+		$group_id = $group_node->gid;
+		
+		if ($variables['block_html_id'] === 'block-block-7') {
+		
+			// replace manual added block html code with group_audience selection
+			$variables['content'] = str_replace('node/add/post','node/add/post?edit[group_audience][und]='.$group_id, $variables['content']);
+		} 
+	}
+	
 	/*+
 	 *	Hook preprocess_menu_link()
 	 */
@@ -124,6 +137,7 @@
 			}
 		}
 	}
+	
 
 	//	This is maybe old code from the Drupal-6 version, commented out to see if
 	//	errors surface at some point. Remove later. fjenett 20121119
