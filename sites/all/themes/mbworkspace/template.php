@@ -83,6 +83,9 @@
 				//sonderfall:  node/add/wiki?parent=834
 				if(substr($current_tab, 0, 9) == 'node/add/'){
 					$current_tab = substr($current_tab, 9, strlen($current_tab));
+					
+					// für "new project posts"
+					if($current_tab == 'post') $current_tab='project';
 				}
 				else{			
 					$tmp = drupal_lookup_path( 'alias', request_path());
