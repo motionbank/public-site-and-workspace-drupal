@@ -7,8 +7,14 @@
     padding-top: 12px;
 }
 
+#block-search-form form
+{
+	display:none;
+}
+
 #block-system-main-menu, 
 #block-menu-secondary-menu
 {
 	margin-bottom:0px;
 }
+
