@@ -105,3 +105,10 @@
  {
 	margin-bottom: 3em;
  }
+
+ .view-dashboard-slideshow-view .view-content
+ {
+    overflow: hidden;
+    position: relative;
+    display: block;
+ }
