@@ -105,3 +105,12 @@
  {
 	margin-bottom: 3em;
  }
+
+ /* hiding overflowing images in slideshow as long as JS has not started */
+ .view-dashboard-slideshow-view .view-content
+ {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    height: 304px;
+ }
