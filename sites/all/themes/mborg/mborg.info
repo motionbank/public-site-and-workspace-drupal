@@ -6,17 +6,23 @@
 ; lines in this file, you MUST refresh Drupal 7's cache by simply visiting the
 ; Appearance page at admin/appearance.
 
+
+
 ; The name, description and screenshot used for this theme on the Appearance
 ; page at admin/appearance.
 
-screenshot  = screenshot.png
-name        = Zen Sub-theme "Zen Base"
-description = This enables some common zen basics for other subthemes
+screenshot  = mborg.png
+name        = motionbank.org theme
+description = based on zen
+
+
 
 ; This theme is compatible with Drupal 7 core. And it is a sub-theme of Zen.
 
 core        = 7.x
 base theme  = zen
+
+
 
 ; This section adds CSS files to your theme. The media type is specified in
 ; the brackets. Typical CSS media types include "all", "screen", "print", and
@@ -29,7 +35,7 @@ base theme  = zen
 
 stylesheets[all][]        = css/html-reset.css
 stylesheets[all][]        = css/wireframes.css
-stylesheets[all][]        = css/layout-fixed.css
+stylesheets[all][]        = css/layout-liquid.css
 stylesheets[all][]        = css/page-backgrounds.css
 stylesheets[all][]        = css/tabs.css
 stylesheets[all][]        = css/pages.css
@@ -55,9 +61,17 @@ stylesheets[print][]      = css/print.css
 stylesheets-conditional[lte IE 7][all][]  = css/ie7.css
 stylesheets-conditional[lte IE 6][all][]  = css/ie6.css
 
+; supersized css
+stylesheets[all][]        = css/supersized.core.css
+
+
 ; Optionally add some JavaScripts to your theme.
 
 ;scripts[] = js/script.js
+
+; supersized js
+scripts[] = js/supersized.core.3.2.1.min.js
+
 
 ; The regions defined in Zen's default page.tpl.php file.  The name in
 ; brackets is the name of the region in the $page variable in the page.tpl.php
@@ -81,6 +95,8 @@ regions[bottom]         = Page bottom
 regions[page_top]       = Page top
 regions[page_bottom]    = Page bottom
 
+
+
 ; Various page elements output by the theme can be toggled on and off. The
 ; "features" control which of these check boxes display on the
 ; admin/appearance config page. This is useful for suppressing check boxes
@@ -96,6 +112,8 @@ features[] = comment_user_picture
 features[] = favicon
 features[] = main_menu
 features[] = secondary_menu
+
+
 
 ; Set the default values of settings on the theme-settings.php form.
 
