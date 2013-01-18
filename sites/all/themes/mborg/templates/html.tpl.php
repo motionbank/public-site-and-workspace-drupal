@@ -69,19 +69,11 @@
   <?php print $styles; ?>
   <?php print $scripts; ?>
   
-  <script type="text/javascript">
-			
-			jQuery(function($){
-				
-				$.supersized({
-					slides  :  	[ {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-1.jpg', title : 'Image Credit: Maria Kazvan'} ]
-				});
-		    });
-		    
-</script>
-  
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
+	
+	<div id="bgimages"></div>
+
   <div id="skip-link">
     <a href="#<?php print $jump_link_target; ?>" class="element-invisible element-focusable"><?php print t('Jump to Navigation'); ?></a>
   </div>
