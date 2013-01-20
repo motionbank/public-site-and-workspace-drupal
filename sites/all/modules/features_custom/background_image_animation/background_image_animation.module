@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Background Image Animation feature.
- */
-
-include_once 'background_image_animation.features.inc';
