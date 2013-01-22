@@ -31,3 +31,9 @@
 <script type="text/javascript">
 	var moba_background_imgs = [<?php print $rows; ?>];
 </script>
+
+<!-- TO DO
+<style>
+  #bgimage-front { background-image: url( <?php ?> ); }
+</style>
+--> 
