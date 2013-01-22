@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/modules/rdf
+END
+rdf.module
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/modules/rdf/rdf.module
+END
+rdf.install
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/66/trunk/modules/rdf/rdf.install
+END
+rdf.info
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/modules/rdf/rdf.info
+END
+rdf.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/66/trunk/modules/rdf/rdf.api.php
+END
+rdf.test
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/modules/rdf/rdf.test
+END

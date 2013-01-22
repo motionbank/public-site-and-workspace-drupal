@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/modules/poll
+END
+poll.info
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/modules/poll/poll.info
+END
+poll.tokens.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/66/trunk/modules/poll/poll.tokens.inc
+END
+poll-bar--block.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/66/trunk/modules/poll/poll-bar--block.tpl.php
+END
+poll.test
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/modules/poll/poll.test
+END
+poll-vote.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/modules/poll/poll-vote.tpl.php
+END
+poll-results.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/modules/poll/poll-results.tpl.php
+END
+poll.module
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/modules/poll/poll.module
+END
+poll.install
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/modules/poll/poll.install
+END
+poll-bar.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/66/trunk/modules/poll/poll-bar.tpl.php
+END
+poll-rtl.css
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/58/trunk/modules/poll/poll-rtl.css
+END
+poll.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/66/trunk/modules/poll/poll.pages.inc
+END
+poll.css
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/66/trunk/modules/poll/poll.css
+END
+poll-results--block.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/66/trunk/modules/poll/poll-results--block.tpl.php
+END

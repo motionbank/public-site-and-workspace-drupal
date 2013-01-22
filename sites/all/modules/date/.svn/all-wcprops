@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/sites/all/modules/date
+END
+date_elements.inc
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/82/trunk/sites/all/modules/date/date_elements.inc
+END
+date.install
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/sites/all/modules/date/date.install
+END
+INSTALL.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/82/trunk/sites/all/modules/date/INSTALL.txt
+END
+date_repeat.inc
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/82/trunk/sites/all/modules/date/date_repeat.inc
+END
+date.tokens.inc
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/82/trunk/sites/all/modules/date/date.tokens.inc
+END
+date.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/82/trunk/sites/all/modules/date/date.js
+END
+date_admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/sites/all/modules/date/date_admin.inc
+END
+date.devel_generate.inc
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/82/trunk/sites/all/modules/date/date.devel_generate.inc
+END
+date_admin.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/82/trunk/sites/all/modules/date/date_admin.js
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/82/trunk/sites/all/modules/date/LICENSE.txt
+END
+date.module
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/sites/all/modules/date/date.module
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/sites/all/modules/date/CHANGELOG.txt
+END
+date.info
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/sites/all/modules/date/date.info
+END
+date.field.inc
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/sites/all/modules/date/date.field.inc
+END
+date.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/sites/all/modules/date/date.api.php
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/82/trunk/sites/all/modules/date/README.txt
+END
+date.theme
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/sites/all/modules/date/date.theme
+END
