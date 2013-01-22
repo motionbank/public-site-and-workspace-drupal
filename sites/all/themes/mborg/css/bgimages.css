@@ -1,4 +1,24 @@
 #bgimages {
+ 
+}
+
+#bgimage-front {
+  z-index: -900;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#bgimage-back {
   z-index: -1000;
   -moz-background-size: cover;
   background-size: cover;

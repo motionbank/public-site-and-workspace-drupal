@@ -72,7 +72,10 @@
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
 	
-	<div id="bgimages"></div>
+  <div id="bgimages">
+    <div id="bgimage-back"></div>
+    <div id="bgimage-front"></div>
+  </div>
 
   <div id="skip-link">
     <a href="#<?php print $jump_link_target; ?>" class="element-invisible element-focusable"><?php print t('Jump to Navigation'); ?></a>
