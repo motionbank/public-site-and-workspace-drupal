@@ -2,42 +2,38 @@ jQuery(function(){
 
   var max_bgImages = moba_background_imgs.length;
   
-  if(max_bgImages > 1){
+  if ( max_bgImages > 1 ) {
 
     var current_bgImage = 0;
     var bgImages = jQuery('#bgimages');
-    var bgImage_front = jQuery('#bgimage-front');
     var bgImage_back = jQuery('#bgimage-back');
+    var bgImage_front = jQuery('#bgimage-front');
 
     bgImage_front.css('background-image', 'url(' + moba_background_imgs[current_bgImage] + ')');
-    bgImage_back.css('background-image', 'url(' + moba_background_imgs[current_bgImage+1] + ')');
-    
-    
+
+    var nextImage = current_bgImage + 1;
+    nextImage %= max_bgImages;
+    bgImage_back.css('background-image', 'url(' + moba_background_imgs[nextImage] + ')');
     
     function changebackground() {
 
       bgImage_front.fadeOut('slow',function(){
         
-        if(current_bgImage < max_bgImages-1){
-          bgImage_front.css('background-image', 'url(' + moba_background_imgs[current_bgImage+1] + ')');
-          bgImage_front.show();
-          bgImage_back.css('background-image', 'url(' + moba_background_imgs[current_bgImage+2] + ')');
+        var nextImage = current_bgImage + 1;
+        nextImage %= max_bgImages;
 
-          current_bgImage = current_bgImage+1;
-        }
-        else{
-          current_bgImage = 0;
-          
-          bgImage_front.css('background-image', 'url(' + moba_background_imgs[current_bgImage] + ')');
-          bgImage_front.show();
-          bgImage_back.css('background-image', 'url(' + moba_background_imgs[current_bgImage+1] + ')');
-          
-          current_bgImage = current_bgImage+1;
-        }
+        bgImage_front.css('background-image', 'url(' + moba_background_imgs[nextImage] + ')');
+        bgImage_front.show();
+        
+        current_bgImage = nextImage;
+
+        nextImage++;
+        nextImage %= max_bgImages;
+        bgImage_back.css('background-image', 'url(' + moba_background_imgs[nextImage] + ')');
+
       });
-   } 
-   
-   setInterval( changebackground, 1500 );
+      setTimeout( changebackground, 1500 );
+   }
    changebackground();
   }
 });
