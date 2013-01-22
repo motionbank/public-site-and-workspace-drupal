@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/86/trunk/sites/all/modules/views/modules/locale
+END
+views_handler_argument_locale_group.inc
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/sites/all/modules/views/modules/locale/views_handler_argument_locale_group.inc
+END
+views_handler_filter_node_language.inc
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/86/trunk/sites/all/modules/views/modules/locale/views_handler_filter_node_language.inc
+END
+views_handler_field_locale_group.inc
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/sites/all/modules/views/modules/locale/views_handler_field_locale_group.inc
+END
+views_handler_filter_locale_group.inc
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/sites/all/modules/views/modules/locale/views_handler_filter_locale_group.inc
+END
+views_handler_argument_locale_language.inc
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/sites/all/modules/views/modules/locale/views_handler_argument_locale_language.inc
+END
+views_handler_field_locale_link_edit.inc
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/sites/all/modules/views/modules/locale/views_handler_field_locale_link_edit.inc
+END
+views_handler_field_locale_language.inc
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/sites/all/modules/views/modules/locale/views_handler_field_locale_language.inc
+END
+views_handler_filter_locale_language.inc
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/sites/all/modules/views/modules/locale/views_handler_filter_locale_language.inc
+END
+views_handler_filter_locale_version.inc
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/sites/all/modules/views/modules/locale/views_handler_filter_locale_version.inc
+END
+views_handler_field_node_language.inc
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/86/trunk/sites/all/modules/views/modules/locale/views_handler_field_node_language.inc
+END

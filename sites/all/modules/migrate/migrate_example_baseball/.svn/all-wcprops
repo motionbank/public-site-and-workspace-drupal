@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/124/trunk/sites/all/modules/migrate/migrate_example_baseball
+END
+migrate_example_baseball.features.field.inc
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/124/trunk/sites/all/modules/migrate/migrate_example_baseball/migrate_example_baseball.features.field.inc
+END
+migrate_example_baseball.info
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/124/trunk/sites/all/modules/migrate/migrate_example_baseball/migrate_example_baseball.info
+END
+migrate_example_baseball.migrate.inc
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/124/trunk/sites/all/modules/migrate/migrate_example_baseball/migrate_example_baseball.migrate.inc
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/124/trunk/sites/all/modules/migrate/migrate_example_baseball/README.txt
+END
+migrate_example_baseball.module
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/124/trunk/sites/all/modules/migrate/migrate_example_baseball/migrate_example_baseball.module
+END
+migrate_example_baseball.features.inc
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/124/trunk/sites/all/modules/migrate/migrate_example_baseball/migrate_example_baseball.features.inc
+END
+migrate_example_baseball.install
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/124/trunk/sites/all/modules/migrate/migrate_example_baseball/migrate_example_baseball.install
+END

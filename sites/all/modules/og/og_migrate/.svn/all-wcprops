@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/sites/all/modules/og/og_migrate
+END
+og_migrate.module
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/sites/all/modules/og/og_migrate/og_migrate.module
+END
+og_migrate.install
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/82/trunk/sites/all/modules/og/og_migrate/og_migrate.install
+END
+og_migrate.info
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/85/trunk/sites/all/modules/og/og_migrate/og_migrate.info
+END
+og_migrate.test
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/82/trunk/sites/all/modules/og/og_migrate/og_migrate.test
+END
