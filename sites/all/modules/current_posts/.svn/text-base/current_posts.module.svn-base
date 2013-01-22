@@ -1,0 +1,21 @@
+<?php
+/**
+* @file
+* A block module that displays recent blog and forum posts.
+*/
+
+function current_posts_help($path, $arg) {
+	switch($path) {
+		case "admin/help#current_posts":
+			return '<p>' . t("Displays links to nodes created on this date") . '</p>';
+			break;
+	}
+}
+
+function current_posts_block_info() {
+	$blocks['current_posts'] = array(
+		'info' => t('Current posts'), 
+		'cache' => DRUPAL_CACHE_PER_ROLE,
+	);
+	return $blocks;
+}

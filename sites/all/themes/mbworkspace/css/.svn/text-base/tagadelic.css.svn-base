@@ -1,0 +1,50 @@
+/* tagadelic block */
+
+#block-tagadelic-1
+{
+  background-color: #E7EAED;
+  padding: 10px;
+}
+
+#block-tagadelic-1 .title
+{
+  display: none;
+}
+
+#block-tagadelic-1 a.level1
+{
+  font-size: 0.6em;
+}
+
+#block-tagadelic-1 a.level2
+{
+  font-size: 0.7em;
+}
+
+#block-tagadelic-1 a.level3
+{
+  font-size: 0.8em;
+}
+
+#block-tagadelic-1 a.level4
+{
+  font-size: 0.9em;
+}
+
+#block-tagadelic-1 a.level5
+{
+  font-size: 1em;
+}
+
+#block-tagadelic-1 a.level6
+{
+  font-size: 1.1em;
+}
+
+#block-tagadelic-1 .more-link
+{
+  padding-top: 6px;
+  text-align: left;
+}
+
+/* end tagadelic block */
