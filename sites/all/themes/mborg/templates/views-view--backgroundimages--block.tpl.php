@@ -26,14 +26,17 @@
  *
  * @ingroup views_templates
  */
- 
+
 ?>
 <script type="text/javascript">
 	var moba_background_imgs = [<?php print $rows; ?>];
 </script>
 
-<!-- TO DO
 <style>
-  #bgimage-front { background-image: url( <?php ?> ); }
+  #bgimage-front {
+  	background-image: url('<?php 
+  	/* See mborg_preprocess_views_view() in template.php */
+  	print $mborg_backgroundimages_first_image; ?>'); 
+}
 </style>
---> 
+

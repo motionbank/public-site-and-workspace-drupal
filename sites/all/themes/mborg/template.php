@@ -134,9 +134,16 @@ function mborg_preprocess_comment(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("block" in this case.)
  */
-/* -- Delete this line if you want to use this function
-function mborg_preprocess_block(&$variables, $hook) {
-  // Add a count to all the blocks in the region.
-  $variables['classes_array'][] = 'count-' . $variables['block_id'];
+
+// function mborg_preprocess_block(&$variables, $hook) {
+// }
+
+function mborg_preprocess_views_view ( &$variables )
+{
+  if ( $variables['name'] === 'backgroundimages' )
+  {
+    $variables['mborg_backgroundimages_first_image'] = file_create_url(
+      $variables['view']->result[0]->field_field_image[0]['rendered']['#file']->uri
+    );
+  }
 }
-// */
