@@ -1,0 +1,116 @@
+
+ .front .submitted,
+ .front .links
+ {
+   display: none;
+ }
+
+ .front .block-views .detailed-info,
+ .view-og-nodes .detailed-info
+ {
+	float: right;
+    color: #ADAFB2;
+    font-size: 0.8em;
+ }
+ 
+ .front .views-row,
+ .view-og-nodes .views-row,
+ .section-taxonomy .taxonomy-node,
+ .section-category .taxonomy-node,
+ .node-type-wiki .book-navigation .menu li,
+ .view-milestones-block ul li
+ {
+   border-bottom: 1px solid #ADAFB2;
+   padding: 8px 0px 8px 12px;
+ }
+ 
+ .front .views-row-first,
+ .view-og-nodes .views-row-first,
+ .section-taxonomy .first .taxonomy-node ,
+ .section-category .first .taxonomy-node,
+ .node-type-wiki .book-navigation .menu,
+ .view-milestones-block ul
+ {
+   list-style: none;
+   border-top: 1px solid #ADAFB2;
+ }
+ 
+ .view-og-nodes .view-header
+ {
+   padding-top: 1em;
+   margin-bottom: 1em;
+ }
+ 
+ .view-dashboard .views-row .content-type-post a,
+ .view-dashboard .views-row .content-type-wiki-page a,
+ .view-dashboard .views-row .content-type-project a,
+ .view-dashboard-comments .views-row a,
+ .section-taxonomy .taxonomy-node .node-body a,
+ .section-category .taxonomy-node .node-body a
+ {
+   font-size: 13px;
+ }
+ 
+ .view-dashboard .views-row .content-type-post a
+ {
+   color: #4D621F;
+ }
+ 
+ .view-dashboard .views-row .content-type-wiki-page a
+ {
+   color: #38648E;
+ }
+ 
+ .view-dashboard .views-row .content-type-project a
+ {
+   color: #722E15;
+ }
+
+.view-image-teaser-block .views-row {
+    border: 0px solid transparent;
+    float: left;
+    height: 110px;
+    width: 110px;
+ }
+
+.view-image-teaser-block {
+    overflow: auto;
+  }
+ 
+ .front .block-views h2.block-title
+ {
+   margin-bottom: 1em;
+ }
+
+ .front .block-views
+ {
+	margin-bottom: 2em;
+ }
+
+ .view-milestones-block ul
+ {
+	margin: 0px;
+	padding: 0px;
+ }
+
+ .view-milestones-block ul li .date-display-single
+ {
+	display: inline-block;
+	width: 200px;
+	color: #777;
+	font-style: italic;
+ }
+
+ .view-milestones-block
+ {
+	margin-bottom: 3em;
+ }
+
+ /* hiding overflowing images in slideshow as long as JS has not started */
+ .view-dashboard-slideshow-view .view-content
+ {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    height: 304px;
+ }

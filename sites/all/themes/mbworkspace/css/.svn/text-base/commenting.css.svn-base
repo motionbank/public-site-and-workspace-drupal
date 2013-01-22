@@ -1,0 +1,145 @@
+/* comments, commenting */
+  
+  .section-comment .region-content .node .content
+  {
+    display: none;
+  }
+  
+  .section-comment .region-content .node h2.title
+  {
+    padding-top: 1em;
+  }
+  
+  .region-content #comments
+  {
+    margin: 0px;
+    margin-top: 2em;
+    /*padding: 10px;
+    background-color: #EDEFF1;*/
+  }
+  
+  .region-content #comments h2.title
+  {
+    padding-bottom: 1em;
+  }
+  
+  .region-content .comment /* reply page */
+  {
+    margin-top: 1em;
+  }
+  
+  .region-content #comments .comment
+  {
+    margin-top: 0px;
+  }
+  
+  .region-content .comment
+  {
+    border-top: 1px solid #939699;
+  }
+  
+  .region-content #comments .comment
+  {
+    border-top: 0px solid #939699;
+  }
+  
+  .region-content #comments div.first
+  {
+    border-top: 1px solid #939699;
+  }
+  
+  .region-content .comment
+  {
+    border-bottom: 1px solid #939699;
+    background-color: #F5F6F8;
+    padding: 10px;
+  }
+  
+  .region-content .comment .new
+  {
+    padding-left: 5px;
+    float: right;
+  }
+  
+  .region-content .comment .picture
+  {
+    display: none;
+  }
+  
+  .region-content .comment .submitted,
+  .region-content .comment .new
+  {
+    font-style: italic;
+    float: right;
+    font-size: 0.8em;
+    padding: 6px;
+    padding-right: 0px;
+  }
+  
+  .region-content .comment .new
+  {
+    font-weight: bold;
+  }
+  
+  .region-content .comment .links
+  {
+    margin: 0px;
+    display: none;
+    float: right;
+  }
+  
+  .region-content .comment:hover .links
+  {
+     display: block;
+  }
+  
+  .region-content .comment .links li
+  {
+    display: inline;
+    float: right;
+    padding: 3px;
+    background-color: #939699;
+    margin-left: 5px;
+  }
+  
+  .region-content .comment .links li a
+  {
+    color: white;
+  }
+  
+  .region-content #comments .last
+  {
+    margin-bottom: 2em;
+  }
+  
+  .feed-icons
+  {
+    display: none;
+  }
+  
+  .section-comment .region-content .box h2,
+  .section-project .region-content .box h2,
+  .node-type-wiki .region-content .box h2
+  {
+    /*display: none;*/
+  }
+  
+  .region-content #comments .ckeditor_links,
+  .section-comment .ckeditor_links
+  {
+    display: block;
+    padding-bottom: 1em;
+  }
+  
+  .node-type-wiki .region-content .links li.talk_add
+  {
+    display: none;
+  }
+
+  .comment-form #edit-author--2,
+  .comment-form .form-item-subject
+  {
+	display: none;
+}
+  
+  /* end comments, commenting */

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/82/trunk/sites/all/modules/cck
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/69/trunk/sites/all/modules/cck/LICENSE.txt
+END
+cck.module
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/69/trunk/sites/all/modules/cck/cck.module
+END
+cck.install
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/69/trunk/sites/all/modules/cck/cck.install
+END
+cck.info
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/skyliner/Motion-Bank-Website-Drupal.git/!svn/ver/69/trunk/sites/all/modules/cck/cck.info
+END
