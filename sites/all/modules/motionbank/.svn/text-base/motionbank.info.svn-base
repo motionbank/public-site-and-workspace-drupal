@@ -1,9 +1,0 @@
-; Motion Bank module
-; fjenett - 2011-07
-
-name = MotionBank
-description = "Provides blocks and mods for the MB workspace"
-core = 7.x
-
-files[] = motionbank.module
-
