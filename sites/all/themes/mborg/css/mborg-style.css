@@ -4,6 +4,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: white;
+  letter-spacing: 0.25em;
 }
 
 h1 {
@@ -57,4 +58,8 @@ a:link, a:hover, a:visited, a:active {
 
 .menufont:hover {
   color: #00E7EE;
+}
+
+.region-footer {
+  margin-top: 200px;
 }

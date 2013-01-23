@@ -59,7 +59,16 @@
 
 #block-menu-menu-block-menu
 {
+	overflow: auto;
+}
 
+#block-menu-menu-block-menu * {
+	display: none;
+}
+
+#block-menu-menu-block-menu .content,
+#block-menu-menu-block-menu .content * {
+	display: block;
 }
 
 #block-menu-menu-block-menu ul,
@@ -76,4 +85,13 @@
 	float: left;
 	width: 374px;
 	border: 1px solid white;
+	margin-right: 32px;
+	margin-bottom: 32px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	letter-spacing: 0.25em;
+	padding-top: 250px;
+	padding-bottom: 250px;
 }
