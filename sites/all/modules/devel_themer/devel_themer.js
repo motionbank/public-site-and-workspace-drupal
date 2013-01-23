@@ -1,24 +1,10 @@
 
 (function ($) {
-  
+
   $(document).ready(function () {
     lastObj = false;
-    thmrSpanified = false;
     strs = Drupal.settings.thmrStrings;
     $('body').addClass("thmr_call").attr("id", "thmr_" + Drupal.settings.page_id);
-    $('[thmr]')
-    .hover(
-      function () {
-        if (themerEnabled && this.parentNode.nodeName != 'BODY' && $(this).attr('thmr_curr') != 1) {
-          $(this).css('outline', 'red solid 1px');
-        }
-      },
-      function () {
-        if (themerEnabled && $(this).attr('thmr_curr') != 1) {
-          $(this).css('outline', 'none');
-        }
-      }
-    );
 
     var themerEnabled = 0;
     var themerToggle = function () {
@@ -30,15 +16,25 @@
         if (lastObj != false) {
           $(lastObj).css('outline', '3px solid #999');
         }
-        if (!thmrSpanified) {
-          spanify();
-        }
+        $('[data-thmr]').hover(
+          function () {
+            if (this.parentNode.nodeName != 'BODY' && $(this).attr('thmr_curr') != 1) {
+              $(this).css('outline', 'red solid 1px');
+            }
+          },
+          function () {
+            if ($(this).attr('thmr_curr') != 1) {
+              $(this).css('outline', 'none');
+            }
+          }
+        );
       }
       else {
         document.onclick = null;
         if (lastObj != false) {
           $(lastObj).css('outline', 'none');
         }
+        $('[data-thmr]').unbind('mouseenter mouseleave');
       }
     };
     $(Drupal.settings.thmr_popup)
@@ -61,7 +57,7 @@
       themerToggle();
     });
   });
-  
+
   /**
    * Known issue: IE does NOT support outline css property.
    * Solution: use another browser
@@ -89,23 +85,6 @@
     return false;
   }
 
-  function spanify() {
-    $('span[thmr]')
-      .each(function () {
-        // make spans around block elements into block elements themselves
-        var kids = $(this).children();
-        for(i=0;i<kids.length;i++) {
-          //console.log(kids[i].style.display);
-          if ($(kids[i]).css('display') != 'inline' && $(kids[i]).is('DIV, P, ADDRESS, BLOCKQUOTE, CENTER, DIR, DL, FIELDSET, FORM, H1, H2, H3, H4, H5, H6, HR, ISINDEX, MENU, NOFRAMES, NOSCRIPT, OL, PRE, TABLE, UL,  DD, DT, FRAMESET, LI, TBODY, TD, TFOOT, TH, THEAD, TR')) {
-            $(this).css('display', 'block');
-          }
-        }
-      });
-    thmrSpanified = true;
-    // turn off the throbber
-    //$('#themer-toggle img.throbber').hide();
-  }
-
   function thmrInPop(obj) {
     //is the element in either the popup box or the toggle div?
     if (obj.id == "themer-popup" || obj.id == "themer-toggle") return true;
@@ -127,16 +106,16 @@
   }
 
   /**
-   * Find all parents with @thmr"
+   * Find all parents with @data-thmr"
    */
   function thmrFindParents(obj) {
     var parents = new Array();
-    if ($(obj).attr('thmr') != undefined) {
+    if ($(obj).attr('data-thmr') != undefined) {
       parents[parents.length] = obj;
     }
     if (obj && obj.parentNode) {
       while ((obj = obj.parentNode) && (obj.nodeType != 9)) {
-        if ($(obj).attr('thmr') != undefined) {
+        if ($(obj).attr('data-thmr') != undefined) {
           parents[parents.length] = obj;
         }
       }
@@ -185,7 +164,7 @@
    */
   function thmrRebuildPopup(objs) {
     // rebuild the popup box
-    var id = objs[0].getAttribute('thmr').split(' ').reverse()[0];
+    var id = objs[0].getAttribute('data-thmr').split(' ').reverse()[0];
     // vars is the settings array element for this theme item
     var vars = Drupal.settings[id];
     // strs is the translatable strings
@@ -212,14 +191,14 @@
     var parents = strs.parents +' <span class="parents">';
     var isFirst = true;
     for (i = 0; i < objs.length; i++) {
-      thmr_ids = objs[i].getAttribute('thmr').split(' ').reverse();
+      thmr_ids = objs[i].getAttribute('data-thmr').split(' ').reverse();
       for (j = (i==0?1:0); j < thmr_ids.length; j++) {
         var thmrid = thmr_ids[j];
         var pvars = Drupal.settings[thmrid];
         parents += (isFirst) ? '' : '&lt; ';
         // populate the parents
         // each parent is wrapped with a span containing a 'trig' attribute with the id of the element it represents
-        parents += '<span class="parent" trig="'+ objs[i].getAttribute('thmr') +'">'+ pvars.name +'</span> ';
+        parents += '<span class="parent" trig="'+ objs[i].getAttribute('data-thmr') +'">'+ pvars.name +'</span> ';
         isFirst = false;
       }
     }
@@ -229,7 +208,7 @@
     $('#themer-popup span.parent')
       .click(function() {
         var thmr_id = $(this).attr('trig');
-        var thmr_obj = $('[thmr = "' + thmr_id + '"]')[0];
+        var thmr_obj = $('[data-thmr = "' + thmr_id + '"]')[0];
         themerDoIt(thmr_obj);
       })
       .hover(

@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * The name of the attribute used to store the thmr id.
+ */
+define ('DEVEL_THEMER_ATTRIBUTE', 'data-thmr');
+
+/**
  * Implements hook_menu().
  */
 function devel_themer_menu() {
@@ -14,9 +19,10 @@ function devel_themer_menu() {
     'access arguments' => array('administer site configuration'),
     'type' => MENU_NORMAL_ITEM,
   );
-  $items['devel_themer/variables'] = array(
+  $items['devel_themer/variables/%/%'] = array(
     'title' => 'Theme Development AJAX variables',
     'page callback' => 'devel_themer_ajax_variables',
+    'page arguments' => array(2, 3),
     'delivery callback' => 'ajax_deliver',
     'access arguments' => array('access devel information'),
     'type' => MENU_CALLBACK,
@@ -198,17 +204,24 @@ function devel_themer_module_implements_alter(&$implementations, $hook) {
  * @param string $marker
  */
 function devel_themer_inject_markers($html, $marker) {
+  if (!module_exists('simplehtmldom')) {
+    drupal_set_message(t('<a href="http://drupal.org/project/simplehtmldom">Simplehtmldom</a> module is missing and required by Theme developer.'), 'error', FALSE);
+    return $html;
+  }
+
   $html_dom = new simple_html_dom();
   $html_dom->load($html);
   foreach ($html_dom->root->nodes as $element) {
     if ($element->nodetype == HDOM_TYPE_TEXT) {
-      $element->innertext = "<span thmr='$marker' class='devel-themer-wrapper'>{$element->innertext}</span>";
+      if (trim($element->innertext) !== '') {
+        $element->innertext = "<span " . DEVEL_THEMER_ATTRIBUTE . "='$marker' class='devel-themer-wrapper'>{$element->innertext}</span>";
+      }
     }
-    elseif ($element->hasAttribute('thmr')) {
-      $element->setAttribute('thmr', "$marker " . $element->getAttribute('thmr'));
+    elseif ($element->hasAttribute(DEVEL_THEMER_ATTRIBUTE)) {
+      $element->setAttribute(DEVEL_THEMER_ATTRIBUTE, "$marker " . $element->getAttribute(DEVEL_THEMER_ATTRIBUTE));
     }
     else {
-      $element->setAttribute('thmr', $marker);
+      $element->setAttribute(DEVEL_THEMER_ATTRIBUTE, $marker);
     }
   }
   $html = (string)$html_dom;
@@ -226,6 +239,9 @@ function devel_themer_catch_function() {
   $hook = $trace[1]['args'][0];
   if (sizeof($trace[1]['args']) > 1) {
     $variables =  $trace[1]['args'][1];
+    if (!is_array($variables)) {
+      watchdog('devel_themer', 'Variables should be passed as an associative array to the theme hook !hook.', array('!hook' => is_array($hook) ? implode(', ', $hook) : $hook), WATCHDOG_ERROR);
+    }
   }
   else {
     $variables = array();
@@ -442,7 +458,7 @@ function devel_themer_theme_twin($hook, $variables) {
   }
 
   // Add the themer attribute here
-  $variables['attributes_array']['thmr'] = $thmr_key;
+  $variables['attributes_array'][DEVEL_THEMER_ATTRIBUTE] = $thmr_key;
 
   // Invoke the variable processors, if any. The processors may specify
   // alternate suggestions for which hook's template/function to use. If the
