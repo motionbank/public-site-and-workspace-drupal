@@ -9,6 +9,7 @@
  		item = jQuery(item);
  		var item_anchor = jQuery('a',item);
  		var img_css_url = 'url(\'' + item.data('preview-image-src') + '\')';
+ 		// hover states
  		item.hover(function(){
  			item_anchor.css({
  				'background-image':img_css_url
@@ -18,5 +19,8 @@
  				'background-image':'none'
  			});
  		});
+ 		// preload image(s)
+ 		var tmpImg = new Image();
+ 		tmpImg.src = item.data('preview-image-src');
  	});
  });
