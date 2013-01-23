@@ -36,6 +36,6 @@ jQuery(function(){
         tmpImg.src = moba_background_imgs[nextImage];
       });
    }
-   changebackground();
+   setTimeout( changebackground, 10 * 1000 );
   }
 });
