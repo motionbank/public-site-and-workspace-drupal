@@ -1,3 +1,36 @@
 * {
   font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+.menufont{
+  font-weight:700;
+  font-size: 12px;
+}
+
+.menufont:hover{
+  color: #00E7EE;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 49px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+p{
+  font-weight: 400;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: underline;
 }
