@@ -1,0 +1,79 @@
+/* Styling for #block-menu-menu-block-menu only */
+
+#block-system-main
+{
+	display: none;
+}
+
+/* --- i18n menu / language switcher--- */
+
+#block-locale-language
+{
+	position: fixed;
+	left: 0px;
+	top: 76px;
+	height: 19px;
+	z-index: 1000;
+	background-color: rgb(51,51,51);
+	color: white;
+	font-size: 11px;
+	letter-spacing: 0.25em;
+}
+
+#block-locale-language {
+	transform-origin: 0% 100%;
+	transform: rotate(90deg);
+	-ms-transform-origin: 0% 100%;
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-webkit-transform-origin: 0% 100%;
+	-webkit-transform: rotate(90deg); /* Safari and Chrome */
+	-o-transform-origin: 0% 100%;
+	-o-transform: rotate(90deg); /* Opera */
+	-moz-transform-origin: 0% 100%;
+	-moz-transform: rotate(90deg); /* Firefox */
+}
+
+#block-locale-language a
+{
+	color: white;
+	text-decoration: none;
+}
+
+#block-locale-language * {
+	display: none;
+}
+
+#block-locale-language .content,
+#block-locale-language .content * {
+	display: block;
+	padding-left: 0.25em;
+}
+
+#block-locale-language .content li.active {
+	display: none;
+}
+
+
+
+/* --- page blocks menu --- */
+
+#block-menu-menu-block-menu
+{
+
+}
+
+#block-menu-menu-block-menu ul,
+#block-menu-menu-block-menu li
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#block-menu-menu-block-menu li a
+{
+	display: block;
+	float: left;
+	width: 374px;
+	border: 1px solid white;
+}

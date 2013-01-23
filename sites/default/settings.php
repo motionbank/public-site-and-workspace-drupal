@@ -245,12 +245,18 @@ $databases = array (
     'default' => 
     array (
       'driver' => 'mysql',
-      'database' => 'motionbank',
-      'username' => 'root',
-      'password' => '',
+      'database' => 'motionbankd7',
+      'username' => 'motionbank',
+      'password' => 'motionbank',
       'host' => 'localhost',
       'port' => '',
-      'prefix' => 'drupal_',
+      'prefix' => array(
+        'default'   => 'main_',
+        'users'     => 'drupal_',
+        'sessions'  => 'drupal_',
+        'role'      => 'drupal_',
+        'authmap'   => 'drupal_',
+      ),
     ),
   ),
 );

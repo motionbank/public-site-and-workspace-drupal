@@ -1,15 +1,9 @@
-* {
+body {
   font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
   color: white;
-}
-
-.menufont{
-  font-weight:700;
-  font-size: 12px;
-}
-
-.menufont:hover{
-  color: #00E7EE;
 }
 
 h1 {
@@ -22,15 +16,45 @@ h2 {
   font-size: 20px;
 }
 
-p{
+h1.title {
+  text-transform: uppercase;
+}
+
+p {
   font-weight: 400;
   font-size: 12px;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-a {
-  text-decoration: underline;
+a:link, a:hover, a:visited, a:active {
+  color: black;
+}
+
+#page-wrapper {
+  position: absolute;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#page-wrapper {
+  padding: 47px 47px 0px 47px;
+}
+
+.toolbar #page-wrapper {
+  top: 30px;
+}
+
+.menufont {
+  font-weight:700;
+  font-size: 12px;
+}
+
+.menufont:hover {
+  color: #00E7EE;
 }
