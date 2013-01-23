@@ -15,7 +15,7 @@ jQuery(function(){
     
     function changebackground() {
 
-      bgImage_front.fadeOut( 'slow', function(){
+      bgImage_front.fadeOut( 3000, function(){
         
         var nextImage = current_bgImage + 1;
         nextImage %= max_bgImages;
