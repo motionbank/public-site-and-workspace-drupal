@@ -3,12 +3,20 @@
 /* --- block system main / main content --- */
 
 #block-system-main {
-	width: 500px;
 	background-color: white;
 	margin-right: 32px;
 	padding: 15px;
 	float: left;
 }
+
+#block-system-main {
+	width: 500px;
+}
+
+/*
+#content h1.title,
+#content .section .tabs
+*/
 
 /* --- i18n menu / language switcher--- */
 

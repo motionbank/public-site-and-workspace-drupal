@@ -156,6 +156,7 @@ function mborg_menu_link ( array $variables )
 {
   $element = &$variables['element'];
   $original_link = &$variables['element']['#original_link'];
+  $active_trail = menu_get_active_trail();
 
   if ( $original_link['menu_name'] === 'menu-block-menu' ) 
   {
@@ -164,6 +165,13 @@ function mborg_menu_link ( array $variables )
     {
       $path = drupal_lookup_path( 'source', $original_link['link_path'] );
       $path = $path === FALSE ? $original_link['link_path'] : $path;
+
+      // hide block if it is the current page
+      if ( __menu_link_active( $active_trail, $path ) )
+      {
+        $element['#attributes']['class'][] = 'element-hidden';
+      }
+
       $nid = str_replace('node/', '', $path);
       $node = node_load( $nid );
 
@@ -188,4 +196,13 @@ function mborg_menu_link ( array $variables )
     }
   }
   return theme_menu_link( $variables );
+}
+
+function __menu_link_active ( $trail, $path ) 
+{
+  foreach ( $trail as $item )
+  {
+    if ( $path === $item['link_path'] ) return true;
+  }
+  return false;
 }
