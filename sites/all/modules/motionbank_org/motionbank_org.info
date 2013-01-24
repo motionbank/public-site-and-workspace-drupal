@@ -1,0 +1,9 @@
+; Motion Bank Org module
+; fjenett - 2013-01
+
+name = Motion Bank Org
+description = "Provides blocks and mods for the MB public website"
+core = 7.x
+
+files[] = motionbank_org.module
+

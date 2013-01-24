@@ -1,0 +1,17 @@
+<?php
+
+	function motionbank_org_block_info() 
+	{
+		$blocks['block-menu-clone']['info'] = t('Clone of the \'Block Menu\' block');
+		$blocks['block-menu-clone']['cache'] = DRUPAL_NO_CACHE;
+		return $blocks;
+	}
+
+	function motionbank_org_block_view($delta = '') 
+	{
+		if ( $delta === 'block-menu-clone' ) 
+		{
+			$block['content'] = menu_tree('menu-block-menu');
+			return $block;
+		}
+	}
