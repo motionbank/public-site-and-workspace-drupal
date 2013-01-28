@@ -1,0 +1,61 @@
+/* Styling for #block-menu-menu-block-menu only */
+
+/* --- block system main / main content --- */
+
+#block-system-main {
+	background-color: white;
+	margin-right: 32px;
+	padding: 15px;
+	float: left;
+}
+
+#block-system-main {
+	width: 500px;
+}
+
+/*
+#content h1.title,
+#content .section .tabs
+*/
+
+/* --- page blocks menu --- */
+
+#block-menu-menu-block-menu
+{
+	overflow: auto;
+}
+
+#block-menu-menu-block-menu * {
+	display: none;
+}
+
+#block-menu-menu-block-menu .content,
+#block-menu-menu-block-menu .content * {
+	display: block;
+}
+
+#block-menu-menu-block-menu ul,
+#block-menu-menu-block-menu li
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#block-menu-menu-block-menu li a
+{
+	display: block;
+	float: left;
+	width: 374px;
+	border: 1px solid white;
+	margin-right: 32px;
+	margin-bottom: 32px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	letter-spacing: 0.25em;
+
+	padding-top: 150px;
+	height: 150px;
+}
