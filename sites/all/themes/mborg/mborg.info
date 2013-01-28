@@ -51,7 +51,7 @@ stylesheets[print][]      = css/print.css
 stylesheets[all][]        = css/bgimages.css
 stylesheets[all][]        = css/fonts.css
 stylesheets[all][]        = css/mborg-style.css
-stylesheets[all][]        = css/block-menu.css
+stylesheets[all][]        = css/language-switcher-menu.css
 stylesheets[all][]        = css/main-menu.css
 
 

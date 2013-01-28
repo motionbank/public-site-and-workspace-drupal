@@ -148,61 +148,63 @@ function mborg_preprocess_views_view ( &$variables )
   }
 }
 
+// Removed blocky menu items
+
 /**
  *  Hook, see:
  *  http://api.drupal.org/api/drupal/includes!menu.inc/function/theme_menu_link/7
  */
-function mborg_menu_link ( array $variables )
-{
-  $element = &$variables['element'];
-  $original_link = &$variables['element']['#original_link'];
-  $active_trail = menu_get_active_trail();
+// function mborg_menu_link ( array $variables )
+// {
+//   $element = &$variables['element'];
+//   $original_link = &$variables['element']['#original_link'];
+//   $active_trail = menu_get_active_trail();
 
-  if ( $original_link['menu_name'] === 'menu-block-menu' ) 
-  {
-    $load_functs = unserialize($original_link['load_functions']);
-    if ( is_array( $load_functs ) && count( $load_functs ) > 0 && in_array('node_load', $load_functs) ) 
-    {
-      $path = drupal_lookup_path( 'source', $original_link['link_path'] );
-      $path = $path === FALSE ? $original_link['link_path'] : $path;
+//   if ( $original_link['menu_name'] === 'menu-block-menu' ) 
+//   {
+//     $load_functs = unserialize($original_link['load_functions']);
+//     if ( is_array( $load_functs ) && count( $load_functs ) > 0 && in_array('node_load', $load_functs) ) 
+//     {
+//       $path = drupal_lookup_path( 'source', $original_link['link_path'] );
+//       $path = $path === FALSE ? $original_link['link_path'] : $path;
 
-      // hide block if it is the current page
-      if ( __menu_link_active( $active_trail, $path ) )
-      {
-        $element['#attributes']['class'][] = 'element-hidden';
-      }
+//       // hide block if it is the current page
+//       if ( __menu_link_active( $active_trail, $path ) )
+//       {
+//         $element['#attributes']['class'][] = 'element-hidden';
+//       }
 
-      $nid = str_replace('node/', '', $path);
-      $node = node_load( $nid );
+//       $nid = str_replace('node/', '', $path);
+//       $node = node_load( $nid );
 
-      if ( count($node->field_preview_image) > 0 )
-      {
-        $preview_file_field = $node->field_preview_image[LANGUAGE_NONE][0];
-        $preview_file_path = file_create_url( image_style_path( 'menu_preview_image', $preview_file_field['uri'] ) );
+//       if ( count($node->field_preview_image) > 0 )
+//       {
+//         $preview_file_field = $node->field_preview_image[LANGUAGE_NONE][0];
+//         $preview_file_path = file_create_url( image_style_path( 'menu_preview_image', $preview_file_field['uri'] ) );
 
-        $preview_width = 374;
-        $preview_height = floor( ($preview_width / (int)$preview_file_field['width']) * (int)$preview_file_field['height'] );
+//         $preview_width = 374;
+//         $preview_height = floor( ($preview_width / (int)$preview_file_field['width']) * (int)$preview_file_field['height'] );
 
-        $element['#attributes']['class'][] = 'menu-preview-image';
-        $element['#attributes']['data-preview-image-src'] = $preview_file_path;
-        $element['#attributes']['data-preview-image-width'] = $preview_width;
-        $element['#attributes']['data-preview-image-height'] = $preview_height;
+//         $element['#attributes']['class'][] = 'menu-preview-image';
+//         $element['#attributes']['data-preview-image-src'] = $preview_file_path;
+//         $element['#attributes']['data-preview-image-width'] = $preview_width;
+//         $element['#attributes']['data-preview-image-height'] = $preview_height;
 
-        $element['#localized_options']['attributes']['style'] = 
-          'width:'.$preview_width.'px;'.
-          'height:'.($preview_height - (floor($preview_height/2) - 10)).'px;'.
-          'padding-top:'.(floor($preview_height/2) - 10).'px;';
-      }
-    }
-  }
-  return theme_menu_link( $variables );
-}
+//         $element['#localized_options']['attributes']['style'] = 
+//           'width:'.$preview_width.'px;'.
+//           'height:'.($preview_height - (floor($preview_height/2) - 10)).'px;'.
+//           'padding-top:'.(floor($preview_height/2) - 10).'px;';
+//       }
+//     }
+//   }
+//   return theme_menu_link( $variables );
+// }
 
-function __menu_link_active ( $trail, $path ) 
-{
-  foreach ( $trail as $item )
-  {
-    if ( $path === $item['link_path'] ) return true;
-  }
-  return false;
-}
+// function __menu_link_active ( $trail, $path ) 
+// {
+//   foreach ( $trail as $item )
+//   {
+//     if ( $path === $item['link_path'] ) return true;
+//   }
+//   return false;
+// }
