@@ -15,6 +15,9 @@
 #block-views-random-nodes-block
 {
 	overflow: auto;
+	margin: 0px;
+	padding: 0px;
+	float: left;
 }
 
 #block-views-frontpage-nodes-block *,
@@ -38,10 +41,12 @@
 {
 	display: block;
 	float: left;
-	width: 374px;
+	width: 334px; /* 374 - padding */
 	border: 1px solid white;
 	margin-right: 32px;
 	margin-bottom: 32px;
+	font-weight: 200;
+	font-size: 20px;
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -49,5 +54,13 @@
 	letter-spacing: 0.25em;
 
 	padding-top: 150px;
+	padding-left: 20px;
+	padding-right: 20px;
 	height: 150px;
+}
+
+#block-views-frontpage-nodes-block .field-content a
+{
+	width: 432px; /* 472 - padding */
+	font-size: 49px;
 }
