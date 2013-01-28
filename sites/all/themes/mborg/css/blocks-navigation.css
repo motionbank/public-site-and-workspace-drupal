@@ -1,0 +1,53 @@
+
+/* --- hide content on frontpage --- */
+
+.front #content h1.title,
+.front #content .tabs,
+.front #content #block-system-main {
+	display: none;
+}
+
+/* --- outlined navigation blocks --- */
+
+
+#block-views-frontpage-nodes-block,
+#block-views-latest-entries-block,
+#block-views-random-nodes-block
+{
+	overflow: auto;
+}
+
+#block-views-frontpage-nodes-block *,
+#block-views-latest-entries-block *,
+#block-views-random-nodes-block * {
+	display: none;
+}
+
+#block-views-frontpage-nodes-block .content,
+#block-views-frontpage-nodes-block .content *,
+#block-views-latest-entries-block .content,
+#block-views-latest-entries-block .content *,
+#block-views-random-nodes-block .content,
+#block-views-random-nodes-block .content * {
+	display: block;
+}
+
+#block-views-frontpage-nodes-block .field-content a,
+#block-views-latest-entries-block .field-content a,
+#block-views-random-nodes-block .field-content a
+{
+	display: block;
+	float: left;
+	width: 374px;
+	border: 1px solid white;
+	margin-right: 32px;
+	margin-bottom: 32px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	letter-spacing: 0.25em;
+
+	padding-top: 150px;
+	height: 150px;
+}

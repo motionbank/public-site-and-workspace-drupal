@@ -15,6 +15,13 @@ function motion_bank_org_feature_ctools_plugin_api() {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function motion_bank_org_feature_views_api() {
+  return array("version" => "3.0");
+}
+
+/**
  * Implements hook_image_default_styles().
  */
 function motion_bank_org_feature_image_default_styles() {

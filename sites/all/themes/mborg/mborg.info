@@ -53,6 +53,7 @@ stylesheets[all][]        = css/fonts.css
 stylesheets[all][]        = css/mborg-style.css
 stylesheets[all][]        = css/language-switcher-menu.css
 stylesheets[all][]        = css/main-menu.css
+stylesheets[all][]		  = css/blocks-navigation.css
 
 
 ; Example of adding handheld stylesheets. The iPhone's preferred media type
