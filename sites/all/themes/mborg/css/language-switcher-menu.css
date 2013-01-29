@@ -37,7 +37,8 @@
 }
 
 #block-locale-language .content,
-#block-locale-language .content * {
+#block-locale-language .content *,
+#block-locale-language .content li:first-child {
 	display: block;
 	padding-left: 0.25em;
 }
