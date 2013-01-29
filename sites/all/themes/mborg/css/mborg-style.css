@@ -73,19 +73,17 @@ a:link, a:hover, a:visited, a:active {
   height: 0px;
 }
 
-#block-system-main
+#content-header
 {
-  background-color: white;
   padding: 0px;
   margin: 0 32px 32px 0;
   float: left;
+  width: 878px;
 }
 
-#block-system-main,
-#content h1.title,
-#content div.tabs
+#block-system-main
 {
-  width: 878px;
+  background-color: white;
 }
 
 #block-system-main .content
