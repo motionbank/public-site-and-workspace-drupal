@@ -22,7 +22,6 @@ function motion_bank_org_feature_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Frontpage nodes';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -73,7 +72,6 @@ function motion_bank_org_feature_views_default_views() {
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $translatables['frontpage_nodes'] = array(
     t('Master'),
-    t('Frontpage nodes'),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -96,7 +94,6 @@ function motion_bank_org_feature_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Latest entries';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -159,7 +156,6 @@ function motion_bank_org_feature_views_default_views() {
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $translatables['latest_entries'] = array(
     t('Master'),
-    t('Latest entries'),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -182,7 +178,6 @@ function motion_bank_org_feature_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Random nodes';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -286,7 +281,6 @@ function motion_bank_org_feature_views_default_views() {
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $translatables['random_nodes'] = array(
     t('Master'),
-    t('Random nodes'),
     t('more'),
     t('Apply'),
     t('Reset'),
