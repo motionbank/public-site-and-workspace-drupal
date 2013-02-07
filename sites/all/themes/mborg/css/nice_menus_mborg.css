@@ -1,16 +1,7 @@
 /*
-<<<<<<< HEAD
-  css for nice menue horizontal motionbank menu
-=======
-  This is the default layout template for nice menus, and will provide
-  a starting point for the look of your menus. To customize, it's
-  recommended to create a custom CSS file using this file as a template,
-  then configure the module to use your custom CSS file
-  (this is done in the global settings tab of the theme administration.)
 
-  See README.txt and the handbook page (http://drupal.org/node/185543)
-  for more information on using the CSS.
->>>>>>> db02d4f4e09a91b291cce1acc2dfadcb1a1a7946
+  css for nice menue horizontal motionbank menu
+
 */
 
 /******************************
@@ -22,7 +13,6 @@ ul.nice-menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
-<<<<<<< HEAD
   /*margin-left: -12px;*/
   margin-bottom: 50px;
   /*border-top: 1px solid #ccc;*/ 
@@ -79,15 +69,11 @@ ul.nice-menu ul li {
 
 ul.nice-menu ul li a {
   padding-bottom: 2px;
-=======
-  border-top: 1px solid #ccc;
 }
 
 ul.nice-menu li {
-  border: 1px solid #ccc;
   border-top: 0;
   float: left; /* LTR */
-  background-color: #FF0000;
 }c
 
 ul.nice-menu a {
@@ -98,7 +84,6 @@ ul.nice-menu ul {
   top: 1.8em;
   left: -1px; /* LTR */
   border: 0;
-  border-top: 1px solid #ccc;
   margin-right: 0; /* LTR */
 }
 
@@ -164,7 +149,6 @@ ul.nice-menu-left li li.menuparent:hover {
 
 ul.nice-menu-left a, ul.nice-menu-left ul a {
   padding-left: 14px;
->>>>>>> db02d4f4e09a91b291cce1acc2dfadcb1a1a7946
 }
 
 /******************************
@@ -177,15 +161,7 @@ ul.nice-menu-down {
 }
 
 ul.nice-menu-down li {
-<<<<<<< HEAD
   /*border-top: 1px solid #ccc;*/
-}
-
-ul.nice-menu-down li:first-child {
-  
-=======
-  border-top: 1px solid #ccc;
->>>>>>> db02d4f4e09a91b291cce1acc2dfadcb1a1a7946
 }
 
 ul.nice-menu-down li li {
@@ -193,7 +169,6 @@ ul.nice-menu-down li li {
 }
 
 ul.nice-menu-down ul {
-<<<<<<< HEAD
   left: 0; /* LTR */s
 }
 
@@ -230,7 +205,6 @@ ul.nice-menu-down li li.menuparent {
 
 ul.nice-menu-down li li.menuparent:hover {
   /*background: #ccc url(arrow-right.png) right center no-repeat; /* LTR */
-=======
   left: 0; /* LTR */
 }
 
@@ -248,20 +222,19 @@ ul.nice-menu-down .menuparent a {
 }
 
 ul.nice-menu-down li.menuparent {
-  background: #eee url(arrow-down.png) right center no-repeat; /* LTR */
+/*  background: #eee url(arrow-down.png) right center no-repeat; /* LTR */
 }
 
 ul.nice-menu-down li.menuparent:hover {
-  background: #ccc url(arrow-down.png) right center no-repeat; /* LTR */
+ /* background: #ccc url(arrow-down.png) right center no-repeat; /* LTR */
 }
 
 ul.nice-menu-down li li.menuparent {
-  background: #eee url(arrow-right.png) right center no-repeat; /* LTR */
+/*  background: #eee url(arrow-right.png) right center no-repeat; /* LTR */
 }
 
 ul.nice-menu-down li li.menuparent:hover {
-  background: #ccc url(arrow-right.png) right center no-repeat; /* LTR */
->>>>>>> db02d4f4e09a91b291cce1acc2dfadcb1a1a7946
+  /*background: #ccc url(arrow-right.png) right center no-repeat; /* LTR */
 }
 
 /******************************
@@ -293,11 +266,7 @@ ul.nice-menu li {
   top: 1.8em;
   left: -1px; /* LTR */
   border: 0;
-<<<<<<< HEAD
   /*border-top: 1px solid #ccc;*/
-=======
-  border-top: 1px solid #ccc;
->>>>>>> db02d4f4e09a91b291cce1acc2dfadcb1a1a7946
   margin-right: 0; /* LTR */
 }
 
