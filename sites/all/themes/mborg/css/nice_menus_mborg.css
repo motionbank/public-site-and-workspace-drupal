@@ -1,12 +1,5 @@
 /*
-  This is the default layout template for nice menus, and will provide
-  a starting point for the look of your menus. To customize, it's
-  recommended to create a custom CSS file using this file as a template,
-  then configure the module to use your custom CSS file
-  (this is done in the global settings tab of the theme administration.)
-
-  See README.txt and the handbook page (http://drupal.org/node/185543)
-  for more information on using the CSS.
+  css for nice menue horizontal motionbank menu
 */
 
 /******************************
@@ -18,7 +11,7 @@ ul.nice-menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-left: -12px;
+  /*margin-left: -12px;*/
   margin-bottom: 50px;
   /*border-top: 1px solid #ccc;*/ 
 }
@@ -47,18 +40,14 @@ ul.nice-menu a:hover {
   background-color: #173A3F;
 }
 
-ul.nice-menu li.first {
-  
+ul.nice-menu li a.active {
+  color: #4FC4D3;
+  background-color: #40A4AC;
 }
 
-ul.nice-menu li a.active{
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-ul.nice-menu li a.active:hover{
+ul.nice-menu li a.active:hover {
   color: #00E7ED;
-  background-color:#173A3F;
+  background-color: #173A3F;
 }
 
 ul.nice-menu ul {
@@ -70,67 +59,14 @@ ul.nice-menu ul {
 }
 
 ul.nice-menu ul li {
-  width: 12.5em;
+  padding: 0px;
+  padding-left: 6px;
+  border: 0px;
+  white-space: nowrap;
 }
 
-/******************************
- VERTICAL (left/right) menus
-******************************/
-
-/* This is the default width of all vertical menus. */
-ul.nice-menu-right, ul.nice-menu-left,
-ul.nice-menu-right li, ul.nice-menu-left li {
-  width: 12.5em;
-}
-
-/* VERTICAL menus where submenus pop RIGHT (default). */
-ul.nice-menu-right ul {
-  width: 12.5em;
-  left: 12.5em;
-  top: -1px;
-}
-
-ul.nice-menu-right ul ul {
-  width: 12.5em;
-  left: 12.5em;
-  top: -1px;
-}
-
-ul.nice-menu-right li.menuparent,
-ul.nice-menu-right li li.menuparent {
-  background: #eee url(arrow-right.png) right center no-repeat;
-}
-
-ul.nice-menu-right li.menuparent:hover,
-ul.nice-menu-right li li.menuparent:hover {
-  background: #ccc url(arrow-right.png) right center no-repeat;
-}
-
-/* VERTICAL menus where submenus pop LEFT. */
-ul.nice-menu-left li ul {
-  width: 12.5em;
-  left: -12.65em;
-  top: -1px;
-}
-
-ul.nice-menu-left li ul li ul {
-  width: 12.5em;
-  left: -12.65em;
-  top: -1px;
-}
-
-ul.nice-menu-left li.menuparent,
-ul.nice-menu-left li li.menuparent {
-  background: #eee url(arrow-left.png) left center no-repeat;
-}
-
-ul.nice-menu-left li.menuparent:hover,
-ul.nice-menu-left li li.menuparent:hover {
-  background: #ccc url(arrow-left.png) left center no-repeat;
-}
-
-ul.nice-menu-left a, ul.nice-menu-left ul a {
-  padding-left: 14px;
+ul.nice-menu ul li a {
+  padding-bottom: 2px;
 }
 
 /******************************
@@ -144,7 +80,6 @@ ul.nice-menu-down {
 
 ul.nice-menu-down li {
   /*border-top: 1px solid #ccc;*/
-  margin: 0 10px;
 }
 
 ul.nice-menu-down li:first-child {
@@ -156,16 +91,22 @@ ul.nice-menu-down li li {
 }
 
 ul.nice-menu-down ul {
-  left: 0; /* LTR */
+  left: 0; /* LTR */s
 }
 
 ul.nice-menu-down ul li {
-  clear: both;
+  /*clear: both;*/
 }
 
 ul.nice-menu-down li ul li ul {
-  left: 12.5em; /* LTR */
+  /*left: 12.5em; /* LTR */
   top: -1px;
+  width: 500px;
+}
+
+ul.nice-menu-down li ul li ul li{
+  margin-left: 52px;
+  clear: none;
 }
 
 ul.nice-menu-down .menuparent a {
@@ -181,11 +122,11 @@ ul.nice-menu-down li.menuparent:hover {
 }
 
 ul.nice-menu-down li li.menuparent {
-  background: #eee url(arrow-right.png) right center no-repeat; /* LTR */
+  /*background: #eee url(arrow-right.png) right center no-repeat; /* LTR */
 }
 
 ul.nice-menu-down li li.menuparent:hover {
-  background: #ccc url(arrow-right.png) right center no-repeat; /* LTR */
+  /*background: #ccc url(arrow-right.png) right center no-repeat; /* LTR */
 }
 
 /******************************
