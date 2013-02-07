@@ -1,7 +1,4 @@
 /*
-<<<<<<< HEAD
-  css for nice menue horizontal motionbank menu
-=======
   This is the default layout template for nice menus, and will provide
   a starting point for the look of your menus. To customize, it's
   recommended to create a custom CSS file using this file as a template,
@@ -10,7 +7,6 @@
 
   See README.txt and the handbook page (http://drupal.org/node/185543)
   for more information on using the CSS.
->>>>>>> db02d4f4e09a91b291cce1acc2dfadcb1a1a7946
 */
 
 /******************************
@@ -22,64 +18,6 @@ ul.nice-menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
-<<<<<<< HEAD
-  /*margin-left: -12px;*/
-  margin-bottom: 50px;
-  /*border-top: 1px solid #ccc;*/ 
-}
-
-ul.nice-menu li {
-  /*border: 1px solid #ccc;*/
-  /*border-top: 0;*/
-  float: left; /* LTR */
-  border-right: 1px solid silver;
-  padding: 0 6px;
-  line-height: 1;
-}
-
-ul.nice-menu a {
-  /*padding: 0.3em 5px 0.3em 5px;*/
-  text-decoration: none;
-  outline: none;
-  font-weight: 700;
-  color: #FFFFFF;
-  padding: 0px 6px;
-  padding-bottom: 2px;
-}
-
-ul.nice-menu a:hover {
-  color: #00E7ED;
-  background-color: #173A3F;
-}
-
-ul.nice-menu li a.active {
-  color: #4FC4D3;
-  background-color: #40A4AC;
-}
-
-ul.nice-menu li a.active:hover {
-  color: #00E7ED;
-  background-color: #173A3F;
-}
-
-ul.nice-menu ul {
-  top: 1.8em;
-  left: -1px; /* LTR */
-  /*border: 0;
-  border-top: 1px solid #ccc;*/
-  margin-right: 0; /* LTR */
-}
-
-ul.nice-menu ul li {
-  padding: 0px;
-  padding-left: 6px;
-  border: 0px;
-  white-space: nowrap;
-}
-
-ul.nice-menu ul li a {
-  padding-bottom: 2px;
-=======
   border-top: 1px solid #ccc;
 }
 
@@ -87,8 +25,8 @@ ul.nice-menu li {
   border: 1px solid #ccc;
   border-top: 0;
   float: left; /* LTR */
-  background-color: #FF0000;
-}c
+  background-color: #eee;
+}
 
 ul.nice-menu a {
   padding: 0.3em 5px 0.3em 5px;
@@ -164,7 +102,6 @@ ul.nice-menu-left li li.menuparent:hover {
 
 ul.nice-menu-left a, ul.nice-menu-left ul a {
   padding-left: 14px;
->>>>>>> db02d4f4e09a91b291cce1acc2dfadcb1a1a7946
 }
 
 /******************************
@@ -177,15 +114,7 @@ ul.nice-menu-down {
 }
 
 ul.nice-menu-down li {
-<<<<<<< HEAD
-  /*border-top: 1px solid #ccc;*/
-}
-
-ul.nice-menu-down li:first-child {
-  
-=======
   border-top: 1px solid #ccc;
->>>>>>> db02d4f4e09a91b291cce1acc2dfadcb1a1a7946
 }
 
 ul.nice-menu-down li li {
@@ -193,44 +122,6 @@ ul.nice-menu-down li li {
 }
 
 ul.nice-menu-down ul {
-<<<<<<< HEAD
-  left: 0; /* LTR */s
-}
-
-ul.nice-menu-down ul li {
-  /*clear: both;*/
-}
-
-ul.nice-menu-down li ul li ul {
-  /*left: 12.5em; /* LTR */
-  top: -1px;
-  width: 500px;
-}
-
-ul.nice-menu-down li ul li ul li{
-  margin-left: 52px;
-  clear: none;
-}
-
-ul.nice-menu-down .menuparent a {
- /* padding-right: 15px; /* LTR */
-}
-
-ul.nice-menu-down li.menuparent {
-  /*background: #eee url(arrow-down.png) right center no-repeat; /* LTR */
-}
-
-ul.nice-menu-down li.menuparent:hover {
-/*  background: #ccc url(arrow-down.png) right center no-repeat; /* LTR */
-}
-
-ul.nice-menu-down li li.menuparent {
-  /*background: #eee url(arrow-right.png) right center no-repeat; /* LTR */
-}
-
-ul.nice-menu-down li li.menuparent:hover {
-  /*background: #ccc url(arrow-right.png) right center no-repeat; /* LTR */
-=======
   left: 0; /* LTR */
 }
 
@@ -261,7 +152,6 @@ ul.nice-menu-down li li.menuparent {
 
 ul.nice-menu-down li li.menuparent:hover {
   background: #ccc url(arrow-right.png) right center no-repeat; /* LTR */
->>>>>>> db02d4f4e09a91b291cce1acc2dfadcb1a1a7946
 }
 
 /******************************
@@ -273,11 +163,7 @@ ul.nice-menu-down li li.menuparent:hover {
  */
 ul.nice-menu li {
   margin: 0;
-<<<<<<< HEAD
-  /*padding-left: 0; /* LTR */
-=======
   padding-left: 0; /* LTR */
->>>>>>> db02d4f4e09a91b291cce1acc2dfadcb1a1a7946
   background-image: none;
 }
 
@@ -293,11 +179,7 @@ ul.nice-menu li {
   top: 1.8em;
   left: -1px; /* LTR */
   border: 0;
-<<<<<<< HEAD
-  /*border-top: 1px solid #ccc;*/
-=======
   border-top: 1px solid #ccc;
->>>>>>> db02d4f4e09a91b291cce1acc2dfadcb1a1a7946
   margin-right: 0; /* LTR */
 }
 
