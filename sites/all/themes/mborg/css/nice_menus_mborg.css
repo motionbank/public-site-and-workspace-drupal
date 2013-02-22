@@ -65,6 +65,7 @@ ul.nice-menu ul li {
   padding-left: 6px;
   border: 0px;
   white-space: nowrap;
+  width:auto;
 }
 
 ul.nice-menu ul li a {
@@ -87,10 +88,6 @@ ul.nice-menu ul {
   margin-right: 0; /* LTR */
 }
 
-ul.nice-menu ul li {
-  width: 12.5em;
-}
-
 /******************************
  VERTICAL (left/right) menus
 ******************************/
@@ -103,7 +100,7 @@ ul.nice-menu-right li, ul.nice-menu-left li {
 
 /* VERTICAL menus where submenus pop RIGHT (default). */
 ul.nice-menu-right ul {
-  width: 12.5em;
+ width: 12.5em;
   left: 12.5em;
   top: -1px;
 }
@@ -179,12 +176,13 @@ ul.nice-menu-down ul li {
 ul.nice-menu-down li ul li ul {
   /*left: 12.5em; /* LTR */
   top: -1px;
-  width: 500px;
+  width: 300px;
+  margin-left:-120px;
 }
 
 ul.nice-menu-down li ul li ul li{
-  margin-left: 52px;
-  clear: none;
+  clear:none;
+  width:auto;
 }
 
 ul.nice-menu-down .menuparent a {
@@ -218,7 +216,7 @@ ul.nice-menu-down li ul li ul {
 }
 
 ul.nice-menu-down .menuparent a {
-  padding-right: 15px; /* LTR */
+  /*padding-right: 15px; /* LTR */
 }
 
 ul.nice-menu-down li.menuparent {
