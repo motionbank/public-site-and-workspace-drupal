@@ -35,6 +35,7 @@ ul.nice-menu a {
   color: #FFFFFF;
   padding: 0px 6px;
   padding-bottom: 2px;
+  margin:auto;
 }
 
 ul.nice-menu a:hover {
@@ -182,7 +183,7 @@ ul.nice-menu-down li ul li ul {
 
 ul.nice-menu-down li ul li ul li{
   clear:none;
-  width:auto;
+  width: 230px;
 }
 
 ul.nice-menu-down .menuparent a {
