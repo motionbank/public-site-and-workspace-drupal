@@ -208,3 +208,110 @@ function mborg_preprocess_views_view ( &$variables )
 //   }
 //   return false;
 // }
+
+// Theming of Nice Menus
+function mborg_nice_menus_build ( $variables )
+{
+  $menu = $variables['menu'];
+  $depth = $variables['depth'];
+  $trail = $variables['trail'];
+  $output = '';
+  $menu_items_processed = 0;
+  $last_branch_group = 0;
+  // Prepare to count the links so we can mark first, last, odd and even.
+  $index = 0;
+  $count = 0;
+  foreach ($menu as $menu_count) {
+    if ($menu_count['link']['hidden'] == 0) {
+      $count++;
+    }
+  }
+  // Get to building the menu.
+  foreach ($menu as $menu_item) {
+    $mlid = $menu_item['link']['mlid'];
+    // Check to see if it is a visible menu item.
+    if (!isset($menu_item['link']['hidden']) || $menu_item['link']['hidden'] == 0) {
+      // Check our count and build first, last, odd/even classes.
+      $index++;
+      $first_class = $index == 1 ? ' first ' : '';
+      $oddeven_class = $index % 2 == 0 ? ' even ' : ' odd ';
+      $last_class = $index == $count ? ' last ' : '';
+      // Build class name based on menu path
+      // e.g. to give each menu item individual style.
+      // Strip funny symbols.
+      $clean_path = str_replace(array('http://', 'www', '<', '>', '&', '=', '?', ':', '.'), '', $menu_item['link']['href']);
+      // Convert slashes to dashes.
+      $clean_path = str_replace('/', '-', $clean_path);
+      $class = 'menu-path-' . $clean_path;
+      if ($trail && in_array($mlid, $trail)) {
+        $class .= ' active-trail';
+      }
+      // If it has children build a nice little tree under it.
+      if ((!empty($menu_item['link']['has_children'])) && (!empty($menu_item['below'])) && $depth != 0) {
+        // Keep passing children into the function 'til we get them all.
+        if ($menu_item['link']['depth'] <= $depth || $depth == -1) {
+          $children = array(
+            '#theme' => 'nice_menus_build',
+            '#prefix' => '<ul>',
+            '#suffix' => '</ul>',
+            '#menu' => $menu_item['below'],
+            '#depth' => $depth,
+            '#trail' => $trail,
+          );
+        }
+        else {
+          $children = '';
+        }
+        // Set the class to parent only of children are displayed.
+        $parent_class = ($children && ($menu_item['link']['depth'] <= $depth || $depth == -1)) ? 'menuparent ' : '';
+         $element = array(
+          '#below' => $children,
+          '#title' => $menu_item['link']['link_title'],
+          '#href' =>  $menu_item['link']['href'],
+          '#localized_options' => $menu_item['link']['localized_options'],
+          '#attributes' => array(
+            'class' => array('menu-' . $mlid, $parent_class, $class, $first_class, $oddeven_class, $last_class),
+          ),
+        );
+        $variables['element'] = $element;
+        $output .= theme('menu_link', $variables);
+        
+      }
+      else {
+     
+        $element = array(
+          '#below' => '',
+          '#title' => $menu_item['link']['link_title'],
+          '#href' =>  $menu_item['link']['href'],
+          '#localized_options' => $menu_item['link']['localized_options'],
+          '#attributes' => array(
+            'class' => array('menu-' . $mlid, $class, $first_class, $oddeven_class, $last_class),
+          ),
+        );
+        $variables['element'] = $element;
+
+        
+        // make (div) groups of 5 children on the very last branch (depth == 3) of the menu-tree
+        if ( $menu_item['link']['depth'] == 3 ) {
+          
+          if($menu_items_processed % 5 == 0){
+            $output .= '<div id="last_branch_group_' . $last_branch_group . '">' . theme('menu_link', $variables);
+            $last_branch_group++;
+          }
+          else if($menu_items_processed % 5 == 4){
+            $output .= theme('menu_link', $variables) . '</div>';
+          }
+          else {
+            $output .= theme('menu_link', $variables);
+          }
+          $menu_items_processed++;
+        }
+        else {
+          $output .= theme('menu_link', $variables);
+        }
+        
+      }
+    }
+  }
+  return $output;
+}

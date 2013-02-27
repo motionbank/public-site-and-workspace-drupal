@@ -7,6 +7,12 @@
 /******************************
  Global CSS for ALL menu types
 ******************************/
+#last_branch_group_0{
+  float:left;
+}
+#last_branch_group_1{
+  float:left;
+}
 
 ul.nice-menu,
 ul.nice-menu ul {
@@ -35,6 +41,7 @@ ul.nice-menu a {
   color: #FFFFFF;
   padding: 0px 6px;
   padding-bottom: 2px;
+  margin:auto;
 }
 
 ul.nice-menu a:hover {
@@ -176,13 +183,12 @@ ul.nice-menu-down ul li {
 ul.nice-menu-down li ul li ul {
   /*left: 12.5em; /* LTR */
   top: -1px;
-  width: 300px;
+  width: 600px;
   margin-left:-120px;
 }
 
 ul.nice-menu-down li ul li ul li{
-  clear:none;
-  width:auto;
+
 }
 
 ul.nice-menu-down .menuparent a {

@@ -53,7 +53,9 @@ stylesheets[all][]        = css/fonts.css
 stylesheets[all][]        = css/mborg-style.css
 stylesheets[all][]        = css/language-switcher-menu.css
 stylesheets[all][]        = css/main-menu.css
-stylesheets[all][]		  = css/blocks-navigation.css
+stylesheets[all][]		    = css/blocks-navigation.css
+; style of nice menus can be found here: css/nice_menus_mborg.css
+; path to this css has to be configured in Apperance -> Theme-Settings -> "Path to custom Nice menus CSS file "
 
 
 ; Example of adding handheld stylesheets. The iPhone's preferred media type
