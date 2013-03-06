@@ -28,9 +28,14 @@ ul.nice-menu li {
   /*border: 1px solid #ccc;*/
   /*border-top: 0;*/
   float: left; /* LTR */
-  border-right: 1px solid silver;
+  border-right: 2px solid #FFFFFF;
   padding: 0 6px;
   line-height: 1;
+}
+
+ul.nice-menu li:last-child {
+  float: left; /* LTR */
+  border-right: none;
 }
 
 ul.nice-menu a {
@@ -39,9 +44,11 @@ ul.nice-menu a {
   outline: none;
   font-weight: 700;
   color: #FFFFFF;
-  padding: 0px 6px;
-  padding-bottom: 2px;
   margin:auto;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 3px 4px 4px 6px;
+
 }
 
 ul.nice-menu a:hover {
