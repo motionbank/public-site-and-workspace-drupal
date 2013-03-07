@@ -7,6 +7,10 @@
 /******************************
  Global CSS for ALL menu types
 ******************************/
+.container-inline{
+  line-height: 1em;
+}
+
 #last_branch_group_0{
   float:left;
 }
@@ -52,18 +56,18 @@ ul.nice-menu a {
 }
 
 ul.nice-menu a:hover {
-  color: #00E7ED;
-  background-color: #173A3F;
+  color: #63FFD2;
+  background-color: #4AD1AD;
 }
 
 ul.nice-menu li a.active {
-  color: #4FC4D3;
-  background-color: #40A4AC;
+  color: #63FFD2;
+  background-color: #000000;
 }
 
 ul.nice-menu li a.active:hover {
-  color: #00E7ED;
-  background-color: #173A3F;
+  color: #63FFD2;
+  background-color: #4AD1AD;
 }
 
 ul.nice-menu ul {
@@ -83,16 +87,30 @@ ul.nice-menu ul li {
 }
 
 ul.nice-menu ul li a {
-  padding-bottom: 2px;
+  text-decoration: none;
+  outline: none;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin:auto;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 3px 4px 4px 6px;
+}
+
+ul.nice-menu ul li ul li a {
+  text-decoration: none;
+  outline: none;
+  font-weight: 300;
+  color: #FFFFFF;
+  margin:auto;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 3px 4px 4px 6px;
 }
 
 ul.nice-menu li {
   border-top: 0;
   float: left; /* LTR */
-}c
-
-ul.nice-menu a {
-  padding: 0.3em 5px 0.3em 5px;
 }
 
 ul.nice-menu ul {
