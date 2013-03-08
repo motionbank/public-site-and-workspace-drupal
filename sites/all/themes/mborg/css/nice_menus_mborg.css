@@ -4,9 +4,23 @@
 
 */
 
+
 /******************************
  Global CSS for ALL menu types
 ******************************/
+
+/* let the submenu stay open */
+#nice-menu-1 .active-trail ul
+{
+  display:block !important;
+  visibility: visible !important;
+}
+
+.region-header
+{
+  height:130px;
+}
+
 .container-inline{
   line-height: 1em;
 }
