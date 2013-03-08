@@ -18,6 +18,14 @@ function motion_bank_org_feature_default_fe_block_settings() {
       'delta' => 'language',
       'module' => 'locale',
     ),
+    'nice_menus-1' => array(
+      'delta' => '1',
+      'module' => 'nice_menus',
+    ),
+    'search-form' => array(
+      'delta' => 'form',
+      'module' => 'search',
+    ),
     'system-main' => array(
       'delta' => 'main',
       'module' => 'system',
@@ -49,6 +57,34 @@ function motion_bank_org_feature_default_fe_block_settings() {
     'theme' => 'bartik',
     'status' => '1',
     'weight' => '0',
+    'region' => 'sidebar_first',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['nice_menus-1'] = array(
+    'module' => 'nice_menus',
+    'delta' => '1',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => -1,
+  );
+
+  $theme['search-form'] = array(
+    'module' => 'search',
+    'delta' => 'form',
+    'theme' => 'bartik',
+    'status' => '1',
+    'weight' => '-1',
     'region' => 'sidebar_first',
     'custom' => '0',
     'visibility' => '0',
@@ -146,6 +182,34 @@ function motion_bank_org_feature_default_fe_block_settings() {
     'cache' => -1,
   );
 
+  $theme['nice_menus-1'] = array(
+    'module' => 'nice_menus',
+    'delta' => '1',
+    'theme' => 'mborg',
+    'status' => '1',
+    'weight' => '-13',
+    'region' => 'header',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => -1,
+  );
+
+  $theme['search-form'] = array(
+    'module' => 'search',
+    'delta' => 'form',
+    'theme' => 'mborg',
+    'status' => '1',
+    'weight' => '-12',
+    'region' => 'header',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
   $theme['system-main'] = array(
     'module' => 'system',
     'delta' => 'main',
@@ -165,7 +229,7 @@ function motion_bank_org_feature_default_fe_block_settings() {
     'delta' => 'backgroundimages-block_1',
     'theme' => 'mborg',
     'status' => '1',
-    'weight' => '0',
+    'weight' => '-14',
     'region' => 'header',
     'custom' => '0',
     'visibility' => '0',
@@ -228,6 +292,34 @@ function motion_bank_org_feature_default_fe_block_settings() {
     'status' => 0,
     'weight' => '0',
     'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['nice_menus-1'] = array(
+    'module' => 'nice_menus',
+    'delta' => '1',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => -1,
+  );
+
+  $theme['search-form'] = array(
+    'module' => 'search',
+    'delta' => 'form',
+    'theme' => 'seven',
+    'status' => '1',
+    'weight' => '-10',
+    'region' => 'dashboard_sidebar',
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
