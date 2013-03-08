@@ -1,0 +1,22 @@
+/*
+
+  css for search-region
+
+*/
+
+#edit-search-block-form--2
+{
+  height:17px;
+  border:0px;
+  margin-left: 6px;
+  width:120px;
+  background-color: #000000;
+  color: #63FFD2;
+  padding-left: 6px;
+  letter-spacing: 2px;
+  display:none;
+}
+
+.form-submit{
+	display:none;
+}
