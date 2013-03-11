@@ -3,7 +3,8 @@
 
 .front #content h1.title,
 .front #content .tabs,
-.front #content #block-system-main {
+.front #content #block-system-main, 
+.front #content-header{
 	display: none;
 }
 
