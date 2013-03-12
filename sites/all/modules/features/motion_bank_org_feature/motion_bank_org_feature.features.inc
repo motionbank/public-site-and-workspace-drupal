@@ -58,14 +58,6 @@ function motion_bank_org_feature_image_default_styles() {
  */
 function motion_bank_org_feature_node_info() {
   $items = array(
-    'article' => array(
-      'name' => t('Article'),
-      'base' => 'node_content',
-      'description' => t('Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
     'backgroundimage' => array(
       'name' => t('Background Image'),
       'base' => 'node_content',
@@ -74,10 +66,18 @@ function motion_bank_org_feature_node_info() {
       'title_label' => t('Backgroundimage'),
       'help' => '',
     ),
-    'page' => array(
+    'basic_page' => array(
       'name' => t('Basic page'),
       'base' => 'node_content',
-      'description' => t('Use <em>basic pages</em> for your static content, such as an \'About us\' page.'),
+      'description' => t('Anything but events.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+    'event' => array(
+      'name' => t('Event'),
+      'base' => 'node_content',
+      'description' => t('Anything with a date: workshops, filmings, shows, ..'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

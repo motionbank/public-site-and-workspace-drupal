@@ -124,8 +124,8 @@ function motion_bank_org_feature_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'article' => 'article',
-    'page' => 'page',
+    'basic_page' => 'basic_page',
+    'event' => 'event',
   );
   /* Filter criterion: Content: Language */
   $handler->display->display_options['filters']['language']['id'] = 'language';
@@ -208,8 +208,8 @@ function motion_bank_org_feature_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'article' => 'article',
-    'page' => 'page',
+    'basic_page' => 'basic_page',
+    'event' => 'event',
   );
   /* Filter criterion: Content: Language */
   $handler->display->display_options['filters']['language']['id'] = 'language';
@@ -296,17 +296,10 @@ function motion_bank_org_feature_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'article' => 'article',
-    'page' => 'page',
+    'basic_page' => 'basic_page',
+    'event' => 'event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Menu: Menu name */
-  $handler->display->display_options['filters']['menu_name_1']['id'] = 'menu_name_1';
-  $handler->display->display_options['filters']['menu_name_1']['table'] = 'menu_links';
-  $handler->display->display_options['filters']['menu_name_1']['field'] = 'menu_name';
-  $handler->display->display_options['filters']['menu_name_1']['operator'] = 'contains';
-  $handler->display->display_options['filters']['menu_name_1']['value'] = 'main';
-  $handler->display->display_options['filters']['menu_name_1']['group'] = 2;
   /* Filter criterion: Content: Title */
   $handler->display->display_options['filters']['title_1']['id'] = 'title_1';
   $handler->display->display_options['filters']['title_1']['table'] = 'node';

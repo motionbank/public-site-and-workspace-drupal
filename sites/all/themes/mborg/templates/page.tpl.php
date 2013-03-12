@@ -177,7 +177,7 @@
         <a class="headline" href="">IMPRINT</a> <a class="headline" href="">TEAM</a> <a class="headline" href="">CONTACT</a>
       </div>
 
-      <div id="project of">
+      <div id="project-of">
         <span class="headline">A PROJECT OF:</span><br />
         THE FORSYTHE COMPANY
       </div>
@@ -185,14 +185,16 @@
       <div id="score-partners">
         <span class="headline">MOTIONBANK SCORE PARTNERS:</span>
         <br />
-        Advanced Computing Center for the Arts and Design Department of Dance at The Ohio State University<br />
-        <br />
-        Fraunhofer-Institut f&uuml;r Graphische Datenverarbeitung<br />
-        <br />
-        Hochschule Darmstadt-<br />
-        University of applied sciences<br />
-        <br />
-        Hochschule f&uuml;r Gestaltung Offenbach
+        <p>
+          Advanced Computing Center for the Arts and Design Department of Dance at The Ohio State University<br />
+          <br />
+          Fraunhofer-Institut f&uuml;r Graphische Datenverarbeitung<br />
+          <br />
+          Hochschule Darmstadt-<br />
+          University of applied sciences<br />
+          <br />
+          Hochschule f&uuml;r Gestaltung Offenbach
+        </p>
       </div>
 
       <div id="workshop-partners">

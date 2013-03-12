@@ -1,3 +1,7 @@
+#footer{
+  width: 1262px;
+}
+
 #footer,
 #footer a{
   color: #FFFFFF;
@@ -15,18 +19,22 @@
 #footer-up,
 #footer-down{
 /*  border-top: solid 3px #C3C2C4;*/
-  border-top: solid 3px #FFFFFF;
-  padding-top: 10px;
+  
 }
 
 #footer-up div{
   float: left;
-  width: 300px;
+  width: 248px;
+  border-top: solid 3px #FFFFFF;
+  padding-top: 10px;
 }
 
 #footer-down{
-  margin-left: 300px;
+  margin-left: 260px;
   margin-top: 10px;
+
+  border-top: solid 3px #FFFFFF;
+  padding-top: 10px;
 }
 
 .headline{
@@ -36,9 +44,18 @@
   margin-bottom:5px;
 }
 
-#footer-links{
-  
+#score-partners span,
+#score-partners p{
+  margin-left: -30px;
+  width:248px;
 }
-#score-partners{
-  width:;
+/*
+#footer-links,
+#project-of,
+#score-partners,
+#workshop-partners,
+#supported{
+  margin-left: auto;
+  margin-right: auto;
 }
+*/
