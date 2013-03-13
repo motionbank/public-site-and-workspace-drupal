@@ -24,7 +24,7 @@ body {
 
 #page-wrapper,
 .region-bottom {
-  min-width: 960px; /* Don't allow the browser to make the site unreadable. */
+ /* min-width: 960px; /* Don't allow the browser to make the site unreadable. */
 }
 
 #page {
