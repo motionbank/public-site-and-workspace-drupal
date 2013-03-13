@@ -65,8 +65,3 @@
 	width: 432px; /* 472 - padding */
 	font-size: 49px;
 }
-
-.field-content a:hover
-{
-	background-image: url(http://motionbank.dev/sites/all/themes/mborg/logo.png);
-}

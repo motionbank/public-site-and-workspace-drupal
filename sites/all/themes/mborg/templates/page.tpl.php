@@ -125,7 +125,6 @@
         <?php print render($page['content_header']); ?>
       </div><!-- /#content-header -->
       <?php print render($page['content']); ?>
-      <?php print $feed_icons; ?>
     </div></div><!-- /.section, /#content -->
 
     <?php if ($page['navigation'] || $main_menu): ?>
