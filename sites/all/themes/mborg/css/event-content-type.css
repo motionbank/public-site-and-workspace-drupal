@@ -1,0 +1,16 @@
+.node-type-event #content-header{
+	width: 836px;
+}
+
+.node-type-event #page-title{
+	line-height: 1;
+	margin-top: -8px;
+	margin-bottom: 30px;
+}
+.node-type-event .form-item.form-type-item{
+	display: none;
+}
+
+.node-type-event{
+
+}
