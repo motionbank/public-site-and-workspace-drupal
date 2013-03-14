@@ -1,0 +1,41 @@
+.node-type-basic-page #content-header{
+	width: 432px;
+}
+
+.node-type-basic-page #page-title{
+	line-height: 1;
+	margin-top: -8px;
+	margin-bottom: 30px;
+}
+.node-type-basic-page .form-item.form-type-item{
+	display: none;
+}
+
+.node-type-basic-page .field-item p{
+	/*margin: 0px;*/
+}	
+
+.node-type-basic-page .field-name-field-image {
+	display: none;
+}
+
+.node-type-basic-page li {
+	list-style-type: none;
+}
+
+.node-type-basic-page li img{
+	margin-bottom: 30px;
+}
+
+.node-type-basic-page .basic-page-image-title{
+	background-color: #FFFFFF;
+	position: relative;
+	top: -26px;
+	padding-left: 10px;
+	font-style: italic;
+}
+
+.node-type-basic-page .view-content{
+	float: left;
+	margin-right: 32px;
+}
