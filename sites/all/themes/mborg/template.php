@@ -140,11 +140,27 @@ function mborg_preprocess_comment(&$variables, $hook) {
 
 function mborg_preprocess_views_view ( &$variables )
 {
+  $view = &$variables['view'];
+
   if ( $variables['name'] === 'backgroundimages' )
   {
     $variables['mborg_backgroundimages_first_image'] = file_create_url(
       $variables['view']->result[0]->field_field_image[0]['rendered']['#file']->uri
     );
+  }
+  else if ( in_array( $variables['name'], array( 'frontpage_nodes', 'latest_entries', 'random_nodes' ) ) )
+  {
+    //dpm( $variables['view'] );
+    $result = $variables['view']->result;
+    if ( count( $result ) > 0 )
+    {
+      $img = $result[0]->field_field_preview_image[0]['raw'];
+      $img_width = 374;
+      $img_height = floor( ($img_width / (int)$img['width']) * (int)$img['height'] );
+      $variables['block_preview_image_src'] = file_create_url( image_style_path( 'menu_preview_image', $img['uri'] ) );
+      $variables['block_preview_image_width'] = $img_width;
+      $variables['block_preview_image_height'] = $img_height;
+    }
   }
 }
 
