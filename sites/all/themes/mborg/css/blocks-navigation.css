@@ -12,7 +12,8 @@
 
 #block-views-frontpage-nodes-block,
 #block-views-latest-entries-block,
-#block-views-random-nodes-block
+#block-views-random-nodes-block,
+#block-views-random-nodes-2-block
 {
 	overflow: auto;
 	margin: 0px;
@@ -22,7 +23,8 @@
 
 #block-views-frontpage-nodes-block *,
 #block-views-latest-entries-block *,
-#block-views-random-nodes-block * {
+#block-views-random-nodes-block *,
+#block-views-random-nodes-2-block * {
 	display: none;
 }
 
@@ -31,13 +33,16 @@
 #block-views-latest-entries-block .content,
 #block-views-latest-entries-block .content *,
 #block-views-random-nodes-block .content,
-#block-views-random-nodes-block .content * {
+#block-views-random-nodes-block .content *,
+#block-views-random-nodes-2-block .content,
+#block-views-random-nodes-2-block .content * {
 	display: block;
 }
 
 #block-views-frontpage-nodes-block .field-content a,
 #block-views-latest-entries-block .field-content a,
-#block-views-random-nodes-block .field-content a
+#block-views-random-nodes-block .field-content a,
+#block-views-random-nodes-2-block .field-content a
 {
 	display: block;
 	float: left;
