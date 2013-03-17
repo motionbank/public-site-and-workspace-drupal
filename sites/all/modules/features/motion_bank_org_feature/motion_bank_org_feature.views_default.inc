@@ -107,6 +107,18 @@ function motion_bank_org_feature_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Preview Image */
+  $handler->display->display_options['fields']['field_preview_image']['id'] = 'field_preview_image';
+  $handler->display->display_options['fields']['field_preview_image']['table'] = 'field_data_field_preview_image';
+  $handler->display->display_options['fields']['field_preview_image']['field'] = 'field_preview_image';
+  $handler->display->display_options['fields']['field_preview_image']['label'] = '';
+  $handler->display->display_options['fields']['field_preview_image']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_preview_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_preview_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_preview_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
