@@ -151,15 +151,26 @@ function mborg_preprocess_views_view ( &$variables )
   else if ( in_array( $variables['name'], array( 'frontpage_nodes', 'latest_entries', 'random_nodes' ) ) )
   {
     //dpm( $variables['view'] );
-    $result = $variables['view']->result;
-    if ( count( $result ) > 0 )
+    $results = $variables['view']->result;
+    if ( count( $results ) > 0 )
     {
-      $img = $result[0]->field_field_preview_image[0]['raw'];
-      $img_width = 374;
-      $img_height = floor( ($img_width / (int)$img['width']) * (int)$img['height'] );
-      $variables['block_preview_image_src'] = file_create_url( image_style_path( 'menu_preview_image', $img['uri'] ) );
-      $variables['block_preview_image_width'] = $img_width;
-      $variables['block_preview_image_height'] = $img_height;
+      foreach ( $results as $num => $result )
+      {
+        $img = $result->field_field_preview_image[0]['raw'];
+        
+        $img_width = 384;
+        $img_height = floor( ($img_width / (int)$img['width']) * (int)$img['height'] );
+        
+        if ( !isset($variables['block_preview_image']) )
+          $variables['block_preview_image'] = array();
+
+        $attr = array();
+        $attr['src'] = file_create_url( image_style_path( 'menu_preview_image', $img['uri'] ) );
+        $attr['width'] = $img_width;
+        $attr['height'] = $img_height;
+
+        $variables['block_preview_image'][$num] = $attr;
+      }
     }
   }
 }
