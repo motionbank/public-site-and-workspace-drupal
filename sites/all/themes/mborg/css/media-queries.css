@@ -11,6 +11,18 @@
 	#logo{
 		margin-left: 798px;
 	}
+
+	/**** FOOTER ***********************************/
+	#footer-wrapper-02{
+	    clear: left;
+	    margin-left: 412px;
+	    padding-top: 10px;
+	}
+
+	  #score-partners span,
+	  #score-partners p{
+	    margin-left: 0px;
+  	}  
 }
 
 @media (max-width: 811px) {
@@ -26,6 +38,22 @@
 	#logo{
 		margin-left: 468px;
 	}
+
+	/**** FOOTER ************************************/
+  	#footer-wrapper-01{
+	    clear: left;
+	    padding-top: 20px;
+	}
+
+	#footer-wrapper-02{
+		clear: left;
+		margin-left: 0px;
+		padding-top: 10px;
+	}
+
+	#footer-down{
+		margin-left: 0px;
+	}
 }
 
 @media (max-width: 479px) {
@@ -40,6 +68,20 @@
 
 	#logo{
 		margin-left: 138px;
+	}
+
+	/**** FOOTER ***********************************/
+	#footer div{
+		clear: left;
+	}
+
+	#score-partners,
+	#supported{
+		padding-top: 20px;
+	}
+
+	#footer-wrapper-02{
+		padding-top: 0px;
 	}
 }
 

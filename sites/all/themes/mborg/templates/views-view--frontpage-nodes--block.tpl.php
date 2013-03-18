@@ -52,11 +52,13 @@
   <?php endif; ?>
 
   <?php if ($rows): ?>
-    <div class="view-content" 
-         data-block-preview-image-src="<?php print $block_preview_image_src; ?>" 
-         data-block-preview-image-width="<?php print $block_preview_image_width; ?>" 
-         data-block-preview-image-height="<?php print $block_preview_image_height; ?>" 
-         >
+    <div class="view-content">
+      <script type="text/javascript">
+      var backgroundPreviewImages = <?php
+          echo str_replace( '\\/', '/', json_encode( $block_preview_image ) );
+        ?>;
+        console.log( backgroundPreviewImages );
+      </script>
       <?php print $rows; ?>
     </div>
   <?php elseif ($empty): ?>
