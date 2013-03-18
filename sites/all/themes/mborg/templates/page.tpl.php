@@ -215,7 +215,7 @@
 
         <div id="supported">
           <span class="headline">DANCE ENGAGING SCIENCE WORKSHOPS SUPPORTED BY:</span><br />
-          <img src="http://motionbank.dev/sites/motionbank.org/files/logos/vw-stiftung.png" alt="Volkswagen Stiftung" />
+          <img src="/sites/motionbank.org/files/logos/vw-stiftung.png" alt="Volkswagen Stiftung" />
         </div>
       </div>
     </div>
