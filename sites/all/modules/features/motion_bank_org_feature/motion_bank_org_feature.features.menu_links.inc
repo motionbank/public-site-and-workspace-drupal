@@ -27,7 +27,7 @@ function motion_bank_org_feature_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-42',
+    'weight' => '-36',
   );
   // Translatables
   // Included for use with string extractors like potx.

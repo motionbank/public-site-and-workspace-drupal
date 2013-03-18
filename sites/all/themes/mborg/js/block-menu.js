@@ -25,6 +25,7 @@
 	 				'background-image':'none'
 	 			});
 	 		});
+	 		jQuery( 'a', row ).css({height:(row.data('block-preview-image-height')-150)+'px'});
 	 		// preload image(s)
 	 		var tmpImg = new Image();
 	 		tmpImg.src = row.data('block-preview-image-src');

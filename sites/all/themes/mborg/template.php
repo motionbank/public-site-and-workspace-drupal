@@ -161,20 +161,23 @@ function mborg_preprocess_views_view_unformatted ( &$variables )
     {
       foreach ( $results as $num => $result )
       {
-        $img = $result->field_field_preview_image[0]['raw'];
-        
-        $img_width = 384;
-        $img_height = floor( ($img_width / (int)$img['width']) * (int)$img['height'] );
-        
-        if ( !isset($variables['block_preview_image']) )
-          $variables['block_preview_image'] = array();
-
-        $attr = array();
-        $attr['src'] = file_create_url( image_style_path( 'menu_preview_image', $img['uri'] ) );
-        $attr['width'] = $img_width;
-        $attr['height'] = $img_height;
-
-        $variables['block_preview_image'][$num] = $attr;
+        if ( is_array($result->field_field_preview_image) && count($result->field_field_preview_image) > 0 )
+        {
+          $img = $result->field_field_preview_image[0]['raw'];
+          
+          $img_width = 384;
+          $img_height = floor( ($img_width / (int)$img['width']) * (int)$img['height'] );
+          
+          if ( !isset($variables['block_preview_image']) )
+            $variables['block_preview_image'] = array();
+  
+          $attr = array();
+          $attr['src'] = file_create_url( image_style_path( 'menu_preview_image', $img['uri'] ) );
+          $attr['width'] = $img_width;
+          $attr['height'] = $img_height;
+  
+          $variables['block_preview_image'][$num] = $attr;
+        }
       }
     }
   }
