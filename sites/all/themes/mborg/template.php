@@ -148,10 +148,15 @@ function mborg_preprocess_views_view ( &$variables )
       $variables['view']->result[0]->field_field_image[0]['rendered']['#file']->uri
     );
   }
-  else if ( in_array( $variables['name'], array( 'frontpage_nodes', 'latest_entries', 'random_nodes' ) ) )
+}
+
+function mborg_preprocess_views_view_unformatted ( &$variables )
+{
+  $view = $variables['view'];
+  //dpm( $view );
+  if ( in_array( $view->name, array( 'frontpage_nodes', 'latest_entries', 'random_nodes' ) ) )
   {
-    //dpm( $variables['view'] );
-    $results = $variables['view']->result;
+    $results = $view->result;
     if ( count( $results ) > 0 )
     {
       foreach ( $results as $num => $result )
