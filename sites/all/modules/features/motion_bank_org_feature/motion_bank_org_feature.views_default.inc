@@ -292,10 +292,6 @@ function motion_bank_org_feature_views_default_views() {
   $handler->display->display_options['sorts']['random']['id'] = 'random';
   $handler->display->display_options['sorts']['random']['table'] = 'views';
   $handler->display->display_options['sorts']['random']['field'] = 'random';
-  $handler->display->display_options['filter_groups']['groups'] = array(
-    1 => 'AND',
-    2 => 'OR',
-  );
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -312,30 +308,6 @@ function motion_bank_org_feature_views_default_views() {
     'event' => 'event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Title */
-  $handler->display->display_options['filters']['title_1']['id'] = 'title_1';
-  $handler->display->display_options['filters']['title_1']['table'] = 'node';
-  $handler->display->display_options['filters']['title_1']['field'] = 'title';
-  $handler->display->display_options['filters']['title_1']['value'] = 'Resources';
-  $handler->display->display_options['filters']['title_1']['group'] = 2;
-  /* Filter criterion: Content: Title */
-  $handler->display->display_options['filters']['title_2']['id'] = 'title_2';
-  $handler->display->display_options['filters']['title_2']['table'] = 'node';
-  $handler->display->display_options['filters']['title_2']['field'] = 'title';
-  $handler->display->display_options['filters']['title_2']['value'] = 'Events';
-  $handler->display->display_options['filters']['title_2']['group'] = 2;
-  /* Filter criterion: Content: Title */
-  $handler->display->display_options['filters']['title']['id'] = 'title';
-  $handler->display->display_options['filters']['title']['table'] = 'node';
-  $handler->display->display_options['filters']['title']['field'] = 'title';
-  $handler->display->display_options['filters']['title']['value'] = 'Scores';
-  $handler->display->display_options['filters']['title']['group'] = 2;
-  /* Filter criterion: Content: Title */
-  $handler->display->display_options['filters']['title_3']['id'] = 'title_3';
-  $handler->display->display_options['filters']['title_3']['table'] = 'node';
-  $handler->display->display_options['filters']['title_3']['field'] = 'title';
-  $handler->display->display_options['filters']['title_3']['value'] = 'Research';
-  $handler->display->display_options['filters']['title_3']['group'] = 2;
   /* Filter criterion: Content: Language */
   $handler->display->display_options['filters']['language']['id'] = 'language';
   $handler->display->display_options['filters']['language']['table'] = 'node';
@@ -344,11 +316,7 @@ function motion_bank_org_feature_views_default_views() {
     '***CURRENT_LANGUAGE***' => '***CURRENT_LANGUAGE***',
     'und' => 'und',
   );
-  /* Filter criterion: Content: Promoted to front page */
-  $handler->display->display_options['filters']['promote']['id'] = 'promote';
-  $handler->display->display_options['filters']['promote']['table'] = 'node';
-  $handler->display->display_options['filters']['promote']['field'] = 'promote';
-  $handler->display->display_options['filters']['promote']['value'] = '0';
+  $handler->display->display_options['filters']['language']['group'] = 1;
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');

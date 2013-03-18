@@ -34,6 +34,13 @@ function motion_bank_org_feature_default_fe_block_settings() {
       'delta' => 'backgroundimages-block_1',
       'module' => 'views',
     ),
+    'views-basic_page_image_listing-block' => array(
+      'delta' => 'basic_page_image_listing-block',
+      'module' => 'views',
+      'node_type' => array(
+        'basic_page' => TRUE,
+      ),
+    ),
     'views-frontpage_nodes-block' => array(
       'delta' => 'frontpage_nodes-block',
       'module' => 'views',
@@ -121,6 +128,20 @@ function motion_bank_org_feature_default_fe_block_settings() {
     'cache' => -1,
   );
 
+  $theme['views-basic_page_image_listing-block'] = array(
+    'module' => 'views',
+    'delta' => 'basic_page_image_listing-block',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
   $theme['views-frontpage_nodes-block'] = array(
     'module' => 'views',
     'delta' => 'frontpage_nodes-block',
@@ -173,7 +194,7 @@ function motion_bank_org_feature_default_fe_block_settings() {
     'delta' => 'language',
     'theme' => 'mborg',
     'status' => '1',
-    'weight' => '-10',
+    'weight' => '-16',
     'region' => 'navigation',
     'custom' => '0',
     'visibility' => '0',
@@ -231,6 +252,20 @@ function motion_bank_org_feature_default_fe_block_settings() {
     'status' => '1',
     'weight' => '-14',
     'region' => 'header',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['views-basic_page_image_listing-block'] = array(
+    'module' => 'views',
+    'delta' => 'basic_page_image_listing-block',
+    'theme' => 'mborg',
+    'status' => '1',
+    'weight' => '-15',
+    'region' => 'content',
     'custom' => '0',
     'visibility' => '0',
     'pages' => '',
@@ -344,6 +379,20 @@ function motion_bank_org_feature_default_fe_block_settings() {
   $theme['views-backgroundimages-block_1'] = array(
     'module' => 'views',
     'delta' => 'backgroundimages-block_1',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['views-basic_page_image_listing-block'] = array(
+    'module' => 'views',
+    'delta' => 'basic_page_image_listing-block',
     'theme' => 'seven',
     'status' => 0,
     'weight' => '0',
