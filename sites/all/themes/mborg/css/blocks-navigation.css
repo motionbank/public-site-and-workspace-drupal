@@ -12,8 +12,7 @@
 
 #block-views-frontpage-nodes-block,
 #block-views-latest-entries-block,
-#block-views-random-nodes-block,
-#block-views-random-nodes-2-block
+#block-views-random-nodes-block
 {
 	overflow: auto;
 	margin: 0px;
@@ -23,8 +22,7 @@
 
 #block-views-frontpage-nodes-block *,
 #block-views-latest-entries-block *,
-#block-views-random-nodes-block *,
-#block-views-random-nodes-2-block * {
+#block-views-random-nodes-block * {
 	display: none;
 }
 
@@ -33,25 +31,23 @@
 #block-views-latest-entries-block .content,
 #block-views-latest-entries-block .content *,
 #block-views-random-nodes-block .content,
-#block-views-random-nodes-block .content *,
-#block-views-random-nodes-2-block .content,
-#block-views-random-nodes-2-block .content * {
+#block-views-random-nodes-block .content * {
+
 	display: block;
 }
 
 #block-views-frontpage-nodes-block .field-content a,
 #block-views-latest-entries-block .field-content a,
-#block-views-random-nodes-block .field-content a,
-#block-views-random-nodes-2-block .field-content a
+#block-views-random-nodes-block .field-content a
 {
 	display: block;
 	float: left;
-	width: 334px; /* 374 - padding */
+	width: 264px; /* 306px (incl. 2x 1px border + 2x20px pading) */
 	border: 1px solid white;
-	margin-right: 32px;
-	margin-bottom: 32px;
+	margin-right: 26px;
+	margin-bottom: 26px;
 	font-weight: 200;
-	font-size: 20px;
+	font-size: 17px;
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -66,6 +62,6 @@
 
 #block-views-frontpage-nodes-block .field-content a
 {
-	width: 432px; /* 472 - padding */
-	font-size: 49px;
+	width: 342px; /* 384px (incl. 2x1px border + 2x20px padding) */
+	font-size: 41px;
 }
