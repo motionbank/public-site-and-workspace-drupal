@@ -1,5 +1,9 @@
+.node-type-basic-page #content{
+	width: 102%;
+}
+
 .node-type-basic-page #content-header{
-	width: 432px;
+	width: 384px;
 }
 
 .node-type-basic-page #page-title{
@@ -35,7 +39,11 @@
 	font-style: italic;
 }
 
-.node-type-basic-page .view-content{
+.node-type-basic-page #block-views-basic-page-image-listing-block{
 	float: left;
-	margin-right: 32px;
+	margin-right: 26px;
+}
+
+.node-type-basic-page #block-views-latest-entries-block{
+	display: none;
 }
