@@ -47,7 +47,8 @@ ul.nice-menu li {
   /*border-top: 0;*/
   float: left; /* LTR */
   border-right: 2px solid #FFFFFF;
-  padding: 0 6px;
+  padding-right: 2px;
+  padding-left: 2px;
   line-height: 1;
 }
 
@@ -63,9 +64,9 @@ ul.nice-menu a {
   font-weight: 700;
   color: #FFFFFF;
   margin:auto;
-  font-size: 12px;
-  letter-spacing: 2px;
-  padding: 3px 4px 4px 6px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 2px 6px 3px 6px;
   text-transform: uppercase;
 }
 
