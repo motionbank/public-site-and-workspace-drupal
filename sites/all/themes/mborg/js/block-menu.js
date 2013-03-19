@@ -27,7 +27,7 @@
 		 			});
 		 		});
 		 		jQuery( 'a', row ).css({
-		 			height:(row.data('block-preview-image-height')/2+20)+'px',
+		 			height:(row.data('block-preview-image-height')/2)+'px',
 		 			paddingTop:(row.data('block-preview-image-height')/2-20)+'px'
 		 		});
 		 		// preload image(s)
