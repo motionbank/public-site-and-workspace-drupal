@@ -164,15 +164,29 @@ function mborg_preprocess_views_view_unformatted ( &$variables )
         if ( is_array($result->field_field_preview_image) && count($result->field_field_preview_image) > 0 )
         {
           $img = $result->field_field_preview_image[0]['raw'];
+
+          if($view->name == 'frontpage_nodes'){
+            $img_width = 384;  
+          }
+          else{
+            $img_width = 306;
+          }
           
-          $img_width = 384;
           $img_height = floor( ($img_width / (int)$img['width']) * (int)$img['height'] );
           
           if ( !isset($variables['block_preview_image']) )
             $variables['block_preview_image'] = array();
   
           $attr = array();
-          $attr['src'] = file_create_url( image_style_path( 'menu_preview_image', $img['uri'] ) );
+
+
+          if($view->name == 'frontpage_nodes'){
+            $attr['src'] = file_create_url( image_style_path( 'preview_image_384', $img['uri'] ) );
+          }
+          else{
+            $attr['src'] = file_create_url( image_style_path( 'preview_image_306', $img['uri'] ) );
+          }
+          
           $attr['width'] = $img_width;
           $attr['height'] = $img_height;
   
