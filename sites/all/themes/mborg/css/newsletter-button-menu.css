@@ -6,9 +6,6 @@
 	height: 19px;
 	z-index: 1000;
 	background-color: rgb(51,51,51);
-	color: white;
-	font-size: 11px;
-	letter-spacing: 0.25em;
 	padding-left: 8px;
 	padding-right: 8px;
 }
@@ -37,5 +34,9 @@
 	line-height: 1.4;
 	display: block;
 	padding-left: 0.25em;
-	font-size: 11px;
+
+	font-size: 10px;
+	letter-spacing: 1.66px;
+	font-weight: 300;
+	
 }
