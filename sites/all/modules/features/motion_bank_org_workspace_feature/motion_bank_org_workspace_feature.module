@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Motion Bank Org Workspace Feature feature.
+ */
+
+include_once 'motion_bank_org_workspace_feature.features.inc';

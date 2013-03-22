@@ -6,6 +6,14 @@
 
 #edit-search-block-form--2
 {
+<<<<<<< HEAD
+  height:12px;
+  border:0px;
+  vertical-align: top;
+  margin-left: 14px;
+  width:120px;
+  margin-top: 1px;
+=======
   height:17px;
   border:0px;
   margin-left: 6px;
@@ -19,4 +27,5 @@
 
 .form-submit{
 	display:none;
+>>>>>>> ccc2374d2051e1049c1e9ce06f65f0cae2c9c5e4
 }

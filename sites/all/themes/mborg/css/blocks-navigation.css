@@ -3,7 +3,8 @@
 
 .front #content h1.title,
 .front #content .tabs,
-.front #content #block-system-main {
+.front #content #block-system-main, 
+.front #content-header{
 	display: none;
 }
 
@@ -63,4 +64,9 @@
 {
 	width: 432px; /* 472 - padding */
 	font-size: 49px;
+}
+
+.field-content a:hover
+{
+	background-image: url(http://motionbank.dev/sites/all/themes/mborg/logo.png);
 }

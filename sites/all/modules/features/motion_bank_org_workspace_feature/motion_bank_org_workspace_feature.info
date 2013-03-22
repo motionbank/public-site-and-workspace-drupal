@@ -1,0 +1,17 @@
+name = Motion Bank Org Workspace Feature
+description = Things for the workspace
+core = 7.x
+package = Motion Bank
+dependencies[] = ctools
+dependencies[] = fe_block
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[fe_block_settings][] = views-dashboard-block_recent_content
+features[fe_block_settings][] = views-dashboard_slideshow_view-block
+features[fe_block_settings][] = views-og_nodes-project_nodes
+features[features_api][] = api:1
+features[views_view][] = dashboard
+features[views_view][] = dashboard_comments
+features[views_view][] = dashboard_slideshow_view
+features[views_view][] = projects
+features[views_view][] = users
