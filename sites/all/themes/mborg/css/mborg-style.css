@@ -10,7 +10,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-weight: 300;
-  font-size: 49px;
+  font-size: 41px;
+  letter-spacing: 0.09em;
 }
 
 h2 {
