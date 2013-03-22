@@ -107,7 +107,6 @@
     <div id="content" class="column"><div class="section">
       <div id="content-header">
         <?php print render($page['highlighted']); ?>
-        <?php print $breadcrumb; ?>
         <a id="main-content"></a>
         <?php print render($title_prefix); ?>
         <?php if ($title): ?>
@@ -125,7 +124,6 @@
         <?php print render($page['content_header']); ?>
       </div><!-- /#content-header -->
       <?php print render($page['content']); ?>
-      <?php print $feed_icons; ?>
     </div></div><!-- /.section, /#content -->
 
     <?php if ($page['navigation'] || $main_menu): ?>
@@ -173,42 +171,52 @@
   <div id="footer">
     <div id="footer-up">
       
-      <div id="footer-links">
-        <a class="headline" href="">IMPRINT</a> <a class="headline" href="">TEAM</a> <a class="headline" href="">CONTACT</a>
+      <ul id="footer-links">
+        <li><a class="headline" href="">IMPRINT</a></li>
+        <li><a class="headline" href="">TEAM</a></li>
+        <li><a class="headline" href="">CONTACT</a></li>
+      </ul>
+
+      <div id="footer-spacer">
       </div>
 
-      <div id="project-of">
-        <span class="headline">A PROJECT OF:</span><br />
-        THE FORSYTHE COMPANY
+      <div id="footer-wrapper-01">
+        <div id="project-of">
+          <span class="headline">A PROJECT OF:</span><br />
+          THE FORSYTHE COMPANY
+        </div>
+
+      
+        <div id="score-partners">
+          <span class="headline">SCORE PARTNERS:</span>
+          <p>
+            Advanced Computing Center for the Arts and Design Department of Dance at The Ohio State University<br />
+            <br />
+            Fraunhofer-Institut f&uuml;r Graphische Datenverarbeitung<br />
+            <br />
+            Hochschule Darmstadt-<br />
+            University of applied sciences<br />
+            <br />
+            Hochschule f&uuml;r Gestaltung Offenbach
+          </p>
+        </div>
       </div>
 
-      <div id="score-partners">
-        <span class="headline">MOTIONBANK SCORE PARTNERS:</span>
-        <br />
-        <p>
-          Advanced Computing Center for the Arts and Design Department of Dance at The Ohio State University<br />
+      <div id="footer-wrapper-02">
+        <div id="workshop-partners">
+          <span class="headline">WORKSHOP PARTNERS:</span>
           <br />
-          Fraunhofer-Institut f&uuml;r Graphische Datenverarbeitung<br />
+          Berlin School of Mind and Brain -<br />
+          Humboldt-Universit&auml;t Berlin<br />
           <br />
-          Hochschule Darmstadt-<br />
-          University of applied sciences<br />
-          <br />
-          Hochschule f&uuml;r Gestaltung Offenbach
-        </p>
-      </div>
+          Max-Planck-Institut f&uuml;r Hirnforschung<br />
+          Frankfurt am Main
+        </div>
 
-      <div id="workshop-partners">
-        <span class="headline">WORKSHOP PARTNERS:</span>
-        <br />
-        Berlin School of Mind and Brain -<br />
-        Humboldt-Universit&auml;t Berlin<br />
-        <br />
-        Max-Planck-Institut f&uuml;r Hirnforschung<br />
-        Frankfurt am Main
-      </div>
-
-      <div id="supported">
-        <span class="headline">DANCE ENGAGING SCIENCE WORKSHOPS SUPPORTED BY:</span><br />
+        <div id="supported">
+          <span class="headline">DANCE ENGAGING SCIENCE WORKSHOPS SUPPORTED BY:</span><br />
+          <img src="/sites/motionbank.org/files/logos/vw-stiftung.png" alt="Volkswagen Stiftung" />
+        </div>
       </div>
     </div>
 

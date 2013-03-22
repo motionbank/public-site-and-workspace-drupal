@@ -1,39 +1,88 @@
 #footer{
-  width: 1262px;
-}
-
-#footer,
-#footer a{
   color: #FFFFFF;
   text-decoration: none;
   line-height:1.3;
-  font-size: 12px;
+  font-size: 10px;
 }
 
-#footer a{
+ul#footer-links{
+  list-style: none;
+  margin: 0;
+
+  padding: 0;
+}
+ul#footer-links li {
+  float:left;
   border-right: 2px solid #FFFFFF;
-  padding-right: 4px;
-  padding-left: 4px;
+  padding: 0 6px;
+  line-height: 1;
+}
+
+ul#footer-links li:first-child,
+ul#footer-links li:first-child a {
+  padding-left: 0px;
+}
+
+ul#footer-links li:last-child {
+  border-right: none;
+}
+
+ul#footer-links li a {
+  text-decoration: none;
+  outline: none;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin:auto;
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding: 3px 4px 4px 6px;
+  text-transform: uppercase;
+}
+
+#footer a:hover {
+  color: #63FFD2;
+  background-color: #4AD1AD;
+}
+
+#footer a.active {
+  color: #63FFD2;
+  background-color: #000000;
+}
+
+#footer a.active:hover {
+  color: #63FFD2;
+  background-color: #4AD1AD;
 }
 
 #footer-up,
 #footer-down{
-/*  border-top: solid 3px #C3C2C4;*/
-  
+  border-top: solid 3px #C3C2C4;
+}
+ul#footer-links{
+  float: left;
+  width: 220px;
+  padding-top: 8px;
 }
 
-#footer-up div{
+#footer-spacer{
   float: left;
-  width: 248px;
-  border-top: solid 3px #FFFFFF;
+  width: 191px;
+  padding-top: 10px;
+}
+
+
+#project-of,
+#score-partners,
+#workshop-partners,
+#supported{
+  float: left;
+  width: 220px;
   padding-top: 10px;
 }
 
 #footer-down{
-  margin-left: 260px;
+  margin-left: 412px;
   margin-top: 10px;
-
-  border-top: solid 3px #FFFFFF;
   padding-top: 10px;
 }
 
@@ -41,21 +90,17 @@
   display: inline-block;
   font-weight: 700;
   letter-spacing: 2px;
-  margin-bottom:5px;
+  margin-bottom: 5px;
+  font-size: 12px;
 }
 
 #score-partners span,
 #score-partners p{
-  margin-left: -30px;
-  width:248px;
+  margin-left: -54px;
+  width: 248px;
+  margin-top: 0px;
 }
-/*
-#footer-links,
-#project-of,
-#score-partners,
-#workshop-partners,
-#supported{
-  margin-left: auto;
-  margin-right: auto;
+
+#partners{
+  margin-bottom: 150px;
 }
-*/

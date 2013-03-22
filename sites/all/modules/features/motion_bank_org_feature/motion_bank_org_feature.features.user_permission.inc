@@ -14,7 +14,8 @@ function motion_bank_org_feature_user_default_permissions() {
   $permissions['search content'] = array(
     'name' => 'search content',
     'roles' => array(
-      0 => 'author',
+      0 => 'anonymous user',
+      1 => 'author',
     ),
     'module' => 'search',
   );

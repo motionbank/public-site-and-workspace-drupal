@@ -1,20 +1,16 @@
-/* --- i18n menu / language switcher--- */
-
-#block-locale-language
+#block-block-1
 {
 	position: fixed;
 	left: 0px;
-	top: 84px;
+	top: 166px;
 	height: 19px;
 	z-index: 1000;
 	background-color: rgb(51,51,51);
-	color: white;
-	font-size: 10px;
-	letter-spacing: 1.66px;
-	font-weight: 300;
+	padding-left: 8px;
+	padding-right: 8px;
 }
 
-#block-locale-language {
+#block-block-1 {
 	transform-origin: 0% 100%;
 	transform: rotate(90deg);
 	-ms-transform-origin: 0% 100%;
@@ -27,24 +23,20 @@
 	-moz-transform: rotate(90deg); /* Firefox */
 }
 
-#block-locale-language a
+#block-block-1 p {
+	margin: 0;
+}
+
+#block-block-1 a
 {
 	color: white;
 	text-decoration: none;
 	line-height: 1.4;
-}
-
-#block-locale-language * {
-	display: none;
-}
-
-#block-locale-language .content,
-#block-locale-language .content *,
-#block-locale-language .content li:first-child {
 	display: block;
 	padding-left: 0.25em;
-}
 
-#block-locale-language .content li.active {
-	display: none;
+	font-size: 10px;
+	letter-spacing: 1.66px;
+	font-weight: 300;
+	
 }

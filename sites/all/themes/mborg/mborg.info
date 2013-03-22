@@ -52,10 +52,16 @@ stylesheets[all][]        = css/bgimages.css
 stylesheets[all][]        = css/fonts.css
 stylesheets[all][]        = css/mborg-style.css
 stylesheets[all][]        = css/language-switcher-menu.css
+stylesheets[all][]        = css/newsletter-button-menu.css
+stylesheets[all][]        = css/social-media-button-menu.css
 stylesheets[all][]        = css/main-menu.css
 stylesheets[all][]		  = css/search.css
 stylesheets[all][]		  = css/logo.css
+stylesheets[all][]		  = css/footer.cs
 stylesheets[all][]		  = css/footer.css
+stylesheets[all][]		  = css/event-content-type.css
+stylesheets[all][]		  = css/basic-page-content-type.css
+stylesheets[all][]		  = css/media-queries.css
 stylesheets[all][]		  = css/blocks-navigation.css
 ; style of nice menus can be found here: css/nice_menus_mborg.css
 ; path to this css has to be configured in Apperance -> Theme-Settings -> "Path to custom Nice menus CSS file "

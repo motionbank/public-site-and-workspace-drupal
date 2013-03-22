@@ -45,11 +45,8 @@ a:link, a:hover, a:visited, a:active {
 }
 
 #page-wrapper {
-  padding: 47px 47px 0px 47px;
-}
-
-.toolbar #page-wrapper {
-  top: 30px;
+  padding-left: 54px;
+  padding-top: 60px;
 }
 
 .menufont {
@@ -76,7 +73,7 @@ a:link, a:hover, a:visited, a:active {
 #content-header
 {
   padding: 0px;
-  margin: 0 32px 32px 0;
+  margin-right: 26px;
   float: left;
   width: 878px;
 }

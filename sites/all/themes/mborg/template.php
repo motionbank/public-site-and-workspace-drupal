@@ -140,11 +140,60 @@ function mborg_preprocess_comment(&$variables, $hook) {
 
 function mborg_preprocess_views_view ( &$variables )
 {
+  $view = &$variables['view'];
+
   if ( $variables['name'] === 'backgroundimages' )
   {
     $variables['mborg_backgroundimages_first_image'] = file_create_url(
       $variables['view']->result[0]->field_field_image[0]['rendered']['#file']->uri
     );
+  }
+}
+
+function mborg_preprocess_views_view_unformatted ( &$variables )
+{
+  $view = $variables['view'];
+  //dpm( $view );
+  if ( in_array( $view->name, array( 'frontpage_nodes', 'latest_entries', 'random_nodes' ) ) )
+  {
+    $results = $view->result;
+    if ( count( $results ) > 0 )
+    {
+      foreach ( $results as $num => $result )
+      {
+        if ( is_array($result->field_field_preview_image) && count($result->field_field_preview_image) > 0 )
+        {
+          $img = $result->field_field_preview_image[0]['raw'];
+
+          if($view->name == 'frontpage_nodes'){
+            $img_width = 384;  
+          }
+          else{
+            $img_width = 306;
+          }
+          
+          $img_height = floor( ($img_width / (int)$img['width']) * (int)$img['height'] );
+          
+          if ( !isset($variables['block_preview_image']) )
+            $variables['block_preview_image'] = array();
+  
+          $attr = array();
+
+
+          if($view->name == 'frontpage_nodes'){
+            $attr['src'] = file_create_url( image_style_path( 'preview_image_384', $img['uri'] ) );
+          }
+          else{
+            $attr['src'] = file_create_url( image_style_path( 'preview_image_306', $img['uri'] ) );
+          }
+          
+          $attr['width'] = $img_width;
+          $attr['height'] = $img_height;
+  
+          $variables['block_preview_image'][$num] = $attr;
+        }
+      }
+    }
   }
 }
 
