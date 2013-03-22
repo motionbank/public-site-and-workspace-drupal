@@ -1,5 +1,5 @@
 .node-type-event #content-header{
-	width: 836px;
+	width: 716px;
 }
 
 .node-type-event #page-title{
@@ -11,6 +11,29 @@
 	display: none;
 }
 
-.node-type-event{
+.node-type-event #block-views-latest-entries-block,
+.node-type-event #block-views-random-nodes-block{
+	display: none;
+}
 
+.node-type-event #main{
+	margin-bottom: 30px;
+}
+
+.node-type-event #block-system-main{
+	background-color: none;
+}
+
+.node-type-event .content{
+	padding: 0px;
+}
+
+.node-type-event .field-item{
+	background-color:rgba(255,255,255,0.8);
+	margin-bottom: 15px;
+}
+
+.node-type-event .field-item p{
+	margin: 0px;
+	padding: 25px 10px 25px 16px;
 }

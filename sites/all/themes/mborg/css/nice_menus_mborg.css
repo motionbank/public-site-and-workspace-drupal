@@ -65,7 +65,7 @@ ul.nice-menu a {
   color: #FFFFFF;
   margin:auto;
   font-size: 11px;
-  letter-spacing: 1px;
+  letter-spacing: 0.09em;
   padding: 2px 6px 3px 6px;
   text-transform: uppercase;
 }
@@ -108,7 +108,7 @@ ul.nice-menu ul li a {
   color: #FFFFFF;
   margin:auto;
   font-size: 12px;
-  letter-spacing: 2px;
+  letter-spacing: 0.09em;
   padding: 3px 4px 4px 6px;
 }
 
@@ -119,7 +119,7 @@ ul.nice-menu ul li ul li a {
   color: #FFFFFF;
   margin:auto;
   font-size: 12px;
-  letter-spacing: 2px;
+  letter-spacing: 0.075em;
   padding: 3px 4px 4px 6px;
 }
 

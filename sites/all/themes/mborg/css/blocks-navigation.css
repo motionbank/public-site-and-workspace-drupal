@@ -46,22 +46,28 @@
 	border: 1px solid white;
 	margin-right: 26px;
 	margin-bottom: 26px;
-	font-weight: 200;
-	font-size: 17px;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-	color: white;
-	letter-spacing: 0.25em;
-
+	
 	padding-top: 150px;
 	padding-left: 20px;
 	padding-right: 20px;
 	height: 150px;
+
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	font-size: 17px;
+	letter-spacing: 0.20em;
+	font-weight: 200;	
 }
 
 #block-views-frontpage-nodes-block .field-content a
 {
 	width: 342px; /* 384px (incl. 2x1px border + 2x20px padding) */
+}
+
+#block-views-frontpage-nodes-block .views-row-first a
+{
 	font-size: 41px;
+	letter-spacing: 0.09em;
 }
