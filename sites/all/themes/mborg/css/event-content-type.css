@@ -11,6 +11,11 @@
 	display: none;
 }
 
-.node-type-event{
+.node-type-event #block-views-latest-entries-block,
+.node-type-event #block-views-random-nodes-block{
+	display: none;
+}
 
+.node-type-event #main{
+	margin-bottom: 30px;
 }
