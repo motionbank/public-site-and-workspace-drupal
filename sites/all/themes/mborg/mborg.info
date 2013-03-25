@@ -87,6 +87,7 @@ stylesheets-conditional[lte IE 6][all][]  = css/ie6.css
 scripts[] = js/bgimageslideshow.js
 scripts[] = js/block-menu.js
 scripts[] = js/search-field.js
+scripts[] = js/nice-menu-custom-hover.js
 
 
 
