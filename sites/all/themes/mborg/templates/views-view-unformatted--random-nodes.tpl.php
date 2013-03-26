@@ -15,7 +15,7 @@
 <?php $block_group = 0; ?>
 
 <?php foreach ($rows as $id => $row): ?>
-	<?php if($processed_blocks % 5 == 0) { print '<div style="float:left" class="random-block-group-' . $block_group . '">'; } ?>
+	<?php if($processed_blocks % 5 == 0) { print '<div class="random-block-group-' . $block_group . '">'; } ?>
 	  <div <?php if ($classes_array[$id]) { print 'class="' . $classes_array[$id] .'"';  } ?> <?php 
   		if ( isset($block_preview_image) && 
   			 is_array($block_preview_image) && 

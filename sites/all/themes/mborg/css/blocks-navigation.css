@@ -71,3 +71,8 @@
 	font-size: 41px;
 	letter-spacing: 0.09em;
 }
+
+#block-views-random-nodes-block .random-block-group-0,
+#block-views-random-nodes-block .random-block-group-1 {
+	float: left;
+}
