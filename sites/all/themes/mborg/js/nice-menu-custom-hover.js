@@ -29,4 +29,24 @@ jQuery(function(){
 		
 	}
 	*/
+	// jQuery( "#nice-menu-1 .menuparent").hover(
+	// 	function(evt){
+	// 		jQuery("#nice-menu-1 .active-trail > ul").css({
+	// 			border: "1px solid green"
+	// 		});
+	// 	},
+	// 	function(evt){
+	// 		console.log( item );
+	// 		// jQuery("#nice-menu-1 .menuparent").css({
+	// 		// 	border: "1px solid red"
+	// 		// });
+	// 	}
+	// );
+	
+	// jQuery("#nice-menu-1 .active-trail > ul").css({
+	// 	border: "1px solid green"
+	// });
 });
+
+
+// ).hover(function(e){console.log(evt)});
