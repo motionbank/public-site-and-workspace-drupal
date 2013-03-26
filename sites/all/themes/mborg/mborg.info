@@ -61,8 +61,8 @@ stylesheets[all][]		  = css/footer.cs
 stylesheets[all][]		  = css/footer.css
 stylesheets[all][]		  = css/event-content-type.css
 stylesheets[all][]		  = css/basic-page-content-type.css
-stylesheets[all][]		  = css/media-queries.css
 stylesheets[all][]		  = css/blocks-navigation.css
+stylesheets[all][]		  = css/media-queries.css
 ; style of nice menus can be found here: css/nice_menus_mborg.css
 ; path to this css has to be configured in Apperance -> Theme-Settings -> "Path to custom Nice menus CSS file "
 
@@ -87,6 +87,7 @@ stylesheets-conditional[lte IE 6][all][]  = css/ie6.css
 scripts[] = js/bgimageslideshow.js
 scripts[] = js/block-menu.js
 scripts[] = js/search-field.js
+scripts[] = js/nice-menu-custom-hover.js
 
 
 

@@ -9,8 +9,9 @@
  Global CSS for ALL menu types
 ******************************/
 
-/* let the submenu stay open */
-#nice-menu-1 .active-trail ul
+
+/* let the submenu stay open  */
+#nice-menu-1 .active-trail > ul
 {
   display:block !important;
   visibility: visible !important;
@@ -121,6 +122,7 @@ ul.nice-menu ul li ul li a {
   font-size: 12px;
   letter-spacing: 0.075em;
   padding: 3px 4px 4px 6px;
+  text-transform: none;
 }
 
 ul.nice-menu li {
@@ -257,7 +259,7 @@ ul.nice-menu-down ul li {
 }
 
 ul.nice-menu-down li ul li ul {
-  left: 12.5em; /* LTR */
+  left: 230px; /* LTR */
   top: -1px;
 }
 
