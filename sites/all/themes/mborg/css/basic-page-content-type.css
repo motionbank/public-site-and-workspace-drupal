@@ -18,12 +18,9 @@
 .node-type-basic-page .field-item{
 	background-color:rgba(255,255,255,0.8);
 	margin-bottom: 15px;
-}
-
-.node-type-basic-page .field-item p{
-	margin: 0px;
 	padding: 25px 10px 25px 16px;
 }
+
 
 .node-type-basic-page .field-name-field-image {
 	display: none;
@@ -55,4 +52,40 @@
 
 .node-type-basic-page #block-views-latest-entries-block{
 	display: none;
+}
+/* TYPE STYLING */
+.node-type-basic-page .field-item p{
+	margin: 0px;
+	margin-top: 12px;
+	font-size: 12px;
+	line-height: 1.6em;
+	letter-spacing: 0.03em;
+	font-weight: 300;
+	color: #000000;
+}
+
+.node-type-basic-page .field-item h2{
+	margin: 0px;
+	font-size: 17px;
+	letter-spacing: 0.05em;
+	font-weight: 400;
+	color: #000000;
+	text-transform: uppercase;	
+}
+
+.node-type-basic-page .field-item h3{
+	margin: 0px;
+	font-size: 17px;
+	letter-spacing: 0.2em;
+	font-weight: 100;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.node-type-basic-page .field-item a {
+	text-decoration: none;
+}
+
+.node-type-basic-page .field-item a:hover {
+	text-decoration: underline;
 }
