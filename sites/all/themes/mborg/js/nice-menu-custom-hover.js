@@ -3,6 +3,13 @@
  */
 
 jQuery(function(){
+	jQuery(".menuparent").not(".active-trail").mouseenter(function() {
+		jQuery(".menuparent .active-trail > ul").fadeTo('fast',0.0);
+	});
+
+	jQuery(".menuparent").not(".active-trail").mouseout(function() {
+		jQuery(".menuparent .active-trail > ul").fadeTo('fast',1);
+	});
 /*
 	
 	jQuery('.menuparent').filter(this '> ul:hidden').find('a').mouseenter(function() {
