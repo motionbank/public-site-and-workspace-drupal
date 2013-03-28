@@ -30,10 +30,43 @@
 
 .node-type-event .field-item{
 	background-color:rgba(255,255,255,0.8);
+	padding: 25px 10px 25px 16px;
 	margin-bottom: 15px;
 }
 
+/* TYPE STYLING */
 .node-type-event .field-item p{
 	margin: 0px;
-	padding: 25px 10px 25px 16px;
+	margin-top: 12px;
+	font-size: 12px;
+	line-height: 1.6em;
+	letter-spacing: 0.03em;
+	font-weight: 300;
+	color: #000000;
+}
+
+.node-type-event .field-item h2{
+	margin: 0px;
+	font-size: 17px;
+	letter-spacing: 0.05em;
+	font-weight: 400;
+	color: #000000;
+	text-transform: uppercase;	
+}
+
+.node-type-event .field-item h3{
+	margin: 0px;
+	font-size: 17px;
+	letter-spacing: 0.2em;
+	font-weight: 100;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.node-type-event .field-item a {
+	text-decoration: none;
+}
+
+.node-type-event .field-item a:hover {
+	text-decoration: underline;
 }

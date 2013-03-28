@@ -14,7 +14,7 @@ function motion_bank_org_feature_field_default_fields() {
   $fields['node-article-body'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(
         0 => 'node',
@@ -438,7 +438,7 @@ function motion_bank_org_feature_field_default_fields() {
       'settings' => array(
         'alt_field' => 0,
         'default_image' => 0,
-        'file_directory' => '',
+        'file_directory' => 'bgimages',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
@@ -463,7 +463,7 @@ function motion_bank_org_feature_field_default_fields() {
   $fields['node-basic_page-body'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(
         0 => 'node',
@@ -908,7 +908,7 @@ function motion_bank_org_feature_field_default_fields() {
   $fields['node-page-body'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(
         0 => 'node',
