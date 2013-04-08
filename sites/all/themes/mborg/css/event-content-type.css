@@ -78,13 +78,14 @@
 
 .node-type-event .field-item dl{
 	margin: 0;
-	margin-top: -56px;
+	margin-top: -15px;
 	padding: 0;
 	padding-left: 20px;
 	float: right;
 }
 .node-type-event .field-item dd{
 	margin-left: 0px;
+	margin-bottom: -21px;
 	font-size: 10px;
 	letter-spacing: 0.09em;
 	font-weight: 100;
