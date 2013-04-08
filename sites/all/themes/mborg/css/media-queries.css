@@ -1,3 +1,8 @@
+@media (min-width: 1485px) {
+	#logo{
+		left: 1183px;
+	}
+}
 @media (max-width: 1143px) {
 
 	#block-views-random-nodes-block .content .random-block-group-1 {
