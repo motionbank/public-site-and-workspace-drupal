@@ -36,6 +36,12 @@ a:link, a:hover, a:visited, a:active {
   color: black;
 }
 
+table,
+td{
+  font-family: 'Lato', sans-serif;
+  margin: 0px;
+}
+
 #page-wrapper {
   position: absolute;
   overflow: auto;
