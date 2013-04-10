@@ -13,7 +13,7 @@ ul#footer-links{
 }
 ul#footer-links li {
   float:left;
-  border-right: 2px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
   padding: 0 6px;
   line-height: 1;
 }
@@ -56,7 +56,7 @@ ul#footer-links li a {
 
 #footer-up,
 #footer-down{
-  border-top: solid 3px #C3C2C4;
+  border-top: solid 1px #FFFFFF;
 }
 ul#footer-links{
   float: left;
