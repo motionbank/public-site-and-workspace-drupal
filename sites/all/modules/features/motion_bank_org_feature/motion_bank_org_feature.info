@@ -55,7 +55,6 @@ features[image][] = preview_image_384
 features[language][] = de
 features[language][] = en
 features[menu_custom][] = main-menu
-features[menu_links][] = main-menu:search/node
 features[node][] = backgroundimage
 features[node][] = basic_page
 features[node][] = event

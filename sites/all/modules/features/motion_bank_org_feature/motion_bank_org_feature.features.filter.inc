@@ -29,7 +29,7 @@ function motion_bank_org_feature_filter_default_formats() {
         'weight' => '1',
         'status' => '1',
         'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <h2> <h3> <img>',
+          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <h2> <h3> <img> <table> <tbody> <td> <tr> <p>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),
