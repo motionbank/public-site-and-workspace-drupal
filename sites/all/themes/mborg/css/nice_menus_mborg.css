@@ -10,12 +10,12 @@
 ******************************/
 
 
-/* let the submenu stay open  */
+/* let the submenu stay open  
 #nice-menu-1 .active-trail > ul
 {
   display:block !important;
   visibility: visible !important;
-}
+}*/
 
 .region-header
 {
@@ -26,10 +26,9 @@
   line-height: 1em;
 }
 
-#last_branch_group_0{
-  float:left;
-}
-#last_branch_group_1{
+#last_branch_group_0,
+#last_branch_group_1,
+#last_branch_group_2{
   float:left;
 }
 
@@ -96,7 +95,7 @@ ul.nice-menu ul {
 
 ul.nice-menu ul li {
   padding: 0px;
-  padding-left: 6px;
+  /*padding-left: 6px;*/
   border: 0px;
   white-space: nowrap;
   width:auto;
@@ -226,7 +225,7 @@ ul.nice-menu-down li ul li ul {
   /*left: 12.5em; /* LTR */
   top: -1px;
   width: 600px;
-  margin-left:-120px;
+  margin-left: 95px;
 }
 
 ul.nice-menu-down li ul li ul li{
@@ -259,7 +258,7 @@ ul.nice-menu-down ul li {
 }
 
 ul.nice-menu-down li ul li ul {
-  left: 230px; /* LTR */
+ /* left: 230px; /* LTR */
   top: -1px;
 }
 
@@ -292,11 +291,8 @@ ul.nice-menu-down li li.menuparent:hover {
  */
 ul.nice-menu li {
   margin: 0;
-<<<<<<< HEAD
   /*padding-left: 0; /* LTR */
-=======
   padding-left: 0; /* LTR */
->>>>>>> db02d4f4e09a91b291cce1acc2dfadcb1a1a7946
   background-image: none;
 }
 
