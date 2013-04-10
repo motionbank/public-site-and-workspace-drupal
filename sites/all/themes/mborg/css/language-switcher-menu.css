@@ -4,7 +4,7 @@
 {
 	position: fixed;
 	left: 0px;
-	top: 84px;
+	top: 90px;
 	height: 19px;
 	z-index: 1000;
 	background-color: rgb(51,51,51);
@@ -35,7 +35,7 @@
 
 	font-size: 10px;
 	letter-spacing: 0.15em;
-	font-weight: 400;
+	font-weight: 300;
 
 	padding-top: 2px;
 	padding-left: 2px;
