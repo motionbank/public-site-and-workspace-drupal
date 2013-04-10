@@ -6,17 +6,75 @@
 
 #edit-search-block-form--2
 {
-  height:17px;
   border:0px;
   margin-left: 6px;
   width:120px;
   background-color: #000000;
-  color: #63FFD2;
+  color: #00e7ee;
   padding-left: 6px;
-  letter-spacing: 2px;
-  display:none;
+  letter-spacing: 0.09em;
+  display: none;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 11px;
+  font-family: 'Lato',sans-serif;
+  margin: 0px;
 }
 
 #search-block-form .form-submit{
 	display:none;
+}
+
+/* STYLE OF SEARCH RESULTS */
+
+#edit-keys {
+  display: inline;
+}
+
+.form-type-textfield label {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  font-weight: 100;
+  color: #FFFFFF;
+  text-decoration: none;
+
+}
+
+h2{
+  font-size: 17px;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-transform: uppercase;  
+}
+
+.title a,
+ol {
+  font-size: 17px;
+  letter-spacing: 0.2em;
+  font-weight: 100;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.title a:hover{
+  text-decoration: underline;
+}
+.search-snippet-info{
+  background-color:rgba(255,255,255,0.8);
+  padding: 25px 10px 25px 16px;
+  margin-bottom: 26px;
+}
+
+p{
+  margin: 0px;
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 1.6em;
+  letter-spacing: 0.03em;
+  font-weight: 300;
+  color: #000000;
+  display: inline;
 }
