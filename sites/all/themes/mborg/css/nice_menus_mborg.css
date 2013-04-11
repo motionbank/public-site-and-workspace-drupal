@@ -71,18 +71,13 @@ ul.nice-menu a {
 }
 
 ul.nice-menu a:hover {
-  color: #63FFD2;
-  background-color: #4AD1AD;
+  color: #00e7ee;
+  background-color: #000000;
 }
 
 ul.nice-menu li a.active {
   color: #00e7ee;
   background-color: #000000;
-}
-
-ul.nice-menu li a.active:hover {
-  color: #63FFD2;
-  background-color: #4AD1AD;
 }
 
 ul.nice-menu ul {
@@ -292,8 +287,7 @@ ul.nice-menu-down li li.menuparent:hover {
 ul.nice-menu li {
   margin: 0;
   /*padding-left: 0; /* LTR */
-  padding-left: 0; /* LTR */
-  background-image: none;
+  padding: 0; /* LTR */
 }
 
 #header-region ul.nice-menu li {
