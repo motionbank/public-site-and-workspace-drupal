@@ -41,7 +41,7 @@
 
 }
 
-h2{
+.main-wrapper h2{
   font-size: 17px;
   letter-spacing: 0.05em;
   font-weight: 400;
@@ -59,6 +59,10 @@ ol {
   text-decoration: none;
 }
 
+.search-results{
+  list-style-type: square;
+}
+
 .title a:hover{
   text-decoration: underline;
 }
@@ -68,13 +72,19 @@ ol {
   margin-bottom: 26px;
 }
 
-p{
+.search-snippet-info p{
   margin: 0px;
   margin-top: 12px;
   font-size: 12px;
-  line-height: 1.6em;
+  line-height: 15px;
   letter-spacing: 0.03em;
   font-weight: 300;
   color: #000000;
-  display: inline;
+  text-transform: none;
+}
+
+.page-search-node #block-views-latest-entries-block,
+.page-search-node #block-views-random-nodes-block,
+.search-info {
+  display: none;
 }
