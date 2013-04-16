@@ -8,6 +8,7 @@ jQuery(function(){
     jQuery('#edit-search-block-form--2:input').val('');
 
     searchButton.fadeOut(100,function(){
+      searchField.css('display', 'block');
       searchField.fadeIn(100, function(){
         searchField.focus();
         });

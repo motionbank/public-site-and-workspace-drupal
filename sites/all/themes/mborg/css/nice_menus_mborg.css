@@ -23,7 +23,7 @@
 }
 
 .container-inline{
-  line-height: 1em;
+  /*line-height: 1em;*/
 }
 
 #last_branch_group_0,
@@ -40,6 +40,7 @@ ul.nice-menu ul {
   /*margin-left: -12px;*/
   margin-bottom: 50px;
   /*border-top: 1px solid #ccc;*/ 
+
 }
 
 ul.nice-menu li {
@@ -58,7 +59,6 @@ ul.nice-menu li:last-child {
 }
 
 ul.nice-menu a {
-  /*padding: 0.3em 5px 0.3em 5px;*/
   text-decoration: none;
   outline: none;
   font-weight: 700;
@@ -66,8 +66,11 @@ ul.nice-menu a {
   margin:auto;
   font-size: 11px;
   letter-spacing: 0.09em;
-  padding: 2px 6px 3px 6px;
+  /*padding: 2px 6px 3px 6px;*/
+  padding-left: 6px;
+  padding-right: 6px;
   text-transform: uppercase;
+  line-height: 12px;
 }
 
 ul.nice-menu a:hover {
@@ -81,11 +84,11 @@ ul.nice-menu li a.active {
 }
 
 ul.nice-menu ul {
-  top: 1.8em;
   left: -1px; /* LTR */
   /*border: 0;
   border-top: 1px solid #ccc;*/
   margin-right: 0; /* LTR */
+  width: 555px;
 }
 
 ul.nice-menu ul li {
@@ -99,12 +102,11 @@ ul.nice-menu ul li {
 ul.nice-menu ul li a {
   text-decoration: none;
   outline: none;
-  font-weight: 700;
+  font-weight: 300;
   color: #FFFFFF;
   margin:auto;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 0.09em;
-  padding: 3px 4px 4px 6px;
 }
 
 ul.nice-menu ul li ul li a {
@@ -113,7 +115,7 @@ ul.nice-menu ul li ul li a {
   font-weight: 300;
   color: #FFFFFF;
   margin:auto;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 0.075em;
   padding: 3px 4px 4px 6px;
   text-transform: none;
@@ -125,7 +127,6 @@ ul.nice-menu li {
 }
 
 ul.nice-menu ul {
-  top: 1.8em;
   left: -1px; /* LTR */
   border: 0;
   margin-right: 0; /* LTR */
@@ -209,11 +210,12 @@ ul.nice-menu-down li li {
 }
 
 ul.nice-menu-down ul {
-  left: 0; /* LTR */s
+  padding-top: 10px;
 }
 
 ul.nice-menu-down ul li {
   /*clear: both;*/
+  padding-bottom: 4px;
 }
 
 ul.nice-menu-down li ul li ul {
@@ -299,7 +301,6 @@ ul.nice-menu li {
 }
 
 #header-region ul.nice-menu ul {
-  top: 1.8em;
   left: -1px; /* LTR */
   border: 0;
   /*border-top: 1px solid #ccc;*/

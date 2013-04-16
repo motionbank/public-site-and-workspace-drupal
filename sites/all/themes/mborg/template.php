@@ -341,7 +341,7 @@ function mborg_nice_menus_build ( $variables )
 
         
         // make (div) groups of 5 children on the very last branch (depth == 3) of the menu-tree
-        if ( $menu_item['link']['depth'] == 3 ) {
+        if ( $menu_item['link']['depth'] == 2 ) {
           
           if($menu_items_processed % 4 == 0){
             $output .= '<div id="last_branch_group_' . $last_branch_group . '">' . theme('menu_link', $variables);

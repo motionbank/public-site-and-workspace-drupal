@@ -8,17 +8,20 @@
 {
   border:0px;
   margin-left: 6px;
-  width:120px;
+  width:100px;
   background-color: #000000;
   color: #00e7ee;
-  padding-left: 6px;
   letter-spacing: 0.09em;
   display: none;
   font-size: 11px;
   font-weight: 700;
-  line-height: 11px;
+  line-height: 15px;
   font-family: 'Lato',sans-serif;
   margin: 0px;
+  padding: 0px;
+  padding-left: 6px;
+  padding-right: 6px;
+  height: 12px;
 }
 
 #search-block-form .form-submit{
@@ -32,12 +35,8 @@
 }
 
 .form-type-textfield label {
-  display: block;
-  font-size: 12px;
-  letter-spacing: 0.2em;
-  font-weight: 100;
-  color: #FFFFFF;
-  text-decoration: none;
+
+  
 
 }
 
