@@ -23,7 +23,7 @@
 }
 
 .container-inline{
-  line-height: 1em;
+  /*line-height: 1em;*/
 }
 
 #last_branch_group_0,
@@ -40,7 +40,7 @@ ul.nice-menu ul {
   /*margin-left: -12px;*/
   margin-bottom: 50px;
   /*border-top: 1px solid #ccc;*/ 
-  width: 900px;
+
 }
 
 ul.nice-menu li {
@@ -88,6 +88,7 @@ ul.nice-menu ul {
   /*border: 0;
   border-top: 1px solid #ccc;*/
   margin-right: 0; /* LTR */
+  width: 555px;
 }
 
 ul.nice-menu ul li {
@@ -215,7 +216,6 @@ ul.nice-menu-down ul {
 ul.nice-menu-down ul li {
   /*clear: both;*/
   padding-bottom: 4px;
-  margin-right: 6px;
 }
 
 ul.nice-menu-down li ul li ul {
