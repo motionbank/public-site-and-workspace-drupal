@@ -62,6 +62,7 @@ stylesheets[all][]		  = css/footer.css
 stylesheets[all][]		  = css/event-content-type.css
 stylesheets[all][]		  = css/basic-page-content-type.css
 stylesheets[all][]		  = css/upcoming-event-list.css
+stylesheets[all][]		  = css/documentation-event-list.css
 stylesheets[all][]		  = css/blocks-navigation.css
 stylesheets[all][]		  = css/media-queries.css
 ; style of nice menus can be found here: css/nice_menus_mborg.css

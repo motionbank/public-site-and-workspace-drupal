@@ -1,0 +1,105 @@
+.page-documentation-event-list #block-views-latest-entries-block,
+.page-documentation-event-list #block-views-random-nodes-block{
+	display: none;
+}
+
+.page-documentation-event-list #main-wrapper{
+	margin-bottom: 30px;
+}
+
+.page-documentation-event-list .region-content-header .views-row {
+	background-color: rgba(255,255,255,0.7);
+	padding: 10px;
+	padding-left: 8px;
+	margin-bottom: 8px;
+	overflow: hidden;
+	line-height: 0;
+
+	position: relative;
+}
+
+.page-documentation-event-list .views-field-field-preview-image {
+	float: left;
+}
+
+.page-documentation-event-list .views-field-title {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    line-height: 21px;
+	text-transform: uppercase;
+
+	padding-top: 8px;
+	padding-left: 14px;
+	overflow: hidden;
+}
+
+.page-documentation-event-list .views-field-title a {
+	color: rgba(0, 0, 0, 0.7);
+	text-decoration: none;
+}
+
+.page-documentation-event-list .views-field-title a:hover {
+	color: #00E7EE;
+	background-color: #000000;
+}
+
+.page-documentation-event-list .views-field-field-date-of-event {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 17px;
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    line-height: 21px;
+    text-transform: uppercase;
+
+	float: left;
+	padding-left: 14px;
+	overflow: hidden;
+}
+
+.page-documentation-event-list .views-field-field-location {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 17px;
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    line-height: 21px;
+    text-transform: uppercase;
+
+	padding-left: 4px;
+	overflow: hidden;	
+}
+
+.page-documentation-event-list .views-field-field-preview-text {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    line-height: 15px;	
+
+    margin-top: 3px;
+	padding-left: 14px;
+	overflow: hidden;
+	width: 70%;
+}
+
+.page-documentation-event-list .views-field-view-node{
+	color: rgba(0, 0, 0, 0.9);
+	font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 15px;	
+
+	overflow: hidden;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.page-documentation-event-list .views-field-view-node a {
+	text-decoration: none;
+}
+
+.page-documentation-event-list .views-field-view-node a:hover {
+	color: #00E7EE;
+	background-color: #000000;
+}
