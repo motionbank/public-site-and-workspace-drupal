@@ -166,7 +166,7 @@ function motion_bank_org_feature_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'language' => array(
-          'weight' => '3',
+          'weight' => '6',
         ),
         'title' => array(
           'weight' => '0',
@@ -175,6 +175,10 @@ function motion_bank_org_feature_strongarm() {
       'display' => array(
         'language' => array(
           'default' => array(
+            'weight' => '1',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
             'weight' => '1',
             'visible' => FALSE,
           ),
