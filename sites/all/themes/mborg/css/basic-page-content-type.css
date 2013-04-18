@@ -58,7 +58,7 @@
 	display: none;
 }
 /* TYPE STYLING */
-.node-type-basic-page .field-item p{
+.node-type-basic-page .field-item p {
 	margin: 0px;
 	margin-top: 12px;
 	font-size: 12px;
@@ -66,6 +66,7 @@
 	letter-spacing: 0.03em;
 	font-weight: 300;
 	color: #000000;
+	display: inline;
 }
 
 .node-type-basic-page .field-item h2{
