@@ -1,3 +1,7 @@
+.page-upcoming-event-list #content-header {
+    width: 716px;
+}
+
 .page-upcoming-event-list #block-views-latest-entries-block,
 .page-upcoming-event-list #block-views-random-nodes-block{
 	display: none;
