@@ -1,3 +1,7 @@
+.node-type-basic-page .links.inline {
+	display: none;
+}
+
 .node-type-basic-page #content{
 	width: 100%;
 }
