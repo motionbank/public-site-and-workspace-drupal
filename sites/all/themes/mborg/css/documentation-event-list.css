@@ -26,8 +26,8 @@
 	margin-bottom: 30px;
 }
 
-.section-documentation .view-id-documentation .field-items,
-.section-dokumentation .view-id-documentation .field-items {
+.section-documentation .view-id-documentation .views-row,
+.section-dokumentation .view-id-documentation .views-row  {
 	background-color: rgba(255,255,255,0.8);
 	padding: 10px;
 	padding-left: 8px;
