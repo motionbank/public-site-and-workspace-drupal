@@ -49,6 +49,10 @@ function motion_bank_org_feature_default_fe_block_settings() {
         'basic_page' => TRUE,
       ),
     ),
+    'views-documentation-block_1' => array(
+      'delta' => 'documentation-block_1',
+      'module' => 'views',
+    ),
     'views-frontpage_nodes-block' => array(
       'delta' => 'frontpage_nodes-block',
       'module' => 'views',
@@ -175,6 +179,21 @@ function motion_bank_org_feature_default_fe_block_settings() {
     'visibility' => '0',
     'pages' => '',
     'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['views-documentation-block_1'] = array(
+    'module' => 'views',
+    'delta' => 'documentation-block_1',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '1',
+    'pages' => 'documentation
+dokumentation',
+    'title' => '<none>',
     'cache' => -1,
   );
 
@@ -337,6 +356,21 @@ function motion_bank_org_feature_default_fe_block_settings() {
     'cache' => -1,
   );
 
+  $theme['views-documentation-block_1'] = array(
+    'module' => 'views',
+    'delta' => 'documentation-block_1',
+    'theme' => 'mborg',
+    'status' => '1',
+    'weight' => '0',
+    'region' => 'content',
+    'custom' => '0',
+    'visibility' => '1',
+    'pages' => 'documentation
+dokumentation',
+    'title' => '<none>',
+    'cache' => -1,
+  );
+
   $theme['views-frontpage_nodes-block'] = array(
     'module' => 'views',
     'delta' => 'frontpage_nodes-block',
@@ -493,6 +527,21 @@ function motion_bank_org_feature_default_fe_block_settings() {
     'visibility' => '0',
     'pages' => '',
     'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['views-documentation-block_1'] = array(
+    'module' => 'views',
+    'delta' => 'documentation-block_1',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '1',
+    'pages' => 'documentation
+dokumentation',
+    'title' => '<none>',
     'cache' => -1,
   );
 

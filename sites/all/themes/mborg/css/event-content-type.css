@@ -1,3 +1,7 @@
+.node-type-event .links.inline {
+	display: none;
+}
+
 .node-type-event #content-header{
 	width: 716px;
 }
