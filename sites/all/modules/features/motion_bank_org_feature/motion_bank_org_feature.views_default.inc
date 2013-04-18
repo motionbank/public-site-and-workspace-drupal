@@ -153,6 +153,150 @@ function motion_bank_org_feature_views_default_views() {
   $export['basic_page_image_listing'] = $view;
 
   $view = new view();
+  $view->name = 'documentation';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Documentation';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Documentation';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '0';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Preview Image */
+  $handler->display->display_options['fields']['field_preview_image']['id'] = 'field_preview_image';
+  $handler->display->display_options['fields']['field_preview_image']['table'] = 'field_data_field_preview_image';
+  $handler->display->display_options['fields']['field_preview_image']['field'] = 'field_preview_image';
+  $handler->display->display_options['fields']['field_preview_image']['label'] = '';
+  $handler->display->display_options['fields']['field_preview_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_preview_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_preview_image']['settings'] = array(
+    'image_style' => 'square_thumbnail',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Date of Event */
+  $handler->display->display_options['fields']['field_date_of_event']['id'] = 'field_date_of_event';
+  $handler->display->display_options['fields']['field_date_of_event']['table'] = 'field_data_field_date_of_event';
+  $handler->display->display_options['fields']['field_date_of_event']['field'] = 'field_date_of_event';
+  $handler->display->display_options['fields']['field_date_of_event']['label'] = '';
+  $handler->display->display_options['fields']['field_date_of_event']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_date_of_event']['alter']['text'] = '[field_date_of_event], ';
+  $handler->display->display_options['fields']['field_date_of_event']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_date_of_event']['settings'] = array(
+    'format_type' => 'mborg_event_date',
+    'fromto' => 'value',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
+  /* Field: Content: Event Location */
+  $handler->display->display_options['fields']['field_location']['id'] = 'field_location';
+  $handler->display->display_options['fields']['field_location']['table'] = 'field_data_field_location';
+  $handler->display->display_options['fields']['field_location']['field'] = 'field_location';
+  $handler->display->display_options['fields']['field_location']['label'] = '';
+  $handler->display->display_options['fields']['field_location']['element_label_colon'] = FALSE;
+  /* Field: Content: Preview Text */
+  $handler->display->display_options['fields']['field_preview_text']['id'] = 'field_preview_text';
+  $handler->display->display_options['fields']['field_preview_text']['table'] = 'field_data_field_preview_text';
+  $handler->display->display_options['fields']['field_preview_text']['field'] = 'field_preview_text';
+  $handler->display->display_options['fields']['field_preview_text']['label'] = '';
+  $handler->display->display_options['fields']['field_preview_text']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['field_preview_text']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['field_preview_text']['alter']['more_link'] = TRUE;
+  $handler->display->display_options['fields']['field_preview_text']['alter']['more_link_text'] = '[more]';
+  $handler->display->display_options['fields']['field_preview_text']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['field_preview_text']['element_label_colon'] = FALSE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = '[more...]';
+  /* Sort criterion: Content: Date of Event -  start date (field_date_of_event) */
+  $handler->display->display_options['sorts']['field_date_of_event_value']['id'] = 'field_date_of_event_value';
+  $handler->display->display_options['sorts']['field_date_of_event_value']['table'] = 'field_data_field_date_of_event';
+  $handler->display->display_options['sorts']['field_date_of_event_value']['field'] = 'field_date_of_event_value';
+  $handler->display->display_options['sorts']['field_date_of_event_value']['order'] = 'DESC';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'event' => 'event',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Date of Event -  start date (field_date_of_event) */
+  $handler->display->display_options['filters']['field_date_of_event_value']['id'] = 'field_date_of_event_value';
+  $handler->display->display_options['filters']['field_date_of_event_value']['table'] = 'field_data_field_date_of_event';
+  $handler->display->display_options['filters']['field_date_of_event_value']['field'] = 'field_date_of_event_value';
+  $handler->display->display_options['filters']['field_date_of_event_value']['operator'] = '<';
+  $handler->display->display_options['filters']['field_date_of_event_value']['form_type'] = 'date_text';
+  $handler->display->display_options['filters']['field_date_of_event_value']['default_date'] = 'today';
+  $handler->display->display_options['filters']['field_date_of_event_value']['year_range'] = '-0:+3';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    '***CURRENT_LANGUAGE***' => '***CURRENT_LANGUAGE***',
+  );
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block_1');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $translatables['documentation'] = array(
+    t('Master'),
+    t('Documentation'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('[field_date_of_event], '),
+    t('[more]'),
+    t('[more...]'),
+    t('Block'),
+  );
+  $export['documentation'] = $view;
+
+  $view = new view();
   $view->name = 'frontpage_nodes';
   $view->description = '';
   $view->tag = 'default';

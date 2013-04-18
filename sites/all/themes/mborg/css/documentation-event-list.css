@@ -1,14 +1,34 @@
-.page-documentation-event-list #block-views-latest-entries-block,
-.page-documentation-event-list #block-views-random-nodes-block{
+.section-documentation .links.inline,
+.section-dokumentation .links.inline {
 	display: none;
 }
 
-.page-documentation-event-list #main-wrapper{
+.section-documentation #content-header,
+.section-dokumentation #content-header {
+    width: 716px;
+    float: none;
+}
+
+.section-documentation .region-content,
+.section-dokumentation .region-content {
+	width: 716px;
+}
+
+.section-documentation #block-views-latest-entries-block,
+.section-documentation #block-views-random-nodes-block,
+.section-dokumentation #block-views-latest-entries-block,
+.section-dokumentation #block-views-random-nodes-block{
+	display: none;
+}
+
+.section-documentation #main-wrapper,
+.section-dokumentation #main-wrapper {
 	margin-bottom: 30px;
 }
 
-.page-documentation-event-list .region-content-header .views-row {
-	background-color: rgba(255,255,255,0.7);
+.section-documentation .view-id-documentation .views-row,
+.section-dokumentation .view-id-documentation .views-row  {
+	background-color: rgba(255,255,255,0.8);
 	padding: 10px;
 	padding-left: 8px;
 	margin-bottom: 8px;
@@ -18,11 +38,13 @@
 	position: relative;
 }
 
-.page-documentation-event-list .views-field-field-preview-image {
+.section-documentation .views-field-field-preview-image,
+.section-dokumentation .views-field-field-preview-image {
 	float: left;
 }
 
-.page-documentation-event-list .views-field-title {
+.section-documentation .views-field-title,
+.section-dokumentation .views-field-title  {
     font-size: 17px;
     font-weight: 400;
     letter-spacing: 0.2em;
@@ -34,17 +56,20 @@
 	overflow: hidden;
 }
 
-.page-documentation-event-list .views-field-title a {
+.section-documentation .views-field-title a,
+.section-dokumentation .views-field-title a  {
 	color: rgba(0, 0, 0, 0.7);
 	text-decoration: none;
 }
 
-.page-documentation-event-list .views-field-title a:hover {
+.section-documentation .views-field-title a:hover,
+.section-dokumentation .views-field-title a:hover  {
 	color: #00E7EE;
 	background-color: #000000;
 }
 
-.page-documentation-event-list .views-field-field-date-of-event {
+.section-documentation .views-field-field-date-of-event, 
+.section-dokumentation .views-field-field-date-of-event {
     color: rgba(0, 0, 0, 0.5);
     font-size: 17px;
     font-weight: 100;
@@ -57,7 +82,8 @@
 	overflow: hidden;
 }
 
-.page-documentation-event-list .views-field-field-location {
+.section-documentation .views-field-field-location,
+.section-dokumentation .views-field-field-location  {
 	color: rgba(0, 0, 0, 0.5);
 	font-size: 17px;
     font-weight: 100;
@@ -69,7 +95,8 @@
 	overflow: hidden;	
 }
 
-.page-documentation-event-list .views-field-field-preview-text {
+.section-documentation .views-field-field-preview-text,
+.section-dokumentation .views-field-field-preview-text  {
 	color: rgba(0, 0, 0, 0.5);
 	font-size: 12px;
     font-weight: 300;
@@ -82,7 +109,8 @@
 	width: 70%;
 }
 
-.page-documentation-event-list .views-field-view-node{
+.section-documentation .views-field-view-node,
+.section-dokumentation .views-field-view-node {
 	color: rgba(0, 0, 0, 0.9);
 	font-size: 12px;
     font-weight: 400;
@@ -95,11 +123,13 @@
 	right: 10px;
 }
 
-.page-documentation-event-list .views-field-view-node a {
+.section-documentation .views-field-view-node a,
+.section-dokumentation .views-field-view-node a  {
 	text-decoration: none;
 }
 
-.page-documentation-event-list .views-field-view-node a:hover {
+.section-documentation .views-field-view-node a:hover,
+.section-dokumentation .views-field-view-node a:hover  {
 	color: #00E7EE;
 	background-color: #000000;
 }
