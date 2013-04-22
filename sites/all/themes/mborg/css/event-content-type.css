@@ -59,6 +59,7 @@
 	color: #000000;
 	color: rgba(0,0,0,0.7);
 	text-transform: uppercase;	
+	display: inline;
 }
 
 .node-type-event .field-item h3{
@@ -69,6 +70,7 @@
 	color: #000000;
 	color: rgba(0,0,0,0.7);
 	text-transform: uppercase;
+	display: inline;
 }
 
 .node-type-event .field-item a {
