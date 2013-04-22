@@ -27,6 +27,8 @@
 }
 
 .page-upcoming-event-list .views-field-title {
+    color: #000000;
+	color: rgba(0, 0, 0, 0.7);
     font-size: 17px;
     font-weight: 400;
     letter-spacing: 0.2em;
@@ -39,7 +41,8 @@
 }
 
 .page-upcoming-event-list .views-field-title a {
-	color: rgba(0, 0, 0, 0.8);
+	color: #000000;
+	color: rgba(0, 0, 0, 0.7);
 	text-decoration: none;
 }
 
@@ -49,7 +52,8 @@
 }
 
 .page-upcoming-event-list .views-field-field-date-of-event {
-    color: rgba(0, 0, 0, 0.5);
+    color: #000000;
+	color: rgba(0, 0, 0, 0.7);
     font-size: 17px;
     font-weight: 100;
     letter-spacing: 0.2em;
@@ -62,7 +66,8 @@
 }
 
 .page-upcoming-event-list .views-field-field-location {
-	color: rgba(0, 0, 0, 0.5);
+	color: #000000;
+	color: rgba(0, 0, 0, 0.7);
 	font-size: 17px;
     font-weight: 100;
     letter-spacing: 0.2em;
@@ -74,11 +79,12 @@
 }
 
 .page-upcoming-event-list .views-field-field-preview-text {
-	color: rgba(0, 0, 0, 0.5);
+	color: #000000;
+	color: rgba(0, 0, 0, 0.7);
 	font-size: 12px;
     font-weight: 300;
     letter-spacing: 0.03em;
-    line-height: 15px;	
+    line-height: 17px;	
 
     margin-top: 3px;
 	padding-left: 14px;
@@ -87,11 +93,12 @@
 }
 
 .page-upcoming-event-list .views-field-view-node{
-	color: rgba(0, 0, 0, 0.9);
+	color: #000000;
+	color: rgba(0, 0, 0, 0.7);
 	font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.03em;
-    line-height: 15px;	
+    line-height: 17px;	
 
 	overflow: hidden;
 	position: absolute;
