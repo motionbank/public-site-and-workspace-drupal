@@ -28,6 +28,7 @@
 
 .section-documentation .view-id-documentation .views-row,
 .section-dokumentation .view-id-documentation .views-row  {
+	background-color: #FFFFFF;
 	background-color: rgba(255,255,255,0.8);
 	padding: 10px;
 	padding-left: 8px;
@@ -58,6 +59,7 @@
 
 .section-documentation .views-field-title a,
 .section-dokumentation .views-field-title a  {
+	color: #000000;
 	color: rgba(0, 0, 0, 0.7);
 	text-decoration: none;
 }
@@ -70,6 +72,7 @@
 
 .section-documentation .views-field-field-date-of-event, 
 .section-dokumentation .views-field-field-date-of-event {
+    color: #000000;
     color: rgba(0, 0, 0, 0.5);
     font-size: 17px;
     font-weight: 100;
@@ -84,6 +87,7 @@
 
 .section-documentation .views-field-field-location,
 .section-dokumentation .views-field-field-location  {
+	color: #000000;
 	color: rgba(0, 0, 0, 0.5);
 	font-size: 17px;
     font-weight: 100;
@@ -97,6 +101,7 @@
 
 .section-documentation .views-field-field-preview-text,
 .section-dokumentation .views-field-field-preview-text  {
+	color: #000000;
 	color: rgba(0, 0, 0, 0.5);
 	font-size: 12px;
     font-weight: 300;
@@ -111,6 +116,7 @@
 
 .section-documentation .views-field-view-node,
 .section-dokumentation .views-field-view-node {
+	color: #000000;
 	color: rgba(0, 0, 0, 0.9);
 	font-size: 12px;
     font-weight: 400;
