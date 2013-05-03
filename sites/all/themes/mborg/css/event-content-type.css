@@ -10,6 +10,7 @@
 	line-height: 1;
 	margin-top: -8px;
 	margin-bottom: 30px;
+	font-weight: 100;
 }
 .node-type-event .form-item.form-type-item{
 	display: none;
@@ -45,7 +46,7 @@
 	font-size: 12px;
 	line-height: 17px;
 	letter-spacing: 0.03em;
-	font-weight: 300;
+	font-weight: 400;
 	color: #000000;
 	color: rgba(0,0,0,0.7);
 	display: block;
