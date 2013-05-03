@@ -102,9 +102,9 @@
 .section-documentation .views-field-field-preview-text,
 .section-dokumentation .views-field-field-preview-text  {
 	color: #000000;
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.7);
 	font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.03em;
     line-height: 15px;	
 
