@@ -2,8 +2,8 @@
 	display: none;
 }
 
-.node-type-basic-page #content{
-	width: 100%;
+.node-type-basic-page .region-content {
+    float: left;
 }
 
 .node-type-basic-page #content-header{
