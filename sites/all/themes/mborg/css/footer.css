@@ -1,3 +1,11 @@
+#footer{
+  padding-right: 54px;
+}
+
+.front #footer{
+  padding-right: 0px;
+}
+
 #footer,
 #footer p{
   color: #FFFFFF;
