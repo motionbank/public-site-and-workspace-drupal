@@ -8,6 +8,7 @@
 
 .node-type-basic-page #content-header{
 	width: 384px;
+	margin-top: -63px;
 }
 
 .node-type-basic-page #page-title{
@@ -67,7 +68,7 @@
 	font-size: 12px;
 	line-height: 17px;
 	letter-spacing: 0.03em;
-	font-weight: 400;
+	font-weight: 300;
 	color: #000000;
 	display: block;
 }

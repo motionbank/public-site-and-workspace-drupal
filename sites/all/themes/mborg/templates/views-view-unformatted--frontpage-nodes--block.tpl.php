@@ -22,6 +22,6 @@
   		<?php endif; ?>
   		>
     <?php print $row; ?>
-    <div class="block-bg-image" style=" visibility: hidden; height:<?php print ($block_preview_image[$id]['height'])-19; ?>px; width:<?php print $block_preview_image[$id]['width']; ?>px; background-image:url('<?php print $block_preview_image[$id]['src']; ?>')"></div>
+    
   </div>
 <?php endforeach; ?>
