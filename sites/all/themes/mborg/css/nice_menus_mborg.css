@@ -107,6 +107,7 @@ ul.nice-menu ul li a {
   margin:auto;
   font-size: 11px;
   letter-spacing: 0.09em;
+  text-transform: none;
 }
 
 ul.nice-menu ul li ul li a {
