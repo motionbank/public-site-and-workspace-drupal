@@ -30,7 +30,7 @@
 .page-upcoming-event-list .views-field-title {
     color: #000000;
     font-size: 17px;
-    font-weight: 400;
+    font-weight: 100;
     letter-spacing: 0.2em;
     line-height: 21px;
 	text-transform: uppercase;
@@ -78,7 +78,7 @@
 .page-upcoming-event-list .views-field-field-preview-text {
 	color: #000000;
 	font-size: 12px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0.03em;
     line-height: 17px;	
 
@@ -91,7 +91,7 @@
 .page-upcoming-event-list .views-field-view-node{
 	color: #000000;
 	font-size: 12px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0.03em;
     line-height: 17px;	
 
