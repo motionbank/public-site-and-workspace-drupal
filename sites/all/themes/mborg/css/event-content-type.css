@@ -48,7 +48,6 @@
 	letter-spacing: 0.03em;
 	font-weight: 400;
 	color: #000000;
-	color: rgba(0,0,0,0.7);
 	display: block;
 }
 
@@ -58,7 +57,6 @@
 	letter-spacing: 0.05em;
 	font-weight: 400;
 	color: #000000;
-	color: rgba(0,0,0,0.7);
 	text-transform: uppercase;	
 	display: inline;
 }
@@ -69,7 +67,6 @@
 	letter-spacing: 0.2em;
 	font-weight: 100;
 	color: #000000;
-	color: rgba(0,0,0,0.7);
 	text-transform: uppercase;
 	display: inline;
 }
