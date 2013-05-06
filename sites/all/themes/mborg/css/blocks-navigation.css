@@ -48,13 +48,14 @@
     border: 1px solid rgba(255, 255, 255, .6);
     -webkit-background-clip: padding-box; /* for Safari */
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
-
+/*
 	margin-right: 26px;
 	margin-bottom: 26px;
 	
 	padding-top: 150px;
 	padding-left: 20px;
 	padding-right: 20px;
+	*/
 	height: 150px;
 
 	text-align: center;

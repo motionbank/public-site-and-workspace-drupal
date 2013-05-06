@@ -25,6 +25,7 @@
   		data-block-preview-image-width="<?php print $block_preview_image[$id]['width']; ?>"
   		<?php endif; ?> >
 	    <?php print $row; ?>
+      <div class="block-bg-image" style=" visibility: hidden; position:relative; top:1px; left:1px; height:<?php print ($block_preview_image[$id]['height'])-20; ?>px; width:<?php print ($block_preview_image[$id]['width'])-42; ?>px; background-image:url('<?php print $block_preview_image[$id]['src']; ?>')"></div>
 	  </div>
 
 	<?php $processed_blocks++; ?>

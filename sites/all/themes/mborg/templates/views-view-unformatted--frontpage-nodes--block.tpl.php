@@ -11,7 +11,7 @@
   <h3><?php print $title; ?></h3>
 <?php endif; ?>
 <?php foreach ($rows as $id => $row): ?>
-  <div <?php if ($classes_array[$id]) { print 'class="' . $classes_array[$id] .'"';  } 
+  <div <?php if ($classes_array[$id]) { print 'class="' . $classes_array[$id] .'"; style=" margin-right: 26px; margin-bottom: 26px;"';  } 
   		?> <?php 
   		if ( isset($block_preview_image) && 
   			 is_array($block_preview_image) && 
@@ -22,6 +22,6 @@
   		<?php endif; ?>
   		>
     <?php print $row; ?>
-    
+    <div class="block-bg-image" style=" visibility: hidden; position:relative; top:1px; left:1px; height:<?php print ($block_preview_image[$id]['height'])-20; ?>px; width:<?php print ($block_preview_image[$id]['width'])-42; ?>px; background-image:url('<?php print $block_preview_image[$id]['src']; ?>')"></div>
   </div>
 <?php endforeach; ?>
