@@ -20,8 +20,8 @@
 		 			// item_anchor.css({
 		 			// 	'background-image':img_css_url
 		 			// });
-		 			jQuery('.block-bg-image', this).fadeIn(400);
-		 			jQuery({alpha:1}).animate({alpha:0}, {
+		 			jQuery('.block-bg-image', this).stop(true, true).fadeIn(400);
+		 			jQuery({alpha:1}).stop(true, true).animate({alpha:0}, {
 						        duration: 200,
 						        step: function(){
 						            item_anchor.css('border-color','rgba(255,255,255,'+this.alpha+')');
@@ -31,8 +31,8 @@
 		 			// item_anchor.css({
 		 			// 	'background-image':'none'
 		 			// });
-		 			jQuery('.block-bg-image', this).fadeOut(400);
-		 			jQuery({alpha:0}).animate({alpha:1}, {
+		 			jQuery('.block-bg-image', this).stop(true, true).fadeOut(400);
+		 			jQuery({alpha:0}).stop(true, true).animate({alpha:1}, {
 						        duration: 200,
 						        step: function(){
 						            item_anchor.css('border-color','rgba(255,255,255,'+this.alpha+')');
