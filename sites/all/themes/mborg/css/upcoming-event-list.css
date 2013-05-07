@@ -1,5 +1,6 @@
 .page-upcoming-event-list #content-header {
     width: 716px;
+    margin-top: -63px;
 }
 
 .page-upcoming-event-list #block-views-latest-entries-block,
@@ -9,6 +10,12 @@
 
 .page-upcoming-event-list #main-wrapper{
 	margin-bottom: 30px;
+}
+
+.page-upcoming-event-list #page-title {
+    font-weight: 100;
+    line-height: 1;
+    margin-bottom: 30px;
 }
 
 .page-upcoming-event-list .region-content-header .views-row {
