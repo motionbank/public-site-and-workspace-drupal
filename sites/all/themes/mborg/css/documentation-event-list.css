@@ -1,3 +1,8 @@
+.section-documentation .region-content-header .field-item,
+.section-dokumentation .region-content-header .field-item{
+	margin-bottom: 8px;
+}
+
 .section-documentation .links.inline,
 .section-dokumentation .links.inline {
 	display: none;
