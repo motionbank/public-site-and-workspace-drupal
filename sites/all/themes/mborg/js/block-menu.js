@@ -25,7 +25,10 @@
 						        duration: 200,
 						        step: function(){
 						            item_anchor.css('border-color','rgba(255,255,255,'+this.alpha+')');
-						        }
+						        },
+						        complete: function(){
+						    	item_anchor.css('border-color','rgba(255,255,255,0)');
+						    }
 						    });
 		 		},function(){
 		 			// item_anchor.css({
@@ -36,7 +39,9 @@
 						        duration: 200,
 						        step: function(){
 						            item_anchor.css('border-color','rgba(255,255,255,'+this.alpha+')');
-						        }
+						        }, complete : function(){
+						    	item_anchor.css('border-color','rgba(255,255,255,0.6)');
+						    }
 						    });
 		 		});
 		 		jQuery( 'a', row ).css({
