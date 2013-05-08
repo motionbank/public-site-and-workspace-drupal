@@ -658,10 +658,9 @@ function motion_bank_org_feature_views_default_views() {
   $handler->display->display_options['filters']['field_date_of_event_value']['default_date'] = 'today';
   $handler->display->display_options['filters']['field_date_of_event_value']['year_range'] = '-0:+3';
 
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page');
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block_1');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['path'] = 'upcoming-event-list';
   $translatables['upcoming_event_list'] = array(
     t('Master'),
     t('Upcoming'),
@@ -681,7 +680,7 @@ function motion_bank_org_feature_views_default_views() {
     t('[field_date_of_event], '),
     t('[more]'),
     t('[more...]'),
-    t('Page'),
+    t('Block'),
   );
   $export['upcoming_event_list'] = $view;
 

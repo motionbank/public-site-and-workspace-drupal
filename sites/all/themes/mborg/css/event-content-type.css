@@ -4,11 +4,11 @@
 
 .node-type-event #content-header{
 	width: 716px;
+	margin-top: -56px
 }
 
 .node-type-event #page-title{
 	line-height: 1;
-	margin-top: -63px;
 	margin-bottom: 15px;
 	font-weight: 100;
 	letter-spacing: 0.05em;

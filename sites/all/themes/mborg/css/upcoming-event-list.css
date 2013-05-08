@@ -1,6 +1,150 @@
-.page-upcoming-event-list #content-header {
+.section-upcoming .region-content-header .field-item,
+.section-vorschau .region-content-header .field-item{
+	margin-bottom: 8px;
+}
+
+.section-upcoming .links.inline,
+.section-vorschau .links.inline {
+	display: none;
+}
+
+.section-upcoming #content-header,
+.section-vorschau #content-header {
     width: 716px;
-    margin-top: -63px;
+    float: none;
+}
+
+.section-upcoming .region-content,
+.section-vorschau .region-content {
+	width: 716px;
+}
+
+.section-upcoming #block-views-latest-entries-block,
+.section-upcoming #block-views-random-nodes-block,
+.section-vorschau #block-views-latest-entries-block,
+.section-vorschau #block-views-random-nodes-block{
+	display: none;
+}
+
+.section-upcoming #main-wrapper,
+.section-vorschau #main-wrapper {
+	margin-bottom: 30px;
+}
+
+.section-upcoming .view-id-upcoming_event_list .views-row,
+.section-vorschau .view-id-upcoming_event_list .views-row  {
+	background-color: #FFFFFF;
+	background-color: rgba(255,255,255,0.8);
+	padding: 10px;
+	padding-left: 8px;
+	margin-bottom: 8px;
+	overflow: hidden;
+	line-height: 0;
+
+	position: relative;
+}
+
+.section-upcoming .views-field-field-preview-image,
+.section-vorschau .views-field-field-preview-image {
+	float: left;
+}
+
+.section-upcoming .views-field-title,
+.section-vorschau .views-field-title  {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    line-height: 21px;
+	text-transform: uppercase;
+
+	padding-top: 3px;
+	padding-left: 14px;
+	overflow: hidden;
+}
+
+.section-upcoming .views-field-title a,
+.section-vorschau .views-field-title a  {
+	color: #000000;
+	text-decoration: none;
+}
+
+.section-upcoming .views-field-title a:hover,
+.section-vorschau .views-field-title a:hover  {
+	color: #00E7EE;
+	background-color: #000000;
+}
+
+.section-upcoming .views-field-field-date-of-event, 
+.section-vorschau .views-field-field-date-of-event {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: 21px;
+    text-transform: uppercase;
+
+	float: left;
+	padding-left: 14px;
+	overflow: hidden;
+}
+
+.section-upcoming .views-field-field-location,
+.section-vorschau .views-field-field-location  {
+	color: #000000;
+	font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: 21px;
+    text-transform: uppercase;
+
+	padding-left: 4px;
+	overflow: hidden;	
+}
+
+.section-upcoming .views-field-field-preview-text,
+.section-vorschau .views-field-field-preview-text  {
+	color: #000000;
+	font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: 15px;	
+
+    margin-top: 8px;
+	padding-left: 14px;
+	overflow: hidden;
+	width: 70%;
+}
+
+.section-upcoming .views-field-view-node,
+.section-vorschau .views-field-view-node {
+	color: #000000;
+	font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    line-height: 15px;	
+
+	overflow: hidden;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.section-upcoming .views-field-view-node a,
+.section-vorschau .views-field-view-node a  {
+	text-decoration: none;
+}
+
+.section-upcoming .views-field-view-node a:hover,
+.section-vorschau .views-field-view-node a:hover  {
+	color: #00E7EE;
+	background-color: #000000;
+}
+
+
+
+/*.page-upcoming-event-list #content-header {
+    width: 716px;
+    margin-top: -56px
 }
 
 .page-upcoming-event-list #block-views-latest-entries-block,
@@ -37,9 +181,9 @@
 
 .page-upcoming-event-list .views-field-title {
     color: #000000;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.05em;
     line-height: 21px;
 	text-transform: uppercase;
 
@@ -60,9 +204,9 @@
 
 .page-upcoming-event-list .views-field-field-date-of-event {
     color: #000000;
-    font-size: 17px;
-    font-weight: 100;
-    letter-spacing: 0.2em;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
     line-height: 21px;
     text-transform: uppercase;
 
@@ -73,9 +217,9 @@
 
 .page-upcoming-event-list .views-field-field-location {
 	color: #000000;
-	font-size: 17px;
-    font-weight: 100;
-    letter-spacing: 0.2em;
+	font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
     line-height: 21px;
     text-transform: uppercase;
 
@@ -116,4 +260,4 @@
 .page-upcoming-event-list .views-field-view-node a:hover {
 	color: #00E7EE;
 	background-color: #000000;
-}
+}*/

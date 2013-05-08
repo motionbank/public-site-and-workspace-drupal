@@ -4,6 +4,21 @@
 
 */
 
+.page-search-node  #content-header{
+  width: 716px;
+  margin-top: -56px
+}
+
+.page-search-node #page-title{
+  line-height: 1;
+  margin-bottom: 15px;
+  font-weight: 100;
+}
+
+ .page-search-node li {
+  color: #FFFFFF;
+ }
+
 #edit-search-block-form--2
 {
   border:0px;
@@ -39,10 +54,6 @@
   font-size: 13px;
   font-weight: 300;
   letter-spacing: 0.05em;
- }
-
- .page-search-node li {
-  color: #FFFFFF;
  }
 
 .main-wrapper h2{
