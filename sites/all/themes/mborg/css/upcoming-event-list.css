@@ -15,7 +15,8 @@
 .page-upcoming-event-list #page-title {
     font-weight: 100;
     line-height: 1;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    letter-spacing: 0.05em;
 }
 
 .page-upcoming-event-list .region-content-header .views-row {
@@ -42,7 +43,7 @@
     line-height: 21px;
 	text-transform: uppercase;
 
-	padding-top: 8px;
+	padding-top: 3px;
 	padding-left: 14px;
 	overflow: hidden;
 }
@@ -86,10 +87,10 @@
 	color: #000000;
 	font-size: 12px;
     font-weight: 300;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.05em;
     line-height: 17px;	
 
-    margin-top: 3px;
+    margin-top: 8px;
 	padding-left: 14px;
 	overflow: hidden;
 	width: 70%;
