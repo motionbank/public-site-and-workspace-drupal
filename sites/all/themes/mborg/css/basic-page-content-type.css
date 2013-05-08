@@ -14,7 +14,7 @@
 .node-type-basic-page #page-title{
 	line-height: 1;
 	margin-top: -8px;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 	font-weight: 100;
 }
 .node-type-basic-page .form-item.form-type-item{
@@ -24,7 +24,7 @@
 .node-type-basic-page .field-item{
 	background-color: #FFFFFF;
 	background-color: rgba(255,255,255,0.8);
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	padding: 25px 10px 25px 16px;
 }
 
@@ -49,7 +49,7 @@
 	padding-left: 10px;
 	font-style: italic;
 	font-size: 10px;
-	letter-spacing: 0.09em;
+	letter-spacing: 0.05em;
 	color: #FFFFFF;
 }
 
@@ -80,15 +80,17 @@
 	font-weight: 400;
 	color: #000000;
 	text-transform: uppercase;	
+	display: inline;
 }
 
 .node-type-basic-page .field-item h3{
 	margin: 0px;
 	font-size: 17px;
-	letter-spacing: 0.2em;
-	font-weight: 100;
+	letter-spacing: 0.05em;
+	font-weight: 300;
 	color: #000000;
 	text-transform: uppercase;
+	display: inline;
 }
 
 .node-type-basic-page .field-item a {

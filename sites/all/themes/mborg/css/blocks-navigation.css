@@ -62,9 +62,9 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	color: white;
-	font-size: 17px;
+	font-size: 16px;
 	letter-spacing: 0.20em;
-	font-weight: 100;	
+	font-weight: 300;	
 }
 
 #block-views-frontpage-nodes-block .field-content a
@@ -75,7 +75,8 @@
 #block-views-frontpage-nodes-block .views-row-first a
 {
 	font-size: 41px;
-	letter-spacing: 0.09em;
+	letter-spacing: 0.05em;
+	font-weight: 100;
 }
 
 #block-views-random-nodes-block .random-block-group-0,

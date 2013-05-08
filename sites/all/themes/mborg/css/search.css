@@ -35,10 +35,15 @@
 }
 
 .form-type-textfield label {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+ }
 
-  
-
-}
+ .page-search-node li {
+  color: #FFFFFF;
+ }
 
 .main-wrapper h2{
   font-size: 17px;
@@ -52,7 +57,7 @@
 ol {
   font-size: 17px;
   letter-spacing: 0.2em;
-  font-weight: 100;
+  font-weight: 300;
   color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;

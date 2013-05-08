@@ -8,9 +8,10 @@
 
 .node-type-event #page-title{
 	line-height: 1;
-	margin-top: -8px;
-	margin-bottom: 30px;
+	margin-top: -63px;
+	margin-bottom: 15px;
 	font-weight: 100;
+	letter-spacing: 0.05em;
 }
 .node-type-event .form-item.form-type-item{
 	display: none;
@@ -36,7 +37,7 @@
 .node-type-event .field-item{
 	background-color:rgba(255,255,255,0.8);
 	padding: 25px 10px 25px 16px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 /* TYPE STYLING */
@@ -64,8 +65,8 @@
 .node-type-event .field-item h3{
 	margin: 0px;
 	font-size: 17px;
-	letter-spacing: 0.2em;
-	font-weight: 100;
+	letter-spacing: 0.05em;
+	font-weight: 300;
 	color: #000000;
 	text-transform: uppercase;
 	display: inline;
