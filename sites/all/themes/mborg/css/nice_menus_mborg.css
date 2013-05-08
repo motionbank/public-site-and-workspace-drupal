@@ -48,8 +48,6 @@ ul.nice-menu li {
   /*border-top: 0;*/
   float: left; /* LTR */
   border-right: 1px solid #FFFFFF;
-  padding-right: 2px;
-  padding-left: 2px;
   line-height: 1;
 }
 
