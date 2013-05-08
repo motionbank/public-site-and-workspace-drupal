@@ -51,9 +51,9 @@
 
 .section-documentation .views-field-title,
 .section-dokumentation .views-field-title  {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.05em;
     line-height: 21px;
 	text-transform: uppercase;
 
@@ -77,9 +77,9 @@
 .section-documentation .views-field-field-date-of-event, 
 .section-dokumentation .views-field-field-date-of-event {
     color: #000000;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 300;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.05em;
     line-height: 21px;
     text-transform: uppercase;
 
@@ -91,9 +91,9 @@
 .section-documentation .views-field-field-location,
 .section-dokumentation .views-field-field-location  {
 	color: #000000;
-	font-size: 17px;
+	font-size: 16px;
     font-weight: 300;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.05em;
     line-height: 21px;
     text-transform: uppercase;
 
