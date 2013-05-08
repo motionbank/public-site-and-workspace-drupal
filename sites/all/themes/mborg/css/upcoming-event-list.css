@@ -1,6 +1,6 @@
 .page-upcoming-event-list #content-header {
     width: 716px;
-    margin-top: -63px;
+    margin-top: -56px
 }
 
 .page-upcoming-event-list #block-views-latest-entries-block,
@@ -37,9 +37,9 @@
 
 .page-upcoming-event-list .views-field-title {
     color: #000000;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.05em;
     line-height: 21px;
 	text-transform: uppercase;
 
@@ -60,9 +60,9 @@
 
 .page-upcoming-event-list .views-field-field-date-of-event {
     color: #000000;
-    font-size: 17px;
-    font-weight: 100;
-    letter-spacing: 0.2em;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
     line-height: 21px;
     text-transform: uppercase;
 
@@ -73,9 +73,9 @@
 
 .page-upcoming-event-list .views-field-field-location {
 	color: #000000;
-	font-size: 17px;
-    font-weight: 100;
-    letter-spacing: 0.2em;
+	font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
     line-height: 21px;
     text-transform: uppercase;
 
