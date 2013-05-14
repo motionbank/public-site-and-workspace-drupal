@@ -183,17 +183,17 @@
 
         <br />
         
-        <img class="partners-img" id="dresden-img" src="/sites/motionbank.org/files/footer-logos/Amtsmarke_gelbhl_SW_weiss.png" alt="" />
-        <img class="partners-img" id="sachsen-img" src="/sites/motionbank.org/files/footer-logos/FS_150_SW_weiss.png" alt="" />
-        <img class="partners-img" id="hmwk-img" src="/sites/motionbank.org/files/footer-logos/HessischesMinisteriumWissenschaftundKunst_weiss.png" alt="" />
-        <img class="partners-img" id="kfffm-img" src="/sites/motionbank.org/files/footer-logos/kffrm-logo-quer-sw_weiss.png" alt="" />
-        <img class="partners-img" id="ksb-img" src="/sites/motionbank.org/files/footer-logos/ksb_SW_weiss.png" alt="" />
-        <img class="partners-img" id="poly-img" src="/sites/motionbank.org/files/footer-logos/stiftung-polytechnische-gesellschaft-ffm_weiss.png" alt="" />
-        <img class="partners-img" id="ffm-img" src="/sites/motionbank.org/files/footer-logos/Logo_StadtFFM_bw_weiss.png" alt="" />
-        <img class="partners-img" id="altana-img" src="/sites/motionbank.org/files/footer-logos/altana_kulturstiftung.png" alt="" />
-        <img class="partners-img" id="hellerau-img" src="/sites/motionbank.org/files/footer-logos/Logo_Hellerau_weiss.png" alt="" />
-        <img class="partners-img" id="flab-img" src="/sites/motionbank.org/files/footer-logos/flab_logo_weiss.png" alt="" />        
-        <img class="partners-img" id="bhf-img" src="/sites/motionbank.org/files/footer-logos/bhf-bank-stiftung_bw_weiss.png" alt="" />
+        <img class="partners-img" id="dresden-img" src="/sites/all/themes/mborg/images/footer-logos/Amtsmarke_gelbhl_SW_weiss.png" alt="" />
+        <img class="partners-img" id="sachsen-img" src="/sites/all/themes/mborg/images/footer-logos/FS_150_SW_weiss.png" alt="" />
+        <img class="partners-img" id="hmwk-img" src="/sites/all/themes/mborg/images/footer-logos/HessischesMinisteriumWissenschaftundKunst_weiss.png" alt="" />
+        <img class="partners-img" id="kfffm-img" src="/sites/all/themes/mborg/images/footer-logos/kffrm-logo-quer-sw_weiss.png" alt="" />
+        <img class="partners-img" id="ksb-img" src="/sites/all/themes/mborg/images/footer-logos/ksb_SW_weiss.png" alt="" />
+        <img class="partners-img" id="poly-img" src="/sites/all/themes/mborg/images/footer-logos/stiftung-polytechnische-gesellschaft-ffm_weiss.png" alt="" />
+        <img class="partners-img" id="ffm-img" src="/sites/all/themes/mborg/images/footer-logos/Logo_StadtFFM_bw_weiss.png" alt="" />
+        <img class="partners-img" id="altana-img" src="/sites/all/themes/mborg/images/footer-logos/altana_kulturstiftung.png" alt="" />
+        <img class="partners-img" id="hellerau-img" src="/sites/all/themes/mborg/images/footer-logos/Logo_Hellerau_weiss.png" alt="" />
+        <img class="partners-img" id="flab-img" src="/sites/all/themes/mborg/images/footer-logos/flab_logo_weiss.png" alt="" />        
+        <img class="partners-img" id="bhf-img" src="/sites/all/themes/mborg/images/footer-logos/bhf-bank-stiftung_bw_weiss.png" alt="" />
       </div>
     </div>
 
