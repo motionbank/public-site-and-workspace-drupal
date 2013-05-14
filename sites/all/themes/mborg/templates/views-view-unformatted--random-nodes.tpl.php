@@ -29,7 +29,7 @@
       if ( isset($block_preview_image) && 
          is_array($block_preview_image) && 
          isset($block_preview_image[$id]) ) : ?>
-          <div class="block-bg-image" style="z-index: -1; display: none; position:relative; top:1px; left:1px; height:<?php print ($block_preview_image[$id]['height'])-20; ?>px; width:<?php print ($block_preview_image[$id]['width']); ?>px; background-image:url('<?php print $block_preview_image[$id]['src']; ?>"></div>
+          <div class="block-bg-image" style="z-index: -1; display: none; position:relative; top:1px; left:1px; height:<?php print ($block_preview_image[$id]['height'])-20; ?>px; width:<?php print ($block_preview_image[$id]['width']); ?>px; background-image:url(<?php print $block_preview_image[$id]['src']; ?>)"></div>
       <?php endif; ?>
 	  </div>
 
