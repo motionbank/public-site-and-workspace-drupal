@@ -169,6 +169,95 @@
   <?php print render($page['footer']); ?>
 
   <div id="footer">
+    <div id="footer-lvl0">
+      <ul id="footer-links">
+        <li><a href="">IMPRINT</a></li>
+        <li><a href="">TEAM</a></li>
+        <li><a href="">CONTACT</a></li>
+      </ul>
+
+      <div id="footer-spacer"></div>
+
+      <div id="partners">
+        <h3>PARTNERS:</h3>
+
+        <br />
+        
+        <img class="partners-img" id="dresden-img" src="/sites/motionbank.org/files/footer-logos/Amtsmarke_gelbhl_SW_weiss.png" alt="" />
+        <img class="partners-img" id="sachsen-img" src="/sites/motionbank.org/files/footer-logos/FS_150_SW_weiss.png" alt="" />
+        <img class="partners-img" id="hmwk-img" src="/sites/motionbank.org/files/footer-logos/HessischesMinisteriumWissenschaftundKunst_weiss.png" alt="" />
+        <img class="partners-img" id="kfffm-img" src="/sites/motionbank.org/files/footer-logos/kffrm-logo-quer-sw_weiss.png" alt="" />
+        <img class="partners-img" id="ksb-img" src="/sites/motionbank.org/files/footer-logos/ksb_SW_weiss.png" alt="" />
+        <img class="partners-img" id="poly-img" src="/sites/motionbank.org/files/footer-logos/stiftung-polytechnische-gesellschaft-ffm_weiss.png" alt="" />
+        <img class="partners-img" id="ffm-img" src="/sites/motionbank.org/files/footer-logos/Logo_StadtFFM_bw_weiss.png" alt="" />
+        <img class="partners-img" id="altana-img" src="/sites/motionbank.org/files/footer-logos/altana_kulturstiftung.png" alt="" />
+        <img class="partners-img" id="hellerau-img" src="/sites/motionbank.org/files/footer-logos/Logo_Hellerau_weiss.png" alt="" />
+        <img class="partners-img" id="flab-img" src="/sites/motionbank.org/files/footer-logos/flab_logo_weiss.png" alt="" />        
+        <img class="partners-img" id="bhf-img" src="/sites/motionbank.org/files/footer-logos/bhf-bank-stiftung_bw_weiss.png" alt="" />
+      </div>
+    </div>
+
+    
+
+    <div id="footer-lvl1">
+      <div id="project-of">
+        <h3>A PROJECT OF:</h3>
+        <p>THE FORSYTHE COMPANY</p>
+      </div>
+      <div id="score-partners">
+        <h3>MOTION BANK SCORE PARTNERS:</h3>
+        <p>
+        Advanced Computing Center for the<br />
+        Arts and Design Department of<br />
+        Dance at The Ohio State University<br />
+        <br />
+        Fraunhofer-Institut für Graphische<br />
+        Datenverarbeitung<br />
+        <br />
+        Hochschule Darmstadt-<br />
+        University of applied sciences<br />
+        <br />
+        Hochschule für Gestaltung Offenbach
+        </p>
+      </div>
+
+      <div id="footer-wrapper">
+        <div id="workshop-partners">
+          <h3>WORKSHOP PARTNERS:</h3>
+          <p>
+          Berlin School of Mind and Brain -<br />
+          Humboldt-Universität Berlin<br />
+          <br />
+          Max-Planck-Institut für Hirnforschung<br />
+          Frankfurt am Main 
+          </p>
+        </div>
+        <div id="engaging-science">
+          <h3>DANCE ENGAGING SCIENCE<br />
+          WORKSHOPS SUPPORTED BY:</h3>
+          <img class="partners-img" id="vw-img" src="/sites/motionbank.org/files/footer-logos/vw-vorab.png" alt="" />
+        </div>
+      </div>
+      <div id="footer-text">
+        <p>
+        The Forsythe Company wird gefördert durch die Landes-<br />
+        hauptstadt Dresden und den Freistaat Sachsen sowie<br />
+        die Stadt Frankfurt am Main und das Land Hessen. Sie ist<br />
+        Company-in-Residence in HELLERAU – Europäisches Zent-<br />
+        rum der Künste in Dresden und im Bockenheimer Depot in<br />
+        Frankfurt am Main. Mit besonderem Dank an die ALTANA<br />
+        Kulturstiftung für die Unterstützung der Forsythe Compa-<br />
+        ny. Motion Bank wird gefördert durch die Kulturstiftung<br />
+        des Bundes, das Hessische Ministerium für Wissenschaft<br />
+        und Kunst, den Kulturfonds Frankfurt RheinMain und die<br />
+        ALTANA Kulturstiftung. Das Frankfurt LAB wird ermöglicht<br />
+        durch den Kulturfonds Frankfurt RheinMain, die Stiftung<br />
+        Polytechnische Gesellschaft und die BHF-BANK-Stiftung.
+        </p>
+      </div>
+  </div>
+<!--
+  <div id="footer">
     <div id="footer-up">
       
       <ul id="footer-links">
@@ -228,7 +317,7 @@
       </div>
     </div>
   </div>
-
+-->
 </div></div><!-- /#page, /#page-wrapper -->
 
 <?php print render($page['bottom']); ?>
