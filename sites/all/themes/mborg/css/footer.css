@@ -4,6 +4,7 @@
   vertical-align: middle;
   margin: 0px;
   padding: 0px;
+  width: 1382px;
 }
 
 #footer p{
@@ -24,7 +25,8 @@
 }
 
 #footer-lvl1 {
-  margin-left: 370px;
+  margin-left: 410px;
+  margin-top: -25px;
 }
 
 #footer h3 {
@@ -90,7 +92,7 @@ ul#footer-links li a {
 
 #footer-spacer{
   display: inline-block;
-  width: 180px;
+  width: 220px;
 }
 
 /* images */
@@ -101,22 +103,22 @@ ul#footer-links li a {
 }
 
 #hmwk-img {
-  left: 70px;
+  left: 85px;
   top: -65px;
 }
 
 #kfffm-img {
-  left: 150px;
+  left: 163px;
   top: -60px;
 }
 
 #ksb-img{
-  left: 180px;
+  left: 200px;
   top: -64px;
 }
 
 #poly-img{
-  left: 210px;
+  left: 259px;
   top: -61px;  
 }
 
@@ -126,7 +128,7 @@ ul#footer-links li a {
 }
 
 #altana-img{
-  left: 134px;
+  left: 112px;
   top: -74px
 }
 
@@ -136,22 +138,24 @@ ul#footer-links li a {
 }
 
 #flab-img{
-  left: 210px;
+  left: 230px;
   top: -73px;
 }
 
 #bhf-img{
-  left: 244px;
+  left: 292px;
   top: -70px;
 }
 
-
-
-
 #project-of {
   float: left;
-  width: 179px;
+  width: 254px;
 } 
+
+#project-of p {
+  font-size: 14px;
+  letter-spacing: 0.09em;
+}
 
 #score-partners,
 #footer-wrapper {
@@ -172,7 +176,7 @@ ul#footer-links li a {
 }
 
 #footer-wrapper {
-  padding-right: 30px;
+  padding-right: 18px;
 }
 
 #footer-text p {

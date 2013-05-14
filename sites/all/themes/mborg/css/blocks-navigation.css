@@ -42,7 +42,7 @@
 {
 	display: block;
 	float: left;
-	width: 264px; /* 306px (incl. 2x 1px border + 2x20px pading) */
+	width: 306px;
 	
 	border: 1px solid rgb(255, 255, 255);
     border: 1px solid rgba(255, 255, 255, .6);

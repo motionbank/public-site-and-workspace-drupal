@@ -246,8 +246,8 @@
         Company-in-Residence in HELLERAU – Europäisches Zent-<br />
         rum der Künste in Dresden und im Bockenheimer Depot in<br />
         Frankfurt am Main. Mit besonderem Dank an die ALTANA<br />
-        Kulturstiftung für die Unterstützung der Forsythe Company.<br />
-        Motion Bank wird gefördert durch die Kulturstiftung<br />
+        Kulturstiftung für die Unterstützung der Forsythe Compa-<br />
+        ny. Motion Bank wird gefördert durch die Kulturstiftung<br />
         des Bundes, das Hessische Ministerium für Wissenschaft<br />
         und Kunst, den Kulturfonds Frankfurt RheinMain und die<br />
         ALTANA Kulturstiftung. Das Frankfurt LAB wird ermöglicht<br />
