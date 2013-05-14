@@ -69,7 +69,7 @@
 
 #block-views-frontpage-nodes-block .field-content a
 {
-	width: 342px; /* 384px (incl. 2x1px border + 2x20px padding) */
+	width: 384px;
 }
 
 #block-views-frontpage-nodes-block .views-row-first a
