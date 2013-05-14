@@ -139,3 +139,13 @@
 	color: #00E7EE;
 	background-color: #000000;
 }
+
+.section-documentation .region-content-header h2,
+.section-dokumentation .region-content-header h2 {
+	font-size: 16px;
+}
+
+.section-documentation .region-content-header h3,
+.section-dokumentation .region-content-header h3 {
+	font-size: 16px;
+}

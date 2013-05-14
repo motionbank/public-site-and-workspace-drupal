@@ -12,7 +12,7 @@
   <h3><?php print $title; ?></h3>
 <?php endif; ?>
 <?php foreach ($rows as $id => $row): ?>
-  <div style="margin-right: 26px; margin-bottom: 26px; height:<?php print ($block_preview_image[$id]['height'])-20; ?>px; width:<?php print ($block_preview_image[$id]['width'])-42; ?>px;" <?php if ($classes_array[$id]) { print 'class="' . $classes_array[$id] .'" ';  } 
+  <div style="margin-right: 26px; margin-bottom: 26px; height:<?php print ($block_preview_image[$id]['height'])-20; ?>px; width:<?php print ($block_preview_image[$id]['width']); ?>px;" <?php if ($classes_array[$id]) { print 'class="' . $classes_array[$id] .'" ';  } 
   		?> <?php 
   		if ( isset($block_preview_image) && 
   			 is_array($block_preview_image) && 
@@ -27,7 +27,7 @@
       if ( isset($block_preview_image) && 
          is_array($block_preview_image) && 
          isset($block_preview_image[$id]) ) : ?>
-          <div class="block-bg-image" style="z-index: -1; display: none; position:relative; top:1px; left:1px; height:<?php print ($block_preview_image[$id]['height'])-20; ?>px; width:<?php print ($block_preview_image[$id]['width'])-42; ?>px; background-image:url('<?php print $block_preview_image[$id]['src']; ?>"></div>
+          <div class="block-bg-image" style="z-index: -1; display: none; position:relative; top:1px; left:1px; height:<?php print ($block_preview_image[$id]['height'])-20; ?>px; width:<?php print ($block_preview_image[$id]['width']); ?>px; background-image:url('<?php print $block_preview_image[$id]['src']; ?>"></div>
       <?php endif; ?>
 
   </div>
