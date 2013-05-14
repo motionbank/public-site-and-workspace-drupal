@@ -235,7 +235,7 @@
         <div id="engaging-science">
           <h3>DANCE ENGAGING SCIENCE<br />
           WORKSHOPS SUPPORTED BY:</h3>
-          <img class="partners-img" id="vw-img" src="/sites/motionbank.org/files/footer-logos/vw-vorab.png" alt="" />
+          <img class="partners-img" id="vw-img" src="/sites/all/themes/mborg/images/footer-logos/vw-vorab.png" alt="" />
         </div>
       </div>
       <div id="footer-text">
