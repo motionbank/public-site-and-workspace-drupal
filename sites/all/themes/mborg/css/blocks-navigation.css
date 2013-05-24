@@ -42,7 +42,7 @@
 {
 	display: block;
 	float: left;
-	width: 306px;
+	width: 284px;
 	
 	border: 1px solid rgb(255, 255, 255);
     border: 1px solid rgba(255, 255, 255, .6);
@@ -65,11 +65,14 @@
 	font-size: 16px;
 	letter-spacing: 0.20em;
 	font-weight: 300;	
+
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 #block-views-frontpage-nodes-block .field-content a
 {
-	width: 384px;
+	width: 364px;
 }
 
 #block-views-frontpage-nodes-block .views-row-first a
