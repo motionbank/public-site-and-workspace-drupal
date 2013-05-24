@@ -27,7 +27,7 @@
 .comment-unpublished div.unpublished /* The word "Unpublished" displayed underneath the content. */ {
   height: 0;
   overflow: visible;
-  color: firebrick;
+  color: #B22222;
   font-size: 75px;
   line-height: 1;
   font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
