@@ -44,6 +44,11 @@ td{
   vertical-align: top;
 }
 
+/* for admin pannel */
+.toolbar #page-wrapper{
+  padding-top: 85px;
+}
+
 #page-wrapper {
   position: absolute;
   overflow: auto;
