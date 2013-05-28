@@ -70,7 +70,7 @@ function motion_bank_org_feature_ckeditor_profile_defaults() {
           'drupalbreaks' => array(
             'name' => 'drupalbreaks',
             'desc' => 'Plugin for inserting Drupal teaser and page breaks.',
-            'path' => '%plugin_dir%drupalbreaks/',
+            'path' => '%plugin_dir%drupalbreaks%base_path%',
             'buttons' => array(
               'DrupalBreak' => array(
                 'label' => 'DrupalBreak',
@@ -82,7 +82,7 @@ function motion_bank_org_feature_ckeditor_profile_defaults() {
           'tableresize' => array(
             'name' => 'tableresize',
             'desc' => 'Table Resize plugin',
-            'path' => '%editor_path%plugins/tableresize/',
+            'path' => '%editor_path%plugins%base_path%tableresize%base_path%',
             'buttons' => FALSE,
             'default' => 't',
           ),
