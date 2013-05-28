@@ -10,6 +10,241 @@
 function motion_bank_org_feature_field_default_fields() {
   $fields = array();
 
+  // Exported field: 'file-image-field_file_image_alt_text'.
+  $fields['file-image-field_file_image_alt_text'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_file_image_alt_text',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'image',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '2',
+        ),
+        'full' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_large' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_link' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_original' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_preview' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_small' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'preview' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'token' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '2',
+        ),
+      ),
+      'entity_type' => 'file',
+      'field_name' => 'field_file_image_alt_text',
+      'label' => 'Alt Text',
+      'required' => 1,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => '60',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '-4',
+      ),
+    ),
+  );
+
+  // Exported field: 'file-image-field_file_image_title_text'.
+  $fields['file-image-field_file_image_title_text'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_file_image_title_text',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'image',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'Title text attribute',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '1',
+        ),
+        'full' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_large' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_link' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_original' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_preview' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_small' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'preview' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'token' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '1',
+        ),
+      ),
+      'entity_type' => 'file',
+      'field_name' => 'field_file_image_title_text',
+      'label' => 'Title Text',
+      'required' => 1,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => '60',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '-3',
+      ),
+    ),
+  );
+
   // Exported field: 'node-article-body'.
   $fields['node-article-body'] = array(
     'field_config' => array(
@@ -501,6 +736,13 @@ function motion_bank_org_feature_field_default_fields() {
           'type' => 'text_default',
           'weight' => '0',
         ),
+        'full' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '0',
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'text',
@@ -569,9 +811,22 @@ function motion_bank_org_feature_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
+          'label' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => '',
+            'image_style' => '',
+          ),
+          'type' => 'image',
+          'weight' => '2',
+        ),
+        'full' => array(
           'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
+          'module' => 'file_entity',
+          'settings' => array(
+            'file_view_mode' => 'default',
+          ),
+          'type' => 'file_rendered',
           'weight' => '2',
         ),
         'teaser' => array(
@@ -598,12 +853,20 @@ function motion_bank_org_feature_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'image',
+        'module' => 'media',
         'settings' => array(
+          'allowed_schemes' => array(
+            0 => 'public',
+            1 => 'private',
+          ),
+          'allowed_types' => array(
+            0 => 'image',
+          ),
+          'browser_plugins' => array(),
           'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
         ),
-        'type' => 'image_image',
+        'type' => 'media_generic',
         'weight' => '3',
       ),
     ),
@@ -650,6 +913,12 @@ function motion_bank_org_feature_field_default_fields() {
           'type' => 'hidden',
           'weight' => '3',
         ),
+        'full' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '3',
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -674,12 +943,20 @@ function motion_bank_org_feature_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'image',
+        'module' => 'media',
         'settings' => array(
+          'allowed_schemes' => array(
+            0 => 'public',
+            1 => 'private',
+          ),
+          'allowed_types' => array(
+            0 => 'image',
+          ),
+          'browser_plugins' => array(),
           'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
         ),
-        'type' => 'image_image',
+        'type' => 'media_generic',
         'weight' => '1',
       ),
     ),
@@ -826,12 +1103,19 @@ function motion_bank_org_feature_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'image',
+        'module' => 'media',
         'settings' => array(
+          'allowed_schemes' => array(
+            0 => 'public',
+            1 => 'private',
+          ),
+          'allowed_types' => array(
+            0 => 'image',
+          ),
           'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
         ),
-        'type' => 'image_image',
+        'type' => 'media_generic',
         'weight' => '7',
       ),
     ),
@@ -1028,24 +1312,31 @@ function motion_bank_org_feature_field_default_fields() {
       'label' => 'Preview Image',
       'required' => 1,
       'settings' => array(
-        'alt_field' => 0,
+        'alt_field' => 1,
         'default_image' => 0,
         'file_directory' => 'preview-images',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
         'min_resolution' => '',
-        'title_field' => 0,
+        'title_field' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'image',
+        'module' => 'media',
         'settings' => array(
+          'allowed_schemes' => array(
+            0 => 'public',
+            1 => 'private',
+          ),
+          'allowed_types' => array(
+            0 => 'image',
+          ),
           'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
         ),
-        'type' => 'image_image',
+        'type' => 'media_generic',
         'weight' => '4',
       ),
     ),
@@ -1432,6 +1723,7 @@ function motion_bank_org_feature_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Alt Text');
   t('Body');
   t('Date');
   t('Date of Event');
@@ -1441,6 +1733,8 @@ function motion_bank_org_feature_field_default_fields() {
   t('Paragraph');
   t('Preview Image');
   t('Preview Text');
+  t('Title Text');
+  t('Title text attribute');
   t('Upload an image to go with this article.');
   t('WP Categories');
   t('WP Tags');
