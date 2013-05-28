@@ -26,7 +26,7 @@
 <div>
 	<img src="<?php print file_create_url( image_style_path( 'basic_page_image_view', $field_image['raw']['uri'] ) ); ?>" />
 	<div class="basic-page-image-title">
-		<?php print $field_image['raw']['title'] ?>
+		<?php print $field_image['raw']['field_file_image_title_text']['und'][0]['safe_value'] ?>
 	</div>
 </div>
 <?php } ?>
