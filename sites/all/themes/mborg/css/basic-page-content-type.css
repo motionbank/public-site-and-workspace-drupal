@@ -99,7 +99,3 @@
 .node-type-basic-page .field-item a {
 	text-decoration: none;
 }
-
-.node-type-basic-page .field-item a:hover {
-	text-decoration: underline;
-}
