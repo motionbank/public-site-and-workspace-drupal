@@ -33,8 +33,14 @@ a {
   text-decoration: underline;
 }
 
-a:link, a:hover, a:visited, a:active {
+a:link, a:visited, a:active {
   color: black;
+}
+
+a:hover {
+  color: #00E7EE;
+  background-color: #000;
+  text-decoration: none;
 }
 
 table,

@@ -171,9 +171,9 @@
   <div id="footer">
     <div id="footer-lvl0">
       <ul id="footer-links">
-        <li><a href="">IMPRINT</a></li>
-        <li><a href="">TEAM</a></li>
-        <li><a href="">CONTACT</a></li>
+        <li><a href="content/imprint">IMPRINT</a></li>
+        <li><a href="content/team">TEAM</a></li>
+        <li><a href="content/contact">CONTACT</a></li>
       </ul>
 
       <div id="footer-spacer"></div>

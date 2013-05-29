@@ -59,11 +59,12 @@ stylesheets[all][]        = css/main-menu.css
 stylesheets[all][]		  = css/search.css
 stylesheets[all][]		  = css/logo.css
 stylesheets[all][]		  = css/footer.css
-stylesheets[all][]		  = css/about-basic-page-custom-style.css
 stylesheets[all][]		  = css/event-content-type.css
 stylesheets[all][]		  = css/basic-page-content-type.css
 stylesheets[all][]		  = css/upcoming-event-list.css
 stylesheets[all][]		  = css/documentation-event-list.css
+stylesheets[all][]		  = css/about-basic-page-custom-style.css
+stylesheets[all][]		  = css/newsletter-basic-page-custom-style.css
 stylesheets[all][]		  = css/blocks-navigation.css
 stylesheets[all][]		  = css/media-queries.css
 ; style of nice menus can be found here: css/nice_menus_mborg.css
