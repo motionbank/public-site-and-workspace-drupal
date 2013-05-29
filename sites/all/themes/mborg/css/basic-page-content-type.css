@@ -32,8 +32,8 @@
 	display: none;
 }
 
-.node-type-basic-page li {
-	list-style-type: none;
+.node-type-basic-page .region-content-header li {
+	list-style-type: square;
 }
 
 .node-type-basic-page li img{
