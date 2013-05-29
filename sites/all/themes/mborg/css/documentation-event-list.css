@@ -104,10 +104,10 @@
 .section-documentation .views-field-field-preview-text,
 .section-dokumentation .views-field-field-preview-text  {
 	color: #000000;
-	font-size: 12px;
+	font-size: 13px;
+	line-height: 17px;
     font-weight: 300;
     letter-spacing: 0.05em;
-    line-height: 15px;	
 
     margin-top: 8px;
 	padding-left: 14px;
