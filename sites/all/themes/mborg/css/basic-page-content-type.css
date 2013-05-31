@@ -99,3 +99,9 @@
 .node-type-basic-page .field-item a {
 	text-decoration: none;
 }
+
+.node-type-basic-page .field-item a:hover {
+  color: #00E7EE;
+  background-color: #000;
+  text-decoration: none;
+}
