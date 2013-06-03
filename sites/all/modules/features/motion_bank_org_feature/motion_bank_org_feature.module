@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Motion Bank Org Feature feature.
+ */
+
+include_once 'motion_bank_org_feature.features.inc';
