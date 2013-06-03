@@ -167,7 +167,7 @@
   </div></div><!-- /#main, /#main-wrapper -->
 
   <?php print render($page['footer']); ?>
-
+<!--
   <div id="footer">
     <div id="footer-lvl0">
       <ul id="footer-links">
@@ -255,7 +255,7 @@
         Polytechnische Gesellschaft und die BHF-BANK-Stiftung.
         </p>
       </div>
-  </div>
+  </div> -->
 <!--
   <div id="footer">
     <div id="footer-up">
