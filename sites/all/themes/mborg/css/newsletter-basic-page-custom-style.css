@@ -1,9 +1,13 @@
-.page-node-398 #block-views-random-nodes-block {
+.page-node-477 #block-views-random-nodes-block {
 	display: none;
 }
 
-.page-node-398 .field-item {
+.page-node-477 .field-item {
 	background-color: transparent;
 	padding: 0px;
 	margin: 0px;
+}
+
+.page-node-477 .field-item p {
+	margin-top: 30px;
 }
