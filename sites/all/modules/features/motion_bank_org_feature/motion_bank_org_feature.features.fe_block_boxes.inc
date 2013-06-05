@@ -99,7 +99,7 @@ function motion_bank_org_feature_default_fe_block_boxes() {
   $fe_block_boxes->info = 'Block for Newsletter Link';
   $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'newsletter_link_block';
-  $fe_block_boxes->body = '<p><a href="">Newsletter</a></p>
+  $fe_block_boxes->body = '<p><a href="/newsletter">Newsletter</a></p>
 ';
 
   $export['newsletter_link_block'] = $fe_block_boxes;

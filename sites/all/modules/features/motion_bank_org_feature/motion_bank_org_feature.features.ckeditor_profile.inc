@@ -13,7 +13,7 @@ function motion_bank_org_feature_ckeditor_profile_defaults() {
       'name' => 'Advanced',
       'settings' => array(
         'ss' => '2',
-        'default' => 't',
+        'default' => 'f',
         'show_toggle' => 't',
         'uicolor' => 'default',
         'uicolor_user' => 'default',
@@ -70,7 +70,7 @@ function motion_bank_org_feature_ckeditor_profile_defaults() {
           'drupalbreaks' => array(
             'name' => 'drupalbreaks',
             'desc' => 'Plugin for inserting Drupal teaser and page breaks.',
-            'path' => '%plugin_dir%drupalbreaks%base_path%',
+            'path' => '%plugin_dir%drupalbreaks/',
             'buttons' => array(
               'DrupalBreak' => array(
                 'label' => 'DrupalBreak',
@@ -82,7 +82,7 @@ function motion_bank_org_feature_ckeditor_profile_defaults() {
           'tableresize' => array(
             'name' => 'tableresize',
             'desc' => 'Table Resize plugin',
-            'path' => '%editor_path%plugins%base_path%tableresize%base_path%',
+            'path' => '%editor_path%plugins/tableresize/',
             'buttons' => FALSE,
             'default' => 't',
           ),
@@ -90,6 +90,72 @@ function motion_bank_org_feature_ckeditor_profile_defaults() {
       ),
       'input_formats' => array(
         'filtered_html' => 'Filtered HTML',
+      ),
+    ),
+    'CKEditor Global Profile' => array(
+      'name' => 'CKEditor Global Profile',
+      'settings' => array(
+        'ckeditor_path' => '%l/ckeditor',
+      ),
+      'input_formats' => array(),
+    ),
+    'Full' => array(
+      'name' => 'Full',
+      'settings' => array(
+        'filebrowser' => 'none',
+        'quickupload' => 'f',
+        'ss' => '2',
+        'filters' => array(),
+        'default' => 't',
+        'show_toggle' => 't',
+        'popup' => 'f',
+        'skin' => 'kama',
+        'toolbar' => '
+[
+    [\'Source\'],
+    [\'Cut\',\'Copy\',\'Paste\',\'PasteText\',\'PasteFromWord\',\'-\',\'SpellChecker\', \'Scayt\'],
+    [\'Undo\',\'Redo\',\'Find\',\'Replace\',\'-\',\'SelectAll\',\'RemoveFormat\'],
+    [\'Image\',\'Media\',\'Flash\',\'Table\',\'HorizontalRule\',\'Smiley\',\'SpecialChar\'],
+    \'/\',
+    [\'Bold\',\'Italic\',\'Underline\',\'Strike\',\'-\',\'Subscript\',\'Superscript\'],
+    [\'NumberedList\',\'BulletedList\',\'-\',\'Outdent\',\'Indent\',\'Blockquote\'],
+    [\'JustifyLeft\',\'JustifyCenter\',\'JustifyRight\',\'JustifyBlock\',\'-\',\'BidiLtr\',\'BidiRtl\'],
+    [\'Link\',\'Unlink\',\'Anchor\'],
+    [\'DrupalBreak\'],
+    \'/\',
+    [\'Format\',\'Font\',\'FontSize\'],
+    [\'TextColor\',\'BGColor\'],
+    [\'Maximize\', \'ShowBlocks\']
+]
+    ',
+        'expand' => 't',
+        'width' => '100%',
+        'lang' => 'en',
+        'auto_lang' => 't',
+        'language_direction' => 'default',
+        'enter_mode' => 'p',
+        'shift_enter_mode' => 'br',
+        'font_format' => 'p;div;pre;address;h1;h2;h3;h4;h5;h6',
+        'format_source' => 't',
+        'format_output' => 't',
+        'custom_formatting' => 'f',
+        'formatting' => array(
+          'custom_formatting_options' => array(
+            'indent' => 'indent',
+            'breakBeforeOpen' => 'breakBeforeOpen',
+            'breakAfterOpen' => 'breakAfterOpen',
+            'breakAfterClose' => 'breakAfterClose',
+          ),
+        ),
+        'css_mode' => 'none',
+        'css_path' => '',
+        'user_choose' => 'f',
+        'ckeditor_load_method' => 'ckeditor.js',
+        'ckeditor_load_time_out' => 0,
+        'scayt_autoStartup' => 'f',
+      ),
+      'input_formats' => array(
+        'full_html' => 'Full HTML',
       ),
     ),
   );
