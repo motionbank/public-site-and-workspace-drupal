@@ -93,7 +93,7 @@ function motion_bank_org_feature_default_fe_block_settings() {
     'pages' => '',
     'title' => '',
     'cache' => -1,
-    'i18n_mode' => '0',
+    'i18n_mode' => '1',
     'machine_name' => 'newsletter_link_block',
   );
 
@@ -326,7 +326,7 @@ vorschau',
     'pages' => '',
     'title' => '',
     'cache' => -1,
-    'i18n_mode' => '0',
+    'i18n_mode' => '1',
     'machine_name' => 'newsletter_link_block',
   );
 
@@ -559,7 +559,7 @@ vorschau',
     'pages' => '',
     'title' => '',
     'cache' => -1,
-    'i18n_mode' => '0',
+    'i18n_mode' => '1',
     'machine_name' => 'newsletter_link_block',
   );
 
