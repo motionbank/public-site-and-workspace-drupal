@@ -689,7 +689,6 @@ function motion_bank_org_feature_strongarm() {
   $strongarm->name = 'node_options_basic_page';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'promote',
   );
   $export['node_options_basic_page'] = $strongarm;
 
@@ -699,7 +698,6 @@ function motion_bank_org_feature_strongarm() {
   $strongarm->name = 'node_options_event';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'promote',
   );
   $export['node_options_event'] = $strongarm;
 
