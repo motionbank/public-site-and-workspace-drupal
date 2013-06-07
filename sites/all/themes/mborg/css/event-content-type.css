@@ -78,11 +78,9 @@
 }
 
 .node-type-event .field-item a:hover {
-	text-decoration: underline;
-}
-
-.node-type-event .field-item img{
-	
+  color: #00E7EE;
+  background-color: #000;
+  text-decoration: none;
 }
 
 .node-type-event .field-item dl{
