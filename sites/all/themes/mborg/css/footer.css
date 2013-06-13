@@ -31,7 +31,7 @@
 #footer-lvl1 {
   border-top: solid 1px #FFFFFF;
   border-top: solid 1px rgba(255,255,255,0.6);
-  padding-top: 10px;
+  padding-top: 12px;
 }
 
 #footer-lvl1 {
@@ -46,6 +46,7 @@
   letter-spacing: 0.09em;
   margin: 0px;
   padding: 0px;
+  padding-bottom: 10px;
 }
 
 ul#footer-links{
@@ -83,34 +84,68 @@ ul#footer-links li a {
 
 /* lvl00 ******************************/
 
-#project-of {
+#footer-wrapper-01 {
   float: left;
-  width: 254px;
-} 
+  width: 220px;
+  margin-bottom: 40px;
+}
 
-  #project-of p {
-    font-size: 14px;
-    letter-spacing: 0.09em;
+  #project-of {
+    float: left;
+    width: 254px;
+  } 
+
+  img#tfc-img {
+    float: left;
+    padding-bottom: 25px;
+  }
+
+  #education-partners .img-wrapper {
+    float: left;
+    width: 65px;
+    display: block;
+  }
+
+  #education-partners p {
+    padding: 0;
+    padding-top: 8px;
   }
 
 #score-partners{
   float: left;
-  width: 244px;
- /*padding-right: 40px;*/
+  width: 284px;
 }
 
-#footer-wrapper {
+#score-partners .img-wrapper {
+  float: left;
+  width: 70px;
+  display: block;
+}
+
+#score-partners p{
+  margin-bottom: 10px;
+}
+
+#footer-wrapper-02 {
   float: left;
   width: 222px;
-  /*padding-right: 18px;*/
 }
-
-  #engaging-science {
-    margin-top: 15px;
-  }
 
   #vw-img {
     margin-left: -26px;
+  }
+
+  #workshop-partners h3 {
+    padding-bottom: 20px;
+  }
+  #workshop-partners .img-wrapper {
+    float: left;
+    width: 50px;
+    display: block;
+  }
+
+  #workshop-partners p {
+    padding: 0;
   }
 
 #footer-text {
@@ -119,6 +154,10 @@ ul#footer-links li a {
 
 #footer-text p {
   padding: 0px;
+  line-height: 1.3;
+}
+#footer-text p span {
+  font-weight:400;
 }
 
 /* lvl01 ******************************/
