@@ -113,7 +113,7 @@ ul#footer-links li a {
 
 #score-partners{
   float: left;
-  width: 284px;
+  width: 282px;
 }
 
 #score-partners .img-wrapper {
@@ -128,7 +128,7 @@ ul#footer-links li a {
 
 #footer-wrapper-02 {
   float: left;
-  width: 222px;
+  width: 218px;
 }
 
   #vw-img {
@@ -150,6 +150,7 @@ ul#footer-links li a {
 
 #footer-text {
   float: left;
+  width: 261px;
 }
 
 #footer-text p {
