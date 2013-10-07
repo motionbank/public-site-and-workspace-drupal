@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/de/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>http://motionbank.dev/de</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>http://motionbank.dev/de/dokumentation</loc><lastmod>2013-06-13T11:20Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://motionbank.dev/de/vorschau</loc><lastmod>2013-06-13T11:21Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://motionbank.dev/de/content/kontakt</loc><lastmod>2013-08-20T18:03Z</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>http://motionbank.dev/de/content/impressum</loc><lastmod>2013-08-26T15:51Z</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>http://motionbank.dev/de/content/team</loc><lastmod>2013-08-20T18:04Z</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>http://motionbank.dev/de/content/ueber-uns</loc><lastmod>2013-06-15T14:06Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://motionbank.dev/de/content/partituren</loc><lastmod>2013-06-15T14:07Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://motionbank.dev/de/content/deborah-hay</loc><lastmod>2013-06-17T04:28Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://motionbank.dev/de/content/jonathan-burrows-matteo-fargion</loc><lastmod>2013-06-12T08:53Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://motionbank.dev/de/content/two-bebe-miller-thomas-hauert</loc><lastmod>2013-06-12T08:52Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://motionbank.dev/de/content/forschung</loc><lastmod>2013-06-15T14:06Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://motionbank.dev/de/content/ausbildung-piecemaker</loc><lastmod>2013-06-15T14:11Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://motionbank.dev/de/content/dance-engaging-science</loc><lastmod>2013-06-24T10:14Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://motionbank.dev/de/content/wissensfundus</loc><lastmod>2013-06-11T14:44Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://motionbank.dev/de/content/partner</loc><lastmod>2013-06-15T14:07Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://motionbank.dev/de/newsletter</loc><lastmod>2013-06-10T11:37Z</lastmod><changefreq>yearly</changefreq></url>
+</urlset>
