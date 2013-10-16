@@ -7,6 +7,11 @@
 	display: none;
 }
 
+/* --- for better display when logged in--- */
+#block-views-frontpage-nodes-block {
+	clear: left;
+}
+
 /* --- outlined navigation blocks --- */
 
 
