@@ -1,7 +1,5 @@
 <?php
 
-
-
 	/**
 	 *	Block not needed any more .. feel free to delete at any time
 	 */
@@ -21,3 +19,16 @@
 	// 		return $block;
 	// 	}
 	// }
+
+	// https://drupal.org/comment/3505368#comment-3505368
+	function motionbank_org_form_alter(&$form, $form_state, $form_id) {
+		$views_forms = array(
+			'views_form_frontpage_nodes_block_1',
+			'views_form_latest_entries_block_1',
+			'views_form_random_nodes_block_1'
+		);
+	  if ( in_array($form_id, $views_forms) ) {
+	    cache_clear_all();
+	    //watchdog('motionbank_org','cleared cache');
+	  }
+	}
