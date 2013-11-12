@@ -10,12 +10,12 @@
 function motion_bank_org_feature_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: search content.
+  // Exported permission: 'search content'.
   $permissions['search content'] = array(
     'name' => 'search content',
     'roles' => array(
-      0 => 'anonymous user',
-      1 => 'author',
+      'anonymous user' => 'anonymous user',
+      'author' => 'author',
     ),
     'module' => 'search',
   );

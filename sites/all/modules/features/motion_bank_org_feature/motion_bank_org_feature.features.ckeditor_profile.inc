@@ -12,7 +12,7 @@ function motion_bank_org_feature_ckeditor_profile_defaults() {
     'Advanced' => array(
       'name' => 'Advanced',
       'settings' => array(
-        'ss' => '2',
+        'ss' => 2,
         'default' => 'f',
         'show_toggle' => 't',
         'uicolor' => 'default',
@@ -60,11 +60,11 @@ function motion_bank_org_feature_ckeditor_profile_defaults() {
         'UserFilesPath' => '%b%f/',
         'UserFilesAbsolutePath' => '%d%b%f/',
         'ckeditor_load_method' => 'ckeditor.js',
-        'ckeditor_load_time_out' => '0',
+        'ckeditor_load_time_out' => 0,
         'forcePasteAsPlainText' => 'f',
         'html_entities' => 'f',
         'scayt_autoStartup' => 'f',
-        'theme_config_js' => 'f',
+        'theme_config_js' => 't',
         'js_conf' => '',
         'loadPlugins' => array(
           'drupalbreaks' => array(
@@ -104,7 +104,7 @@ function motion_bank_org_feature_ckeditor_profile_defaults() {
       'settings' => array(
         'filebrowser' => 'none',
         'quickupload' => 'f',
-        'ss' => '2',
+        'ss' => 2,
         'filters' => array(),
         'default' => 't',
         'show_toggle' => 't',

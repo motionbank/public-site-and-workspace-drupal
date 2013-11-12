@@ -13,7 +13,7 @@ function motion_bank_org_feature_user_default_roles() {
   // Exported role: content enterer.
   $roles['content enterer'] = array(
     'name' => 'content enterer',
-    'weight' => '7',
+    'weight' => 7,
   );
 
   return $roles;
