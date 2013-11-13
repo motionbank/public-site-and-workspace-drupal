@@ -99,13 +99,13 @@ function motion_bank_org_feature_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_display_in_box_system'
-  $field_bases['field_display_in_box_system'] = array(
+  // Exported field_base: 'field_display_on_frontpage_colum'
+  $field_bases['field_display_on_frontpage_colum'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_display_in_box_system',
+    'field_name' => 'field_display_on_frontpage_colum',
     'foreign keys' => array(
       'tid' => array(
         'columns' => array(
@@ -124,41 +124,7 @@ function motion_bank_org_feature_field_default_field_bases() {
     'settings' => array(
       'allowed_values' => array(
         0 => array(
-          'vocabulary' => 'spalte',
-          'parent' => 0,
-        ),
-      ),
-    ),
-    'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
-  );
-
-  // Exported field_base: 'field_display_in_box_system_2'
-  $field_bases['field_display_in_box_system_2'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_display_in_box_system_2',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'spalte',
+          'vocabulary' => 'column',
           'parent' => 0,
         ),
       ),

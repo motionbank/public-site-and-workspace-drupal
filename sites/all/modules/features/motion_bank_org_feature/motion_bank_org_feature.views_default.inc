@@ -367,11 +367,15 @@ function motion_bank_org_feature_views_default_views() {
     'und' => 'und',
   );
   $handler->display->display_options['filters']['language']['group'] = 1;
-  /* Filter criterion: Content: Promoted to front page */
-  $handler->display->display_options['filters']['promote']['id'] = 'promote';
-  $handler->display->display_options['filters']['promote']['table'] = 'node';
-  $handler->display->display_options['filters']['promote']['field'] = 'promote';
-  $handler->display->display_options['filters']['promote']['value'] = '1';
+  /* Filter criterion: Content: Display on Frontpage Column (field_display_on_frontpage_colum) */
+  $handler->display->display_options['filters']['field_display_on_frontpage_colum_tid']['id'] = 'field_display_on_frontpage_colum_tid';
+  $handler->display->display_options['filters']['field_display_on_frontpage_colum_tid']['table'] = 'field_data_field_display_on_frontpage_colum';
+  $handler->display->display_options['filters']['field_display_on_frontpage_colum_tid']['field'] = 'field_display_on_frontpage_colum_tid';
+  $handler->display->display_options['filters']['field_display_on_frontpage_colum_tid']['value'] = array(
+    0 => '25',
+  );
+  $handler->display->display_options['filters']['field_display_on_frontpage_colum_tid']['group'] = 1;
+  $handler->display->display_options['filters']['field_display_on_frontpage_colum_tid']['vocabulary'] = 'column';
 
   /* Display: Display Block */
   $handler = $view->new_display('block', 'Display Block', 'block');
@@ -381,6 +385,12 @@ function motion_bank_org_feature_views_default_views() {
   /* Display: Sort Block */
   $handler = $view->new_display('block', 'Sort Block', 'block_1');
   $handler->display->display_options['display_description'] = 'This Block enables you to sort the item order';
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    5 => '5',
+    7 => '7',
+  );
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
@@ -475,36 +485,10 @@ function motion_bank_org_feature_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'none';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'table';
-  $handler->display->display_options['style_options']['columns'] = array(
-    'title' => 'title',
-    'field_preview_image' => 'field_preview_image',
-    'draggableviews' => 'draggableviews',
-  );
-  $handler->display->display_options['style_options']['default'] = '-1';
-  $handler->display->display_options['style_options']['info'] = array(
-    'title' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_preview_image' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'draggableviews' => array(
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-  );
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -552,77 +536,27 @@ function motion_bank_org_feature_views_default_views() {
     '***CURRENT_LANGUAGE***' => '***CURRENT_LANGUAGE***',
     'und' => 'und',
   );
-  /* Filter criterion: Broken/missing handler */
-  $handler->display->display_options['filters']['field_display_in_column_tid']['id'] = 'field_display_in_column_tid';
-  $handler->display->display_options['filters']['field_display_in_column_tid']['table'] = 'field_data_field_display_in_column';
-  $handler->display->display_options['filters']['field_display_in_column_tid']['field'] = 'field_display_in_column_tid';
-  $handler->display->display_options['filters']['field_display_in_column_tid']['value'] = array(
-    23 => '23',
+  /* Filter criterion: Content: Display on Frontpage Column (field_display_on_frontpage_colum) */
+  $handler->display->display_options['filters']['field_display_on_frontpage_colum_tid']['id'] = 'field_display_on_frontpage_colum_tid';
+  $handler->display->display_options['filters']['field_display_on_frontpage_colum_tid']['table'] = 'field_data_field_display_on_frontpage_colum';
+  $handler->display->display_options['filters']['field_display_on_frontpage_colum_tid']['field'] = 'field_display_on_frontpage_colum_tid';
+  $handler->display->display_options['filters']['field_display_on_frontpage_colum_tid']['value'] = array(
+    0 => '26',
   );
+  $handler->display->display_options['filters']['field_display_on_frontpage_colum_tid']['vocabulary'] = 'column';
 
-  /* Display: Display Block */
-  $handler = $view->new_display('block', 'Display Block', 'block');
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Draggableviews: Weight */
-  $handler->display->display_options['sorts']['weight']['id'] = 'weight';
-  $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
-  $handler->display->display_options['sorts']['weight']['field'] = 'weight';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'latest_entries:block_1';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_new_items_bottom_list'] = 1;
 
   /* Display: Sort Block */
   $handler = $view->new_display('block', 'Sort Block', 'block_1');
-  $handler->display->display_options['defaults']['css_class'] = FALSE;
-  $handler->display->display_options['css_class'] = 'last-nodes-sort-block';
   $handler->display->display_options['defaults']['access'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
     5 => '5',
     7 => '7',
   );
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Preview Image */
-  $handler->display->display_options['fields']['field_preview_image']['id'] = 'field_preview_image';
-  $handler->display->display_options['fields']['field_preview_image']['table'] = 'field_data_field_preview_image';
-  $handler->display->display_options['fields']['field_preview_image']['field'] = 'field_preview_image';
-  $handler->display->display_options['fields']['field_preview_image']['label'] = '';
-  $handler->display->display_options['fields']['field_preview_image']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_preview_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_preview_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_preview_image']['settings'] = array(
-    'image_style' => 'menu_preview_image',
-    'image_link' => '',
-  );
-  /* Field: Draggableviews: Content */
-  $handler->display->display_options['fields']['draggableviews']['id'] = 'draggableviews';
-  $handler->display->display_options['fields']['draggableviews']['table'] = 'node';
-  $handler->display->display_options['fields']['draggableviews']['field'] = 'draggableviews';
-  $handler->display->display_options['fields']['draggableviews']['label'] = '';
-  $handler->display->display_options['fields']['draggableviews']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['draggableviews']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['draggableviews']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['draggableviews']['draggableviews']['ajax'] = 0;
-  $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Draggableviews: Weight */
-  $handler->display->display_options['sorts']['weight']['id'] = 'weight';
-  $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
-  $handler->display->display_options['sorts']['weight']['field'] = 'weight';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'self';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_new_items_bottom_list'] = 1;
   $translatables['latest_entries'] = array(
     t('Master'),
     t('more'),
@@ -631,7 +565,7 @@ function motion_bank_org_feature_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Display Block'),
+    t('Block'),
     t('Sort Block'),
   );
   $export['latest_entries'] = $view;
@@ -705,13 +639,14 @@ function motion_bank_org_feature_views_default_views() {
     'und' => 'und',
   );
   $handler->display->display_options['filters']['language']['group'] = 1;
-  /* Filter criterion: Broken/missing handler */
-  $handler->display->display_options['filters']['field_display_in_column_tid']['id'] = 'field_display_in_column_tid';
-  $handler->display->display_options['filters']['field_display_in_column_tid']['table'] = 'field_data_field_display_in_column';
-  $handler->display->display_options['filters']['field_display_in_column_tid']['field'] = 'field_display_in_column_tid';
-  $handler->display->display_options['filters']['field_display_in_column_tid']['value'] = array(
-    24 => '24',
+  /* Filter criterion: Content: Display on Frontpage Column (field_display_on_frontpage_colum) */
+  $handler->display->display_options['filters']['field_display_on_frontpage_colum_tid']['id'] = 'field_display_on_frontpage_colum_tid';
+  $handler->display->display_options['filters']['field_display_on_frontpage_colum_tid']['table'] = 'field_data_field_display_on_frontpage_colum';
+  $handler->display->display_options['filters']['field_display_on_frontpage_colum_tid']['field'] = 'field_display_on_frontpage_colum_tid';
+  $handler->display->display_options['filters']['field_display_on_frontpage_colum_tid']['value'] = array(
+    0 => '27',
   );
+  $handler->display->display_options['filters']['field_display_on_frontpage_colum_tid']['vocabulary'] = 'column';
 
   /* Display: Display Block */
   $handler = $view->new_display('block', 'Display Block', 'block');

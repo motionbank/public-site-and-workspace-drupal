@@ -501,22 +501,19 @@ function motion_bank_org_feature_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-basic_page-field_display_in_box_system'
-  $field_instances['node-basic_page-field_display_in_box_system'] = array(
+  // Exported field_instance: 'node-basic_page-field_display_on_frontpage_colum'
+  $field_instances['node-basic_page-field_display_on_frontpage_colum'] = array(
     'bundle' => 'basic_page',
-    'default_value' => array(
-      0 => array(
-        'tid' => 21,
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 3,
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'above',
@@ -532,8 +529,8 @@ function motion_bank_org_feature_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_display_in_box_system',
-    'label' => 'Display in Box System',
+    'field_name' => 'field_display_on_frontpage_colum',
+    'label' => 'Display on Frontpage Column',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -543,7 +540,7 @@ function motion_bank_org_feature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 31,
+      'weight' => 32,
     ),
   );
 
@@ -720,22 +717,19 @@ function motion_bank_org_feature_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_display_in_box_system_2'
-  $field_instances['node-event-field_display_in_box_system_2'] = array(
+  // Exported field_instance: 'node-event-field_display_on_frontpage_colum'
+  $field_instances['node-event-field_display_on_frontpage_colum'] = array(
     'bundle' => 'event',
-    'default_value' => array(
-      0 => array(
-        'tid' => 21,
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 2,
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -745,8 +739,8 @@ function motion_bank_org_feature_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_display_in_box_system_2',
-    'label' => 'Display in Box System',
+    'field_name' => 'field_display_on_frontpage_colum',
+    'label' => 'Display on Frontpage Column',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1187,7 +1181,7 @@ function motion_bank_org_feature_field_default_field_instances() {
   t('Body');
   t('Date');
   t('Date of Event');
-  t('Display in Box System');
+  t('Display on Frontpage Column');
   t('Event Location');
   t('First day of events');
   t('Image');
