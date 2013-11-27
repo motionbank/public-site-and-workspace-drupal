@@ -501,6 +501,51 @@ function motion_bank_org_feature_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-basic_page-field_direct_link'
+  $field_instances['node-basic_page-field_direct_link'] = array(
+    'bundle' => 'basic_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'A direct Link is a URL to some website. If a direct link is given, the link on a content box on the frontpage will direct to that location instead to the origin content.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_direct_link',
+    'label' => 'Direct Link',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 33,
+    ),
+  );
+
   // Exported field_instance: 'node-basic_page-field_display_on_frontpage_colum'
   $field_instances['node-basic_page-field_display_on_frontpage_colum'] = array(
     'bundle' => 'basic_page',
@@ -509,11 +554,10 @@ function motion_bank_org_feature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 5,
+        'type' => 'hidden',
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'above',
@@ -531,7 +575,7 @@ function motion_bank_org_feature_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_display_on_frontpage_colum',
     'label' => 'Display on Frontpage Column',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -621,7 +665,7 @@ function motion_bank_org_feature_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'full' => array(
         'label' => 'above',
@@ -681,7 +725,7 @@ function motion_bank_org_feature_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -717,6 +761,45 @@ function motion_bank_org_feature_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-event-field_direct_link'
+  $field_instances['node-event-field_direct_link'] = array(
+    'bundle' => 'event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'A direct Link is a URL to some website. If a direct link is given, the link on a content box on the frontpage will direct to that location instead to the origin content.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_direct_link',
+    'label' => 'Direct Link',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 33,
+    ),
+  );
+
   // Exported field_instance: 'node-event-field_display_on_frontpage_colum'
   $field_instances['node-event-field_display_on_frontpage_colum'] = array(
     'bundle' => 'event',
@@ -725,11 +808,10 @@ function motion_bank_org_feature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 8,
+        'type' => 'hidden',
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -741,7 +823,7 @@ function motion_bank_org_feature_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_display_on_frontpage_colum',
     'label' => 'Display on Frontpage Column',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -764,7 +846,7 @@ function motion_bank_org_feature_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -818,7 +900,7 @@ function motion_bank_org_feature_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -899,7 +981,7 @@ function motion_bank_org_feature_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -953,7 +1035,7 @@ function motion_bank_org_feature_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1177,10 +1259,12 @@ function motion_bank_org_feature_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('A direct Link is a URL to some website. If a direct link is given, the link on a content box on the frontpage will direct to that location instead to the origin content.');
   t('Alt Text');
   t('Body');
   t('Date');
   t('Date of Event');
+  t('Direct Link');
   t('Display on Frontpage Column');
   t('Event Location');
   t('First day of events');

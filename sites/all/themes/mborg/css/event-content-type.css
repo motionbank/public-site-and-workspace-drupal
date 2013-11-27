@@ -1,80 +1,80 @@
 .node-type-event .links.inline {
-	display: none;
+  display: none;
 }
 
 .node-type-event #content-header{
-	width: 716px;
-	margin-top: -56px
+  width: 716px;
+  margin-top: -56px;
 }
 
 .node-type-event #page-title{
-	line-height: 1;
-	margin-bottom: 15px;
-	font-weight: 100;
-	letter-spacing: 0.05em;
+  line-height: 1;
+  margin-bottom: 15px;
+  font-weight: 100;
+  letter-spacing: 0.05em;
 }
 .node-type-event .form-item.form-type-item{
-	display: none;
+  display: none;
 }
 
 .node-type-event #block-views-latest-entries-block,
 .node-type-event #block-views-random-nodes-block{
-	display: none;
+  display: none;
 }
 
 .node-type-event #main{
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .node-type-event #block-system-main{
-	background-color: none;
+  background-color: none;
 }
 
 .node-type-event .content{
-	padding: 0px;
+  padding: 0px;
 }
 
 .node-type-event .field-item{
-	background-color: #FFFFFF;
-	background-color: rgba(255,255,255,0.8);
-	padding: 25px 10px 10px 16px;
-	margin-bottom: 10px;
+  background-color: #FFFFFF;
+  background-color: rgba(255,255,255,0.8);
+  padding: 25px 10px 10px 16px;
+  margin-bottom: 10px;
 }
 
 /* TYPE STYLING */
 .node-type-event .field-item p{
-	margin: 0px;
-	margin-top: 12px;
-	font-size: 13px;
-	line-height: 18px;
-	letter-spacing: 0.03em;
-	font-weight: 300;
-	color: #000000;
-	display: block;
+  margin: 0px;
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  font-weight: 300;
+  color: #000000;
+  display: block;
 }
 
 .node-type-event .field-item h2{
-	margin: 0px;
-	font-size: 17px;
-	letter-spacing: 0.05em;
-	font-weight: 400;
-	color: #000000;
-	text-transform: uppercase;	
-	display: inline;
+  margin: 0px;
+  font-size: 17px;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  display: inline;
 }
 
 .node-type-event .field-item h3{
-	margin: 0px;
-	font-size: 17px;
-	letter-spacing: 0.05em;
-	font-weight: 300;
-	color: #000000;
-	text-transform: uppercase;
-	display: inline;
+  margin: 0px;
+  font-size: 17px;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  color: #000000;
+  text-transform: uppercase;
+  display: inline;
 }
 
 .node-type-event .field-item a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .node-type-event .field-item a:hover {
@@ -84,19 +84,19 @@
 }
 
 .node-type-event .field-item dl{
-	margin: -15px 0 0 20px;
-	padding: 0px;
-	line-height: normal;
-	font-size: 0px;
+  margin: -15px 0 0 20px;
+  padding: 0px;
+  line-height: normal;
+  font-size: 0px;
 }
 
 .node-type-event .field-item dd{
-	font-size: 10px;
-	letter-spacing: 0.09em;
-	font-weight: 100;
-	font-style: italic;
-	line-height: 1;
+  font-size: 10px;
+  letter-spacing: 0.09em;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 1;
 
-	margin: 0px;
-	padding: 5px 0 0 0;
+  margin: 0px;
+  padding: 5px 0 0 0;
 }
