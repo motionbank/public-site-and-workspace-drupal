@@ -1,6 +1,6 @@
 .section-documentation .region-content-header .field-item,
 .section-dokumentation .region-content-header .field-item{
-	margin-bottom: 8px;
+	margin-bottom: 56px;
 }
 
 .section-documentation .links.inline,
@@ -148,4 +148,34 @@
 .section-documentation .region-content-header h3,
 .section-dokumentation .region-content-header h3 {
 	font-size: 16px;
+}
+
+
+/* Exposed Filter */
+.section-documentation .views-widget-sort-by,
+.section-dokumentation .views-widget-sort-by {
+	display: none;
+}
+
+.section-documentation .form-item label,
+.section-dokumentation .form-item label {
+	display: none;
+}
+
+.section-documentation .views-widget-sort-order,
+.section-dokumentation .views-widget-sort-order {
+	float: right;
+	padding: 0;
+}
+
+.section-documentation .views-widget-sort-order select,
+.section-dokumentation .views-widget-sort-order select {
+	background-color: rgba(255, 255, 255, 0.8);
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+.ajax-progress-throbber {
+	display: none;
 }

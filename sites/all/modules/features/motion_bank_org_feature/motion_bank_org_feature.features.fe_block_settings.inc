@@ -14,10 +14,6 @@ function motion_bank_org_feature_default_fe_block_settings() {
 
   // Theme independent visibility settings.
   $export['visibility'] = array(
-    'block-mborg_video_trailer_block' => array(
-      'machine_name' => 'mborg_video_trailer_block',
-      'module' => 'block',
-    ),
     'block-motionbank_footer' => array(
       'machine_name' => 'motionbank_footer',
       'module' => 'block',
@@ -50,13 +46,6 @@ function motion_bank_org_feature_default_fe_block_settings() {
       'delta' => 'backgroundimages-block_1',
       'module' => 'views',
     ),
-    'views-basic_page_image_listing-block' => array(
-      'delta' => 'basic_page_image_listing-block',
-      'module' => 'views',
-      'node_type' => array(
-        'basic_page' => TRUE,
-      ),
-    ),
     'views-documentation-block_1' => array(
       'delta' => 'documentation-block_1',
       'module' => 'views',
@@ -74,30 +63,6 @@ function motion_bank_org_feature_default_fe_block_settings() {
       'node_type' => array(
         'event' => TRUE,
       ),
-    ),
-    'views-frontpage_nodes-block' => array(
-      'delta' => 'frontpage_nodes-block',
-      'module' => 'views',
-    ),
-    'views-frontpage_nodes-block_1' => array(
-      'delta' => 'frontpage_nodes-block_1',
-      'module' => 'views',
-    ),
-    'views-latest_entries-block' => array(
-      'delta' => 'latest_entries-block',
-      'module' => 'views',
-    ),
-    'views-latest_entries-block_1' => array(
-      'delta' => 'latest_entries-block_1',
-      'module' => 'views',
-    ),
-    'views-random_nodes-block' => array(
-      'delta' => 'random_nodes-block',
-      'module' => 'views',
-    ),
-    'views-random_nodes-block_1' => array(
-      'delta' => 'random_nodes-block_1',
-      'module' => 'views',
     ),
     'views-upcoming_event_list-block_1' => array(
       'delta' => 'upcoming_event_list-block_1',
@@ -136,22 +101,6 @@ function motion_bank_org_feature_default_fe_block_settings() {
     'cache' => -1,
     'i18n_mode' => 0,
     'machine_name' => 'social_media_link_block',
-  );
-
-  $theme['block-mborg_video_trailer_block'] = array(
-    'module' => 'block',
-    'theme' => 'bartik',
-    'status' => 0,
-    'weight' => 0,
-    'region' => '',
-    'custom' => 0,
-    'visibility' => 1,
-    'pages' => 'content/about
-content/ueber-uns',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 1,
-    'machine_name' => 'mborg_video_trailer_block',
   );
 
   $theme['block-motionbank_footer'] = array(
@@ -244,21 +193,6 @@ content/ueber-uns',
     'i18n_mode' => 0,
   );
 
-  $theme['views-basic_page_image_listing-block'] = array(
-    'module' => 'views',
-    'delta' => 'basic_page_image_listing-block',
-    'theme' => 'bartik',
-    'status' => 0,
-    'weight' => 0,
-    'region' => '',
-    'custom' => 0,
-    'visibility' => 0,
-    'pages' => '',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
   $theme['views-documentation-block_1'] = array(
     'module' => 'views',
     'delta' => 'documentation-block_1',
@@ -300,96 +234,6 @@ dokumentation',
     'custom' => 0,
     'visibility' => 0,
     'pages' => '',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
-  $theme['views-frontpage_nodes-block'] = array(
-    'module' => 'views',
-    'delta' => 'frontpage_nodes-block',
-    'theme' => 'bartik',
-    'status' => 0,
-    'weight' => 0,
-    'region' => '',
-    'custom' => 0,
-    'visibility' => 1,
-    'pages' => '<front>',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
-  $theme['views-frontpage_nodes-block_1'] = array(
-    'module' => 'views',
-    'delta' => 'frontpage_nodes-block_1',
-    'theme' => 'bartik',
-    'status' => 0,
-    'weight' => 0,
-    'region' => '',
-    'custom' => 0,
-    'visibility' => 1,
-    'pages' => '<front>',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
-  $theme['views-latest_entries-block'] = array(
-    'module' => 'views',
-    'delta' => 'latest_entries-block',
-    'theme' => 'bartik',
-    'status' => 0,
-    'weight' => 0,
-    'region' => '',
-    'custom' => 0,
-    'visibility' => 0,
-    'pages' => '',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
-  $theme['views-latest_entries-block_1'] = array(
-    'module' => 'views',
-    'delta' => 'latest_entries-block_1',
-    'theme' => 'bartik',
-    'status' => 0,
-    'weight' => 0,
-    'region' => '',
-    'custom' => 0,
-    'visibility' => 1,
-    'pages' => '<front>',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
-  $theme['views-random_nodes-block'] = array(
-    'module' => 'views',
-    'delta' => 'random_nodes-block',
-    'theme' => 'bartik',
-    'status' => 0,
-    'weight' => 0,
-    'region' => '',
-    'custom' => 0,
-    'visibility' => 0,
-    'pages' => '',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
-  $theme['views-random_nodes-block_1'] = array(
-    'module' => 'views',
-    'delta' => 'random_nodes-block_1',
-    'theme' => 'bartik',
-    'status' => 0,
-    'weight' => 0,
-    'region' => '',
-    'custom' => 0,
-    'visibility' => 1,
-    'pages' => '<front>',
     'title' => '',
     'cache' => -1,
     'i18n_mode' => 0,
@@ -444,22 +288,6 @@ vorschau',
     'cache' => -1,
     'i18n_mode' => 0,
     'machine_name' => 'social_media_link_block',
-  );
-
-  $theme['block-mborg_video_trailer_block'] = array(
-    'module' => 'block',
-    'theme' => 'mborg',
-    'status' => 1,
-    'weight' => -14,
-    'region' => 'content',
-    'custom' => 0,
-    'visibility' => 1,
-    'pages' => 'content/about
-content/ueber-uns',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 1,
-    'machine_name' => 'mborg_video_trailer_block',
   );
 
   $theme['block-motionbank_footer'] = array(
@@ -552,21 +380,6 @@ content/ueber-uns',
     'i18n_mode' => 0,
   );
 
-  $theme['views-basic_page_image_listing-block'] = array(
-    'module' => 'views',
-    'delta' => 'basic_page_image_listing-block',
-    'theme' => 'mborg',
-    'status' => 1,
-    'weight' => -13,
-    'region' => 'content',
-    'custom' => 0,
-    'visibility' => 0,
-    'pages' => '',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
   $theme['views-documentation-block_1'] = array(
     'module' => 'views',
     'delta' => 'documentation-block_1',
@@ -608,96 +421,6 @@ dokumentation',
     'custom' => 0,
     'visibility' => 0,
     'pages' => '',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
-  $theme['views-frontpage_nodes-block'] = array(
-    'module' => 'views',
-    'delta' => 'frontpage_nodes-block',
-    'theme' => 'mborg',
-    'status' => 1,
-    'weight' => -12,
-    'region' => 'content',
-    'custom' => 0,
-    'visibility' => 1,
-    'pages' => '<front>',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
-  $theme['views-frontpage_nodes-block_1'] = array(
-    'module' => 'views',
-    'delta' => 'frontpage_nodes-block_1',
-    'theme' => 'mborg',
-    'status' => 1,
-    'weight' => -19,
-    'region' => 'content',
-    'custom' => 0,
-    'visibility' => 1,
-    'pages' => '<front>',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
-  $theme['views-latest_entries-block'] = array(
-    'module' => 'views',
-    'delta' => 'latest_entries-block',
-    'theme' => 'mborg',
-    'status' => 1,
-    'weight' => -11,
-    'region' => 'content',
-    'custom' => 0,
-    'visibility' => 0,
-    'pages' => '',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
-  $theme['views-latest_entries-block_1'] = array(
-    'module' => 'views',
-    'delta' => 'latest_entries-block_1',
-    'theme' => 'mborg',
-    'status' => 1,
-    'weight' => -18,
-    'region' => 'content',
-    'custom' => 0,
-    'visibility' => 1,
-    'pages' => '<front>',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
-  $theme['views-random_nodes-block'] = array(
-    'module' => 'views',
-    'delta' => 'random_nodes-block',
-    'theme' => 'mborg',
-    'status' => 1,
-    'weight' => -10,
-    'region' => 'content',
-    'custom' => 0,
-    'visibility' => 0,
-    'pages' => '',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
-  $theme['views-random_nodes-block_1'] = array(
-    'module' => 'views',
-    'delta' => 'random_nodes-block_1',
-    'theme' => 'mborg',
-    'status' => 1,
-    'weight' => -17,
-    'region' => 'content',
-    'custom' => 0,
-    'visibility' => 1,
-    'pages' => '<front>',
     'title' => '',
     'cache' => -1,
     'i18n_mode' => 0,
@@ -752,22 +475,6 @@ vorschau',
     'cache' => -1,
     'i18n_mode' => 0,
     'machine_name' => 'social_media_link_block',
-  );
-
-  $theme['block-mborg_video_trailer_block'] = array(
-    'module' => 'block',
-    'theme' => 'seven',
-    'status' => 0,
-    'weight' => 0,
-    'region' => '',
-    'custom' => 0,
-    'visibility' => 1,
-    'pages' => 'content/about
-content/ueber-uns',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 1,
-    'machine_name' => 'mborg_video_trailer_block',
   );
 
   $theme['block-motionbank_footer'] = array(
@@ -860,21 +567,6 @@ content/ueber-uns',
     'i18n_mode' => 0,
   );
 
-  $theme['views-basic_page_image_listing-block'] = array(
-    'module' => 'views',
-    'delta' => 'basic_page_image_listing-block',
-    'theme' => 'seven',
-    'status' => 0,
-    'weight' => 0,
-    'region' => '',
-    'custom' => 0,
-    'visibility' => 0,
-    'pages' => '',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
   $theme['views-documentation-block_1'] = array(
     'module' => 'views',
     'delta' => 'documentation-block_1',
@@ -916,96 +608,6 @@ dokumentation',
     'custom' => 0,
     'visibility' => 0,
     'pages' => '',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
-  $theme['views-frontpage_nodes-block'] = array(
-    'module' => 'views',
-    'delta' => 'frontpage_nodes-block',
-    'theme' => 'seven',
-    'status' => 0,
-    'weight' => 0,
-    'region' => '',
-    'custom' => 0,
-    'visibility' => 1,
-    'pages' => '<front>',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
-  $theme['views-frontpage_nodes-block_1'] = array(
-    'module' => 'views',
-    'delta' => 'frontpage_nodes-block_1',
-    'theme' => 'seven',
-    'status' => 0,
-    'weight' => 0,
-    'region' => '',
-    'custom' => 0,
-    'visibility' => 1,
-    'pages' => '<front>',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
-  $theme['views-latest_entries-block'] = array(
-    'module' => 'views',
-    'delta' => 'latest_entries-block',
-    'theme' => 'seven',
-    'status' => 0,
-    'weight' => 0,
-    'region' => '',
-    'custom' => 0,
-    'visibility' => 0,
-    'pages' => '',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
-  $theme['views-latest_entries-block_1'] = array(
-    'module' => 'views',
-    'delta' => 'latest_entries-block_1',
-    'theme' => 'seven',
-    'status' => 0,
-    'weight' => 0,
-    'region' => '',
-    'custom' => 0,
-    'visibility' => 1,
-    'pages' => '<front>',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
-  $theme['views-random_nodes-block'] = array(
-    'module' => 'views',
-    'delta' => 'random_nodes-block',
-    'theme' => 'seven',
-    'status' => 0,
-    'weight' => 0,
-    'region' => '',
-    'custom' => 0,
-    'visibility' => 0,
-    'pages' => '',
-    'title' => '',
-    'cache' => -1,
-    'i18n_mode' => 0,
-  );
-
-  $theme['views-random_nodes-block_1'] = array(
-    'module' => 'views',
-    'delta' => 'random_nodes-block_1',
-    'theme' => 'seven',
-    'status' => 0,
-    'weight' => 0,
-    'region' => '',
-    'custom' => 0,
-    'visibility' => 1,
-    'pages' => '<front>',
     'title' => '',
     'cache' => -1,
     'i18n_mode' => 0,

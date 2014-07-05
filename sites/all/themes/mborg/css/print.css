@@ -9,7 +9,7 @@
 /* underline all links */
 a:link,
 a:visited {
-  text-decoration: underline !important;
+/*  text-decoration: underline !important; */
 }
 
 /* Don't underline header */
@@ -19,12 +19,14 @@ a:visited {
 }
 
 /* CSS2 selector to add visible href after links */
+/*
 #content a:link:after,
 #content a:visited:after {
   content: " (" attr(href) ") ";
   font-size: 0.8em;
   font-weight: normal;
 }
+*/
 
 /* Un-float the content */
 #content,
@@ -46,6 +48,12 @@ body,
   color: #000;
   background-color: transparent !important;
   background-image: none !important;
+  overflow: visible !important;
+}
+
+#page {
+  /*border: 1px solid #FF0000;
+ /* width: 695px;*/
 }
 
 /* Hide sidebars and nav elements */
@@ -71,4 +79,102 @@ div.tabs,
    the content after the first page. */
 #page-wrapper {
   overflow-y: visible;
+  padding: 50px 20px 50px 20px;
+  padding: 0;
+}
+
+
+#bgimages {
+  display: none;
+}
+
+#header {
+  display: none;
+}
+
+#block-views-event-navigation-top-block,
+#block-views-event-navigation-bottom-block {
+  display: none;
+}
+
+#skip-link {
+  display: none;
+}
+
+#page-title {
+  color: #000;
+
+  font-weight: 300 !important;
+  margin-bottom: 45px !important;
+}
+
+.node-type-event #content-header {
+  width: 100%;
+  margin: 0;
+}
+
+#content .section {
+  background-color: transparent;
+}
+
+.node-type-event .field-item {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.node-type-event .field-item dl {
+  margin: 0;
+}
+
+td:first-child {
+  float: right;
+  width: 300px;
+  padding-left: 35px;
+}
+
+td:last-child {
+  float: left;
+  width: 330px;
+  margin-bottom: 30px;
+}
+
+h2 {
+ 
+}
+
+h3 {
+
+  display: block !important;
+  margin: 0 0 25px !important;
+}
+
+p {
+
+  color: #666666 !important;
+  margin: 0 !important;
+  page-break-inside:avoid;
+}
+
+iframe {
+  border: 1px solid #999999;
+  width: 330px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.field-item {
+  page-break-inside: avoid;
+}
+
+.node-type-event .field-item dl {
+  width: 330px;
+}
+
+.download_btn {
+  display: none;
 }

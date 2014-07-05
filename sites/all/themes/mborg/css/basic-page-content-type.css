@@ -7,7 +7,7 @@
 }
 
 .node-type-basic-page #content-header{
-	width: 384px;
+	/*width: 384px;*/
 	margin-top: -56px
 }
 
@@ -29,7 +29,7 @@
 
 
 .node-type-basic-page .field-name-field-image {
-	display: none;
+	/*display: none;*/
 }
 
 .node-type-basic-page .region-content-header ul {
@@ -114,3 +114,167 @@
   background-color: #000;
   text-decoration: none;
 }
+
+
+
+
+/* PANELS UPDATE - START */
+.node-type-basic-page .panels-flexible-region-basic_page-center {
+	width: auto;
+}
+
+.node-type-basic-page .panels-flexible-region-first {
+	width: 384px;
+	margin-right: 26px;
+}
+	/* RESET FOR DOCUMENTATION PAGE */
+	.section-dokumentation .panels-flexible-region-first {
+		width: 100%;
+	}
+
+.node-type-basic-page .panels-flexible-region-basic_page-02 .pane-node-field-image {
+	width: 306px;
+}
+
+.node-type-basic-page .panels-flexible-region-basic_page-02,
+.node-type-basic-page .panels-flexible-region-basic_page-03,
+.node-type-basic-page .panels-flexible-region-basic_page-04 {
+	width: 309px;
+	margin-right: 23px;
+}
+
+.node-type-basic-page .panels-flexible-basic_page .panels-flexible-region-inside {
+	padding: 0;
+}
+
+
+.node-type-basic-page .panels-flexible-region-basic_page-02 .field-item {
+	padding: 0;
+	margin: 0;
+}
+
+.node-type-basic-page .panels-flexible-region-basic_page-02 .field-name-field-file-image-title-text .field-item {
+	background-color: rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    line-height: 15px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    padding-left: 10px;
+    position: relative;
+}
+
+
+.node-type-basic-page .panels-flexible-region-basic_page-02 .panel-separator {
+    margin: 0 0 10px;
+}
+
+
+.node-type-basic-page .panels-flexible-region-basic_page-02 img {
+    height: 100%;
+    width: 100%;
+}
+
+	/* MOTIONBANK TRAILER PANE */
+	.pane-block-3 p { 
+		margin: 0;
+		line-height: 0;
+	}
+
+.node-type-basic-page #content-header {
+    float: left;
+    
+}
+
+.node-type-basic-page .panels-flexible-region-basic_page-03 .field-item,
+.node-type-basic-page .panels-flexible-region-basic_page-04 .field-item {
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+}
+
+.node-type-basic-page .panels-flexible-region-basic_page-03 .panel-pane,
+.node-type-basic-page .panels-flexible-region-basic_page-04 .panel-pane {
+	display: table;
+	width: 100%;
+}
+
+.node-type-basic-page .panels-flexible-region-basic_page-03 .panel-pane h2,
+.node-type-basic-page .panels-flexible-region-basic_page-04 .panel-pane h2 {
+	display: table-cell;
+	vertical-align: middle;
+	width: 306px;
+
+    border: 1px solid rgb(255, 255, 255);
+	border: 1px solid rgba(255, 255, 255, .6);
+	-webkit-background-clip: padding-box; /* for Safari */
+	background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	letter-spacing: 0.20em;
+	font-weight: 300;	
+}
+
+.node-type-basic-page .panels-flexible-region-basic_page-03 .pane-title a,
+.node-type-basic-page .panels-flexible-region-basic_page-04 .pane-title a {
+	display: block;
+	padding: 0 10px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.node-type-basic-page .panels-flexible-region-basic_page-03 .pane-content .field-type-image,
+.node-type-basic-page .panels-flexible-region-basic_page-04 .pane-content .field-type-image {
+	/*display: none; /* hide image */
+	margin: 0 0 0 -306px;
+    overflow: hidden;
+    position: absolute;
+    width: 306px;
+    z-index: -1;
+    line-height: 0;
+}
+
+.node-type-basic-page .panels-flexible-region-basic_page-03 .pane-content img,
+.node-type-basic-page .panels-flexible-region-basic_page-04 .pane-content img {
+	display: none;
+}
+
+.node-type-basic-page .panels-flexible-region-basic_page-03 .panel-separator,
+.node-type-basic-page .panels-flexible-region-basic_page-04 .panel-separator {
+    margin: 0 0 24px;
+}
+
+.pane-plain-box-direct-link-box {
+	border: 1px solid rgb(255, 255, 255);
+	border: 1px solid rgba(255, 255, 255, .6);
+	-webkit-background-clip: padding-box; /* for Safari */
+	background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	letter-spacing: 0.20em;
+	font-weight: 300;
+}
+
+.pane-plain-box-direct-link-box a {
+	color: inherit;
+    font-size: inherit;
+    text-decoration: inherit;
+}
+
+.pane-plain-box-direct-link-box img {
+	width: 100%;
+	height: 100%;
+}
+ 
+/* PANELS UPDATE - END */

@@ -99,7 +99,7 @@ function motion_bank_org_feature_strongarm() {
   $strongarm->value = array(
     'view_modes' => array(
       'teaser' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'full' => array(
         'custom_settings' => TRUE,
@@ -117,6 +117,15 @@ function motion_bank_org_feature_strongarm() {
         'custom_settings' => FALSE,
       ),
       'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'block_standard_box_' => array(
+        'custom_settings' => TRUE,
+      ),
+      'block_big_box_' => array(
+        'custom_settings' => TRUE,
+      ),
+      'revision' => array(
         'custom_settings' => FALSE,
       ),
     ),
@@ -148,6 +157,14 @@ function motion_bank_org_feature_strongarm() {
             'weight' => '1',
             'visible' => FALSE,
           ),
+          'block_standard_box_' => array(
+            'weight' => '3',
+            'visible' => FALSE,
+          ),
+          'block_big_box_' => array(
+            'weight' => '11',
+            'visible' => FALSE,
+          ),
         ),
       ),
     ),
@@ -161,10 +178,10 @@ function motion_bank_org_feature_strongarm() {
   $strongarm->value = array(
     'view_modes' => array(
       'teaser' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'full' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,
@@ -179,6 +196,15 @@ function motion_bank_org_feature_strongarm() {
         'custom_settings' => FALSE,
       ),
       'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'block_standard_box_' => array(
+        'custom_settings' => TRUE,
+      ),
+      'block_big_box_' => array(
+        'custom_settings' => TRUE,
+      ),
+      'revision' => array(
         'custom_settings' => FALSE,
       ),
     ),
@@ -208,6 +234,18 @@ function motion_bank_org_feature_strongarm() {
           ),
           'teaser' => array(
             'weight' => '1',
+            'visible' => FALSE,
+          ),
+          'full' => array(
+            'weight' => '1',
+            'visible' => FALSE,
+          ),
+          'block_standard_box_' => array(
+            'weight' => '2',
+            'visible' => FALSE,
+          ),
+          'block_big_box_' => array(
+            'weight' => '10',
             'visible' => FALSE,
           ),
         ),
@@ -314,13 +352,13 @@ function motion_bank_org_feature_strongarm() {
     'language' => 'de',
     'name' => 'German',
     'native' => 'Deutsch',
-    'direction' => '0',
+    'direction' => 0,
     'enabled' => 1,
-    'plurals' => '0',
+    'plurals' => 0,
     'formula' => '',
     'domain' => '',
     'prefix' => 'de',
-    'weight' => '0',
+    'weight' => 0,
     'javascript' => '',
   );
   $export['language_default'] = $strongarm;
@@ -515,7 +553,7 @@ function motion_bank_org_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'nice_menus_menu_1';
-  $strongarm->value = 'main-menu';
+  $strongarm->value = 'main-menu:0';
   $export['nice_menus_menu_1'] = $strongarm;
 
   $strongarm = new stdClass();

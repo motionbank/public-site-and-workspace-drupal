@@ -49,7 +49,7 @@
   display: inline;
 }
 
-.form-type-textfield label {
+#search-form .form-type-textfield label {
   color: #FFFFFF;
   font-size: 13px;
   font-weight: 300;

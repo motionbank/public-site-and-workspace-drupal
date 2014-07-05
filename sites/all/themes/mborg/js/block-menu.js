@@ -4,6 +4,37 @@
  *	JS to generate hovers for the blocked menu.
  */
 
+jQuery(function(){
+	jQuery(".page-frontpage .panel-pane, .panels-flexible-region-basic_page-03 .panel-pane, .panels-flexible-region-basic_page-04 .panel-pane").each(function( index, item ){
+		item = jQuery('h2',item);
+		var imgHeight = jQuery( this ).children().find( "img" ).attr( "height" );
+		jQuery( this ).css("height", imgHeight);
+		jQuery( this ).hover(function(){
+			jQuery('img', this).stop(true, true).fadeIn(400);
+			jQuery({alpha:0.6}).stop(true, true).animate({alpha:0}, {
+						        duration: 200,
+						        step: function(){
+						            item.css('border-color','rgba(255,255,255,'+this.alpha+')');
+						        },
+						        complete: function(){
+						    		item.css('border-color','rgba(255,255,255,0)');
+						    }
+						    });
+		}, function(){
+			jQuery('img', this).stop(true, true).fadeOut(400);
+			jQuery({alpha:0}).stop(true, true).animate({alpha:0.6}, {
+						        duration: 200,
+						        step: function(){
+						            item.css('border-color','rgba(255,255,255,'+this.alpha+')');
+						        }, complete : function(){
+						    	item.css('border-color','rgba(255,255,255,0.6)');
+						    }
+						    });
+		});
+	});
+});
+
+/*
  jQuery(function(){
  	jQuery('#block-views-frontpage-nodes-block,'+
  		   '#block-views-latest-entries-block,'+
@@ -55,3 +86,4 @@
  		});
  	});
  });
+ */

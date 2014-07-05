@@ -11,15 +11,6 @@ function motion_bank_org_feature_default_fe_block_boxes() {
   $export = array();
 
   $fe_block_boxes = new stdClass();
-  $fe_block_boxes->info = 'Block: Motionbank Trailer 2012';
-  $fe_block_boxes->format = 'full_html';
-  $fe_block_boxes->machine_name = 'mborg_video_trailer_block';
-  $fe_block_boxes->body = '<p><iframe allowfullscreen="" frameborder="0" height="172" mozallowfullscreen="" src="http://player.vimeo.com/video/58463008?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" webkitallowfullscreen="" width="306"></iframe></p>
-';
-
-  $export['mborg_video_trailer_block'] = $fe_block_boxes;
-
-  $fe_block_boxes = new stdClass();
   $fe_block_boxes->info = 'motionbank_footer';
   $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'motionbank_footer';

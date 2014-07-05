@@ -1,0 +1,5 @@
+name = Job Scheduler Trigger
+description = Creates scheduler triggers that fire up at certain days, times
+core = 7.x
+php = 5.2
+dependencies[] = job_scheduler

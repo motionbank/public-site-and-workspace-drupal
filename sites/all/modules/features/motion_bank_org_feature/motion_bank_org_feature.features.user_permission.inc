@@ -10,16 +10,6 @@
 function motion_bank_org_feature_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: 'access draggableviews'.
-  $permissions['access draggableviews'] = array(
-    'name' => 'access draggableviews',
-    'roles' => array(
-      'author' => 'author',
-      'content enterer' => 'content enterer',
-    ),
-    'module' => 'draggableviews',
-  );
-
   // Exported permission: 'search content'.
   $permissions['search content'] = array(
     'name' => 'search content',

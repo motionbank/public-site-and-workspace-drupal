@@ -8,7 +8,16 @@
  * Implements hook_ctools_plugin_api().
  */
 function motion_bank_org_feature_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "ds" && $api == "ds") {
+    return array("version" => "1");
+  }
   if ($module == "file_entity" && $api == "file_default_displays") {
+    return array("version" => "1");
+  }
+  if ($module == "page_manager" && $api == "pages_default") {
+    return array("version" => "1");
+  }
+  if ($module == "panels" && $api == "layouts") {
     return array("version" => "1");
   }
   if ($module == "strongarm" && $api == "strongarm") {
@@ -32,6 +41,7 @@ function motion_bank_org_feature_image_default_styles() {
   // Exported image style: basic_page_image_view.
   $styles['basic_page_image_view'] = array(
     'name' => 'basic_page_image_view',
+    'label' => 'basic_page_image_view',
     'effects' => array(
       10 => array(
         'label' => 'Scale',
@@ -55,6 +65,7 @@ function motion_bank_org_feature_image_default_styles() {
   // Exported image style: menu_preview_image.
   $styles['menu_preview_image'] = array(
     'name' => 'menu_preview_image',
+    'label' => 'menu_preview_image',
     'effects' => array(
       2 => array(
         'label' => 'Scale',
@@ -96,6 +107,7 @@ function motion_bank_org_feature_image_default_styles() {
         'weight' => 1,
       ),
     ),
+    'label' => 'preview_image_306',
   );
 
   // Exported image style: preview_image_384.
@@ -119,11 +131,13 @@ function motion_bank_org_feature_image_default_styles() {
         'weight' => 1,
       ),
     ),
+    'label' => 'preview_image_384',
   );
 
   // Exported image style: width_438px.
   $styles['width_438px'] = array(
     'name' => 'width_438px',
+    'label' => 'width_438px',
     'effects' => array(
       8 => array(
         'label' => 'Scale',
