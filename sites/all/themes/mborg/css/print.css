@@ -157,9 +157,9 @@ p {
 }
 
 iframe {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAFUlEQVQImWNgQAJnzpz5TyqHgYEBAMu5DY05OQAeAAAAAElFTkSuQmCC") repeat scroll 0 0 rgba(0, 0, 0, 0);
   border: 1px solid #999999;
   width: 330px;
-  overflow: hidden;
 }
 
 img {
@@ -169,12 +169,4 @@ img {
 
 .field-item {
   page-break-inside: avoid;
-}
-
-.node-type-event .field-item dl {
-  width: 330px;
-}
-
-.download_btn {
-  display: none;
 }

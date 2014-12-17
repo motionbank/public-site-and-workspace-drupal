@@ -37,10 +37,6 @@ a:link, a:hover, a:visited, a:active {
   color: black;
 }
 
-.pager a {
-  color: #FFF !important;
-}
-
 table,
 td{
   font-family: 'Lato', sans-serif;
@@ -95,7 +91,9 @@ td{
 
 a.download_btn {
   border: 1px solid #000000;
-  display: block;
-  margin-bottom: 6px;
-  text-align: center;
+  padding: 2px 6px;
+}
+
+.pager a {
+  color: #FFF !important;
 }

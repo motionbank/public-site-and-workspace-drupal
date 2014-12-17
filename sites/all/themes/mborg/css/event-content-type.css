@@ -88,21 +88,7 @@
   padding: 0px;
   line-height: normal;
   font-size: 0px;
-
-  width: 438px;
 }
-
-  /* exception for Online Scores Tutorials */
-  .page-node-522 .field-item dl,
-  .page-node-523 .field-item dl {
-    width: 645px;
-  }
-
-  /* exception for Motion Bank Trailers */
-  .page-node-510 .field-item dl,
-  .page-node-513 .field-item dl {
-    width: 645px;
-  }
 
 .node-type-event .field-item dd{
   font-size: 10px;
